@@ -27,7 +27,7 @@ for(const [locale,title,description,action,unsubscribe] of [
  const name=`NoobEye issue ${issueId} ${locale}`;
  const previous=existing.find(b=>b.name===name);
  if(previous){console.log(`${locale}: existing broadcast ${previous.id}; skipped`);continue;}
- const draft=await resend(env,'/broadcasts','POST',{name,segment_id:env.RESEND_SEGMENT_ID,topic_id:env['RESEND_TOPIC_'+locale.toUpperCase()],from:env.MAIL_FROM,subject:title,send:false,text:`${title}\n${description}\n\n${action}: ${play.href}\n\n${unsubscribe}: {{{RESEND_UNSUBSCRIBE_URL}}}`,html:`<div style="font:17px/1.8 system-ui;max-width:560px;margin:32px auto"><p>NoobEye ◉ · FindPuzzle</p><h1>${esc(title)}</h1><p>${esc(description)}</p><p><a href="${esc(play.href)}">${action} →</a></p><p><a href="{{{RESEND_UNSUBSCRIBE_URL}}}">${unsubscribe}</a></p><small>QianYaStudio</small></div>`});
+ const draft=await resend(env,'/broadcasts','POST',{name,segment_id:env.RESEND_SEGMENT_ID,topic_id:env['RESEND_TOPIC_'+locale.toUpperCase()],from:env.MAIL_FROM,subject:title,send:false,text:`${title}\n${description}\n\n${action}: ${play.href}\n\n${unsubscribe}: {{{RESEND_UNSUBSCRIBE_URL}}}`,html:`<div style="font:17px/1.8 system-ui;max-width:560px;margin:32px auto"><p>NoobEye · FindPuzzle</p><h1>${esc(title)}</h1><p>${esc(description)}</p><p><a href="${esc(play.href)}">${action}</a></p><p><a href="{{{RESEND_UNSUBSCRIBE_URL}}}">${unsubscribe}</a></p><small>QianYaStudio</small></div>`});
  console.log(`${locale}: draft ${draft.id}`);
 }
 console.log('Review language, issue URL and recipients in Resend Broadcasts, then send there. No emails sent by this command.');

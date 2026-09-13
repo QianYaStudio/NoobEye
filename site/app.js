@@ -54,7 +54,7 @@ function render() {
   }
   $('hint').disabled = found.size === targets.length;
   const level = selected ? Number(hints[selected] || 0) : 0;
-  $('hint').textContent = found.size === targets.length ? tr('全部发现 ✓','All found ✓','すべて発見 ✓') : level >= 2 ? tr('揭晓这件藏品 ↗','Reveal this object ↗','この位置を見る ↗') : level === 1 ? tr('圈出大致区域 ↗','Show the area ↗','近くの範囲を見る ↗') : tr('给我一点线索 ↗','A little hint ↗','ヒントをもらう ↗');
+  $('hint').textContent = found.size === targets.length ? tr('全部发现','All found','すべて発見') : level >= 2 ? tr('揭晓这件藏品','Reveal this object','この位置を見る') : level === 1 ? tr('圈出大致区域','Show the area','近くの範囲を見る') : tr('给我一点线索','A little hint','ヒントをもらう');
   updateShelf();renderCompletion();
 }
 function discover(target) {
@@ -187,7 +187,7 @@ function updateShelf(){
     button.setAttribute('aria-pressed',String(issue.id===currentIssue?.id));
     button.querySelector('strong').textContent=titleOf(issue);
     button.querySelector('.card-number').textContent=tr(`第 ${issue.id} 期`,`ISSUE ${issue.id}`,`第${issue.id}号`);
-    button.querySelector('.card-progress').textContent=count===issue.targets.length?tr('已完成 ✓','Completed ✓','クリア済み ✓'):count?tr(`${count} / ${issue.targets.length} 已发现`,`${count} / ${issue.targets.length} found`,`${count} / ${issue.targets.length} 発見`):tr(`${issue.targets.length} 件藏品 · 开始寻找`,`${issue.targets.length} objects · Explore`,`${issue.targets.length}個を探す`);
+    button.querySelector('.card-progress').textContent=count===issue.targets.length?tr('已完成','Completed','クリア済み'):count?tr(`${count} / ${issue.targets.length} 已发现`,`${count} / ${issue.targets.length} found`,`${count} / ${issue.targets.length} 発見`):tr(`${issue.targets.length} 件藏品 · 开始寻找`,`${issue.targets.length} objects · Explore`,`${issue.targets.length}個を探す`);
   }
   $('collection-progress').textContent=tr(`${issues.length} 期收藏 · ${completed} 期已完成`,`${issues.length} issues · ${completed} completed`,`全${issues.length}号・${completed}号クリア`);
 }
@@ -255,7 +255,7 @@ function adjacent(delta){const next=neighbor(delta);if(next)loadIssue(next.id,{n
 function updateNavigation(){
  const prev=!neighbor(-1),next=!neighbor(1);
  $('prev-issue').disabled=prev;$('complete-prev').disabled=prev;$('next-issue').disabled=next;
- $('continue-issue').textContent=next?tr('返回书架 →','Back to the collection →','一覧へ戻る →'):tr('下一期 →','Next issue →','次の号へ →');
+ $('continue-issue').textContent=next?tr('返回书架','Back to the collection','一覧へ戻る'):tr('下一期','Next issue','次の号へ');
 }
 $('prev-issue').addEventListener('click',()=>adjacent(-1));$('next-issue').addEventListener('click',()=>adjacent(1));
 $('complete-prev').addEventListener('click',()=>adjacent(-1));
