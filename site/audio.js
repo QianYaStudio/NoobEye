@@ -114,6 +114,20 @@ function toggleMusic(){prefs.music=blocked||!userStartedPlayback?true:!prefs.mus
 function chooseTrack(id){userStartedPlayback=true;prefs.track=id;prefs.music=true;prefs.touched=true;persist();ui();play();}
 function stepTrack(delta){chooseTrack(TRACKS[(TRACKS.findIndex(t=>t.id===current().id)+delta+TRACKS.length)%TRACKS.length].id);}
 function volumeChanged(event){prefs.volume=Number(event.target.value)/100;player.volume=prefs.volume;persist();ui();}
+export async function prepareSensorAudio(){await ensureContext().resume();}
+// Original two-mode hollow chime, synthesized without recorded samples.
+export function sensorPulse(strength){
+ if(!prefs.effects||context?.state!=='running')return null;
+ const ctx=context,t=ctx.currentTime,nodes=[];
+ for(const [frequency,level,decay] of [[510,1,.14],[1373,.22,.075]]){
+  const o=ctx.createOscillator(),g=ctx.createGain();o.type='sine';
+  o.frequency.setValueAtTime(frequency,t);o.frequency.exponentialRampToValueAtTime(frequency*.96,t+.12);
+  g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime((.009+.046*strength)*level,t+.006);g.gain.exponentialRampToValueAtTime(.0001,t+decay);
+  o.connect(g).connect(ctx.destination);o.start(t);o.stop(t+decay+.02);nodes.push([o,g]);
+  o.onended=()=>{o.disconnect();g.disconnect();};
+ }
+ return ()=>{for(const [o,g]of nodes){g.disconnect();try{o.stop();}catch{}}};
+}
 export function effect(kind='tap'){
  if(!prefs.effects)return;
  try{

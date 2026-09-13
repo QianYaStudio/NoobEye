@@ -1,3 +1,4 @@
+import { setupSensor } from './sensor.js';
 import {targetOutline,createOutlineMark} from './target-outlines.js';
 import { effect, setupAudio, setIssueMusic, startListening } from './audio.js';
 import { tr, labelOf, titleOf, introOf, clueOf, setupLanguage } from './i18n.js';
@@ -13,14 +14,14 @@ let targets = [], found = new Set(), hints = {}, selected = null, issues=[], cur
 let sceneReady=false, sceneRequest=0;
 const clock=new SessionClock();
 let gameVisible=false, mistakes=0, runId='', rankEligible=true, rankResult=null, startPromise=null, startSent=false;
-let awaitingFreshInteraction=false;
+let awaitingFreshInteraction=false, sensorUsed=false;
 let view = { x: 0, y: 0, size: 1254 }, pointers = new Map(), drag = null, pinch = null;
 const say = (text) => { $('status').textContent = text; };
 const clamp = (n, min, max) => Math.max(min, Math.min(max, n));
 const sceneWidth=()=>currentIssue?.width||1254;
 const sceneHeight=()=>currentIssue?.height||1254;
 function loadScene(src){
-  const request=++sceneRequest;sceneReady=false;$('viewport').setAttribute('aria-busy','true');
+  sensor.clear();const request=++sceneRequest;sceneReady=false;$('viewport').setAttribute('aria-busy','true');
   const preload=new Image();
   preload.onload=()=>{if(request!==sceneRequest)return;$('scene-image').setAttribute('href',src);sceneReady=true;$('viewport').setAttribute('aria-busy','false');syncClock();};
   preload.onerror=()=>{if(request!==sceneRequest)return;$('viewport').setAttribute('aria-busy','false');say(tr('画面加载失败，请重新选刊或切换版本重试。','The picture could not load. Select this issue or an edition to retry.','画像を読み込めませんでした。この号か表示を選び直してください。'));};
@@ -28,7 +29,7 @@ function loadScene(src){
 }
 function save() {
   if(!currentIssue||awaitingFreshInteraction)return;
-  try { localStorage.setItem(STORAGE, JSON.stringify({ found: [...found], hints, ...clock.snapshot(), mistakes, runId, rankEligible, gameplayRevision:currentIssue.gameplayRevision })); }
+  try { localStorage.setItem(STORAGE, JSON.stringify({ found: [...found], hints, sensorUsed, ...clock.snapshot(), mistakes, runId, rankEligible, gameplayRevision:currentIssue.gameplayRevision })); }
   catch { say(tr('当前浏览器无法保存进度，请保持此页打开。','This browser cannot save progress. Keep this page open to continue.','このブラウザーでは進み具合を保存できません。このページを開いたまま続けてください。')); }
 }
 function svgElement(name, attrs) {
@@ -133,7 +134,7 @@ $('reset-dialog').addEventListener('close',()=>{
   $('hint-copy').textContent=tr('卡住了？先选一件想找的藏品。','Stuck? Select an object for a hint.','迷ったら、探すものを選んでヒントを見ましょう。');save();render();syncClock();effect('page');say(tr('新的观察，从这里开始。','A fresh look starts here.','新しい発見を、ここから。'));
 });
 function resetAttempt(waitForInteraction=false){
-  awaitingFreshInteraction=waitForInteraction;found.clear();hints={};selected=null;clock.load({});mistakes=0;runId=crypto.randomUUID();rankEligible=true;rankResult=null;startPromise=null;startSent=false;
+  sensor.clear();sensorUsed=false;awaitingFreshInteraction=waitForInteraction;found.clear();hints={};selected=null;clock.load({});mistakes=0;runId=crypto.randomUUID();rankEligible=true;rankResult=null;startPromise=null;startSent=false;
   $('marks').replaceChildren();$('hint-mark').replaceChildren();$('ripple-layer').replaceChildren();$('personal-best').textContent='';$('rank-result').textContent='';$('rank-result').hidden=true;$('complete').classList.remove('celebrate');
   view={x:0,y:0,size:sceneWidth()};updateView();
 }
@@ -142,7 +143,7 @@ $('clear-records').addEventListener('click',()=>{if(!currentIssue)return;clock.s
 $('clear-dialog').addEventListener('close',()=>{
   const scope=$('clear-dialog').returnValue;
   if(!['issue','all'].includes(scope)){syncClock();return;}
-  try{clearPlayRecords(localStorage,scope,currentIssue.id);}
+  try{clearPlayRecords(localStorage,scope,currentIssue.id);shelfCounts.clear();}
   catch{say(tr('无法清除浏览器中的记录，请稍后重试。','The browser records could not be cleared. Please try again.','記録を消去できませんでした。もう一度お試しください。'));syncClock();return;}
   resetAttempt(true);render();syncClock();
   $('hint-copy').textContent=tr('准备好了，点击画面开始新的寻找。','Ready. Click the picture to start a fresh search.','準備できました。画面をクリックして、新しく探し始めましょう。');
@@ -154,6 +155,10 @@ $('share').addEventListener('click',async()=>{
   catch {say(tr(`本期链接：${url.href}`,`Issue link: ${url.href}`,`この号のリンク：${url.href}`));}
 });
 const vp=$('viewport');
+const sensor=setupSensor({viewport:vp,localPoint,onEngage:engage,onScan:()=>{if(!sensorUsed){sensorUsed=true;save();}},readState:()=>({
+  targets,found,width:sceneWidth(),height:sceneHeight(),
+  active:sceneReady&&gameVisible&&pointers.size<2&&!$('reset-dialog').open&&!$('clear-dialog').open
+})});
 vp.addEventListener('wheel',e=>{e.preventDefault();const r=vp.getBoundingClientRect();zoom(Math.exp(-e.deltaY*.0015),(e.clientX-r.left)/r.width,(e.clientY-r.top)/r.height);},{passive:false});
 vp.addEventListener('wheel',engage,{passive:true});
 document.querySelector('.toolbar').addEventListener('click',engage);
@@ -161,14 +166,14 @@ vp.addEventListener('pointerdown',e=>{
   if(e.button!==0)return;engage();vp.setPointerCapture(e.pointerId);pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});
   $('canvas-tip').style.opacity='0';
   if(pointers.size===1)drag={x:e.clientX,y:e.clientY,vx:view.x,vy:view.y,moved:false};
-  else{drag=null;const [a,b]=[...pointers.values()];pinch=Math.hypot(a.x-b.x,a.y-b.y);}
+  else{drag=null;const [a,b]=[...pointers.values()];pinch={distance:Math.hypot(a.x-b.x,a.y-b.y),x:(a.x+b.x)/2,y:(a.y+b.y)/2};}
 });
 vp.addEventListener('pointermove',e=>{
   if(!pointers.has(e.pointerId))return;pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});
-  if(pointers.size>=2){const[a,b]=[...pointers.values()];const distance=Math.hypot(a.x-b.x,a.y-b.y);const r=vp.getBoundingClientRect();if(pinch>0)zoom(distance/pinch,((a.x+b.x)/2-r.left)/r.width,((a.y+b.y)/2-r.top)/r.height);pinch=distance;return;}
+  if(pointers.size>=2){const[a,b]=[...pointers.values()];const distance=Math.hypot(a.x-b.x,a.y-b.y);const r=vp.getBoundingClientRect();const x=(a.x+b.x)/2,y=(a.y+b.y)/2;if(pinch?.distance>0){zoom(distance/pinch.distance,(pinch.x-r.left)/r.width,(pinch.y-r.top)/r.height);view.x-=(x-pinch.x)/r.width*view.size;view.y-=(y-pinch.y)/r.height*view.size*sceneHeight()/sceneWidth();updateView();}pinch={distance,x,y};return;}
   if(!drag)return;const dx=e.clientX-drag.x,dy=e.clientY-drag.y;
   if(Math.hypot(dx,dy)>5)drag.moved=true;
-  if(drag.moved){const scale=view.size/vp.clientWidth;view.x=drag.vx-dx*scale;view.y=drag.vy-dy*scale;updateView();}
+  if(drag.moved&&!(sensor.enabled&&e.pointerType!=='mouse')){const scale=view.size/vp.clientWidth;view.x=drag.vx-dx*scale;view.y=drag.vy-dy*scale;updateView();}
 });
 function endPointer(e,cancelled=false){
   if(!pointers.has(e.pointerId))return;
@@ -184,12 +189,50 @@ vp.addEventListener('keydown',e=>{
   if(e.key.startsWith('Arrow')){const step=view.size*.1;view.x+=(e.key==='ArrowRight'?step:e.key==='ArrowLeft'?-step:0);view.y+=(e.key==='ArrowDown'?step:e.key==='ArrowUp'?-step:0);updateView();}
 });
 const storageKey=issue=>issue.id==='011'?'noobeye:pottery-yard:v1':`noobeye:issue:${issue.id}:${issue.version}`;
+const SHELF_PAGE_SIZE=4;
+let shelfPage=0;
+let shelfSlide=null;
+const shelfCounts=new Map();
+function renderShelfPage(direction=0){
+  const shelf=$('issue-shelf');
+  shelfSlide?.cancel();
+  const cards=document.createDocumentFragment();
+  for(const issue of issues.slice(shelfPage*SHELF_PAGE_SIZE,(shelfPage+1)*SHELF_PAGE_SIZE)){
+    const button=document.createElement('button');button.id=`issue-${issue.id}`;button.className='issue-card';
+    const cover=document.createElement('span');cover.className='card-cover';
+    cover.style.aspectRatio=`${issue.coverWidth||520} / ${issue.coverHeight||708}`;
+    const img=document.createElement('img');img.alt='';img.loading='lazy';img.decoding='async';img.width=issue.coverWidth;img.height=issue.coverHeight;
+    const fallback=document.createElement('span');fallback.className='cover-fallback';fallback.hidden=true;fallback.setAttribute('aria-hidden','true');
+    fallback.textContent=issue.id;
+    img.addEventListener('load',()=>{cover.classList.add('is-loaded');});
+    img.addEventListener('error',()=>{cover.classList.add('is-error');fallback.hidden=false;});
+    img.src=issue.cover;cover.append(img,fallback);
+    const copy=document.createElement('span');copy.className='card-copy';
+    const number=document.createElement('span');number.className='card-number';
+    const title=document.createElement('strong');
+    const progress=document.createElement('span');progress.className='card-progress';
+    copy.append(number,title,progress);button.append(cover,copy);
+    button.addEventListener('click',()=>loadIssue(issue.id,{navigate:true}));cards.append(button);
+  }
+  shelf.replaceChildren(cards);shelf.scrollLeft=0;updateShelf();
+  if(direction&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
+    shelfSlide=shelf.animate([{transform:`translateX(${direction*8}%)`,opacity:.25},{transform:'translateX(0)',opacity:1}],{duration:280,easing:'cubic-bezier(.2,.75,.3,1)'});
+  }
+}
+function turnShelf(delta){
+  const next=clamp(shelfPage+delta,0,Math.max(0,Math.ceil(issues.length/SHELF_PAGE_SIZE)-1));
+  if(next===shelfPage)return;shelfPage=next;renderShelfPage(delta);
+}
+$('shelf-prev').addEventListener('click',()=>turnShelf(-1));
+$('shelf-next').addEventListener('click',()=>turnShelf(1));
 function updateShelf(){
   let completed=0;
   for(const issue of issues){
     let count=0;
     if(issue.id===currentIssue?.id)count=found.size;
+    else if(shelfCounts.has(issue.id))count=shelfCounts.get(issue.id);
     else try{const p=JSON.parse(localStorage.getItem(storageKey(issue))||'{}');count=new Set((Array.isArray(p.found)?p.found:[]).filter(id=>issue.targets.some(t=>t.id===id))).size;}catch{}
+    shelfCounts.set(issue.id,count);
     if(count===issue.targets.length)completed++;
     const button=$(`issue-${issue.id}`);if(!button)continue;
     button.setAttribute('aria-pressed',String(issue.id===currentIssue?.id));
@@ -197,6 +240,10 @@ function updateShelf(){
     button.querySelector('.card-number').textContent=tr(`第 ${issue.id} 期`,`ISSUE ${issue.id}`,`第${issue.id}号`);
     button.querySelector('.card-progress').textContent=count===issue.targets.length?tr('已完成','Completed','クリア済み'):count?tr(`${count} / ${issue.targets.length} 已发现`,`${count} / ${issue.targets.length} found`,`${count} / ${issue.targets.length} 発見`):tr(`${issue.targets.length} 件藏品 · 开始寻找`,`${issue.targets.length} objects · Explore`,`${issue.targets.length}個を探す`);
   }
+  const pages=Math.max(1,Math.ceil(issues.length/SHELF_PAGE_SIZE));
+  $('shelf-prev').disabled=shelfPage===0;$('shelf-next').disabled=shelfPage>=pages-1;
+  for(const [id,label]of [['shelf-prev',tr('上一页 · 较新期刊','Previous page · newer issues','前のページ・新しい号')],['shelf-next',tr('下一页 · 较早期刊','Next page · older issues','次のページ・以前の号')]]){$(id).setAttribute('aria-label',label);$(id).title=label;}
+  $('shelf-page').textContent=tr(`第 ${shelfPage+1} / ${pages} 页`,`${shelfPage+1} / ${pages}`,`${shelfPage+1} / ${pages} ページ`);
   $('collection-progress').textContent=tr(`${issues.length} 期收藏 · ${completed} 期已完成`,`${issues.length} issues · ${completed} completed`,`全${issues.length}号・${completed}号クリア`);
 }
 function loadIssue(id,{navigate=false}={}){
@@ -217,6 +264,7 @@ function loadIssue(id,{navigate=false}={}){
     found=new Set((Array.isArray(progress.found)?progress.found:[]).filter(id=>targets.some(t=>t.id===id)));
     hints=progress.hints&&typeof progress.hints==='object'&&!Array.isArray(progress.hints)?progress.hints:{};
     if(progress.gameplayRevision!==issue.gameplayRevision){for(const id of issue.invalidatedTargets||[]){found.delete(id);delete hints[id];}}
+    sensorUsed=progress.sensorUsed===true;
     clock.load({...progress,finished:found.size===targets.length});
     mistakes=Math.max(0,Number(progress.mistakes)||0);runId=progress.runId||crypto.randomUUID();
     rankEligible=progress.rankEligible!==false && !(found.size>0&&!progress.started);
@@ -244,15 +292,7 @@ async function init(){
   try {
     const response=await fetch('./catalog.json');if(!response.ok)throw new Error('Content unavailable');
     const content=await response.json();issues=content.issues.sort((a,b)=>Number(b.id)-Number(a.id));
-    for(const issue of issues){
-      const button=document.createElement('button');button.id=`issue-${issue.id}`;button.className='issue-card';
-      const img=document.createElement('img');img.src=issue.cover;img.alt='';img.loading='lazy';img.width=issue.coverWidth;img.height=issue.coverHeight;
-      const copy=document.createElement('span');copy.className='card-copy';
-      const number=document.createElement('span');number.className='card-number';number.textContent=tr(`第 ${issue.id} 期`,`ISSUE ${issue.id}`,`第${issue.id}号`);
-      const title=document.createElement('strong');title.textContent=titleOf(issue);
-      const progress=document.createElement('span');progress.className='card-progress';
-      copy.append(number,title,progress);button.append(img,copy);button.addEventListener('click',()=>loadIssue(issue.id,{navigate:true}));$('issue-shelf').append(button);
-    }
+    renderShelfPage();
     let last;try{last=localStorage.getItem('noobeye:last-issue');}catch{}
     const requested=new URL(location.href).searchParams.get('issue')||last||content.defaultIssue;
     loadIssue(issues.some(i=>i.id===requested)?requested:content.defaultIssue);
@@ -263,9 +303,25 @@ function adjacent(delta){const next=neighbor(delta);if(next)loadIssue(next.id,{n
 function updateNavigation(){
  const prev=!neighbor(-1),next=!neighbor(1);
  $('prev-issue').disabled=prev;$('complete-prev').disabled=prev;$('next-issue').disabled=next;
+ for(const [id,disabled,label] of [['side-prev',prev,tr('上一期','Previous issue','前の号へ')],['side-next',next,tr('下一期','Next issue','次の号へ')]]){
+   $(id).disabled=disabled;$(id).setAttribute('aria-label',label);$(id).title=label;
+ }
  $('continue-issue').textContent=next?tr('返回书架','Back to the collection','一覧へ戻る'):tr('下一期','Next issue','次の号へ');
 }
 $('prev-issue').addEventListener('click',()=>adjacent(-1));$('next-issue').addEventListener('click',()=>adjacent(1));
+$('side-prev').addEventListener('click',()=>adjacent(-1));$('side-next').addEventListener('click',()=>adjacent(1));
+// Keep quick navigation in the outer gutters, only alongside the playing canvas.
+let sideNavigationFrame=0;
+function positionSideNavigation(){
+ sideNavigationFrame=0;
+ const rect=vp.getBoundingClientRect(),middle=innerHeight/2;
+ document.querySelector('.side-navigation').classList.toggle('is-visible',rect.top<=middle&&rect.bottom>=middle);
+}
+function scheduleSideNavigation(){if(!sideNavigationFrame)sideNavigationFrame=requestAnimationFrame(positionSideNavigation);}
+window.addEventListener('scroll',scheduleSideNavigation,{passive:true});
+window.addEventListener('resize',scheduleSideNavigation);
+new ResizeObserver(scheduleSideNavigation).observe(document.querySelector('.canvas-column'));
+scheduleSideNavigation();
 $('complete-prev').addEventListener('click',()=>adjacent(-1));
 $('continue-issue').addEventListener('click',()=>{if(!neighbor(1))$('archive').scrollIntoView();else adjacent(1);});
 for(const a of document.querySelectorAll('a[href="#play"]'))a.addEventListener('click',()=>{engage();startListening();effect('page');});
@@ -299,7 +355,7 @@ function renderCompletion(){
  updateNavigation();
 }
 async function recordCompletion(){
- const issue=currentIssue,id=runId,elapsed=clock.elapsedMs,hintCount=Object.values(hints).reduce((a,b)=>a+Number(b||0),0);
+ const issue=currentIssue,id=runId,elapsed=clock.elapsedMs,hintCount=Object.values(hints).reduce((a,b)=>a+Number(b||0),0)+(sensorUsed?1:0);
  if(rankEligible&&clock.started){
    let best;try{best=JSON.parse(localStorage.getItem(STORAGE+':best')||'null');if(!best||elapsed<best.elapsedMs)localStorage.setItem(STORAGE+':best',JSON.stringify({elapsedMs:elapsed,hints:hintCount}));}catch{}
  }
