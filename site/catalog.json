@@ -1,0 +1,1096 @@
+{
+  "defaultIssue": "009",
+  "issues": [
+    {
+      "id": "009",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "大南瓜",
+      "english": "ONE BIG PUMPKIN",
+      "intro": "一颗大南瓜，把秋天变成了一个小世界。顺着弧线、缝隙和枝叶，发现它藏起来的礼物。",
+      "music": "echoes",
+      "width": 1152,
+      "height": 1152,
+      "line": "./assets/issues/009/scene-line.png",
+      "color": "./assets/issues/009/scene-color.png",
+      "cover": "./assets/issues/009/cover.webp",
+      "coverWidth": 520,
+      "coverHeight": 708,
+      "targets": [
+        {
+          "id": "study-01-stone-joint",
+          "label": "骨头",
+          "image": "./assets/issues/009/01-study-01-stone-joint.png",
+          "bounds": [
+            246.6,
+            925.5203943972525,
+            354.6808698986399,
+            948.7063072248168
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "v04-02-wheel-ribs-and-rim",
+          "label": "剪刀",
+          "image": "./assets/issues/009/02-v04-02-wheel-ribs-and-rim.png",
+          "bounds": [
+            505.08316224394446,
+            690.379,
+            586.8478210143705,
+            812.7157695951943
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "study-03-tray-vents",
+          "label": "口琴",
+          "image": "./assets/issues/009/03-study-03-tray-vents.png",
+          "bounds": [
+            1016.3523030754855,
+            826.6388021269687,
+            1101.44,
+            862.7500656543923
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "study-04-corner-gap",
+          "label": "胡萝卜",
+          "image": "./assets/issues/009/04-study-04-corner-gap.png",
+          "bounds": [
+            1069.8,
+            154,
+            1111.6,
+            296.5630500286676
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "v04-05-boot-panel-saw-study",
+          "label": "手锯",
+          "image": "./assets/issues/009/05-v04-05-boot-panel-saw-study.png",
+          "bounds": [
+            692.6789473684211,
+            776.439159642885,
+            782.6209711044539,
+            805.2466446424928
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "v04-06-braided-bun-study",
+          "label": "松果",
+          "image": "./assets/issues/009/06-v04-06-braided-bun-study.png",
+          "bounds": [
+            752.821052631579,
+            287.98,
+            783.6457627118644,
+            332.1847826086957
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "study-07-leaf-space",
+          "label": "牙齿",
+          "image": "./assets/issues/009/07-study-07-leaf-space.png",
+          "bounds": [
+            245.2768312260127,
+            157.06831636426068,
+            289.4648527690512,
+            213.81173636539646
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "v04-08-crate-bay",
+          "label": "路锥",
+          "image": "./assets/issues/009/08-v04-08-crate-bay.png",
+          "bounds": [
+            916.0621252994612,
+            943.2,
+            990.9,
+            990
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "study-09-awning-fold",
+          "label": "蘑菇",
+          "image": "./assets/issues/009/09-study-09-awning-fold.png",
+          "bounds": [
+            409.79,
+            180.17136094674555,
+            449.2166666666667,
+            230.30857292645203
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        }
+      ]
+    },
+    {
+      "id": "008",
+      "version": "release-v04-rotation",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "河岸边的邮局",
+      "english": "THE RIVERSIDE POST OFFICE",
+      "intro": "信件带着远方的故事，河水经过安静的门口。在等待回信的片刻，找找眼前的九个小秘密。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/issues/008/scene-line.png",
+      "color": "./assets/issues/008/scene-color.png",
+      "cover": "./assets/issues/008/cover.webp",
+      "coverWidth": 520,
+      "coverHeight": 677,
+      "targets": [
+        {
+          "id": "t01-peach",
+          "label": "桃子",
+          "image": "./assets/issues/008/01-peach-v04.png",
+          "bounds": [
+            82.233070155989,
+            156.90446682406397,
+            170.942736827619,
+            238
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-toast",
+          "label": "吐司",
+          "image": "./assets/issues/008/02-toast-v04.png",
+          "bounds": [
+            775.3429082669925,
+            307.3696211662103,
+            907.095803278509,
+            425.25
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-butterfly",
+          "label": "蝴蝶",
+          "image": "./assets/issues/008/03-butterfly-v04.png",
+          "bounds": [
+            390.5846837100816,
+            722.7747458519112,
+            480.8522486097871,
+            792.105166140705
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-key",
+          "label": "钥匙",
+          "image": "./assets/issues/008/04-key-v04.png",
+          "bounds": [
+            175,
+            898.2233047033632,
+            206.45355992499933,
+            954
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-spoon",
+          "label": "勺子",
+          "image": "./assets/issues/008/05-spoon-v04.png",
+          "bounds": [
+            1154.445851259239,
+            936.9827984452548,
+            1203.4918406818679,
+            1062.686414520141
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-palette",
+          "label": "调色盘",
+          "image": "./assets/issues/008/06-palette-v04.png",
+          "bounds": [
+            39.35830653421159,
+            1011.3433303342658,
+            182.04201611432458,
+            1114.393876913398
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-umbrella",
+          "label": "雨伞",
+          "image": "./assets/issues/008/07-umbrella-v04.png",
+          "bounds": [
+            649.0754446796631,
+            209.1821436370704,
+            695,
+            270.032841375493
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-snail",
+          "label": "蜗牛",
+          "image": "./assets/issues/008/08-snail-v04.png",
+          "bounds": [
+            898,
+            1050.0554741573853,
+            1029.7329504355914,
+            1099.541575131545
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-fish",
+          "label": "鱼",
+          "image": "./assets/issues/008/09-fish-v04.png",
+          "bounds": [
+            761,
+            1129.4400224317817,
+            882.8156365032494,
+            1171.650204180777
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        }
+      ]
+    },
+    {
+      "id": "007",
+      "version": "release-v01-external-completed",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [
+        "knife",
+        "watch",
+        "hockey-stick"
+      ],
+      "title": "LOSANTOS 改装车工作坊",
+      "english": "THE CUSTOM CAR WORKSHOP",
+      "intro": "高架桥绕过城市，工作坊迎来一个晴天。八件藏品借用了树木、建筑和汽车的轮廓。换个角度，看见它们。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/issues/007/scene-line.png",
+      "color": "./assets/issues/007/scene-color.png",
+      "cover": "./assets/issues/007/cover.webp",
+      "coverWidth": 520,
+      "coverHeight": 696,
+      "targets": [
+        {
+          "id": "feather-fan",
+          "label": "羽毛扇",
+          "image": "./assets/issues/007/find-007-feather-fan.png",
+          "bounds": [
+            1027,
+            12,
+            1190,
+            126
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "comb",
+          "label": "梳子",
+          "image": "./assets/issues/007/find-007-comb.png",
+          "bounds": [
+            934,
+            228,
+            962,
+            329
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "hockey-stick",
+          "label": "曲棍球杆",
+          "image": "./assets/issues/007/find-007-hockey-stick.png",
+          "bounds": [
+            589,
+            851,
+            755,
+            893
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "cat",
+          "label": "猫",
+          "image": "./assets/issues/007/find-007-cat.png",
+          "bounds": [
+            936,
+            945,
+            1005,
+            1054
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "ice-pop",
+          "label": "冰棒",
+          "image": "./assets/issues/007/find-007-ice-pop.png",
+          "bounds": [
+            598,
+            441,
+            634,
+            517
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "glasses",
+          "label": "圆框眼镜",
+          "image": "./assets/issues/007/find-007-glasses.png",
+          "bounds": [
+            175,
+            1014,
+            221,
+            1046
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "knife",
+          "label": "美工刀",
+          "image": "./assets/issues/007/find-007-knife.png",
+          "bounds": [
+            924,
+            548,
+            1000,
+            619
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "watch",
+          "label": "腕表",
+          "image": "./assets/issues/007/find-007-watch.png",
+          "bounds": [
+            219,
+            738,
+            277,
+            762
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        }
+      ]
+    },
+    {
+      "id": "006",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [
+        "toothbrush"
+      ],
+      "title": "山顶天文台观景露台",
+      "english": "THE OBSERVATORY TERRACE",
+      "intro": "沿石阶向上，星空还没有亮起。望远镜、松树和背包把九件藏品留给此刻专注的目光。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/issues/006/scene-line.png",
+      "color": "./assets/issues/006/scene-color.png",
+      "cover": "./assets/issues/006/cover.webp",
+      "coverWidth": 520,
+      "coverHeight": 679,
+      "targets": [
+        {
+          "id": "acorn",
+          "label": "橡果",
+          "image": "./assets/issues/006/find-01-acorn-board-source-v01.png",
+          "bounds": [
+            184,
+            590,
+            241,
+            651
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "cloth",
+          "label": "衬衫",
+          "image": "./assets/issues/006/find-02-draped-cloth-board-source-v01.png",
+          "bounds": [
+            1009,
+            886,
+            1093,
+            982
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "kite",
+          "label": "风筝",
+          "image": "./assets/issues/006/find-03-kite-board-source-v01.png",
+          "bounds": [
+            448,
+            717,
+            518,
+            794
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "bridge",
+          "label": "量角器",
+          "image": "./assets/issues/006/find-04-bridge-board-source-v01.png",
+          "bounds": [
+            351,
+            204,
+            414,
+            246
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "bulb",
+          "label": "灯泡",
+          "image": "./assets/issues/006/find-05-light-bulb-board-source-v01.png",
+          "bounds": [
+            709,
+            456,
+            746,
+            505
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "whistle",
+          "label": "哨子",
+          "image": "./assets/issues/006/find-06-whistle-board-source-v01.png",
+          "bounds": [
+            734,
+            410,
+            777,
+            466
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "sailboat",
+          "label": "帆船",
+          "image": "./assets/issues/006/find-07-sailboat-board-source-v01.png",
+          "bounds": [
+            797,
+            1000,
+            857,
+            1053
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "rocket",
+          "label": "火箭",
+          "image": "./assets/issues/006/find-08-rocket-board-source-v01.png",
+          "bounds": [
+            40,
+            1008,
+            162,
+            1104
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "toothbrush",
+          "label": "牙刷",
+          "image": "./assets/issues/006/find-09-toothbrush-board-source-v01.png",
+          "bounds": [
+            221,
+            287,
+            388,
+            334
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        }
+      ]
+    },
+    {
+      "id": "005",
+      "version": "release-v02-color-external-manual",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "元宵灯会饰品市集",
+      "english": "THE LANTERN MARKET",
+      "intro": "灯笼亮起来，小巷也热闹起来。衣袖、发髻、屋檐和小摊上，九种形状正等着被你认出来。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/issues/005/scene-line.png",
+      "color": "./assets/issues/005/scene-color.png",
+      "cover": "./assets/issues/005/cover.webp",
+      "coverWidth": 520,
+      "coverHeight": 677,
+      "targets": [
+        {
+          "id": "crown-pendant",
+          "label": "铃铛",
+          "image": "./assets/issues/005/find-005-crown-pendant.png",
+          "bounds": [
+            779,
+            178,
+            819,
+            244
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "crab",
+          "label": "玩偶",
+          "image": "./assets/issues/005/find-005-crab.png",
+          "bounds": [
+            749,
+            545,
+            786,
+            575
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "mountain-panel",
+          "label": "山形画框",
+          "image": "./assets/issues/005/find-005-mountain-panel.png",
+          "bounds": [
+            394,
+            349,
+            429,
+            436
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "hat",
+          "label": "元宝",
+          "image": "./assets/issues/005/find-005-hat.png",
+          "bounds": [
+            70,
+            449,
+            138,
+            487
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "arm",
+          "label": "痒痒挠",
+          "image": "./assets/issues/005/find-005-arm.png",
+          "bounds": [
+            672,
+            842,
+            751,
+            1004
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "bag",
+          "label": "牛奶",
+          "image": "./assets/issues/005/find-005-bag.png",
+          "bounds": [
+            101,
+            815,
+            139,
+            866
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "flower",
+          "label": "乌龟",
+          "image": "./assets/issues/005/find-005-flower.png",
+          "bounds": [
+            979,
+            700,
+            1050,
+            754
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "tassel",
+          "label": "晴天娃娃",
+          "image": "./assets/issues/005/find-005-tassel.png",
+          "bounds": [
+            138,
+            1000,
+            181,
+            1090
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "flower-pin",
+          "label": "花簪",
+          "image": "./assets/issues/005/find-005-flower-pin.png",
+          "bounds": [
+            988,
+            12,
+            1117,
+            82
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        }
+      ]
+    },
+    {
+      "id": "004",
+      "version": "release-v03-color",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "沙漠绿洲考古营地",
+      "english": "THE DESERT DIG",
+      "intro": "在沙土、石壁和棕榈叶之间，时间留下了不止一种形状。沿着考古队的脚步，寻找九个藏在眼前的线索。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/issues/004/scene-line.png",
+      "color": "./assets/issues/004/scene-color.png",
+      "cover": "./assets/issues/004/cover.webp",
+      "coverWidth": 520,
+      "coverHeight": 758,
+      "targets": [
+        {
+          "id": "book",
+          "label": "书本",
+          "image": "./assets/issues/004/find-004-book.png",
+          "bounds": [
+            125,
+            190,
+            243,
+            288
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "beaver",
+          "label": "小猫",
+          "image": "./assets/issues/004/find-004-beaver.png",
+          "bounds": [
+            412,
+            344,
+            448,
+            419
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "ice-cream",
+          "label": "冰淇淋",
+          "image": "./assets/issues/004/find-004-ice-cream.png",
+          "bounds": [
+            143,
+            836,
+            188,
+            898
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "peach",
+          "label": "山竹",
+          "image": "./assets/issues/004/find-004-peach.png",
+          "bounds": [
+            951,
+            229,
+            993,
+            271
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "leaf",
+          "label": "萝卜",
+          "image": "./assets/issues/004/find-004-leaf.png",
+          "bounds": [
+            238,
+            66,
+            356,
+            117
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "knife",
+          "label": "小刀",
+          "image": "./assets/issues/004/find-004-knife.png",
+          "bounds": [
+            1027,
+            7,
+            1253,
+            142
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "feather",
+          "label": "羽毛",
+          "image": "./assets/issues/004/find-004-feather.png",
+          "bounds": [
+            799,
+            660,
+            847,
+            695
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "pistol",
+          "label": "手枪",
+          "image": "./assets/issues/004/find-004-pistol.png",
+          "bounds": [
+            971,
+            648,
+            1087,
+            724
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "pen",
+          "label": "钢笔",
+          "image": "./assets/issues/004/find-004-pen.png",
+          "bounds": [
+            1223,
+            791,
+            1246,
+            879
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        }
+      ]
+    },
+    {
+      "id": "003",
+      "version": "release-v01-final",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [
+        "t02-key"
+      ],
+      "title": "山谷森林小站",
+      "english": "THE FOREST STATION",
+      "intro": "沿着山路来到林间小站。木头、叶子与石头之间，十种熟悉的形状悄悄出现。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/issues/003/scene-line.png",
+      "color": null,
+      "cover": "./assets/issues/003/cover.webp",
+      "coverWidth": 520,
+      "coverHeight": 731,
+      "targets": [
+        {
+          "id": "t20-mushroom",
+          "label": "蝙蝠",
+          "image": "./assets/issues/003/01-bat-find-v08.png",
+          "bounds": [
+            0,
+            239.514,
+            125.4,
+            396.264
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t24-paper-airplane",
+          "label": "纸飞机",
+          "image": "./assets/issues/003/02-paper-airplane-find-v08.png",
+          "bounds": [
+            1028.28,
+            260.832,
+            1128.6000000000001,
+            356.13599999999997
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t19-bottle",
+          "label": "瓶子",
+          "image": "./assets/issues/003/03-bottle-find-v08.png",
+          "bounds": [
+            777.48,
+            470.25,
+            867.7679999999999,
+            594.396
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t25-hourglass",
+          "label": "烟雾",
+          "image": "./assets/issues/003/04-smoke-find-v08.png",
+          "bounds": [
+            494.076,
+            465.234,
+            566.808,
+            659.604
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-key",
+          "label": "钥匙",
+          "image": "./assets/issues/003/05-key-find-v08.png",
+          "bounds": [
+            248,
+            628,
+            389,
+            670
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-rake",
+          "label": "耙子",
+          "image": "./assets/issues/003/06-rake-find-v08.png",
+          "bounds": [
+            0,
+            589.38,
+            213.18,
+            758.67
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t14-canoe",
+          "label": "砍刀",
+          "image": "./assets/issues/003/07-canoe-find-v08.png",
+          "bounds": [
+            332.31,
+            709.7639999999999,
+            545.49,
+            830.148
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t23-apple",
+          "label": "葫芦",
+          "image": "./assets/issues/003/08-apple-find-v08.png",
+          "bounds": [
+            159.258,
+            911.658,
+            257.07,
+            1033.296
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t26-tin-can",
+          "label": "铁罐",
+          "image": "./assets/issues/003/09-tin-can-find-v08.png",
+          "bounds": [
+            188.1,
+            437.64599999999996,
+            239.514,
+            506.61600000000004
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t27-cane",
+          "label": "手杖",
+          "image": "./assets/issues/003/10-cane-find-v08.png",
+          "bounds": [
+            719.7959999999999,
+            180.576,
+            950.532,
+            437.64599999999996
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        }
+      ]
+    },
+    {
+      "id": "002",
+      "version": "release-v06-final",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "海边灯塔小镇",
+      "english": "THE LIGHTHOUSE TOWN",
+      "intro": "海风吹过窗台，浪花漫过岸边。灯塔守着远方，六件小东西藏在近处。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/issues/002/scene-line.png",
+      "color": null,
+      "cover": "./assets/issues/002/cover.webp",
+      "coverWidth": 520,
+      "coverHeight": 650,
+      "targets": [
+        {
+          "id": "t01-envelope",
+          "label": "信封",
+          "image": "./assets/issues/002/t01-envelope-find-v06.png",
+          "bounds": [
+            1072,
+            571,
+            1248,
+            727
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-dragon-egg",
+          "label": "龙蛋",
+          "image": "./assets/issues/002/t02-dragon-egg-find-v06.png",
+          "bounds": [
+            219,
+            1040,
+            339,
+            1142
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-fork",
+          "label": "叉子",
+          "image": "./assets/issues/002/t03-fork-find-v06.png",
+          "bounds": [
+            1022,
+            974,
+            1112,
+            1178
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-chess-pawn",
+          "label": "国际象棋兵",
+          "image": "./assets/issues/002/t04-chess-pawn-find-v06.png",
+          "bounds": [
+            885,
+            199,
+            930,
+            304
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-camera",
+          "label": "相机",
+          "image": "./assets/issues/002/t05-camera-find-v06.png",
+          "bounds": [
+            249,
+            518,
+            413,
+            663
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-whale",
+          "label": "鲸鱼",
+          "image": "./assets/issues/002/t06-whale-find-v06.png",
+          "bounds": [
+            493,
+            444,
+            651,
+            506
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        }
+      ]
+    },
+    {
+      "id": "001",
+      "version": "release-v13",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "周末社区花园",
+      "english": "THE COMMUNITY GARDEN",
+      "intro": "阳光照着菜畦，也照着藏在枝叶里的小秘密。沿着花园的小径，让目光慢慢散步。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/issues/001/scene-line.png",
+      "color": null,
+      "cover": "./assets/issues/001/cover.webp",
+      "coverWidth": 520,
+      "coverHeight": 650,
+      "targets": [
+        {
+          "id": "t01-watch",
+          "label": "手表",
+          "image": "./assets/issues/001/t01-watch-find-v13.png",
+          "bounds": [
+            841.4340000000001,
+            158.004,
+            939.246,
+            343.596
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-candle",
+          "label": "蜡烛",
+          "image": "./assets/issues/001/t02-candle-find-v13.png",
+          "bounds": [
+            115.368,
+            575.586,
+            142.95600000000002,
+            709.7639999999999
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-ladder",
+          "label": "梯子",
+          "image": "./assets/issues/001/t03-ladder-find-v13.png",
+          "bounds": [
+            618.222,
+            283.404,
+            707.256,
+            418.836
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-fan",
+          "label": "扇子",
+          "image": "./assets/issues/001/t04-fan-find-v13.png",
+          "bounds": [
+            1093.488,
+            1028.28,
+            1201.3319999999999,
+            1153.68
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-slingshot",
+          "label": "弹弓",
+          "image": "./assets/issues/001/t05-slingshot-find-v13.png",
+          "bounds": [
+            381.216,
+            31.35,
+            491.56800000000004,
+            294.69
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-paintbrush",
+          "label": "画笔",
+          "image": "./assets/issues/001/t06-paintbrush-find-v13.png",
+          "bounds": [
+            800.052,
+            423.85200000000003,
+            846.45,
+            605.682
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-bell",
+          "label": "铃铛",
+          "image": "./assets/issues/001/t07-bell-find-v13.png",
+          "bounds": [
+            1180.014,
+            257.07,
+            1235.19,
+            378.70799999999997
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        }
+      ]
+    }
+  ]
+}

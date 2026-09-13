@@ -1,0 +1,32 @@
+NoobEye Magazine
+
+Software source code is licensed under the MIT License; see LICENSE.
+
+Illustrations and extracted target artwork in site/assets/ are excluded from
+the MIT grant and licensed under Creative Commons Attribution-NonCommercial
+4.0 International (CC BY-NC 4.0):
+https://creativecommons.org/licenses/by-nc/4.0/
+Legal terms: https://creativecommons.org/licenses/by-nc/4.0/legalcode
+
+Artwork attribution: NoobEye, QianYaStudio, 2026.
+Source: NoobEye issues 001–009. Original embedded artwork signatures,
+including QIANYASTUDIO, are retained where present in the published images.
+Public creator profile: https://github.com/QianYaStudio
+
+When sharing or adapting the illustrations, provide appropriate credit,
+link to the license, and indicate changes. Commercial use is not granted
+under this artwork license. The license does not imply endorsement.
+
+This distribution contains no third-party frontend runtime or bundled fonts.
+
+Default background recording: Echoes (EchoesG.mp3), supplied by the project
+owner from their DailyGen music collection.
+Optional recordings: selected from the project owner's supplied music
+library, tracks bgm-02 (Lazy Sunday Acoustic), bgm-06 (Bossa Nova Sunny),
+bgm-12 (Minimal Piano Solo), and bgm-91 (Spring Birdsong Ambient Pad).
+Web editions are loudness-normalized and re-encoded from the supplied files.
+These recordings are included for playback with the magazine. A separate
+reuse license for the recordings is not granted by the MIT software license
+or the CC BY-NC artwork license. Contact the project owner for other uses.
+Interactive sound effects are synthesized by the MIT-licensed software.
+

@@ -1,0 +1,12 @@
+{
+  "name": "noobeye-stats",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "migrate": "wrangler d1 execute noobeye-stats --remote --file schema.sql"
+  },
+  "devDependencies": {
+    "wrangler": "4.131.1"
+  }
+}

@@ -1,0 +1,12 @@
+// Browser regression: the rendered confirmation form must submit with its real Origin.
+// The fixture returns an already-confirmed record on POST; no email/contact API is used.
+import http from 'node:http';
+import assert from 'node:assert/strict';
+import worker from '../backend/worker.js';
+import {digest} from '../backend/subscriptions.js';
+const token='a'.repeat(64),hash=await digest(token),events=[];
+let confirming=false;
+const env={DB:{prepare(){return {bind(){return {async first(){return {locale:'zh',token_hash:hash,expires_at:Date.now()+60000,confirmed_at:confirming?Date.now():null};}};}};}}};
+const server=http.createServer(async(req,res)=>{confirming=req.method==='POST';let raw='';for await(const chunk of req)raw+=chunk;const response=await worker.fetch(new Request('http://localhost:4191'+req.url,{method:req.method,headers:req.headers,body:raw||undefined}),env);events.push({method:req.method,origin:req.headers.origin||'',status:response.status});res.writeHead(response.status,Object.fromEntries(response.headers));res.end(await response.text());});await new Promise(r=>server.listen(4191,'127.0.0.1',r));
+const tab=await(await fetch('http://127.0.0.1:9337/json/new?about:blank',{method:'PUT'})).json();const ws=new WebSocket(tab.webSocketDebuggerUrl);await new Promise(r=>ws.addEventListener('open',r,{once:true}));let id=0;const pending=new Map();ws.onmessage=({data})=>{const m=JSON.parse(data);if(m.id){pending.get(m.id)(m.result);pending.delete(m.id);}};const call=(method,params={})=>new Promise(resolve=>{pending.set(++id,resolve);ws.send(JSON.stringify({id,method,params}));});
+try{await call('Page.enable');await call('Network.enable');await call('Network.setCacheDisabled',{cacheDisabled:true});await call('Page.navigate',{url:'http://localhost:4191/subscriptions/confirm?token='+token});for(let i=0;i<30;i++){const r=await call('Runtime.evaluate',{expression:'Boolean(document.querySelector("form"))',returnByValue:true});if(r.result.value)break;await new Promise(r=>setTimeout(r,100));}await call('Runtime.evaluate',{expression:'document.querySelector("button").click()',userGesture:true});await new Promise(r=>setTimeout(r,700));console.log(JSON.stringify(events));assert.equal(events.find(e=>e.method==='POST')?.status,200);assert.equal(events.find(e=>e.method==='POST')?.origin,'http://localhost:4191');}finally{await call('Page.close');ws.close();server.closeAllConnections();server.close();}
