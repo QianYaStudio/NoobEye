@@ -49,7 +49,7 @@ function ui(){
  dock.setAttribute('aria-label',tr('音乐播放器','Music player','ミュージックプレーヤー'));
  $('dock-title').textContent=tr(...current().names);
  $('dock-prev').setAttribute('aria-label',tr('上一首','Previous track','前の曲'));$('dock-next').setAttribute('aria-label',tr('下一首','Next track','次の曲'));
- $('dock-collapse').setAttribute('aria-label',prefs.collapsed?tr('展开播放器','Expand player','プレーヤーを展開'):tr('收起到右侧','Collapse to the right','右側に折りたたむ'));$('dock-collapse').setAttribute('aria-expanded',String(!prefs.collapsed));
+ $('dock-collapse').setAttribute('aria-label',prefs.collapsed?tr('展开播放器','Expand player','プレーヤーを展開'):tr('收起到右下角','Collapse to bottom right','右下に折りたたむ'));$('dock-collapse').setAttribute('aria-expanded',String(!prefs.collapsed));
  for(const id of ['dock-prev','dock-next','dock-collapse'])$(id).title=$(id).getAttribute('aria-label');
  $('dock-state').textContent=audible?tr('正在播放','NOW PLAYING','再生中'):tr('已暂停','PAUSED','一時停止中');
  $('dock-play').dataset.icon=audible?'pause':'play';
