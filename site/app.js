@@ -1,3 +1,4 @@
+import {targetOutline,createOutlineMark} from './target-outlines.js';
 import { effect, setupAudio, setIssueMusic, startListening } from './audio.js';
 import { tr, labelOf, titleOf, introOf, clueOf, setupLanguage } from './i18n.js';
 import {setupProjectLinks} from './project.js';
@@ -35,7 +36,14 @@ function svgElement(name, attrs) {
   for (const [key, value] of Object.entries(attrs)) el.setAttribute(key, value);
   return el;
 }
-function mark(target, hint = false) {
+function mark(target, hint = false, animate = false) {
+  const outline = !hint && targetOutline(currentIssue.id, target.id);
+  if (outline) {
+    const group = createOutlineMark(outline,target.bounds,animate);
+    group.dataset.target=target.id;
+    $('marks').append(group);
+    return;
+  }
   const [x1, y1, x2, y2] = target.bounds;
   const layer = hint ? $('hint-mark') : $('marks');
   if (hint) layer.replaceChildren();
@@ -59,7 +67,7 @@ function render() {
 }
 function discover(target) {
   if (found.has(target.id)) return;
-  found.add(target.id); mark(target); $('hint-mark').replaceChildren();
+  found.add(target.id); mark(target,false,true); $('hint-mark').replaceChildren();
   selected = null; $('hint-copy').textContent = tr('又发现一件。让目光继续散步吧。','Another discovery. Keep exploring.','また一つ発見。引き続き探してみましょう。');
   if(found.size===targets.length){clock.finish();recordCompletion();}
   save(); render(); effect(found.size===targets.length?'complete':'found','発見済み');
@@ -220,7 +228,7 @@ function loadIssue(id,{navigate=false}={}){
       button.append(img,label);button.addEventListener('click',()=>{
         engage();
         effect('select');
-        if(found.has(target.id)){view={x:0,y:0,size:sceneWidth()};updateView();say(tr(`${labelOf(target)}已找到，实线框记录着你的发现。`,`${labelOf(target)} is already found, marked by a solid outline.`,`${labelOf(target)}は発見済みです。実線の枠が目印です。`));return;}
+        if(found.has(target.id)){view={x:0,y:0,size:sceneWidth()};updateView();say(tr(`${labelOf(target)}已找到，高亮线条记录着你的发现。`,`${labelOf(target)} is already found, highlighted in the picture.`,`${labelOf(target)}は発見済みです。絵の中の線がハイライトされています。`));return;}
         selected=target.id;$('hint-mark').replaceChildren();$('hint-copy').textContent=tr(`正在寻找${labelOf(target)}。需要时可以获取线索。`,`Looking for ${labelOf(target)}. A hint is available if you need one.`,`${labelOf(target)}を探しています。必要ならヒントをどうぞ。`);render();
       });$('targets').append(button);if(found.has(target.id))mark(target);
     }

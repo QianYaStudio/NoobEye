@@ -45,9 +45,12 @@ function ui(){
  $('sound').textContent=prefs.effects?tr('音效：开','Sound: on','効果音：オン'):tr('音效：关','Sound: off','効果音：オフ');$('sound').setAttribute('aria-pressed',String(prefs.effects));
  $('now-playing').textContent=tr(...current().names)+' · '+tr(...current().styles);
  $('music-volume').value=String(Math.round(prefs.volume*100));$('music-track').value=prefs.track;
- const dock=$('music-dock');dock.hidden=!dockVisible;dock.classList.toggle('is-playing',audible);document.body.classList.toggle('music-dock-open',dockVisible);
+ const dock=$('music-dock');dock.hidden=!dockVisible;dock.classList.toggle('is-playing',audible);dock.classList.toggle('is-collapsed',Boolean(prefs.collapsed));document.body.classList.toggle('music-dock-open',dockVisible&&!prefs.collapsed);
  dock.setAttribute('aria-label',tr('音乐播放器','Music player','ミュージックプレーヤー'));
  $('dock-title').textContent=tr(...current().names);
+ $('dock-prev').setAttribute('aria-label',tr('上一首','Previous track','前の曲'));$('dock-next').setAttribute('aria-label',tr('下一首','Next track','次の曲'));
+ $('dock-collapse').setAttribute('aria-label',prefs.collapsed?tr('展开播放器','Expand player','プレーヤーを展開'):tr('收起到右侧','Collapse to the right','右側に折りたたむ'));$('dock-collapse').setAttribute('aria-expanded',String(!prefs.collapsed));
+ for(const id of ['dock-prev','dock-next','dock-collapse'])$(id).title=$(id).getAttribute('aria-label');
  $('dock-state').textContent=audible?tr('正在播放','NOW PLAYING','再生中'):tr('已暂停','PAUSED','一時停止中');
  $('dock-play').dataset.icon=audible?'pause':'play';
  $('dock-play').setAttribute('aria-label',audible?tr('暂停音乐','Pause music','音楽を一時停止'):tr('继续播放','Resume music','音楽を再開'));
@@ -64,7 +67,7 @@ function drawWave(){
  if(canvas.width!==w*ratio||canvas.height!==h*ratio){canvas.width=w*ratio;canvas.height=h*ratio;}
  const ctx=canvas.getContext('2d');ctx.setTransform(ratio,0,0,ratio,0,0);ctx.clearRect(0,0,w,h);
  const active=!player.paused&&prefs.music;
- if(analyser&&active){analyser.getByteFrequencyData(frequency);analyser.getByteTimeDomainData(timeDomain);}
+ if(analyser&&frequency&&timeDomain&&active){analyser.getByteFrequencyData(frequency);analyser.getByteTimeDomainData(timeDomain);}
  const energy=active&&frequency?frequency.slice(0,100).reduce((sum,v)=>sum+v,0)/25500:0;
  $('music-dock').style.setProperty('--energy',String(energy));
  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -108,6 +111,8 @@ async function play(){
  }
 }
 function toggleMusic(){prefs.music=blocked||!userStartedPlayback?true:!prefs.music;userStartedPlayback=true;blocked=false;prefs.touched=true;persist();play();ui();}
+function chooseTrack(id){userStartedPlayback=true;prefs.track=id;prefs.music=true;prefs.touched=true;persist();ui();play();}
+function stepTrack(delta){chooseTrack(TRACKS[(TRACKS.findIndex(t=>t.id===current().id)+delta+TRACKS.length)%TRACKS.length].id);}
 function volumeChanged(event){prefs.volume=Number(event.target.value)/100;player.volume=prefs.volume;persist();ui();}
 export function effect(kind='tap'){
  if(!prefs.effects)return;
@@ -122,10 +127,12 @@ export function startListening(){userStartedPlayback=true;if(!prefs.touched){pre
 export function setupAudio(){
  for(const track of TRACKS){const o=document.createElement('option');o.value=track.id;o.textContent=tr(...track.names);$('music-track').append(o);}
  $('music-toggle').addEventListener('click',toggleMusic);$('dock-play').addEventListener('click',toggleMusic);
+ $('dock-prev').addEventListener('click',()=>stepTrack(-1));$('dock-next').addEventListener('click',()=>stepTrack(1));
+ $('dock-collapse').addEventListener('click',()=>{prefs.collapsed=!prefs.collapsed;persist();ui();});
  $('dock-close').addEventListener('click',()=>{++playVersion;prefs.music=false;prefs.touched=true;dockVisible=false;player.pause();player.removeAttribute('src');player.load();persist();ui();});
  $('sound').addEventListener('click',()=>{prefs.effects=!prefs.effects;persist();ui();effect('select');});
  $('music-volume').addEventListener('input',volumeChanged);$('dock-volume').addEventListener('input',volumeChanged);
- $('music-track').addEventListener('change',e=>{userStartedPlayback=true;prefs.track=e.target.value;prefs.music=true;prefs.touched=true;persist();ui();play();});
+ $('music-track').addEventListener('change',e=>chooseTrack(e.target.value));
  document.addEventListener('visibilitychange',()=>{if(document.hidden){++playVersion;player.pause();context?.suspend();ui();}else{context?.resume().catch(()=>{});play();}});
  player.addEventListener('pause',()=>{cancelAnimationFrame(frame);ui();});
  player.addEventListener('playing',()=>{if(prefs.music){dockVisible=true;ui();animate();}});

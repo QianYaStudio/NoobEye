@@ -734,7 +734,7 @@
         {
           "id": "pistol",
           "label": "手枪",
-          "image": "./assets/issues/004/find-004-pistol.png",
+          "image": "./assets/issues/004/find-004-pistol-clean.png",
           "bounds": [
             971,
             648,
