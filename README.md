@@ -1,40 +1,27 @@
 # NoobEye · FindPuzzle
 
-FindPuzzle by QianYaStudio — 一本可以玩的找物杂志 / A hidden-object journal you can play / 遊べるもの探しマガジン。
+**一本可以玩的独立找物杂志。**
 
-当前公开九期（001—009）、76件藏品。中文、English、日本語可切换。完整封面书架、找物波纹、提示、存档、计时和通关庆祝；音乐播放时出现带音频波纹的悬浮控制栏。
+放慢一点，让目光在画里散个步。NoobEye 把熟悉的日常画成一个个小世界，将意想不到的形状藏进风景里，等待你再看一眼。
 
-Play at https://qianyastudio.github.io/NoobEye/ · Source: https://github.com/QianYaStudio/NoobEye
+**[打开杂志，开始寻找 ↗](https://qianyastudio.github.io/NoobEye/)**
 
-Music files are requested only after an explicit playback action in the current page. Closing the player stops and releases the audio source. Near the page bottom, the player docks at the footer boundary without adding a spacer below the footer.
+![NoobEye《大南瓜》：秋日菜园里的找物世界](site/assets/issues/009/scene-color.png)
 
-The Find list includes Clear records: clear this issue or every issue, including personal bests. Language, sound preferences and online totals are preserved.
+## 每一期，走进一个小世界
 
+从阳光下的菜园、海边的灯塔，到山间小站、热闹街巷和秋日的大南瓜，每期都有一幅独立插画、一份寻找清单，以及几句陪你进入画面的文字。
 
-010、011、012暂不公开，发布后再同步。当前默认入口为009；旧隐藏期号链接会回到009，原有游玩记录保留。
+藏品有时换了方向，有时借用了树枝、屋檐或石头的轮廓。记住它们的形状，放大细看，再点击画面记录你的发现。遇到难题，也可以借一点提示。
 
-## Run
+## 按自己的节奏游玩
 
-`python -m http.server 4173 --bind 127.0.0.1` → http://localhost:4173/site/
+选一期喜欢的风景，打开音乐，慢慢寻找。进度会自动保存，随时回来接着玩；也可以清空记录，把这一页交给下一个好奇的人。
 
-## Publish
+支持 **中文、English、日本語**。在杂志中订阅，即可收到新刊来信。
 
-Published by **QianYaStudio**. GitHub Actions deploys site/ to GitHub Pages when main is updated, without a frontend build.
+---
 
-## Statistics
+由 **QianYaStudio** 创作与发行 · [在 X 上关注我们](https://x.com/QianYaStudio)
 
-The publisher’s live statistics API is configured in site/config.json. Set statsApi to an empty string to disable collection, or deploy your own backend. See [backend setup](backend/README.md). Zero visitors are shown as zero. Percentiles require at least 20 comparable other players; no invented rankings.
-
-Self-hosted copies should configure their own API and allowed origins. Production database identifiers and authentication data are not included.
-
-## License
-
-Software: [MIT](LICENSE). Illustrations: [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/), credit **QianYaStudio** and retain existing artwork signatures. Recordings are for magazine playback; separate reuse is not covered by these licenses. See [NOTICE](NOTICE).
-
-Chinese domain and CDN planning: [DEPLOYMENT.md](DEPLOYMENT.md).
-
-## Email subscriptions
-
-中英日新刊订阅已接入 Resend，先确认邮箱，每封新刊邮件可退订。发送域为 `updates.deadnine.com`。Subscription requests use the Worker endpoint in `subscriptionsApi`; self-hosted copies should configure their own backend and verified sending domain. Keys belong in Worker Secrets, never the static site.
-
-`node tools/newsletter-draft.mjs ISSUE_ID https://your-published-site/` prepares three language drafts for a published issue. Review and send in Resend Broadcasts. See [backend setup](backend/README.md).
+代码采用 [MIT](LICENSE)，插画采用 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hans)。分享或改编插画时，请署名 QianYaStudio 并遵守非商业使用条件。完整授权说明见 [NOTICE](NOTICE)。
