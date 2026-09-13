@@ -1,13 +1,6 @@
-# NoobEye 的域名与国内访问
+# 域名与访问部署
 
-适用范围：当前 QianYaStudio 的静态找物杂志（按需加载插画和音乐）及独立统计 API。建议核对日期：2026-09-13。尚未购买域名、开通 CDN 或修改 DNS。
-
-## 当前状态
-
-- 发布方为 **QianYaStudio**，GitHub 仓库由用户创建；仓库名以实际创建结果为准。
-- Worker + D1 统计已部署，前端已连接实际接口。本地试玩来源与 `https://qianyastudio.github.io` 已加入来源列表。
-- 国内域名确定后，需要把网站来源加入 Worker 的 `ALLOWED_ORIGINS`，并更新前端 `site/config.json` 的 API 地址。
-- 统计失败不会阻止游戏、音乐、计时或本地存档。网络不可用时不会把错误显示成0人。
+NoobEye 由 QianYaStudio 发布：[在线杂志](https://qianyastudio.github.io/NoobEye/) · [源代码](https://github.com/QianYaStudio/NoobEye)。静态网页、插画和音乐由网站托管服务提供，统计与订阅使用独立后端。以下是配置自定义访问域名时可选的部署方案，开通前应核对供应商条件与实际访问效果。
 
 ## 优先方案：备案域名 + 国内对象存储 + 国内 CDN
 
@@ -35,4 +28,4 @@ Cloudflare Worker 支持在已接入 Cloudflare 的域中绑定自定义域名�
 
 ## 邮件发信域
 
-`updates.deadnine.com` 已在 Resend 验证，用于 NoobEye 邮件发信，不是杂志站点访问域。邮箱确认链接暂时使用已部署的 Worker 地址；绑定 API 自定义域名后需同步 `PUBLIC_API_URL`。`/subscriptions` 与确认路径同样不缓存。国内访问验证应增加“订阅请求→收到确认邮件→确认链接”完整链路。
+邮件发信子域和网站访问域分别配置。邮箱确认链接使用 `PUBLIC_API_URL`；绑定 API 自定义域名后需同步此值。`/subscriptions` 与确认路径同样不缓存。国内访问验证应增加“订阅请求→收到确认邮件→确认链接”完整链路。
