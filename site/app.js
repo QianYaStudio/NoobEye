@@ -1,5 +1,5 @@
 import { setupSensor } from './sensor.js';
-import {targetOutline,createOutlineMark} from './target-outlines.js';
+import {targetOutline,createOutlineMark} from './target-outlines.js?v=issue-010';
 import { effect, setupAudio, setIssueMusic, startListening } from './audio.js';
 import { tr, labelOf, titleOf, introOf, clueOf, setupLanguage } from './i18n.js';
 import {setupProjectLinks} from './project.js';
@@ -290,7 +290,7 @@ function loadIssue(id,{navigate=false}={}){
 async function init(){
   setupLanguage();setupSubscriptions();setupAudio();await Promise.all([setupStats(),setupProjectLinks()]);
   try {
-    const response=await fetch('./catalog.json');if(!response.ok)throw new Error('Content unavailable');
+    const response=await fetch('./catalog.json?v=issue-010');if(!response.ok)throw new Error('Content unavailable');
     const content=await response.json();issues=content.issues.sort((a,b)=>Number(b.id)-Number(a.id));
     renderShelfPage();
     let last;try{last=localStorage.getItem('noobeye:last-issue');}catch{}

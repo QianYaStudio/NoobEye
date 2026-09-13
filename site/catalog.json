@@ -1,6 +1,121 @@
 {
-  "defaultIssue": "009",
+  "defaultIssue": "010",
   "issues": [
+    {
+      "id": "010",
+      "version": "release-v03",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "屋顶放映夜",
+      "english": "THE ROOFTOP PICTURE HOUSE",
+      "intro": "放映还没开始，夜色已经入场。让目光越过屋顶，在八个意外的轮廓里找到今晚的彩蛋。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/issues/010/scene-line.png",
+      "color": "./assets/issues/010/scene-color.png",
+      "cover": "./assets/issues/010/cover.webp",
+      "coverWidth": 520,
+      "coverHeight": 697,
+      "targets": [
+        {
+          "id": "t01-bow-tie",
+          "label": "领结",
+          "image": "./assets/issues/010/01-t01-bow-tie.png",
+          "bounds": [
+            322.87210941031276,
+            371.9098300562505,
+            389.5463978177501,
+            399.51668597910367
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-microphone",
+          "label": "话筒",
+          "image": "./assets/issues/010/02-t02-microphone.png",
+          "bounds": [
+            443,
+            329,
+            498,
+            428
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-hourglass",
+          "label": "沙漏",
+          "image": "./assets/issues/010/03-t03-hourglass.png",
+          "bounds": [
+            407,
+            294,
+            427,
+            327
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-iron",
+          "label": "熨斗",
+          "image": "./assets/issues/010/04-t04-iron.png",
+          "bounds": [
+            263.75,
+            666.75,
+            375.75,
+            730.75
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-trowel",
+          "label": "手铲",
+          "image": "./assets/issues/010/05-t05-trowel.png",
+          "bounds": [
+            1112.3753876971366,
+            429.75,
+            1150.444454610509,
+            504
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-ladder",
+          "label": "梯子",
+          "image": "./assets/issues/010/06-t06-ladder.png",
+          "bounds": [
+            1131.75,
+            829,
+            1214.75,
+            988
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-diamond",
+          "label": "钻石",
+          "image": "./assets/issues/010/07-t07-diamond.png",
+          "bounds": [
+            1203.25,
+            761.75,
+            1235.25,
+            804.25
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-croissant",
+          "label": "牛角面包",
+          "image": "./assets/issues/010/08-t08-croissant.png",
+          "bounds": [
+            1056.8741670760573,
+            245.60759747116973,
+            1111.75,
+            308.75
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "009",
       "version": "release-v01",

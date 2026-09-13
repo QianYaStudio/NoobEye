@@ -1,4 +1,7 @@
 {
-  "defaultIssue": "009",
-  "withheldIssues": ["010", "011", "012"]
+  "defaultIssue": "010",
+  "withheldIssues": [
+    "011",
+    "012"
+  ]
 }
