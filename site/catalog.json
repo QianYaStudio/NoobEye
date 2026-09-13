@@ -712,24 +712,24 @@
           "label": "小刀",
           "image": "./assets/issues/004/find-004-knife.png",
           "bounds": [
-            1027,
-            7,
-            1253,
-            142
-          ],
-          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
-        },
-        {
-          "id": "feather",
-          "label": "羽毛",
-          "image": "./assets/issues/004/find-004-feather.png",
-          "bounds": [
             799,
             660,
             847,
             695
           ],
           "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "feather",
+          "label": "香蕉",
+          "image": "./assets/issues/004/find-004-feather.png",
+          "bounds": [
+            1027,
+            7,
+            1253,
+            142
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
         },
         {
           "id": "pistol",
