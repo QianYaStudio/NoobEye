@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "010",
+  "defaultIssue": "011",
   "issues": [
+    {
+      "id": "011",
+      "version": "release-v06",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "陶艺小院",
+      "english": "THE POTTERY YARD",
+      "intro": "泥土在指间转动，午后的光落在石板上。九件藏品可能换了方向，也可能成了某个物件的一部分。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/issues/011/scene-line.png",
+      "color": "./assets/issues/011/scene-color.png",
+      "cover": "./assets/issues/011/cover.webp",
+      "coverWidth": 520,
+      "coverHeight": 736,
+      "targets": [
+        {
+          "id": "t01-goblet",
+          "label": "高脚杯",
+          "image": "./assets/issues/011/01-t01-goblet.png",
+          "bounds": [
+            769.75,
+            360,
+            795.75,
+            430.25
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t11-feather",
+          "label": "羽毛",
+          "image": "./assets/issues/011/02-t11-feather.png",
+          "bounds": [
+            350,
+            180,
+            397,
+            222
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-thread-spool",
+          "label": "线轴",
+          "image": "./assets/issues/011/03-t06-thread-spool.png",
+          "bounds": [
+            299,
+            629.5,
+            352,
+            710.75
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-paperclip",
+          "label": "回形针",
+          "image": "./assets/issues/011/04-t05-paperclip.png",
+          "bounds": [
+            935.8135507337922,
+            1148,
+            1016.3097768088417,
+            1177.384090909091
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-eighth-note",
+          "label": "八分音符",
+          "image": "./assets/issues/011/05-t03-eighth-note.png",
+          "bounds": [
+            357.9899054230104,
+            55.31085328388456,
+            396.9916393002012,
+            100
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-sock",
+          "label": "袜子",
+          "image": "./assets/issues/011/06-t09-sock.png",
+          "bounds": [
+            851.2315094446377,
+            706,
+            952.7615724369896,
+            784.25
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-starfish",
+          "label": "海星",
+          "image": "./assets/issues/011/07-t08-starfish.png",
+          "bounds": [
+            519,
+            1117.7942981460321,
+            612.3850468363878,
+            1182.8364555216508
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-electric-plug",
+          "label": "电源插头",
+          "image": "./assets/issues/011/08-t10-electric-plug.png",
+          "bounds": [
+            1180,
+            28.25,
+            1243,
+            80
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t13-adhesive-bandage",
+          "label": "创可贴",
+          "image": "./assets/issues/011/09-t13-adhesive-bandage.png",
+          "bounds": [
+            232.5,
+            103,
+            249.5,
+            151
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "010",
       "version": "release-v03",
