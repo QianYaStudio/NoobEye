@@ -1,6 +1,7 @@
-import { setupSensor } from './sensor.js';
+import { setupSensor } from './sensor.js?v=feedback-20260915';
+import { celebrateCompletion } from './celebration.js';
 import {targetOutline,createOutlineMark} from './target-outlines.js?v=issue-011';
-import { effect, setupAudio, setIssueMusic, startListening } from './audio.js';
+import { effect, setupAudio, setIssueMusic, startListening } from './audio.js?v=feedback-20260915';
 import { tr, labelOf, titleOf, introOf, clueOf, setupLanguage } from './i18n.js';
 import {setupProjectLinks} from './project.js';
 import {setupSubscriptions} from './subscriptions.js';
@@ -72,6 +73,7 @@ function discover(target) {
   selected = null; $('hint-copy').textContent = tr('又发现一件。让目光继续散步吧。','Another discovery. Keep exploring.','また一つ発見。引き続き探してみましょう。');
   if(found.size===targets.length){clock.finish();recordCompletion();}
   save(); render(); effect(found.size===targets.length?'complete':'found','発見済み');
+  if(found.size===targets.length)celebrateCompletion($('complete'));
   say(found.size === targets.length ? tr(`全部 ${targets.length} 件藏品都找到了！`,`All ${targets.length} objects found!`,`全${targets.length}個を見つけました！`) : tr(`发现了${labelOf(target)}！已找到 ${found.size} / ${targets.length}。`,`Found ${labelOf(target)}! ${found.size} / ${targets.length}.`,`${labelOf(target)}を発見！ ${found.size} / ${targets.length}。`));
 }
 function updateView() {
@@ -359,7 +361,7 @@ async function recordCompletion(){
  if(rankEligible&&clock.started){
    let best;try{best=JSON.parse(localStorage.getItem(STORAGE+':best')||'null');if(!best||elapsed<best.elapsedMs)localStorage.setItem(STORAGE+':best',JSON.stringify({elapsedMs:elapsed,hints:hintCount}));}catch{}
  }
- const card=$('complete');card.classList.remove('celebrate');void card.offsetWidth;card.classList.add('celebrate');
+ const card=$('complete');
  setTimeout(()=>{if(currentIssue===issue&&found.size===targets.length){card.scrollIntoView({block:'center',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});card.focus({preventScroll:true});}},250);
  await(startPromise||startRun(issue,id));
  const result=await finishRun(issue,id,elapsed,hintCount,mistakes,rankEligible&&clock.started);

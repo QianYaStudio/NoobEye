@@ -1,5 +1,5 @@
 import { tr } from './i18n.js';
-import { prepareSensorAudio, sensorPulse } from './audio.js';
+import { prepareSensorAudio, sensorPulse } from './audio.js?v=feedback-20260915';
 
 // Distances use scene coordinates so zoom alone cannot make a target closer.
 export function proximity(point, targets, found, width, height) {
@@ -18,7 +18,9 @@ export function setupSensor({viewport,readState,localPoint,onEngage,onScan=()=>{
   const button=document.getElementById('sensor');
   const copy=document.getElementById('sensor-copy');
   const indicator=document.getElementById('sensor-signal');
-  let enabled=false,point=null,timer=null,lastPulse=-Infinity,stopSound=()=>{},version=0,glow=null;
+  const preferenceKey='noobeye:sensor:v1';
+  let enabled=true,point=null,timer=null,lastPulse=-Infinity,stopSound=()=>{},glow=null;
+  try{enabled=localStorage.getItem(preferenceKey)!=='false';}catch{}
   const stopFeedback=()=>{stopSound();glow?.cancel();glow=null;indicator.setAttribute('data-level','0');indicator.setAttribute('aria-valuenow','0');};
   const clear=()=>{point=null;lastPulse=-Infinity;stopFeedback();};
   function positionIndicator(){
@@ -60,13 +62,16 @@ export function setupSensor({viewport,readState,localPoint,onEngage,onScan=()=>{
       flash(signal.strength);onScan();lastPulse=performance.now();
     }
   }
-  button.addEventListener('click',async()=>{
-    const request=++version;enabled=!enabled;clear();clearInterval(timer);timer=null;ui();
-    if(!enabled)return;
-    onEngage();
-    try{await prepareSensorAudio();if(enabled&&request===version)timer=setInterval(tick,40);}
-    catch{if(request!==version)return;enabled=false;ui();copy.hidden=false;copy.textContent=tr('声音暂时无法启用，请再次点击重试。','Audio could not start. Click again to retry.','音を開始できませんでした。もう一度お試しください。');}
+  // Default-on feedback runs immediately; audio unlocks on a real user gesture.
+  const unlockAudio=()=>{if(enabled)prepareSensorAudio().catch(()=>{});};
+  button.addEventListener('click',()=>{
+    enabled=!enabled;clear();clearInterval(timer);timer=null;
+    try{localStorage.setItem(preferenceKey,String(enabled));}catch{}
+    ui();
+    if(enabled){onEngage();unlockAudio();timer=setInterval(tick,40);}
   });
+  document.addEventListener('pointerdown',unlockAudio);
+  document.addEventListener('keydown',unlockAudio);
   function track(e){
     if(!enabled)return;
     if(!e.isPrimary){clear();return;}
@@ -85,5 +90,6 @@ export function setupSensor({viewport,readState,localPoint,onEngage,onScan=()=>{
   document.addEventListener('visibilitychange',clear);
   window.addEventListener('noobeye-language',ui);
   ui();
+  if(enabled)timer=setInterval(tick,40);
   return {get enabled(){return enabled;},clear};
 }

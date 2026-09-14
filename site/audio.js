@@ -132,6 +132,24 @@ export function effect(kind='tap'){
  if(!prefs.effects)return;
  try{
   const ctx=ensureContext();ctx.resume().catch(()=>{});
+  if(kind==='found'||kind==='complete'){
+   // The finale extends the discovery chime into an ascending phrase and full chord.
+   const start=ctx.currentTime;
+   const notes=kind==='complete'
+    ?[[523.25,0,.28,.07],[659.25,.11,.28,.075],[783.99,.22,.3,.08],[1046.5,.36,.38,.085],[1174.66,.54,.22,.065],[1318.51,.7,.4,.08],[1567.98,.88,.38,.07],[1046.5,1.08,1.1,.085],[1318.51,1.08,1,.04],[1567.98,1.08,1,.035],[261.63,1.08,1.15,.075],[523.25,1.08,1.1,.035],[2093,1.18,.8,.018]]
+    :[[659.25,0,.15,.07],[783.99,.065,.17,.07],[1046.5,.14,.46,.085],[523.25,.14,.4,.032],[659.25,.14,.4,.024]];
+   for(const [freq,delay,duration,level] of notes){
+    for(const [partial,weight] of [[1,1],[2,.14]]){
+     const o=ctx.createOscillator(),g=ctx.createGain(),t=start+delay;
+     o.type='sine';o.frequency.setValueAtTime(freq*partial,t);
+     g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(level*weight,t+.006);
+     g.gain.exponentialRampToValueAtTime(.0001,t+duration);
+     o.connect(g).connect(ctx.destination);o.start(t);o.stop(t+duration+.02);
+     o.onended=()=>{o.disconnect();g.disconnect();};
+    }
+   }
+   return;
+  }
   const presets={tap:[[700,0,.045]],miss:[[270,0,.11],[185,.06,.16]],select:[[440,0,.08],[660,.045,.1]],hint:[[660,0,.14],[880,.08,.2]],found:[[523.25,0,.18],[659.25,.075,.2],[783.99,.15,.25]],complete:[[523.25,0,.2],[659.25,.1,.2],[783.99,.2,.25],[1046.5,.36,.6]],page:[[392,0,.08],[523.25,.055,.12]]};
   for(const[freq,delay,duration]of presets[kind]||presets.tap){const o=ctx.createOscillator(),g=ctx.createGain(),t=ctx.currentTime+delay;o.type=kind==='miss'?'triangle':'sine';o.frequency.setValueAtTime(freq,t);if(kind==='miss')o.frequency.exponentialRampToValueAtTime(freq*.7,t+duration);g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(kind==='miss'?.07:.065,t+.008);g.gain.exponentialRampToValueAtTime(.0001,t+duration);o.connect(g).connect(ctx.destination);o.start(t);o.stop(t+duration+.03);}
  }catch{}
