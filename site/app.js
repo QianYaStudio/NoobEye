@@ -1,6 +1,6 @@
 import { setupSensor } from './sensor.js?v=feedback-20260915';
 import { celebrateCompletion } from './celebration.js';
-import {targetOutline,createOutlineMark} from './target-outlines.js?v=issue-012';
+import {targetOutline,createOutlineMark} from './target-outlines.js?v=issue-012-branding-v03';
 import { effect, setupAudio, setIssueMusic, startListening } from './audio.js?v=feedback-20260915';
 import { tr, labelOf, titleOf, introOf, clueOf, setupLanguage } from './i18n.js';
 import {setupProjectLinks} from './project.js';
@@ -190,7 +190,7 @@ vp.addEventListener('keydown',e=>{
   if(e.key==='h'||e.key==='H')giveHint();if(e.key==='0'){view={x:0,y:0,size:sceneWidth()};updateView();}
   if(e.key.startsWith('Arrow')){const step=view.size*.1;view.x+=(e.key==='ArrowRight'?step:e.key==='ArrowLeft'?-step:0);view.y+=(e.key==='ArrowDown'?step:e.key==='ArrowUp'?-step:0);updateView();}
 });
-const storageKey=issue=>issue.id==='011'?'noobeye:pottery-yard:v1':`noobeye:issue:${issue.id}:${issue.version}`;
+const storageKey=issue=>issue.id==='011'?'noobeye:pottery-yard:v1':`noobeye:issue:${issue.id}:${issue.storageVersion||issue.version}`;
 const SHELF_PAGE_SIZE=4;
 let shelfPage=0;
 let shelfSlide=null;
@@ -292,7 +292,7 @@ function loadIssue(id,{navigate=false}={}){
 async function init(){
   setupLanguage();setupSubscriptions();setupAudio();await Promise.all([setupStats(),setupProjectLinks()]);
   try {
-    const response=await fetch('./catalog.json?v=issue-012');if(!response.ok)throw new Error('Content unavailable');
+    const response=await fetch('./catalog.json?v=issue-012-branding-v03');if(!response.ok)throw new Error('Content unavailable');
     const content=await response.json();issues=content.issues.sort((a,b)=>Number(b.id)-Number(a.id));
     renderShelfPage();
     let last;try{last=localStorage.getItem('noobeye:last-issue');}catch{}

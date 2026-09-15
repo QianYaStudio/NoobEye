@@ -3,7 +3,7 @@
   "issues": [
     {
       "id": "012",
-      "version": "release-v01",
+      "version": "release-v03",
       "gameplayRevision": 2,
       "invalidatedTargets": [],
       "title": "水獭的漂流书屋",
@@ -12,9 +12,9 @@
       "music": "echoes",
       "width": 1254,
       "height": 1254,
-      "line": "./assets/issues/012/scene-line.png",
-      "color": "./assets/issues/012/scene-color.png",
-      "cover": "./assets/issues/012/cover.webp",
+      "line": "./assets/issues/012/scene-line-v03.png",
+      "color": "./assets/issues/012/scene-color-v03.png",
+      "cover": "./assets/issues/012/cover-v03.webp",
       "coverWidth": 520,
       "coverHeight": 736,
       "targets": [
@@ -126,7 +126,8 @@
           ],
           "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
         }
-      ]
+      ],
+      "storageVersion": "release-v01"
     },
     {
       "id": "011",
