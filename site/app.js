@@ -1,6 +1,6 @@
 import { setupSensor } from './sensor.js?v=feedback-20260915';
 import { celebrateCompletion } from './celebration.js';
-import {targetOutline,createOutlineMark} from './target-outlines.js?v=issue-012-branding-v03';
+import {targetOutline,createOutlineMark} from './target-outlines.js?v=issue-013-20260916';
 import { effect, setupAudio, setIssueMusic, startListening } from './audio.js?v=feedback-20260915';
 import { tr, labelOf, titleOf, introOf, clueOf, setupLanguage } from './i18n.js';
 import {setupProjectLinks} from './project.js';
@@ -293,7 +293,7 @@ function loadIssue(id,{navigate=false}={}){
 async function init(){
   setupLanguage();setupSubscriptions();setupAudio();setupStats();setupProjectLinks();
   try {
-    const response=await fetch('./catalog.json?v=lossless-images-20260915');if(!response.ok)throw new Error('Content unavailable');
+    const response=await fetch('./catalog.json?v=issue-013-20260916');if(!response.ok)throw new Error('Content unavailable');
     const content=await response.json();issues=content.issues.sort((a,b)=>Number(b.id)-Number(a.id));
     renderShelfPage();
     let last;try{last=localStorage.getItem('noobeye:last-issue');}catch{}

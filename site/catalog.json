@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "012",
+  "defaultIssue": "013",
   "issues": [
+    {
+      "id": "013",
+      "version": "release-v03",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "风筝修理铺",
+      "english": "THE KITE MENDERS",
+      "intro": "风掀起布尾，孩子们忙着修补大风筝。沿着工具、木架和草地，找出九个藏起来的小秘密。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/9bb32efd2ecc4d70c806706bb97b2797d4d2325bfc348dacfc4f045ee22d5888.webp",
+      "color": "./assets/optimized/bdd1b4429b4b54988802f8f00e975d35360d00533fd0f5256bcd82fcef3ebd9d.webp",
+      "cover": "./assets/optimized/77b32fde81b58d21f1373065eba5914d07064757bf3b0ebc5b2c526fbc86b7e4.webp",
+      "coverWidth": 520,
+      "coverHeight": 736,
+      "targets": [
+        {
+          "id": "t06-heart",
+          "label": "爱心",
+          "image": "./assets/optimized/2698cb62faf7cc30291a9635a06efe540918676968a6adf830137dbbb8f5b9f8.png",
+          "bounds": [
+            995.6289963665027,
+            185.21163306797,
+            1038.956476364178,
+            246.25
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-castle",
+          "label": "城堡",
+          "image": "./assets/optimized/a3c2ab66ec710810f7a6f45ab5124c4720c45d32f96d4ee87c64004cb2750414.png",
+          "bounds": [
+            975.25,
+            531.75,
+            1090.25,
+            588.25
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-fish",
+          "label": "鱼",
+          "image": "./assets/optimized/ec9328cc4764481929501b90c9e437ec5fc5cf53860b5b619375cc45bc7fc458.png",
+          "bounds": [
+            345,
+            1139,
+            471,
+            1193
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-flashlight",
+          "label": "手电筒",
+          "image": "./assets/optimized/58e02b57ce94a13363362f0332a4ac293797f642d035b1993b268aebfa54bb10.png",
+          "bounds": [
+            189.75,
+            428.68087037988545,
+            297.75,
+            465.625
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-thermometer",
+          "label": "温度计",
+          "image": "./assets/optimized/4e92aa03e1f012c7ed48b023f7222992b4607cc9377de5fa515fe135379a4ae6.png",
+          "bounds": [
+            614.8234406471086,
+            643.3333333333335,
+            649,
+            717.1852904916134
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-bell",
+          "label": "铃铛",
+          "image": "./assets/optimized/b2afffb23f8ae06ec7201a99e8f68bdde543e86fa240b6a5cc21ae142e41b917.png",
+          "bounds": [
+            530.6405978748567,
+            293.07285915898365,
+            593.9879954935058,
+            363.3839215688275
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-ice-pop",
+          "label": "冰棒",
+          "image": "./assets/optimized/51a92f56a9159791a32b02ce3c1a3823f7cd7b42a255c8f5e9ea734dbc908d12.png",
+          "bounds": [
+            158.25,
+            859.25,
+            223.75,
+            986
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-cherries",
+          "label": "樱桃",
+          "image": "./assets/optimized/f8197ead4c7812ba5ae8e52595646190eafcaab973dde0bae84c9b12ab40d37e.png",
+          "bounds": [
+            593.4851628329889,
+            808,
+            629.1765593528913,
+            880.4553302292422
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-banjo",
+          "label": "班卓琴",
+          "image": "./assets/optimized/131c6704577f8f68eacd4a5f4231d2e2246dd5be97936d2e8965a7299022bac7.png",
+          "bounds": [
+            239.8324296486959,
+            586.5555555555555,
+            300.66666666666663,
+            736.5745073534124
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "012",
       "version": "release-v03",
