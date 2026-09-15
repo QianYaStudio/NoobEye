@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "011",
+  "defaultIssue": "012",
   "issues": [
+    {
+      "id": "012",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "水獭的漂流书屋",
+      "english": "THE DRIFTING LIBRARY",
+      "intro": "书页轻轻翻动，书屋顺水漂流。跟着水獭的旅程，把九次发现写进今天的阅读笔记。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/issues/012/scene-line.png",
+      "color": "./assets/issues/012/scene-color.png",
+      "cover": "./assets/issues/012/cover.webp",
+      "coverWidth": 520,
+      "coverHeight": 736,
+      "targets": [
+        {
+          "id": "t06-screwdriver",
+          "label": "螺丝刀",
+          "image": "./assets/issues/012/01-t06-screwdriver.png",
+          "bounds": [
+            890,
+            349,
+            912.0769230769232,
+            419
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-boomerang",
+          "label": "回旋镖",
+          "image": "./assets/issues/012/02-t03-boomerang.png",
+          "bounds": [
+            134,
+            834,
+            371,
+            953
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-horn",
+          "label": "号角",
+          "image": "./assets/issues/012/03-t04-horn.png",
+          "bounds": [
+            797,
+            271.9458031418757,
+            915.6274030565186,
+            327
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-pear",
+          "label": "梨",
+          "image": "./assets/issues/012/04-t08-pear.png",
+          "bounds": [
+            410.2288145844341,
+            562,
+            455.90824492394586,
+            653.0130762664147
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-accordion",
+          "label": "手风琴",
+          "image": "./assets/issues/012/05-t02-accordion.png",
+          "bounds": [
+            165,
+            665,
+            241,
+            730.76
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-magnifier",
+          "label": "放大镜",
+          "image": "./assets/issues/012/06-t07-magnifier.png",
+          "bounds": [
+            140.5,
+            122.95252840195715,
+            184.59081537009723,
+            180.28571428571428
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-sailboat",
+          "label": "帆船",
+          "image": "./assets/issues/012/07-t10-sailboat.png",
+          "bounds": [
+            852,
+            627,
+            930,
+            692
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-comb",
+          "label": "梳子",
+          "image": "./assets/issues/012/08-t09-comb.png",
+          "bounds": [
+            875.7177011287839,
+            575.503,
+            942.7602902713927,
+            612.7274375099255
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t11-mallet",
+          "label": "木槌",
+          "image": "./assets/issues/012/09-t11-mallet.png",
+          "bounds": [
+            1182.4,
+            758,
+            1239.7777777777778,
+            910.3286666666669
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "011",
       "version": "release-v06",
