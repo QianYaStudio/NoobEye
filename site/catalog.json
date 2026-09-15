@@ -12,16 +12,16 @@
       "music": "echoes",
       "width": 1254,
       "height": 1254,
-      "line": "./assets/issues/012/scene-line-v03.png",
-      "color": "./assets/issues/012/scene-color-v03.png",
-      "cover": "./assets/issues/012/cover-v03.webp",
+      "line": "./assets/optimized/a0f1d97adccf469bdfc7b019539da1b5c24b1241714415e1f1636a99d4596d69.webp",
+      "color": "./assets/optimized/1cd149cfe8f3a8f5f2a1d171fe2ece6630f3e6f676b887666d6522324a542ede.webp",
+      "cover": "./assets/optimized/fb0d6478f1feb7d3e0bc33b598f6d9bb1ca30d9cd5e391cf518c126096cdc751.webp",
       "coverWidth": 520,
       "coverHeight": 736,
       "targets": [
         {
           "id": "t06-screwdriver",
           "label": "螺丝刀",
-          "image": "./assets/issues/012/01-t06-screwdriver.png",
+          "image": "./assets/optimized/bce95846a243b20eaa7e06b9d25f3daac53854ec9d83212de6eeb0ad9edb3ef7.png",
           "bounds": [
             890,
             349,
@@ -33,7 +33,7 @@
         {
           "id": "t03-boomerang",
           "label": "回旋镖",
-          "image": "./assets/issues/012/02-t03-boomerang.png",
+          "image": "./assets/optimized/d9109d8e8ebec07ee017499d9a4fa9583c38a7a06f50e1294f0708f921215205.png",
           "bounds": [
             134,
             834,
@@ -45,7 +45,7 @@
         {
           "id": "t04-horn",
           "label": "号角",
-          "image": "./assets/issues/012/03-t04-horn.png",
+          "image": "./assets/optimized/1f624460d86eadb96001807bd8cc65710b9f86d7ab88dd52cc87e2765577e52e.png",
           "bounds": [
             797,
             271.9458031418757,
@@ -57,7 +57,7 @@
         {
           "id": "t08-pear",
           "label": "梨",
-          "image": "./assets/issues/012/04-t08-pear.png",
+          "image": "./assets/optimized/5a69cade6ba070de3da3f8d0b84a6ca901e47b7404180b0a728c9f56a8c74150.png",
           "bounds": [
             410.2288145844341,
             562,
@@ -69,7 +69,7 @@
         {
           "id": "t02-accordion",
           "label": "手风琴",
-          "image": "./assets/issues/012/05-t02-accordion.png",
+          "image": "./assets/optimized/0c7ed4f0406f4b2244f7ff549375d00484cdb32dd5c4d7ab0423ddc8723b200a.png",
           "bounds": [
             165,
             665,
@@ -81,7 +81,7 @@
         {
           "id": "t07-magnifier",
           "label": "放大镜",
-          "image": "./assets/issues/012/06-t07-magnifier.png",
+          "image": "./assets/optimized/43571d0be3db24d96af41643fcb6ef9b779d6d73895375c834f0c1a9659baf51.png",
           "bounds": [
             140.5,
             122.95252840195715,
@@ -93,7 +93,7 @@
         {
           "id": "t10-sailboat",
           "label": "帆船",
-          "image": "./assets/issues/012/07-t10-sailboat.png",
+          "image": "./assets/optimized/299df290bfb0b17c8668278cbb8f70620cb3b8f7219ce99c609cc310f70a5444.png",
           "bounds": [
             852,
             627,
@@ -105,7 +105,7 @@
         {
           "id": "t09-comb",
           "label": "梳子",
-          "image": "./assets/issues/012/08-t09-comb.png",
+          "image": "./assets/optimized/e0a4373aadcd3d79b01dc81c9f226d6001dec2af8260c079a9e683e5f21918ad.png",
           "bounds": [
             875.7177011287839,
             575.503,
@@ -117,7 +117,7 @@
         {
           "id": "t11-mallet",
           "label": "木槌",
-          "image": "./assets/issues/012/09-t11-mallet.png",
+          "image": "./assets/optimized/321b388d636c6309c3f7bf791ee481e66d3efd53dfd5e27a1b4499f532200156.png",
           "bounds": [
             1182.4,
             758,
@@ -140,16 +140,16 @@
       "music": "echoes",
       "width": 1254,
       "height": 1254,
-      "line": "./assets/issues/011/scene-line.png",
-      "color": "./assets/issues/011/scene-color.png",
-      "cover": "./assets/issues/011/cover.webp",
+      "line": "./assets/optimized/24699aea08073c518caddc498c0bc707f2a394e9b230d9af8b171432c96afc2f.webp",
+      "color": "./assets/optimized/9425fe474d7ea9896d777cdc573924f6ebb9ef1dc2fc14f6a4a3f1ef5354eb85.webp",
+      "cover": "./assets/optimized/985b623904151cd600de19b65d16a2dd939ef4965764e1dc6f5b5ae56044e888.webp",
       "coverWidth": 520,
       "coverHeight": 736,
       "targets": [
         {
           "id": "t01-goblet",
           "label": "高脚杯",
-          "image": "./assets/issues/011/01-t01-goblet.png",
+          "image": "./assets/optimized/5692bf20d5265ccfbd2abfdad4cd5c6971fc679120ad4aa1a1b088e9ea41f20e.png",
           "bounds": [
             769.75,
             360,
@@ -161,7 +161,7 @@
         {
           "id": "t11-feather",
           "label": "羽毛",
-          "image": "./assets/issues/011/02-t11-feather.png",
+          "image": "./assets/optimized/eba5d2bdbe84487635e796395c562349f093a64a9a6313e4f45f416d7bfdc887.png",
           "bounds": [
             350,
             180,
@@ -173,7 +173,7 @@
         {
           "id": "t06-thread-spool",
           "label": "线轴",
-          "image": "./assets/issues/011/03-t06-thread-spool.png",
+          "image": "./assets/optimized/34043dc11156c275bcbbd839517e7bfdb4dcd801e051768f5bc8632a91922dbf.png",
           "bounds": [
             299,
             629.5,
@@ -185,7 +185,7 @@
         {
           "id": "t05-paperclip",
           "label": "回形针",
-          "image": "./assets/issues/011/04-t05-paperclip.png",
+          "image": "./assets/optimized/ae94ba8a6e7e82fa195f014c7a130feefc2561e26aed08b5bb0f41770215cacd.png",
           "bounds": [
             935.8135507337922,
             1148,
@@ -197,7 +197,7 @@
         {
           "id": "t03-eighth-note",
           "label": "八分音符",
-          "image": "./assets/issues/011/05-t03-eighth-note.png",
+          "image": "./assets/optimized/a7dd9fa7a2f27a1131fa13bbe5e503200497e745ec2667a81cbfe8d3b7cb077f.png",
           "bounds": [
             357.9899054230104,
             55.31085328388456,
@@ -209,7 +209,7 @@
         {
           "id": "t09-sock",
           "label": "袜子",
-          "image": "./assets/issues/011/06-t09-sock.png",
+          "image": "./assets/optimized/85b1b3117e39e42f943780084ee4943799abb27ba15268ec4cceff201376c615.png",
           "bounds": [
             851.2315094446377,
             706,
@@ -221,7 +221,7 @@
         {
           "id": "t08-starfish",
           "label": "海星",
-          "image": "./assets/issues/011/07-t08-starfish.png",
+          "image": "./assets/optimized/d18bf399c623eeeb50ea7fea53773d3f2fd16cd63ae75fda26a6c2e040a00ba3.png",
           "bounds": [
             519,
             1117.7942981460321,
@@ -233,7 +233,7 @@
         {
           "id": "t10-electric-plug",
           "label": "电源插头",
-          "image": "./assets/issues/011/08-t10-electric-plug.png",
+          "image": "./assets/optimized/d9f5422e53d936cc0124019195c13189e0a380926691f2ee4ad46c157ea6065e.png",
           "bounds": [
             1180,
             28.25,
@@ -245,7 +245,7 @@
         {
           "id": "t13-adhesive-bandage",
           "label": "创可贴",
-          "image": "./assets/issues/011/09-t13-adhesive-bandage.png",
+          "image": "./assets/optimized/037cb57c348d7d0f2fb17184bdb0e48107abbc3309190edc9e2e0d91a5b581ce.png",
           "bounds": [
             232.5,
             103,
@@ -267,16 +267,16 @@
       "music": "echoes",
       "width": 1254,
       "height": 1254,
-      "line": "./assets/issues/010/scene-line.png",
-      "color": "./assets/issues/010/scene-color.png",
-      "cover": "./assets/issues/010/cover.webp",
+      "line": "./assets/optimized/7415921929b0716711fde9212924a27e02a83429fb4ac14be8111de1a539f1ac.webp",
+      "color": "./assets/optimized/2d17553166feb3d4a7050fdb3ad899baff1fbd1389ff0837234786e8cab3fa73.webp",
+      "cover": "./assets/optimized/96be5ebd0d3d703ecb8aa92db6ddf642454de451e427a54bbf06df085a779e96.webp",
       "coverWidth": 520,
       "coverHeight": 697,
       "targets": [
         {
           "id": "t01-bow-tie",
           "label": "领结",
-          "image": "./assets/issues/010/01-t01-bow-tie.png",
+          "image": "./assets/optimized/138abe0a55e30a8277becd0416ec2714d88da38997a142e45e368f8569408a3b.png",
           "bounds": [
             322.87210941031276,
             371.9098300562505,
@@ -288,7 +288,7 @@
         {
           "id": "t02-microphone",
           "label": "话筒",
-          "image": "./assets/issues/010/02-t02-microphone.png",
+          "image": "./assets/optimized/2550e03d440227c76dce5391d32d845f20379dded074ed1e234ebd585c3346c3.png",
           "bounds": [
             443,
             329,
@@ -300,7 +300,7 @@
         {
           "id": "t03-hourglass",
           "label": "沙漏",
-          "image": "./assets/issues/010/03-t03-hourglass.png",
+          "image": "./assets/optimized/41ffe34bf481fa3fd59d37da7b5f007a83ef181730866d1f867b61b67629b1ac.png",
           "bounds": [
             407,
             294,
@@ -312,7 +312,7 @@
         {
           "id": "t04-iron",
           "label": "熨斗",
-          "image": "./assets/issues/010/04-t04-iron.png",
+          "image": "./assets/optimized/88d33a8ee7152b58711af2c4efbe29b066da3f632fef4b9975f409b4469a7ac5.png",
           "bounds": [
             263.75,
             666.75,
@@ -324,7 +324,7 @@
         {
           "id": "t05-trowel",
           "label": "手铲",
-          "image": "./assets/issues/010/05-t05-trowel.png",
+          "image": "./assets/optimized/0128a8264ddc1d2f1bda2d83148abaa0ffc1bba22a14de7afe962c8f55f0edf7.png",
           "bounds": [
             1112.3753876971366,
             429.75,
@@ -336,7 +336,7 @@
         {
           "id": "t06-ladder",
           "label": "梯子",
-          "image": "./assets/issues/010/06-t06-ladder.png",
+          "image": "./assets/optimized/fe134adb67b2fc2ad85b30466c9024a7d6045e1d35ce4fe50662a554f8ad8fc4.png",
           "bounds": [
             1131.75,
             829,
@@ -348,7 +348,7 @@
         {
           "id": "t07-diamond",
           "label": "钻石",
-          "image": "./assets/issues/010/07-t07-diamond.png",
+          "image": "./assets/optimized/3d9da36b0058443eb0a3b8c7519a76a5cad29a976720f2cbedd68d0cd2f31cdc.png",
           "bounds": [
             1203.25,
             761.75,
@@ -360,7 +360,7 @@
         {
           "id": "t08-croissant",
           "label": "牛角面包",
-          "image": "./assets/issues/010/08-t08-croissant.png",
+          "image": "./assets/optimized/d3c568784c2ff77c7062304f4be2c2e0a101d4f8d40be62d21da05bd64e67ef8.png",
           "bounds": [
             1056.8741670760573,
             245.60759747116973,
@@ -382,16 +382,16 @@
       "music": "echoes",
       "width": 1152,
       "height": 1152,
-      "line": "./assets/issues/009/scene-line.png",
-      "color": "./assets/issues/009/scene-color.png",
-      "cover": "./assets/issues/009/cover.webp",
+      "line": "./assets/optimized/f0ab0557d6b7e4a9af4c194cf605ce0053853be7275263623f0e25f131f02990.webp",
+      "color": "./assets/optimized/87a012c4e6e28cfc5b7f81c6f7caa2ebc5b72bcd28c6aa2033061dd6f7629e04.webp",
+      "cover": "./assets/optimized/66ba4d89c0b326cd252a982d86550b302b4144b95a507da6e4b938e4400a4720.webp",
       "coverWidth": 520,
       "coverHeight": 708,
       "targets": [
         {
           "id": "study-01-stone-joint",
           "label": "骨头",
-          "image": "./assets/issues/009/01-study-01-stone-joint.png",
+          "image": "./assets/optimized/0bb509a0d776c75d3b4333f3cb4b1b50a3777c498a8e083ba0b653e462ac9d03.png",
           "bounds": [
             246.6,
             925.5203943972525,
@@ -403,7 +403,7 @@
         {
           "id": "v04-02-wheel-ribs-and-rim",
           "label": "剪刀",
-          "image": "./assets/issues/009/02-v04-02-wheel-ribs-and-rim.png",
+          "image": "./assets/optimized/9f7f10fb3a58a6e485ef70b70e462286122b9a6cc0939c6d46ceccd9a7473685.png",
           "bounds": [
             505.08316224394446,
             690.379,
@@ -415,7 +415,7 @@
         {
           "id": "study-03-tray-vents",
           "label": "口琴",
-          "image": "./assets/issues/009/03-study-03-tray-vents.png",
+          "image": "./assets/optimized/2b6ffb1ed9a39054c31da2bd6944980fa35f40fdc37d4c7ab6c23f6cf299b2e2.png",
           "bounds": [
             1016.3523030754855,
             826.6388021269687,
@@ -427,7 +427,7 @@
         {
           "id": "study-04-corner-gap",
           "label": "胡萝卜",
-          "image": "./assets/issues/009/04-study-04-corner-gap.png",
+          "image": "./assets/optimized/53fa0df3e85f850d7c7b7b6238612f57ba5a9a104797a87d62e8a70afcee197a.png",
           "bounds": [
             1069.8,
             154,
@@ -439,7 +439,7 @@
         {
           "id": "v04-05-boot-panel-saw-study",
           "label": "手锯",
-          "image": "./assets/issues/009/05-v04-05-boot-panel-saw-study.png",
+          "image": "./assets/optimized/f843c9fd79ab65b95b003f78a9f67fa0fe26fc9b86da63cbbcf621dacc01c0e5.png",
           "bounds": [
             692.6789473684211,
             776.439159642885,
@@ -451,7 +451,7 @@
         {
           "id": "v04-06-braided-bun-study",
           "label": "松果",
-          "image": "./assets/issues/009/06-v04-06-braided-bun-study.png",
+          "image": "./assets/optimized/dca2713a0140caa80c4ea87809238f48ab98fe4b7de5268542a597107b22bc63.png",
           "bounds": [
             752.821052631579,
             287.98,
@@ -463,7 +463,7 @@
         {
           "id": "study-07-leaf-space",
           "label": "牙齿",
-          "image": "./assets/issues/009/07-study-07-leaf-space.png",
+          "image": "./assets/optimized/54183f7a24dacf9c14444c53d76588c17ef7c9a4fdfe4b602b69190460aa2d8c.png",
           "bounds": [
             245.2768312260127,
             157.06831636426068,
@@ -475,7 +475,7 @@
         {
           "id": "v04-08-crate-bay",
           "label": "路锥",
-          "image": "./assets/issues/009/08-v04-08-crate-bay.png",
+          "image": "./assets/optimized/c286747a6e6140d11fdbbea7444e97bb78a276baf57c835b6aea3f19ad060cb1.png",
           "bounds": [
             916.0621252994612,
             943.2,
@@ -487,7 +487,7 @@
         {
           "id": "study-09-awning-fold",
           "label": "蘑菇",
-          "image": "./assets/issues/009/09-study-09-awning-fold.png",
+          "image": "./assets/optimized/05b044b96f65bd51ffe7ffc92c509a3fcb48e5db77ed9f3b10d51693bb4eda73.png",
           "bounds": [
             409.79,
             180.17136094674555,
@@ -509,16 +509,16 @@
       "music": "echoes",
       "width": 1254,
       "height": 1254,
-      "line": "./assets/issues/008/scene-line.png",
-      "color": "./assets/issues/008/scene-color.png",
-      "cover": "./assets/issues/008/cover.webp",
+      "line": "./assets/optimized/1805dfb974e938a506c187a839e22b079a0479d10ebb32c129ad9553d56e4e31.webp",
+      "color": "./assets/optimized/70fce0137f4cc757c90bf73f06a707e81e29a3ed2934207873bd543d4d8247cd.webp",
+      "cover": "./assets/optimized/690139173ca05be33a58d9a0806d76b7e1c5230cc2a125565c04d87419408c51.webp",
       "coverWidth": 520,
       "coverHeight": 677,
       "targets": [
         {
           "id": "t01-peach",
           "label": "桃子",
-          "image": "./assets/issues/008/01-peach-v04.png",
+          "image": "./assets/optimized/b47682bd2e60e1443476eb4d9b8d1840cbef7aec6694e1820bfd900b59fd5288.png",
           "bounds": [
             82.233070155989,
             156.90446682406397,
@@ -530,7 +530,7 @@
         {
           "id": "t02-toast",
           "label": "吐司",
-          "image": "./assets/issues/008/02-toast-v04.png",
+          "image": "./assets/optimized/dde486fe41659561f076b35cfbd135d5115e38aee916b762e3bc99aafcee2d4c.png",
           "bounds": [
             775.3429082669925,
             307.3696211662103,
@@ -542,7 +542,7 @@
         {
           "id": "t03-butterfly",
           "label": "蝴蝶",
-          "image": "./assets/issues/008/03-butterfly-v04.png",
+          "image": "./assets/optimized/4f39870db15f45a2674fad5854d6bef548cb687731c7a1fc642d51a3591187d2.png",
           "bounds": [
             390.5846837100816,
             722.7747458519112,
@@ -554,7 +554,7 @@
         {
           "id": "t04-key",
           "label": "钥匙",
-          "image": "./assets/issues/008/04-key-v04.png",
+          "image": "./assets/optimized/7beaa7ea57d4e5d90e06424cd904ec86f7463c8092b81cff20cd436e78f3224d.png",
           "bounds": [
             175,
             898.2233047033632,
@@ -566,7 +566,7 @@
         {
           "id": "t05-spoon",
           "label": "勺子",
-          "image": "./assets/issues/008/05-spoon-v04.png",
+          "image": "./assets/optimized/2eab514b601a60cf50fc95b6f7cf3fd3d8f81e290f61492dd76bb3b47ac29188.png",
           "bounds": [
             1154.445851259239,
             936.9827984452548,
@@ -578,7 +578,7 @@
         {
           "id": "t06-palette",
           "label": "调色盘",
-          "image": "./assets/issues/008/06-palette-v04.png",
+          "image": "./assets/optimized/d391e3b692ebda2de9a608105c6b94fc5e4706a26c1bcb3b716734604ea62d5a.png",
           "bounds": [
             39.35830653421159,
             1011.3433303342658,
@@ -590,7 +590,7 @@
         {
           "id": "t07-umbrella",
           "label": "雨伞",
-          "image": "./assets/issues/008/07-umbrella-v04.png",
+          "image": "./assets/optimized/613afcb49799d1b7d5e1c2e320a739990bc02a820fd62f55a47f30624e2e2476.png",
           "bounds": [
             649.0754446796631,
             209.1821436370704,
@@ -602,7 +602,7 @@
         {
           "id": "t08-snail",
           "label": "蜗牛",
-          "image": "./assets/issues/008/08-snail-v04.png",
+          "image": "./assets/optimized/7be9241aac3985a1e2643e342dd031812467dc452bbb046e03c374e85d888025.png",
           "bounds": [
             898,
             1050.0554741573853,
@@ -614,7 +614,7 @@
         {
           "id": "t09-fish",
           "label": "鱼",
-          "image": "./assets/issues/008/09-fish-v04.png",
+          "image": "./assets/optimized/b03019a130a0a6ad56a0530e1c529ca7aabff723ed55c541d3f762fa26353e36.png",
           "bounds": [
             761,
             1129.4400224317817,
@@ -640,16 +640,16 @@
       "music": "echoes",
       "width": 1254,
       "height": 1254,
-      "line": "./assets/issues/007/scene-line.png",
-      "color": "./assets/issues/007/scene-color.png",
-      "cover": "./assets/issues/007/cover.webp",
+      "line": "./assets/optimized/3a520ba9ebf874fdab6844e65de1b868629667179725ada241ec52d6b46dad86.webp",
+      "color": "./assets/optimized/e5682f68e8ee09e3ca615117b5572ed5478334f34763334dc3c3699af93f9f1a.webp",
+      "cover": "./assets/optimized/697114b8f275b48d5d39ba7e22d1120742c07fa2a75608018f1a1b2ec2b73657.webp",
       "coverWidth": 520,
       "coverHeight": 696,
       "targets": [
         {
           "id": "feather-fan",
           "label": "羽毛扇",
-          "image": "./assets/issues/007/find-007-feather-fan.png",
+          "image": "./assets/optimized/070eb387b15f305ffad2077358146c889f9908b4be688147314c2692c3d57c48.png",
           "bounds": [
             1027,
             12,
@@ -661,7 +661,7 @@
         {
           "id": "comb",
           "label": "梳子",
-          "image": "./assets/issues/007/find-007-comb.png",
+          "image": "./assets/optimized/b74880cc96b26138f36169cf10040db0f7198a5026a0da20e1baa8b8b1245fe0.png",
           "bounds": [
             934,
             228,
@@ -673,7 +673,7 @@
         {
           "id": "hockey-stick",
           "label": "曲棍球杆",
-          "image": "./assets/issues/007/find-007-hockey-stick.png",
+          "image": "./assets/optimized/bd3ae6b1a918a060298bff056b44e3c319f3f6cb48a7dcf0a6de650a6dccaefb.png",
           "bounds": [
             589,
             851,
@@ -685,7 +685,7 @@
         {
           "id": "cat",
           "label": "猫",
-          "image": "./assets/issues/007/find-007-cat.png",
+          "image": "./assets/optimized/8bb93688f9e0d49d4d8eb21bbcfebc9991cc0f59252158cb5c60ef714106d072.png",
           "bounds": [
             936,
             945,
@@ -697,7 +697,7 @@
         {
           "id": "ice-pop",
           "label": "冰棒",
-          "image": "./assets/issues/007/find-007-ice-pop.png",
+          "image": "./assets/optimized/1d835e75990b48da71b222327262094a2e7179aa79c28845e1042d85efbe9332.png",
           "bounds": [
             598,
             441,
@@ -709,7 +709,7 @@
         {
           "id": "glasses",
           "label": "圆框眼镜",
-          "image": "./assets/issues/007/find-007-glasses.png",
+          "image": "./assets/optimized/d69b5e9fc4573ecc06ff38220ff267e4d746639cd0f37736a021d75dbb5d8ace.png",
           "bounds": [
             175,
             1014,
@@ -721,7 +721,7 @@
         {
           "id": "knife",
           "label": "美工刀",
-          "image": "./assets/issues/007/find-007-knife.png",
+          "image": "./assets/optimized/9a0b4f6f42e61c8f8099df60817d76cdb6f8d5ad3620db500802150b1ab8e5c3.png",
           "bounds": [
             924,
             548,
@@ -733,7 +733,7 @@
         {
           "id": "watch",
           "label": "腕表",
-          "image": "./assets/issues/007/find-007-watch.png",
+          "image": "./assets/optimized/4fa17d3a8e48431c7d0db25c417de621b17dd69efa84e5f2d3dabe02d5617114.png",
           "bounds": [
             219,
             738,
@@ -757,16 +757,16 @@
       "music": "echoes",
       "width": 1254,
       "height": 1254,
-      "line": "./assets/issues/006/scene-line.png",
-      "color": "./assets/issues/006/scene-color.png",
-      "cover": "./assets/issues/006/cover.webp",
+      "line": "./assets/optimized/22f18ab45745a5ecdad39368ba242f0b715639629e53a75f0f43acf0b2a06fb4.webp",
+      "color": "./assets/optimized/b4e2c961902c57668a33e32a34cb2ad2a3713cb94926d9c1d2ec09ac3f3cba2f.webp",
+      "cover": "./assets/optimized/0ef6066fc02ae7bb93a07a133c85db48f151020075cd2a9210712f20ff00764c.webp",
       "coverWidth": 520,
       "coverHeight": 679,
       "targets": [
         {
           "id": "acorn",
           "label": "橡果",
-          "image": "./assets/issues/006/find-01-acorn-board-source-v01.png",
+          "image": "./assets/optimized/43d5ac8411b73a3ac377b5ff6f72a974dbb7b57adc5c372fdcf0673869a12bf7.png",
           "bounds": [
             184,
             590,
@@ -778,7 +778,7 @@
         {
           "id": "cloth",
           "label": "衬衫",
-          "image": "./assets/issues/006/find-02-draped-cloth-board-source-v01.png",
+          "image": "./assets/optimized/29f1a1ce71ca7c335c243567c7d7394f862c0d1ba90dd5d5984b4862145070c0.png",
           "bounds": [
             1009,
             886,
@@ -790,7 +790,7 @@
         {
           "id": "kite",
           "label": "风筝",
-          "image": "./assets/issues/006/find-03-kite-board-source-v01.png",
+          "image": "./assets/optimized/dfae962a57f5a067d8564abacad054f28adb514e05dc2e8d3afea81c38aeccaf.png",
           "bounds": [
             448,
             717,
@@ -802,7 +802,7 @@
         {
           "id": "bridge",
           "label": "量角器",
-          "image": "./assets/issues/006/find-04-bridge-board-source-v01.png",
+          "image": "./assets/optimized/5a5a6ec8a896179dc21d4d7bd46581d7e06148a1f57613917ffdc30e17e14039.png",
           "bounds": [
             351,
             204,
@@ -814,7 +814,7 @@
         {
           "id": "bulb",
           "label": "灯泡",
-          "image": "./assets/issues/006/find-05-light-bulb-board-source-v01.png",
+          "image": "./assets/optimized/0b14ae173f82b042eec9016b92d9e9626a965714b2e7b096d683e9f2b1c4a4b2.png",
           "bounds": [
             709,
             456,
@@ -826,7 +826,7 @@
         {
           "id": "whistle",
           "label": "哨子",
-          "image": "./assets/issues/006/find-06-whistle-board-source-v01.png",
+          "image": "./assets/optimized/ad69eb2f9bf7a86c1800afff41c0df57762934a3c50fcd899131d848f1633546.png",
           "bounds": [
             734,
             410,
@@ -838,7 +838,7 @@
         {
           "id": "sailboat",
           "label": "帆船",
-          "image": "./assets/issues/006/find-07-sailboat-board-source-v01.png",
+          "image": "./assets/optimized/00505a89588fb2651bdc2fa486893a5d83116bbe2841d6f34b94360a604dbbc4.png",
           "bounds": [
             797,
             1000,
@@ -850,7 +850,7 @@
         {
           "id": "rocket",
           "label": "火箭",
-          "image": "./assets/issues/006/find-08-rocket-board-source-v01.png",
+          "image": "./assets/optimized/627b67010dc164b3f1d802615cb0ab165efe4db32427547c4ef3b6c10dfa80ff.png",
           "bounds": [
             40,
             1008,
@@ -862,7 +862,7 @@
         {
           "id": "toothbrush",
           "label": "牙刷",
-          "image": "./assets/issues/006/find-09-toothbrush-board-source-v01.png",
+          "image": "./assets/optimized/cdd9345d4d06bf3ddf1ec9ef3a89076c7d38ca87893261241ee83d3b7269d843.png",
           "bounds": [
             221,
             287,
@@ -884,16 +884,16 @@
       "music": "echoes",
       "width": 1254,
       "height": 1254,
-      "line": "./assets/issues/005/scene-line.png",
-      "color": "./assets/issues/005/scene-color.png",
-      "cover": "./assets/issues/005/cover.webp",
+      "line": "./assets/optimized/4edb1e7d4559819abf5f73b227e60ca1c2b6bcc9061c7c399f5333230cbb21e2.webp",
+      "color": "./assets/optimized/e61e1adf06284f798d12f37f46480fd30d8143849362e3c714d6f9214a5725d6.webp",
+      "cover": "./assets/optimized/fb0d52f6f58990d5802282156d1db997fd2e78624165f422c058e5d86e370ace.webp",
       "coverWidth": 520,
       "coverHeight": 677,
       "targets": [
         {
           "id": "crown-pendant",
           "label": "铃铛",
-          "image": "./assets/issues/005/find-005-crown-pendant.png",
+          "image": "./assets/optimized/e8249fc8d06d8bd9bcb413dc5dd64332ce00f5ea6225e9a9ee28b14db1c96869.png",
           "bounds": [
             779,
             178,
@@ -905,7 +905,7 @@
         {
           "id": "crab",
           "label": "玩偶",
-          "image": "./assets/issues/005/find-005-crab.png",
+          "image": "./assets/optimized/1969bd53f0ceb1d3aa418fb720674211824be5e0721e199c71832fed260f5c06.png",
           "bounds": [
             749,
             545,
@@ -917,7 +917,7 @@
         {
           "id": "mountain-panel",
           "label": "山形画框",
-          "image": "./assets/issues/005/find-005-mountain-panel.png",
+          "image": "./assets/optimized/8eb34d6f85b8d800d51d675245953cf434236cb6a8d3265f203b9ea75b9c07a8.png",
           "bounds": [
             394,
             349,
@@ -929,7 +929,7 @@
         {
           "id": "hat",
           "label": "元宝",
-          "image": "./assets/issues/005/find-005-hat.png",
+          "image": "./assets/optimized/7021bb8790237c47867796dcc4c2bbc6c83273419cfe18cd9c3b92152857c062.png",
           "bounds": [
             70,
             449,
@@ -941,7 +941,7 @@
         {
           "id": "arm",
           "label": "痒痒挠",
-          "image": "./assets/issues/005/find-005-arm.png",
+          "image": "./assets/optimized/e10563bdf655a6394b007a40aa50a821f725c9e280a895c2631d43b9f64cb6c9.png",
           "bounds": [
             672,
             842,
@@ -953,7 +953,7 @@
         {
           "id": "bag",
           "label": "牛奶",
-          "image": "./assets/issues/005/find-005-bag.png",
+          "image": "./assets/optimized/2dcddca27c479cfcd983a095f23feab927ee94a90b193d2cc6933083ac38b4bb.png",
           "bounds": [
             101,
             815,
@@ -965,7 +965,7 @@
         {
           "id": "flower",
           "label": "乌龟",
-          "image": "./assets/issues/005/find-005-flower.png",
+          "image": "./assets/optimized/bc221dec53265891228211fed3495593e26864855b6bc3586398e061ca18a463.png",
           "bounds": [
             979,
             700,
@@ -977,7 +977,7 @@
         {
           "id": "tassel",
           "label": "晴天娃娃",
-          "image": "./assets/issues/005/find-005-tassel.png",
+          "image": "./assets/optimized/a59a6b469e50880b86efbcbadb2715d7a665cbfc82c9389efc3fbb25c9dd9202.png",
           "bounds": [
             138,
             1000,
@@ -989,7 +989,7 @@
         {
           "id": "flower-pin",
           "label": "花簪",
-          "image": "./assets/issues/005/find-005-flower-pin.png",
+          "image": "./assets/optimized/ae3b23006ffc494afebe47c596aa1e2f8794636850caa853e6f3d70ab7b4aaa1.png",
           "bounds": [
             988,
             12,
@@ -1011,16 +1011,16 @@
       "music": "echoes",
       "width": 1254,
       "height": 1254,
-      "line": "./assets/issues/004/scene-line.png",
-      "color": "./assets/issues/004/scene-color.png",
-      "cover": "./assets/issues/004/cover.webp",
+      "line": "./assets/optimized/5c6d694f7802b8146b1eb51a1da870908848acc2ca2c9040f58a6f37596f50f5.webp",
+      "color": "./assets/optimized/e0b4b6295df0c2521bec0b2e33d7c63ae31cc378c5342f330ae1eba0b4233465.webp",
+      "cover": "./assets/optimized/dc18acb81bf978e7a79b5f34c667cd118689b4768781bbe09c7c3fbc5b619415.webp",
       "coverWidth": 520,
       "coverHeight": 758,
       "targets": [
         {
           "id": "book",
           "label": "书本",
-          "image": "./assets/issues/004/find-004-book.png",
+          "image": "./assets/optimized/53291d4ac3e2d938eb61ae51f4326a9b6c7cc88384be7800d9ba6d494fcf9899.png",
           "bounds": [
             125,
             190,
@@ -1032,7 +1032,7 @@
         {
           "id": "beaver",
           "label": "小猫",
-          "image": "./assets/issues/004/find-004-beaver.png",
+          "image": "./assets/optimized/b4b88ec72ccc3b326f8f5cab810951a78b0fa29e61cf6f3a7e76169ab4db309e.png",
           "bounds": [
             412,
             344,
@@ -1044,7 +1044,7 @@
         {
           "id": "ice-cream",
           "label": "冰淇淋",
-          "image": "./assets/issues/004/find-004-ice-cream.png",
+          "image": "./assets/optimized/53b5e3466a92cc0efc9bf5a68ed5b4d3f3185afa4694c2b9148cde1ff875f337.png",
           "bounds": [
             143,
             836,
@@ -1056,7 +1056,7 @@
         {
           "id": "peach",
           "label": "山竹",
-          "image": "./assets/issues/004/find-004-peach.png",
+          "image": "./assets/optimized/21ed562afec511710bb58eb57a32ae55a13037df3c48d520d8bbe6c05f2d41de.png",
           "bounds": [
             951,
             229,
@@ -1068,7 +1068,7 @@
         {
           "id": "leaf",
           "label": "萝卜",
-          "image": "./assets/issues/004/find-004-leaf.png",
+          "image": "./assets/optimized/10d238f99f13d3f319a55079edc2899aea78e39f4361f936f4c0cb9620835081.png",
           "bounds": [
             238,
             66,
@@ -1080,7 +1080,7 @@
         {
           "id": "knife",
           "label": "小刀",
-          "image": "./assets/issues/004/find-004-knife.png",
+          "image": "./assets/optimized/c8da57b42e80cf7e43c4f8716bcef2756f54426a1472c013a857f888661e6453.png",
           "bounds": [
             799,
             660,
@@ -1092,7 +1092,7 @@
         {
           "id": "feather",
           "label": "香蕉",
-          "image": "./assets/issues/004/find-004-feather.png",
+          "image": "./assets/optimized/27bab414bc69a2f4fcb5e69873c1752e17f095ca9b70d75e5752cfb3c1c9341a.png",
           "bounds": [
             1027,
             7,
@@ -1104,7 +1104,7 @@
         {
           "id": "pistol",
           "label": "手枪",
-          "image": "./assets/issues/004/find-004-pistol-clean.png",
+          "image": "./assets/optimized/f48221724a43298a6ae8b906364c28817a8c7068f4c1d3c39fa246c3970de705.png",
           "bounds": [
             971,
             648,
@@ -1116,7 +1116,7 @@
         {
           "id": "pen",
           "label": "钢笔",
-          "image": "./assets/issues/004/find-004-pen.png",
+          "image": "./assets/optimized/5ffe09b24a070899bfdefffcf719d236e6e6ab934398f1712d51a19ae4068e5e.png",
           "bounds": [
             1223,
             791,
@@ -1140,16 +1140,16 @@
       "music": "echoes",
       "width": 1254,
       "height": 1254,
-      "line": "./assets/issues/003/scene-line.png",
+      "line": "./assets/optimized/d945f4bf4303b017467f3a4775c971803b2974a1c862fefe39158909f7759a32.webp",
       "color": null,
-      "cover": "./assets/issues/003/cover.webp",
+      "cover": "./assets/optimized/626df9109526fce9424950c810bcbb7262079bf4d48c3b31285513506d502dae.webp",
       "coverWidth": 520,
       "coverHeight": 731,
       "targets": [
         {
           "id": "t20-mushroom",
           "label": "蝙蝠",
-          "image": "./assets/issues/003/01-bat-find-v08.png",
+          "image": "./assets/optimized/08e28acce85d2aaf53545553cf48ffc3cd2c187d9f9b85518ab6f8ab911ee92c.png",
           "bounds": [
             0,
             239.514,
@@ -1161,7 +1161,7 @@
         {
           "id": "t24-paper-airplane",
           "label": "纸飞机",
-          "image": "./assets/issues/003/02-paper-airplane-find-v08.png",
+          "image": "./assets/optimized/aecf2c87701c34a0d14e684cb50e03da96e6c9a97894680ba01229620af1fee1.png",
           "bounds": [
             1028.28,
             260.832,
@@ -1173,7 +1173,7 @@
         {
           "id": "t19-bottle",
           "label": "瓶子",
-          "image": "./assets/issues/003/03-bottle-find-v08.png",
+          "image": "./assets/optimized/ac895d914a9af5f62550c91455c69eaf83bc4e0e195a88952dbb94be08c3d1fa.png",
           "bounds": [
             777.48,
             470.25,
@@ -1185,7 +1185,7 @@
         {
           "id": "t25-hourglass",
           "label": "烟雾",
-          "image": "./assets/issues/003/04-smoke-find-v08.png",
+          "image": "./assets/optimized/182bdde4c46cd9441f5ecf7d133fc012640361a7a37e1921f2eb0566ff9c18a6.png",
           "bounds": [
             494.076,
             465.234,
@@ -1197,7 +1197,7 @@
         {
           "id": "t02-key",
           "label": "钥匙",
-          "image": "./assets/issues/003/05-key-find-v08.png",
+          "image": "./assets/optimized/88a1ddf171193adfeab5189d294f1478b2957203f88be8e836ae2df073ea023b.png",
           "bounds": [
             248,
             628,
@@ -1209,7 +1209,7 @@
         {
           "id": "t10-rake",
           "label": "耙子",
-          "image": "./assets/issues/003/06-rake-find-v08.png",
+          "image": "./assets/optimized/aac7a5b70b533051db6ea2dc1b0d65e97e66b0caaacc68bdf2241781e4b47192.png",
           "bounds": [
             0,
             589.38,
@@ -1221,7 +1221,7 @@
         {
           "id": "t14-canoe",
           "label": "砍刀",
-          "image": "./assets/issues/003/07-canoe-find-v08.png",
+          "image": "./assets/optimized/fef044326ac3b6873a5f37478916207ce6e721f20196504331550f5a51e56348.png",
           "bounds": [
             332.31,
             709.7639999999999,
@@ -1233,7 +1233,7 @@
         {
           "id": "t23-apple",
           "label": "葫芦",
-          "image": "./assets/issues/003/08-apple-find-v08.png",
+          "image": "./assets/optimized/c857e0be28666f576e4209d25ee8a3ed9fe69ea8b1a62da64538a48987de318b.png",
           "bounds": [
             159.258,
             911.658,
@@ -1245,7 +1245,7 @@
         {
           "id": "t26-tin-can",
           "label": "铁罐",
-          "image": "./assets/issues/003/09-tin-can-find-v08.png",
+          "image": "./assets/optimized/41e777f4285bda03839a586a3758103b97a2bfcd0cbdae377063e749f7248fc1.png",
           "bounds": [
             188.1,
             437.64599999999996,
@@ -1257,7 +1257,7 @@
         {
           "id": "t27-cane",
           "label": "手杖",
-          "image": "./assets/issues/003/10-cane-find-v08.png",
+          "image": "./assets/optimized/487e970755ea4b61aa96ee73f89d035352d5f219ceef1bc5df9c545a7bb531b0.png",
           "bounds": [
             719.7959999999999,
             180.576,
@@ -1279,16 +1279,16 @@
       "music": "echoes",
       "width": 1254,
       "height": 1254,
-      "line": "./assets/issues/002/scene-line.png",
+      "line": "./assets/optimized/bcf2f1fbecdf6443a4bd975559daddf0b44b2cf6fd81c87dd6a03ce6ca11a70f.webp",
       "color": null,
-      "cover": "./assets/issues/002/cover.webp",
+      "cover": "./assets/optimized/ca52f446d6660837bcd5d9467c08fd6ce2b3157fc0ae5101ff169b234535ab63.webp",
       "coverWidth": 520,
       "coverHeight": 650,
       "targets": [
         {
           "id": "t01-envelope",
           "label": "信封",
-          "image": "./assets/issues/002/t01-envelope-find-v06.png",
+          "image": "./assets/optimized/3805a3059c171d1114424d287d26e77c21d66401e632a4530506a6bc416aa51c.png",
           "bounds": [
             1072,
             571,
@@ -1300,7 +1300,7 @@
         {
           "id": "t02-dragon-egg",
           "label": "龙蛋",
-          "image": "./assets/issues/002/t02-dragon-egg-find-v06.png",
+          "image": "./assets/optimized/407dabcdbf60f40f0747b386e2455b0b06f578e745d8d558a9405108a0b2366c.png",
           "bounds": [
             219,
             1040,
@@ -1312,7 +1312,7 @@
         {
           "id": "t03-fork",
           "label": "叉子",
-          "image": "./assets/issues/002/t03-fork-find-v06.png",
+          "image": "./assets/optimized/94fad4f04aaf1099e87c5d2ad61191e3f3f3e41ad9387fa74da117197add1ce6.png",
           "bounds": [
             1022,
             974,
@@ -1324,7 +1324,7 @@
         {
           "id": "t04-chess-pawn",
           "label": "国际象棋兵",
-          "image": "./assets/issues/002/t04-chess-pawn-find-v06.png",
+          "image": "./assets/optimized/7256ad35f6f59d80ca42f328e9f736a1f43e39f9b2ae9ddb4d151f95b4577246.png",
           "bounds": [
             885,
             199,
@@ -1336,7 +1336,7 @@
         {
           "id": "t05-camera",
           "label": "相机",
-          "image": "./assets/issues/002/t05-camera-find-v06.png",
+          "image": "./assets/optimized/4e82496ba58717bfa09aa3e4da3972d1bbe7ca21ea4db814827aeb2b296795cc.png",
           "bounds": [
             249,
             518,
@@ -1348,7 +1348,7 @@
         {
           "id": "t06-whale",
           "label": "鲸鱼",
-          "image": "./assets/issues/002/t06-whale-find-v06.png",
+          "image": "./assets/optimized/1b105db6f42b40645e79ce7325776b3f445eb5d16e33df66cc5f6e1d884086ff.png",
           "bounds": [
             493,
             444,
@@ -1370,16 +1370,16 @@
       "music": "echoes",
       "width": 1254,
       "height": 1254,
-      "line": "./assets/issues/001/scene-line.png",
+      "line": "./assets/optimized/15b3143f919929915b4ec4967e1ab0c3b400797d61887dad7b190bbc5d69f7cc.webp",
       "color": null,
-      "cover": "./assets/issues/001/cover.webp",
+      "cover": "./assets/optimized/9ad6eaf7eaae39ab626cea50c34555e810a54f7703658002ab97a2ddbd218640.webp",
       "coverWidth": 520,
       "coverHeight": 650,
       "targets": [
         {
           "id": "t01-watch",
           "label": "手表",
-          "image": "./assets/issues/001/t01-watch-find-v13.png",
+          "image": "./assets/optimized/c36d60fc0d7ce7dc2179949ac1964daa6d777e482f478b1e0ace2c81322aacfc.png",
           "bounds": [
             841.4340000000001,
             158.004,
@@ -1391,7 +1391,7 @@
         {
           "id": "t02-candle",
           "label": "蜡烛",
-          "image": "./assets/issues/001/t02-candle-find-v13.png",
+          "image": "./assets/optimized/7b7850dcf04d4fb0958e868747f0aa160ffa5187d4a5d48f194580420d9ee72b.png",
           "bounds": [
             115.368,
             575.586,
@@ -1403,7 +1403,7 @@
         {
           "id": "t03-ladder",
           "label": "梯子",
-          "image": "./assets/issues/001/t03-ladder-find-v13.png",
+          "image": "./assets/optimized/fd5405b43fd87aa9ea6629c159a16a387ccb3705087206b6820286968e36f6e0.png",
           "bounds": [
             618.222,
             283.404,
@@ -1415,7 +1415,7 @@
         {
           "id": "t04-fan",
           "label": "扇子",
-          "image": "./assets/issues/001/t04-fan-find-v13.png",
+          "image": "./assets/optimized/c94d98ac6baa6a43070b077a0d4a3301ad60bbc58cbd8d891b5963bbf2bbdf49.png",
           "bounds": [
             1093.488,
             1028.28,
@@ -1427,7 +1427,7 @@
         {
           "id": "t05-slingshot",
           "label": "弹弓",
-          "image": "./assets/issues/001/t05-slingshot-find-v13.png",
+          "image": "./assets/optimized/8cd14dc4bd5480165cb37b46298cd0190d5bce076fdc45e8cd4415b3ad121079.png",
           "bounds": [
             381.216,
             31.35,
@@ -1439,7 +1439,7 @@
         {
           "id": "t06-paintbrush",
           "label": "画笔",
-          "image": "./assets/issues/001/t06-paintbrush-find-v13.png",
+          "image": "./assets/optimized/211ee4d36a4b9552754bd7cef98b331c4e6686234c00f340f4de2b5043e2bb2e.png",
           "bounds": [
             800.052,
             423.85200000000003,
@@ -1451,7 +1451,7 @@
         {
           "id": "t07-bell",
           "label": "铃铛",
-          "image": "./assets/issues/001/t07-bell-find-v13.png",
+          "image": "./assets/optimized/96b8a41b7c5a376e518ec319a1f03483d3287e71aa22213fac321da5959d1304.png",
           "bounds": [
             1180.014,
             257.07,

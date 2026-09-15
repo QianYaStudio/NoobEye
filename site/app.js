@@ -292,7 +292,7 @@ function loadIssue(id,{navigate=false}={}){
 async function init(){
   setupLanguage();setupSubscriptions();setupAudio();await Promise.all([setupStats(),setupProjectLinks()]);
   try {
-    const response=await fetch('./catalog.json?v=issue-012-branding-v03');if(!response.ok)throw new Error('Content unavailable');
+    const response=await fetch('./catalog.json?v=lossless-images-20260915');if(!response.ok)throw new Error('Content unavailable');
     const content=await response.json();issues=content.issues.sort((a,b)=>Number(b.id)-Number(a.id));
     renderShelfPage();
     let last;try{last=localStorage.getItem('noobeye:last-issue');}catch{}
