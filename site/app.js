@@ -7,7 +7,7 @@ import {setupProjectLinks} from './project.js';
 import {setupSubscriptions} from './subscriptions.js';
 import {clearPlayRecords} from './records.js';
 import { SessionClock, formatTime } from './session.js';
-import { setupStats, startRun, finishRun, readStats } from './stats.js';
+import { setupStats, startRun, finishRun, readStats } from './stats.js?v=startup-20260915';
 const $ = (id) => document.getElementById(id);
 const NS = 'http://www.w3.org/2000/svg';
 let STORAGE = 'noobeye:pottery-yard:v1';
@@ -24,6 +24,7 @@ const sceneHeight=()=>currentIssue?.height||1254;
 function loadScene(src){
   sensor.clear();const request=++sceneRequest;sceneReady=false;$('viewport').setAttribute('aria-busy','true');
   const preload=new Image();
+  preload.fetchPriority='high';
   preload.onload=()=>{if(request!==sceneRequest)return;$('scene-image').setAttribute('href',src);sceneReady=true;$('viewport').setAttribute('aria-busy','false');syncClock();};
   preload.onerror=()=>{if(request!==sceneRequest)return;$('viewport').setAttribute('aria-busy','false');say(tr('画面加载失败，请重新选刊或切换版本重试。','The picture could not load. Select this issue or an edition to retry.','画像を読み込めませんでした。この号か表示を選び直してください。'));};
   preload.src=src;
@@ -203,7 +204,7 @@ function renderShelfPage(direction=0){
     const button=document.createElement('button');button.id=`issue-${issue.id}`;button.className='issue-card';
     const cover=document.createElement('span');cover.className='card-cover';
     cover.style.aspectRatio=`${issue.coverWidth||520} / ${issue.coverHeight||708}`;
-    const img=document.createElement('img');img.alt='';img.loading='lazy';img.decoding='async';img.width=issue.coverWidth;img.height=issue.coverHeight;
+    const img=document.createElement('img');img.alt='';img.loading='lazy';img.fetchPriority='low';img.decoding='async';img.width=issue.coverWidth;img.height=issue.coverHeight;
     const fallback=document.createElement('span');fallback.className='cover-fallback';fallback.hidden=true;fallback.setAttribute('aria-hidden','true');
     fallback.textContent=issue.id;
     img.addEventListener('load',()=>{cover.classList.add('is-loaded');});
@@ -290,7 +291,7 @@ function loadIssue(id,{navigate=false}={}){
     if(navigate){$('play').scrollIntoView();startListening();effect('page');}
 }
 async function init(){
-  setupLanguage();setupSubscriptions();setupAudio();await Promise.all([setupStats(),setupProjectLinks()]);
+  setupLanguage();setupSubscriptions();setupAudio();setupStats();setupProjectLinks();
   try {
     const response=await fetch('./catalog.json?v=lossless-images-20260915');if(!response.ok)throw new Error('Content unavailable');
     const content=await response.json();issues=content.issues.sort((a,b)=>Number(b.id)-Number(a.id));

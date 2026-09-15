@@ -1,9 +1,11 @@
 import {readSettings} from './settings.js';
 let endpoint='';
+let ready;
 let visitor;try{visitor=localStorage.getItem('noobeye:visitor');if(!visitor){visitor=crypto.randomUUID();localStorage.setItem('noobeye:visitor',visitor);}}catch{visitor=crypto.randomUUID();}
-export async function setupStats(){const config=await readSettings();endpoint=String(config.statsApi||'').replace(/\/$/,'');}
+export function setupStats(){return ready ||= readSettings().then(config=>{endpoint=String(config.statsApi||'').replace(/\/$/,'');});}
 export const statsEnabled=()=>Boolean(endpoint);
 async function request(path,body){
+ await setupStats();
  if(!endpoint)return null;
  try{const response=await fetch(endpoint+path,{method:body?'POST':'GET',headers:body?{'Content-Type':'application/json'}:undefined,body:body?JSON.stringify({...body,visitorId:visitor}):undefined,signal:AbortSignal.timeout(6000)});return response.ok?await response.json():null;}catch{return null;}
 }
