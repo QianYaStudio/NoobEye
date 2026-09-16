@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "013",
+  "defaultIssue": "014",
   "issues": [
+    {
+      "id": "014",
+      "version": "release-v03",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "熊的果酱厨房",
+      "english": "JAM SESSION",
+      "intro": "熊忙着熬果酱，狐狸送来水果，睡鼠抢着尝一口。沿着厨房里的瓶罐、布巾和石板，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/a82145e80fa9d4a439a70348060b4c0b1a4a302efb4af519c9a9eec844c335b9.webp",
+      "color": "./assets/optimized/1138f4c5e89fc7a37234dcd0e0c259d8a6b3b31dd7d14a00a6f0dafc55e91590.webp",
+      "cover": "./assets/optimized/525f68f33e239f85a8123fdbd2e51eeb80911dfc22999877ac263d3205139a72.webp",
+      "coverWidth": 520,
+      "coverHeight": 735,
+      "targets": [
+        {
+          "id": "t16-wrench",
+          "label": "扳手",
+          "image": "./assets/optimized/2cf39cc7ba1668a5d771db9d548c43fac1be94b8a49f899d4443ce995b501094.png",
+          "bounds": [
+            530.9754806553558,
+            1085.1492534080019,
+            667.94,
+            1144.9341485452094
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-candy",
+          "label": "糖果",
+          "image": "./assets/optimized/7a3f1695cbc54fcdb5b929edc913dc46531f1b06ca1c31bb201aab3d02ddfda6.png",
+          "bounds": [
+            613.88,
+            504.8456859594394,
+            698.6409360750026,
+            554.13
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t15-tomato",
+          "label": "番茄",
+          "image": "./assets/optimized/7b7c0fe9c4232069d817961648287bcb3c277caa05e456e8fd44be1f8d689b84.png",
+          "bounds": [
+            116.40682528612682,
+            297,
+            181.09297044867452,
+            356.6386298155128
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-magnet",
+          "label": "磁铁",
+          "image": "./assets/optimized/3c2a7102e22c1112f9032ce13d3723a8124d9e05bafd9487f07378d8ff2e8b60.png",
+          "bounds": [
+            1032.75,
+            383.75,
+            1068.75,
+            427.75
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-safety-pin",
+          "label": "安全别针",
+          "image": "./assets/optimized/7fb7f727f0ebf0366ff40488c37a3920297a426fdd64a01ae576ee20e277e07d.png",
+          "bounds": [
+            826.1191924349675,
+            767.4594539050863,
+            890.255737039856,
+            803.0981017033049
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t14-corkscrew",
+          "label": "螺旋开瓶器",
+          "image": "./assets/optimized/cb324e67a0aa57aa0f390cb4209e11736be7558301023e856a0b20be6a564cff.png",
+          "bounds": [
+            1120.861561236694,
+            1067.8421415359942,
+            1171.484020822629,
+            1144.5
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t13-hot-air-balloon",
+          "label": "热气球",
+          "image": "./assets/optimized/7e6e3a3cd5f72c46eb79fdba0b380d8043b1c3a959c56c94f95b4a89a6e8f6da.png",
+          "bounds": [
+            1043.624876967488,
+            226.75,
+            1116.8248980900116,
+            347
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-baseball-bat",
+          "label": "棒球棒",
+          "image": "./assets/optimized/56bac888c0a6b8f0f8601a7bd393ad3996a52aceeccf8b5ec5bf430863dc8fa7.png",
+          "bounds": [
+            482.8509852931752,
+            679.9161449836506,
+            513.0947501931113,
+            841
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-scallop",
+          "label": "贝壳",
+          "image": "./assets/optimized/24cf19e719be662e8c480b3d9739943fdf98feb4a344ed740985b78397650988.png",
+          "bounds": [
+            1086.3809241237577,
+            330,
+            1187.6098064875582,
+            432.38227685959185
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "013",
       "version": "release-v03",

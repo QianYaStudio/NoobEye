@@ -1,4 +1,4 @@
-import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=codex-credit-20260916';
+import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-014-20260916';
 const KEY='noobeye:language';
 let saved;try{saved=localStorage.getItem(KEY);}catch{}
 const preferred=(navigator.languages?.[0]||navigator.language||'en').toLowerCase();
@@ -6,12 +6,14 @@ export let language=['zh','en','ja'].includes(saved)?saved:(preferred.startsWith
 export const tr=(zh,en,ja)=>language==='zh'?zh:language==='ja'?(ja??en):en;
 export const titleOf=issue=>tr(issue.title,issue.english.replace(/^THE /,'').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase()),titlesJa[issue.id]);
 const nouns={
+'扳手':'Wrench','糖果':'Candy','番茄':'Tomato','磁铁':'Magnet','安全别针':'Safety pin','螺旋开瓶器':'Corkscrew','热气球':'Hot-air balloon','棒球棒':'Baseball bat','贝壳':'Seashell',
  '爱心':'Heart','城堡':'Castle','手电筒':'Flashlight','温度计':'Thermometer','樱桃':'Cherries','班卓琴':'Banjo',
  '手铲':'Trowel','手锯':'Hand saw','牛角面包':'Croissant','话筒':'Microphone',
  '手表':'Watch','蜡烛':'Candle','梯子':'Ladder','扇子':'Fan','弹弓':'Slingshot','画笔':'Paintbrush','铃铛':'Bell','信封':'Envelope','龙蛋':'Dragon egg','叉子':'Fork','国际象棋兵':'Chess pawn','相机':'Camera','鲸鱼':'Whale','蝙蝠':'Bat','纸飞机':'Paper airplane','瓶子':'Bottle','烟雾':'Smoke','钥匙':'Key','耙子':'Rake','砍刀':'Machete','葫芦':'Gourd','铁罐':'Tin can','手杖':'Cane','书本':'Book','小猫':'Kitten','冰淇淋':'Ice cream','山竹':'Mangosteen','萝卜':'Carrot','小刀':'Knife','羽毛':'Feather','香蕉':'Banana','手枪':'Pistol','钢笔':'Fountain pen','玩偶':'Doll','山形画框':'Mountain picture','元宝':'Gold ingot','痒痒挠':'Back scratcher','牛奶':'Milk carton','乌龟':'Turtle','晴天娃娃':'Weather doll','花簪':'Flower hairpin','橡果':'Acorn','衬衫':'Shirt','风筝':'Kite','量角器':'Protractor','灯泡':'Light bulb','哨子':'Whistle','帆船':'Sailboat','火箭':'Rocket','牙刷':'Toothbrush','羽毛扇':'Feather fan','梳子':'Comb','曲棍球杆':'Hockey stick','猫':'Cat','冰棒':'Ice pop','圆框眼镜':'Round glasses','美工刀':'Utility knife','腕表':'Wristwatch','桃子':'Peach','吐司':'Toast','蝴蝶':'Butterfly','勺子':'Spoon','调色盘':'Palette','雨伞':'Umbrella','蜗牛':'Snail','鱼':'Fish','骨头':'Bone','剪刀':'Scissors','口琴':'Harmonica','胡萝卜':'Carrot','锯子':'Saw','松果':'Pine cone','牙齿':'Tooth','路锥':'Traffic cone','蘑菇':'Mushroom','领结':'Bow tie','麦克风':'Microphone','沙漏':'Hourglass','熨斗':'Iron','小铲子':'Trowel','园艺铲':'Trowel','铲子':'Trowel','钻石':'Diamond','牛角包':'Croissant','高脚杯':'Goblet','线轴':'Thread spool','回形针':'Paperclip','八分音符':'Eighth note','袜子':'Sock','海星':'Starfish','电源插头':'Electric plug','创可贴':'Bandage','螺丝刀':'Screwdriver','回旋镖':'Boomerang','号角':'Horn','梨':'Pear','手风琴':'Accordion','放大镜':'Magnifying glass','木槌':'Mallet'
 };
 export const labelOf=target=>tr(target.label,nouns[target.label]||target.labelEn||target.label,nounsJa[target.label]);
 const intros={
+'014':'Bear stirs the jam, Fox brings fruit, and Dormouse sneaks a taste. Look among the jars, cloths and paving stones for nine hidden shapes.',
 '013':'Cloth tails flutter as the children mend their big kite. Follow the tools, wooden frames and grass to find nine little secrets.',
 '001':'Sunlight reaches the vegetable beds and the little secrets between the leaves. Take your eyes for a gentle walk through the garden.',
 '002':'Sea breezes pass the windows and waves reach the shore. The lighthouse watches the distance; six little things are hiding nearby.',
