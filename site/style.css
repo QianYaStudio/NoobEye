@@ -155,3 +155,5 @@ footer .brand-symbol{width:42px;height:42px}footer .brand-name{font-size:32px}fo
  .side-issue:disabled{opacity:.2;cursor:default;background:transparent}
 }
 .toolbar{flex-wrap:wrap;gap:8px}#sensor{padding:7px 10px;font-size:12px}#sensor[aria-pressed="true"]{background:#e3efe7;border-color:#55816c}.sensor-copy{font-size:12px;line-height:1.7;color:var(--muted);margin:0 0 10px}
+
+footer .creation-note{display:block;max-width:38em;margin:6px 0;line-height:1.7}

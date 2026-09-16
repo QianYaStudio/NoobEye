@@ -1,4 +1,4 @@
-import {language,tr} from './i18n.js?v=issue-013-20260916-r2';
+import {language,tr} from './i18n.js?v=codex-credit-20260916';
 import {readSettings} from './settings.js';
 export function setupSubscriptions(){
  const section=document.createElement('section');section.id='subscribe';section.className='newsletter';

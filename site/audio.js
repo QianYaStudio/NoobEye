@@ -1,4 +1,4 @@
-import { tr } from './i18n.js?v=issue-013-20260916-r2';
+import { tr } from './i18n.js?v=codex-credit-20260916';
 const TRACKS=[
  {id:'echoes',names:['Echoes','Echoes','Echoes'],styles:['默认配乐','Default soundtrack','標準の音楽'],src:'./assets/music/echoes.mp3'},
  {id:'acoustic',names:['慢慢的星期天','Lazy Sunday','ゆったりした日曜日'],styles:['木吉他 · 轻盈午后','Acoustic guitar','アコースティックギター'],src:'./assets/music/acoustic.mp3'},

@@ -1,10 +1,10 @@
-import { setupSensor } from './sensor.js?v=issue-013-20260916-r2';
+import { setupSensor } from './sensor.js?v=codex-credit-20260916';
 import { celebrateCompletion } from './celebration.js';
 import {targetOutline,createOutlineMark} from './target-outlines.js?v=issue-013-20260916-r2';
-import { effect, setupAudio, setIssueMusic, startListening } from './audio.js?v=issue-013-20260916-r2';
-import { tr, labelOf, titleOf, introOf, clueOf, setupLanguage } from './i18n.js?v=issue-013-20260916-r2';
+import { effect, setupAudio, setIssueMusic, startListening } from './audio.js?v=codex-credit-20260916';
+import { tr, labelOf, titleOf, introOf, clueOf, setupLanguage } from './i18n.js?v=codex-credit-20260916';
 import {setupProjectLinks} from './project.js';
-import {setupSubscriptions} from './subscriptions.js?v=issue-013-20260916-r2';
+import {setupSubscriptions} from './subscriptions.js?v=codex-credit-20260916';
 import {clearPlayRecords} from './records.js';
 import { SessionClock, formatTime } from './session.js';
 import { setupStats, startRun, finishRun, readStats } from './stats.js?v=startup-20260915';
