@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "014",
+  "defaultIssue": "015",
   "issues": [
+    {
+      "id": "015",
+      "version": "release-v04",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "云端缆车站",
+      "english": "CLOUDLINE",
+      "intro": "旅人推着一盆高大的植物赶上山间缆车，站员扶门接应。沿着树冠、吊舱和山间站台，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/fb7b9416a7412c26e3e05dcadfe6f218ea954305d119e649e3caed5ea4eb4033.webp",
+      "color": "./assets/optimized/9f8da17fc404114843617cfa2d5bcaf778a34a40a05eeb1930247203d427917b.webp",
+      "cover": "./assets/optimized/88554033a4b971fc9c0b23ab71a9d9a5a28e3cac1074cdbcb247c50a117f3a4d.webp",
+      "coverWidth": 520,
+      "coverHeight": 736,
+      "targets": [
+        {
+          "id": "t07-frying-pan",
+          "label": "平底锅",
+          "image": "./assets/optimized/2561dc492bddf5b881abfab56829176d6030cec49af0040a3abd1d51be2609a7.png",
+          "bounds": [
+            606.75,
+            882.75,
+            683.0538479387301,
+            1044.2316877398732
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-domino",
+          "label": "多米诺骨牌",
+          "image": "./assets/optimized/794213666de86d0be48bfc081d07c615bb77536c1a2a91804963af5568285516.png",
+          "bounds": [
+            367.25,
+            213.75,
+            391.75,
+            264.75
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-headphones",
+          "label": "头戴式耳机",
+          "image": "./assets/optimized/d54a0f9e3db907cc8b8be0491f27c199483f50980262d4997b763c867a98ff24.png",
+          "bounds": [
+            70,
+            700.931146092589,
+            119,
+            739
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-necktie",
+          "label": "领带",
+          "image": "./assets/optimized/9c62cc0b62611a9b5a8e23c4a7eed6f870580be1854731a9218afae39231c680.png",
+          "bounds": [
+            625,
+            251.99526627218938,
+            648,
+            314
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-thimble",
+          "label": "顶针",
+          "image": "./assets/optimized/38c95e42154e806e924a469a9af4fd18c20fded9c57170988274ce294806f57b.png",
+          "bounds": [
+            791.5,
+            957.7127463232937,
+            824,
+            984.125
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-broom",
+          "label": "扫帚",
+          "image": "./assets/optimized/e15078261d29cc50fa92989b956924de9b4bf4f9b4fc4d768d49379cd5fbb0e0.png",
+          "bounds": [
+            117,
+            889.75,
+            150,
+            979
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-tuning-fork",
+          "label": "音叉",
+          "image": "./assets/optimized/fa82162c28e4bf06317b1fa5764e1443a1071265274e1b952edc317cf060fe05.png",
+          "bounds": [
+            916,
+            165,
+            953.1090385241021,
+            291.57142857142856
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-funnel",
+          "label": "漏斗",
+          "image": "./assets/optimized/f78f1e4d970a9172df442d9004e36d67485ef2873801f81adf3564672a7ccfd5.png",
+          "bounds": [
+            589.25,
+            794.75,
+            628.25,
+            832.2
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t11-honey-dipper",
+          "label": "蜂蜜棒",
+          "image": "./assets/optimized/c4d73abfb20ffc0b07faee155d08ab89b9ec514cb6011eee025a5c9d46911f51.png",
+          "bounds": [
+            827.25,
+            517.25,
+            869.9482611914476,
+            555.2381111111112
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "014",
       "version": "release-v03",
