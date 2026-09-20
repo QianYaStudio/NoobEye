@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "015",
+  "defaultIssue": "016",
   "issues": [
+    {
+      "id": "016",
+      "version": "release-v03",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "河马的洗衣日",
+      "english": "LAUNDRY DAY",
+      "intro": "河马晾起巨大的床单，小鸟递来夹子，青蛙搬着衣服。沿着布料、树枝和水岸，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/8af9ecd56f86f4b0255a3af2acbad4c43fa50fb1095e56e95f621d7d013edf73.webp",
+      "color": "./assets/optimized/8290ff15b0cc96a65803079c1d5579f607db458e3a27ba88cff3b4207dc787b4.webp",
+      "cover": "./assets/optimized/260adf755c461dcc733006adf7b6f75b655bed125fd2af2b70d1d54b13d8de9c.webp",
+      "coverWidth": 520,
+      "coverHeight": 736,
+      "targets": [
+        {
+          "id": "t02-safety-razor",
+          "label": "剃须刀",
+          "image": "./assets/optimized/ebec5baa9e7eac99dafecf6b6ecebc7c6fe35073bfce965f375d7d8c7c3fe50a.png",
+          "bounds": [
+            963.4789473684212,
+            521.2,
+            999,
+            564
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t13-steamed-bun",
+          "label": "包子",
+          "image": "./assets/optimized/0c634231cb5c1fd2ddab137e98fc9ec8d090310da055ddb16d7865e777da7fa6.png",
+          "bounds": [
+            1033.027777777778,
+            832.7142857142858,
+            1072.1781326885691,
+            866.7026277031416
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-matchstick",
+          "label": "火柴",
+          "image": "./assets/optimized/bf7e2e5aec6f37c1ee83d7a52bd04fccc0faf19c1f3393be547aa5e51e983e05.png",
+          "bounds": [
+            43,
+            361.30563475780787,
+            60.033371958207255,
+            422.33333333333337
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-zipper",
+          "label": "拉链",
+          "image": "./assets/optimized/cb0612d763cce8b43b1747b215dd9988e44159da3481fd45e4ffb951f06cb6c6.png",
+          "bounds": [
+            121,
+            990,
+            136,
+            1059
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-chess-knight",
+          "label": "国际象棋马",
+          "image": "./assets/optimized/38bd0f21f0c00e42837d5970af6e492c76c4e201b202452a71270cf12053458b.png",
+          "bounds": [
+            453,
+            812,
+            499,
+            889
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-telescope",
+          "label": "望远镜",
+          "image": "./assets/optimized/11d507a6fa07a074b8db336c92716c4e3d0651d7932cf64fde330751f2036d09.png",
+          "bounds": [
+            985.75,
+            332.1578947368421,
+            1121.5461193933088,
+            390.75
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-skateboard",
+          "label": "滑板",
+          "image": "./assets/optimized/316686dfe3a8965ac5c50d5b9b8e63030f2052be9da87c007446f022f7be853b.png",
+          "bounds": [
+            711.8571428571429,
+            1057.7142857142858,
+            789,
+            1096.5990000000002
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t11-pacifier",
+          "label": "安抚奶嘴",
+          "image": "./assets/optimized/3209142eaf2f04299744d33861cd214dfc3fe0463b80ea19a4315195ba78a79b.png",
+          "bounds": [
+            436.8571428571429,
+            632.5446697707575,
+            463.00000000000006,
+            671.3085223985182
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-shrimp",
+          "label": "虾",
+          "image": "./assets/optimized/ff189327fa3059c10bdf731f252400a448eab392a06cd2a27b2e78903e53eb32.png",
+          "bounds": [
+            189.3917499276149,
+            409,
+            249.19101171684335,
+            492.2857142857143
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "015",
       "version": "release-v04",

@@ -1,4 +1,4 @@
-import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-015-20260919-r2';
+import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-016-20260920';
 const KEY='noobeye:language';
 let saved;try{saved=localStorage.getItem(KEY);}catch{}
 const preferred=(navigator.languages?.[0]||navigator.language||'en').toLowerCase();
@@ -6,6 +6,7 @@ export let language=['zh','en','ja'].includes(saved)?saved:(preferred.startsWith
 export const tr=(zh,en,ja)=>language==='zh'?zh:language==='ja'?(ja??en):en;
 export const titleOf=issue=>tr(issue.title,issue.english.replace(/^THE /,'').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase()),titlesJa[issue.id]);
 const nouns={
+'剃须刀':'Safety razor','包子':'Steamed bun','火柴':'Matchstick','拉链':'Zipper','国际象棋马':'Chess knight','望远镜':'Telescope','滑板':'Skateboard','安抚奶嘴':'Pacifier','虾':'Shrimp',
 '平底锅':'Frying pan','多米诺骨牌':'Domino','头戴式耳机':'Headphones','领带':'Necktie','顶针':'Thimble','扫帚':'Broom','音叉':'Tuning fork','漏斗':'Funnel','蜂蜜棒':'Honey dipper',
 '扳手':'Wrench','糖果':'Candy','番茄':'Tomato','磁铁':'Magnet','安全别针':'Safety pin','螺旋开瓶器':'Corkscrew','热气球':'Hot-air balloon','棒球棒':'Baseball bat','贝壳':'Seashell',
  '爱心':'Heart','城堡':'Castle','手电筒':'Flashlight','温度计':'Thermometer','樱桃':'Cherries','班卓琴':'Banjo',
@@ -14,6 +15,7 @@ const nouns={
 };
 export const labelOf=target=>tr(target.label,nouns[target.label]||target.labelEn||target.label,nounsJa[target.label]);
 const intros={
+'016':'Hippo hangs a giant sheet, a little bird brings clothespins, and a frog carries the laundry. Find nine hidden shapes among the fabric, branches and riverside.',
 '015':'A traveler hurries to catch the mountain cable car with a tall plant, while the station keeper holds the door. Find nine hidden shapes among the treetops, cabins and highland platform.',
 '014':'Bear stirs the jam, Fox brings fruit, and Dormouse sneaks a taste. Look among the jars, cloths and paving stones for nine hidden shapes.',
 '013':'Cloth tails flutter as the children mend their big kite. Follow the tools, wooden frames and grass to find nine little secrets.',
