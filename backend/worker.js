@@ -1,6 +1,6 @@
 import {subscriptionRoute} from './subscriptions.js';
 const UUID=/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
-const issueValid=v=>/^(00[1-9]|01[0-8])$/.test(v);
+const issueValid=v=>/^(00[1-9]|01[0-9])$/.test(v);
 const integer=(v,min,max)=>Number.isInteger(v)&&v>=min&&v<=max;
 const json=(data,status,origin)=>new Response(JSON.stringify(data),{status,headers:{'Content-Type':'application/json','Access-Control-Allow-Origin':origin,'Vary':'Origin','Cache-Control':'no-store'}});
 async function counts(db,issue,revision){

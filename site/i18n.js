@@ -1,4 +1,4 @@
-import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-018-20260924';
+import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-019-20260925';
 const KEY='noobeye:language';
 let saved;try{saved=localStorage.getItem(KEY);}catch{}
 const preferred=(navigator.languages?.[0]||navigator.language||'en').toLowerCase();
@@ -6,7 +6,8 @@ export let language=['zh','en','ja'].includes(saved)?saved:(preferred.startsWith
 export const tr=(zh,en,ja)=>language==='zh'?zh:language==='ja'?(ja??en):en;
 export const titleOf=issue=>tr(issue.title,issue.english.replace(/^THE /,'').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase()),titlesJa[issue.id]);
 const nouns={
-'柑橘切片':'Citrus wedge','鸭子':'Duck','打蛋器':'Whisk','铁砧':'Anvil','滚筒刷':'Paint roller','耳朵':'Ear','螺钉':'Screw','纽扣':'Button','三角旗':'Pennant',
+  '爪印':'Paw print','直尺':'Ruler','棒棒糖':'Lollipop','海马':'Seahorse','注射器':'Syringe','花生':'Peanut','宝剑':'Sword','刮刀':'Squeegee','橄榄球':'Football',
+  '柑橘切片':'Citrus wedge','鸭子':'Duck','打蛋器':'Whisk','铁砧':'Anvil','滚筒刷':'Paint roller','耳朵':'Ear','螺钉':'Screw','纽扣':'Button','三角旗':'Pennant',
 '钳子':'Pliers','擀面杖':'Rolling pin','拼图块':'Jigsaw piece','竖琴':'Harp','挂锁':'Padlock','帐篷':'Tent','订书机':'Stapler','胶带卷':'Adhesive tape','印章':'Rubber stamp',
 '剃须刀':'Safety razor','包子':'Steamed bun','火柴':'Matchstick','拉链':'Zipper','国际象棋马':'Chess knight','望远镜':'Telescope','滑板':'Skateboard','安抚奶嘴':'Pacifier','虾':'Shrimp',
 '平底锅':'Frying pan','多米诺骨牌':'Domino','头戴式耳机':'Headphones','领带':'Necktie','顶针':'Thimble','扫帚':'Broom','音叉':'Tuning fork','漏斗':'Funnel','蜂蜜棒':'Honey dipper',
@@ -17,7 +18,8 @@ const nouns={
 };
 export const labelOf=target=>tr(target.label,nouns[target.label]||target.labelEn||target.label,nounsJa[target.label]);
 const intros={
-'018':'Beaver keeps the river mill turning as water rushes beneath the wooden wheel. Nine hidden shapes are tucked among the tools, timbers and riverbank.',
+  '019':'The wind lifts the picnic cloth toward the trees as three people hold the table steady and a dog watches a napkin caught in the branches. Find nine hidden shapes among the cloth, branches and grass.',
+  '018':'Beaver keeps the river mill turning as water rushes beneath the wooden wheel. Nine hidden shapes are tucked among the tools, timbers and riverbank.',
 '017':'A lion settles in for a trim beneath the trees while the rabbit barber and a tiny helper keep busy. Find nine hidden shapes among the mane, cape and tools.',
 '016':'Hippo hangs a giant sheet, a little bird brings clothespins, and a frog carries the laundry. Find nine hidden shapes among the fabric, branches and riverside.',
 '015':'A traveler hurries to catch the mountain cable car with a tall plant, while the station keeper holds the door. Find nine hidden shapes among the treetops, cabins and highland platform.',

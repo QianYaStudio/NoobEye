@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "018",
+  "defaultIssue": "019",
   "issues": [
+    {
+      "id": "019",
+      "version": "release-v05",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "起风了，野餐！",
+      "english": "A WINDY PICNIC",
+      "intro": "风把野餐桌布掀向树枝，三个人合力按住桌角，小狗盯着挂起的餐巾。沿着桌布、树枝与草地，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/9b0353e8a8cede87b635da44e494d276c90445ac85783f70afcac258ee4f354a.webp",
+      "color": "./assets/optimized/ea9d1cb59a1ee0e60b6238086a903f725d70dab3c2f0b566a134bf88ef96aeba.webp",
+      "cover": "./assets/optimized/5c3e9c0c177e5708c8956ac902f2b4bc1632a336f4208dcdc56c4a7692f1aae4.webp",
+      "coverWidth": 520,
+      "coverHeight": 736,
+      "targets": [
+        {
+          "id": "t14-paw-print",
+          "label": "爪印",
+          "image": "./assets/optimized/dc382aaf9ca2b643b51726f0721d244af9aac1e360d7564caaed70e78f8bd47e.png",
+          "bounds": [
+            945.8445824720008,
+            592.8083982925824,
+            1007.8854381999832,
+            628.1280556198185
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t11-ruler",
+          "label": "直尺",
+          "image": "./assets/optimized/e11690ce6ce270f57d4c180f15f7198c1c56acf86579792fc3e13d4a4d21c028.png",
+          "bounds": [
+            556.75,
+            1016.75,
+            711.75,
+            1068.25
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-lollipop",
+          "label": "棒棒糖",
+          "image": "./assets/optimized/c06c79e5f3156b00b802a304e8c5ea6eddc4e93a6dd4e8d926ca60c65e5e0b12.png",
+          "bounds": [
+            392,
+            287.8938592265679,
+            428.52337681970283,
+            331.8
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-seahorse",
+          "label": "海马",
+          "image": "./assets/optimized/7539011232881ffdaa32c5ad35154ff08b0affee9cf630e509ba3ae6caeb0308.png",
+          "bounds": [
+            773.7135967346239,
+            254.58,
+            837.34,
+            287.38
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-syringe",
+          "label": "注射器",
+          "image": "./assets/optimized/cbdfcf24733324ef65d4464ba8fb1cbc254cc3feabbd44fa6715eaff0bac2f57.png",
+          "bounds": [
+            186,
+            1043,
+            214,
+            1112
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t19-peanut",
+          "label": "花生",
+          "image": "./assets/optimized/32971d9813b9588660a003225203343dbd17a49a730980c29f5d6ffb08142041.png",
+          "bounds": [
+            49.853818751964695,
+            330.24978545820477,
+            73.98452684532765,
+            382.25
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t20-sword",
+          "label": "宝剑",
+          "image": "./assets/optimized/f71e8a214e0dd4e7d895bf01af905e4d5b54e68157e193d4c1bb8a0b2fbf6ce4.png",
+          "bounds": [
+            510.5,
+            1173.25,
+            561.25,
+            1232.8688888888887
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t15-squeegee",
+          "label": "刮刀",
+          "image": "./assets/optimized/6b8f44e860941108c2860b14fa64d4d603eea134029cd2a6a35d28581886c3f1.png",
+          "bounds": [
+            790.25,
+            1055.25,
+            888.25,
+            1145.75
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t13-football",
+          "label": "橄榄球",
+          "image": "./assets/optimized/ebeef3a041260ad4955476bafa3c0d16e350a4e3c81501a26f4fa0b145eed2f6.png",
+          "bounds": [
+            632.75,
+            132.31688339496313,
+            673.25,
+            157.66307172394792
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "018",
       "version": "release-v05",
