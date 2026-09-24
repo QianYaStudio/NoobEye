@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "016",
+  "defaultIssue": "017",
   "issues": [
+    {
+      "id": "017",
+      "version": "release-v03",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "树荫下的理发店",
+      "english": "MANE STREET",
+      "intro": "狮子坐在树荫下理发，兔子理发师和小帮手忙前忙后。沿着鬃毛、披布与理发工具，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/1cc4abcee5e4dd4096655b2a497d34438e4b39fdefad76ef7b106e10dd1a49bd.webp",
+      "color": "./assets/optimized/e5a0ff7aae5f204a5143baed4d9e40c5fe01b5cf6900f36a8282559b39430466.webp",
+      "cover": "./assets/optimized/8d0cf76ed571f6f874d2ac44ca7a64689dde92ac971ebdee1c7de4f2228cd4d2.webp",
+      "coverWidth": 520,
+      "coverHeight": 736,
+      "targets": [
+        {
+          "id": "t09-stapler",
+          "label": "订书机",
+          "image": "./assets/optimized/cc55bb082752251440f9baa131b989f771067db7bdb081a0ef93b5d286de9219.png",
+          "bounds": [
+            995,
+            704,
+            1043.5714285714284,
+            727
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t13-rubber-stamp",
+          "label": "印章",
+          "image": "./assets/optimized/85be4dcb7671e3c2abd043ec67143b72312edb9264afb9015b7937811137a771.png",
+          "bounds": [
+            529,
+            691.8615612366939,
+            575,
+            764.8
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t11-tape-roll",
+          "label": "胶带卷",
+          "image": "./assets/optimized/875eb2457734a8690d2db9fc4b3c30aa9afd18fa0ecb7385873666a5cc7d7611.png",
+          "bounds": [
+            502.95262490344436,
+            1118,
+            556.8947368421052,
+            1157.0019083118125
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-jigsaw",
+          "label": "拼图块",
+          "image": "./assets/optimized/0741244c98f79da0bf9adc5254e4599dc43c72846b8cf1db3a686bc05ba781da.png",
+          "bounds": [
+            1062.75,
+            727,
+            1138.75,
+            791
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-pliers",
+          "label": "钳子",
+          "image": "./assets/optimized/c91137d49e9601d3b928cb90f0e3a2b273a7eea5bd71117a72296522c166d767.png",
+          "bounds": [
+            501.33333333333337,
+            859,
+            602,
+            967.5
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-harp",
+          "label": "竖琴",
+          "image": "./assets/optimized/9a709f6c2fc3341101456e97d50ad1c448a5a61fca324debdc5d213e830c11c9.png",
+          "bounds": [
+            127.25,
+            241.6053212468864,
+            232,
+            460.4855769230769
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-tent",
+          "label": "帐篷",
+          "image": "./assets/optimized/6cf073802b0e459f5a2ddf8c5e807522e07e46cc7a54179262cb0b55b9c1b476.png",
+          "bounds": [
+            644,
+            824.6666666666667,
+            828.75,
+            951.75
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-rolling-pin",
+          "label": "擀面杖",
+          "image": "./assets/optimized/f9fd910de326e28fa991fce5ff607b5904f0eb13f51eab022549fac1d3861a1e.png",
+          "bounds": [
+            410,
+            32.666666666666664,
+            545,
+            61
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-padlock",
+          "label": "挂锁",
+          "image": "./assets/optimized/489eff8d983643324c4968496a15d2640b2aa615a18285a06762d3aae6740677.png",
+          "bounds": [
+            807,
+            230,
+            836,
+            259
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "016",
       "version": "release-v03",

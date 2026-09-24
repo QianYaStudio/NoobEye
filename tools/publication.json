@@ -1,7 +1,10 @@
 {
-  "defaultIssue": "010",
-  "withheldIssues": [
-    "011",
-    "012"
-  ]
+  "defaultIssue": "017",
+  "withheldIssues": [],
+  "assetSuffixes": {
+    "012": "-v03"
+  },
+  "storageVersions": {
+    "012": "release-v01"
+  }
 }
