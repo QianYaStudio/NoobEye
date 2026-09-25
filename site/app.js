@@ -203,7 +203,10 @@ function renderShelfPage(direction=0){
   for(const issue of issues.slice(shelfPage*SHELF_PAGE_SIZE,(shelfPage+1)*SHELF_PAGE_SIZE)){
     const button=document.createElement('button');button.id=`issue-${issue.id}`;button.className='issue-card';
     const cover=document.createElement('span');cover.className='card-cover';
-    cover.style.aspectRatio=`${issue.coverWidth||520} / ${issue.coverHeight||708}`;
+    const coverWidth=issue.coverWidth||520,coverHeight=issue.coverHeight||708;
+    const landscape=coverWidth>coverHeight;
+    cover.style.aspectRatio=landscape?`${coverHeight} / ${coverWidth}`:`${coverWidth} / ${coverHeight}`;
+    if(landscape){cover.classList.add('is-landscape');cover.style.setProperty('--cover-ratio',coverWidth/coverHeight);}
     const img=document.createElement('img');img.alt='';img.loading='lazy';img.fetchPriority='low';img.decoding='async';img.width=issue.coverWidth;img.height=issue.coverHeight;
     const fallback=document.createElement('span');fallback.className='cover-fallback';fallback.hidden=true;fallback.setAttribute('aria-hidden','true');
     fallback.textContent=issue.id;
