@@ -1,4 +1,4 @@
-import {tr,setupLanguage} from './i18n.js?v=issue-021-20260925';
+import {tr,setupLanguage} from './i18n.js?v=issue-022-20260925';
 function render(){
  document.getElementById('credits-copy').innerHTML=tr(
  `<h1>授权与署名</h1><p>发行与制作：QianYaStudio。插画：NoobEye 第 001—011 期，2026。保留原图已有的 QIANYASTUDIO 等署名。</p><p>代码采用 <a href="https://opensource.org/license/mit">MIT License</a>。插画及藏品图例采用 <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hans">CC BY-NC 4.0</a>，允许署名的非商业分享与改编。请保留署名、附上许可链接，并说明修改。</p><h2>音乐</h2><p>默认配乐为作者提供的 Echoes（EchoesG.mp3）。另可手动选择木吉他、Bossa Nova、钢琴与鸟鸣氛围四首配乐。网页版本统一了响度并重新编码；原文件保持不变。录音供本站配乐播放，单独使用录音请联系作者。代码与插画许可不涵盖录音的再利用，交互音效由程序合成。</p><h2>邮件订阅</h2><p>主动订阅并确认邮箱后，QianYaStudio 通过 Resend 发送所选语言的新刊通知。邮箱及语言用于管理此订阅，每封新刊邮件都有退订入口。Cloudflare 暂存确认请求 48 小时，过期数据每日清理；Resend 保留联系人和退订状态以管理投递。邮箱不与游戏成绩关联。如需删除邮箱记录，可通过作者主页联系。</p><h2>进度和统计</h2><p>语言、声音偏好、各期进度与个人成绩保存在当前浏览器。在线统计仅在站点接入统计服务后启用，记录随机访客编号、期号、开局与通关、用时、提示与错误次数。人数按浏览器访客去重；有提示与无提示成绩分组比较。</p><p><a href="https://github.com/QianYaStudio">作者主页</a> · <a href="./#play">回去继续寻找</a></p>`,

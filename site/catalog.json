@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "021",
+  "defaultIssue": "022",
   "issues": [
+    {
+      "id": "022",
+      "version": "release-v02",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "企鹅的夏日冰车",
+      "english": "SCOOP & SPLASH",
+      "intro": "企鹅把高高的冰淇淋递向水獭，小螃蟹在脚边凑热闹。沿着冰车、遮阳棚、篮子和海边的衣物，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/fa12c79e2dd9d7073b6928484d758527f2a7e99e9400003d02aa207f0ff12a40.webp",
+      "color": "./assets/optimized/9a8e48a89ea4385dde0181e14c461573d0bc4d8b7653f9843960e6956fc09bc7.webp",
+      "cover": "./assets/optimized/dcefa38e80fb1fd2ed8f65e60f074f6a3781b2ca8262d77191c652b131d0d3c2.webp",
+      "coverWidth": 520,
+      "coverHeight": 736,
+      "targets": [
+        {
+          "id": "t11-turtle",
+          "label": "乌龟",
+          "image": "./assets/optimized/8094c26efb3ffc8bae595655f0d26315981033e17dd5a408a5d0e56cd6137575.png",
+          "bounds": [
+            831.8400724734815,
+            380.7272727272727,
+            1154,
+            510.85266825731765
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-pouch",
+          "label": "束口袋",
+          "image": "./assets/optimized/ba49adfb7bc3e827349b67a73149daf94c9afe5421948812046978534d6192ae.png",
+          "bounds": [
+            774.75,
+            882.276528540267,
+            879.25,
+            1007.9486646133766
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-window",
+          "label": "窗户",
+          "image": "./assets/optimized/fcf0ca881530b98b4168bd4fa634130af99788bce419d6e5c5ed7a65ef0204a6.png",
+          "bounds": [
+            37.19184724039363,
+            856.4708254787731,
+            206.953488372093,
+            979.4000000000002
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-hair-dryer",
+          "label": "吹风机",
+          "image": "./assets/optimized/0e7cdb7963cf9fc7546a270c841a67063bdde59a51ea6d7749ff8bcc8f773a03.png",
+          "bounds": [
+            40,
+            473,
+            192,
+            608.7054844919403
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-moustache",
+          "label": "小胡子",
+          "image": "./assets/optimized/5e62759c959108c6a79e19bd08404aadf2f1a2596de19d3a8ec45c3e7605f568.png",
+          "bounds": [
+            735,
+            16,
+            1218,
+            156
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-binoculars",
+          "label": "双筒望远镜",
+          "image": "./assets/optimized/ecfb956b3e4c44d31e40d4aef8e3d8a06507e1b8c59eb18610cf18e7ad9d9a6c.png",
+          "bounds": [
+            495.94579113296805,
+            650.5,
+            610.0139742034627,
+            743.1490973122325
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-chilli",
+          "label": "辣椒",
+          "image": "./assets/optimized/cd026016dd6af31de1bcc7c24f59d6bdb9c9614fe853fd8f783d3932325d3a97.png",
+          "bounds": [
+            349,
+            407.84670695183064,
+            451,
+            494.7655953063153
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-nail",
+          "label": "钉子",
+          "image": "./assets/optimized/04e5bf3db992835e4a495c3766521efea535cc6e1449ce7dd6b91478df533112.png",
+          "bounds": [
+            498.25,
+            770.6730564027921,
+            538.75,
+            887
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-rain-boot",
+          "label": "雨靴",
+          "image": "./assets/optimized/999c76e57db17a357cffbf2f9fd38fc226a9a29cbe0f28863b6d262ff0580c5e.png",
+          "bounds": [
+            494.3797700232445,
+            266.25,
+            595.25,
+            449
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "021",
       "version": "release-v04",
