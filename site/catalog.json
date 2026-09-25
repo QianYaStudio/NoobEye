@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "019",
+  "defaultIssue": "020",
   "issues": [
+    {
+      "id": "020",
+      "version": "release-v03",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "雨后的站台",
+      "english": "AFTER THE RAIN",
+      "intro": "雨停了，刺猬站长帮兔子旅客把大行李箱扶上小推车。小兔子从车厢探出身子，背着行李的蜗牛旅客正慢慢爬上坡道。沿着站台、车厢和雨后的植物，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/4f5c92eb3e36c818ec2e075927e766a0445d8171150283584ae523788e739988.webp",
+      "color": "./assets/optimized/8fff424b551efd00aab158a592d28c362aff1e86c4152df4e5dffe0f45b1f5d7.webp",
+      "cover": "./assets/optimized/f8c0650f106f05fdb4857beb120f657f678e2c46ed7f63d95d6ed42b9ea8473f.webp",
+      "coverWidth": 520,
+      "coverHeight": 736,
+      "targets": [
+        {
+          "id": "t08-handcuffs",
+          "label": "手铐",
+          "image": "./assets/optimized/d84ad96b250088fc6e410862791652f83b6b136c204950dfbe031700c67c1c14.png",
+          "bounds": [
+            1205.4883191202737,
+            810.2177777777778,
+            1237.576979195443,
+            890.1539782910202
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-fried-egg",
+          "label": "煎蛋",
+          "image": "./assets/optimized/70d5332e74c31c3c2e7f198954f9d824322d6aa21ae3d0f358850a560950c8a9.png",
+          "bounds": [
+            823.9219944315141,
+            907.526744890077,
+            940.5190736009996,
+            946.4886316300998
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t13-birdcage",
+          "label": "鸟笼",
+          "image": "./assets/optimized/353514fad13e4c347417ec4ebe16d4eceea5a8f3abe1f66e79aa400b4c890060.png",
+          "bounds": [
+            81,
+            210,
+            146,
+            278.5
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-flying-saucer",
+          "label": "飞碟",
+          "image": "./assets/optimized/abb7f1bbe8aceb42f997fe548a5687f63727d07671bb8b70baa4455e295d0a10.png",
+          "bounds": [
+            1108,
+            231.60612308660188,
+            1220,
+            279
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t11-battery",
+          "label": "电池",
+          "image": "./assets/optimized/f6dadf96b126d2bbc17472792c4090224484da28eb0e72bedb3b01fc38d1b408.png",
+          "bounds": [
+            169.5,
+            756,
+            215,
+            772
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-telephone-receiver",
+          "label": "电话听筒",
+          "image": "./assets/optimized/549cb9c9461ebb30564306a72420f405deb3384e932536d2a773338c73d656e4.png",
+          "bounds": [
+            480.33333333333337,
+            299,
+            532.8,
+            370.66666666666663
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-jellyfish",
+          "label": "水母",
+          "image": "./assets/optimized/5397dd29e4257a3df20017f7e04e9a6af397d79ff0d08f5478eed7f2c04332d3.png",
+          "bounds": [
+            231.3613701844873,
+            703.9268997883057,
+            290.2990381056767,
+            783.1293787513022
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t12-pizza-slice",
+          "label": "披萨",
+          "image": "./assets/optimized/825f67b68b18af979d6385c6a87a439602af7a73d5d63c4721fe508cb4c5f254.png",
+          "bounds": [
+            526,
+            839.4756062449969,
+            560,
+            892.7777777777778
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-eye",
+          "label": "眼睛",
+          "image": "./assets/optimized/825da840dde93a77ad0742c8e6cedc810628406c8c63f6e4366f0dceb4c377c5.png",
+          "bounds": [
+            243.764,
+            1005.4759100724007,
+            310.236,
+            1044.807178874431
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "019",
       "version": "release-v05",

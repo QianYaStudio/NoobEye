@@ -1,4 +1,4 @@
-import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-019-20260925';
+import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-020-20260925';
 const KEY='noobeye:language';
 let saved;try{saved=localStorage.getItem(KEY);}catch{}
 const preferred=(navigator.languages?.[0]||navigator.language||'en').toLowerCase();
@@ -6,6 +6,7 @@ export let language=['zh','en','ja'].includes(saved)?saved:(preferred.startsWith
 export const tr=(zh,en,ja)=>language==='zh'?zh:language==='ja'?(ja??en):en;
 export const titleOf=issue=>tr(issue.title,issue.english.replace(/^THE /,'').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase()),titlesJa[issue.id]);
 const nouns={
+  '手铐':'Handcuffs','煎蛋':'Fried egg','鸟笼':'Birdcage','飞碟':'Flying saucer','电池':'Battery','电话听筒':'Telephone receiver','水母':'Jellyfish','披萨':'Pizza slice','眼睛':'Eye',
   '爪印':'Paw print','直尺':'Ruler','棒棒糖':'Lollipop','海马':'Seahorse','注射器':'Syringe','花生':'Peanut','宝剑':'Sword','刮刀':'Squeegee','橄榄球':'Football',
   '柑橘切片':'Citrus wedge','鸭子':'Duck','打蛋器':'Whisk','铁砧':'Anvil','滚筒刷':'Paint roller','耳朵':'Ear','螺钉':'Screw','纽扣':'Button','三角旗':'Pennant',
 '钳子':'Pliers','擀面杖':'Rolling pin','拼图块':'Jigsaw piece','竖琴':'Harp','挂锁':'Padlock','帐篷':'Tent','订书机':'Stapler','胶带卷':'Adhesive tape','印章':'Rubber stamp',
@@ -18,6 +19,7 @@ const nouns={
 };
 export const labelOf=target=>tr(target.label,nouns[target.label]||target.labelEn||target.label,nounsJa[target.label]);
 const intros={
+  '020':'The rain has stopped. A hedgehog stationmaster helps a rabbit traveler lift a large suitcase onto a little cart, while a small rabbit leans from the carriage and a snail traveler climbs the ramp. Find nine hidden shapes among the platform, train and rain-washed plants.',
   '019':'The wind lifts the picnic cloth toward the trees as three people hold the table steady and a dog watches a napkin caught in the branches. Find nine hidden shapes among the cloth, branches and grass.',
   '018':'Beaver keeps the river mill turning as water rushes beneath the wooden wheel. Nine hidden shapes are tucked among the tools, timbers and riverbank.',
 '017':'A lion settles in for a trim beneath the trees while the rabbit barber and a tiny helper keep busy. Find nine hidden shapes among the mane, cape and tools.',
