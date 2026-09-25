@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "020",
+  "defaultIssue": "021",
   "issues": [
+    {
+      "id": "021",
+      "version": "release-v04",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "小小木偶剧场",
+      "english": "THE TINY THEATRE",
+      "intro": "爷爷在花园里为两个孩子演木偶戏，狐狸骑士和友善的龙在小舞台上相遇。沿着戏台、布景和花园里的道具，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/c50da05c28b8c2b151a72bcf44d9f155fd902c0f19c1170c259518436e4ab4d8.webp",
+      "color": "./assets/optimized/7557560d00784e18cf10653155a7c286a29b68c9ae26f936e7d52b99fe704f96.webp",
+      "cover": "./assets/optimized/c27757b5192a046ce7ebfa2a0edca59d70b55e12c972e76781da8461c88f17f5.webp",
+      "coverWidth": 520,
+      "coverHeight": 368,
+      "targets": [
+        {
+          "id": "t01-vinyl-record",
+          "label": "黑胶唱片",
+          "image": "./assets/optimized/aa94334a1b482886d6857bdf7af56360bee765e00278fd0c034ca32900271fc6.png",
+          "bounds": [
+            263,
+            740.75,
+            376.00654068381607,
+            762.5
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-arrow",
+          "label": "箭头",
+          "image": "./assets/optimized/1ef35acd78051956febae57ee616e0dfa2bc2ee168564e7695812c45bab7fbd1.png",
+          "bounds": [
+            1191,
+            292.75,
+            1231.75,
+            331.75
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-treble-clef",
+          "label": "高音谱号",
+          "image": "./assets/optimized/8de07ea1bb8a8b48172ef9c7ef134fbf8603095eb6f963306ccef7dbae852b42.png",
+          "bounds": [
+            60.84929415052225,
+            600.6000315691206,
+            94.14764362029202,
+            679.8664371937446
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-die",
+          "label": "骰子",
+          "image": "./assets/optimized/52f39f53dc33f7cd0b6b93ab7d53c81a744dbe0f300f1f42a27cb754deb875b7.png",
+          "bounds": [
+            867,
+            811,
+            926,
+            859
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-garlic",
+          "label": "大蒜",
+          "image": "./assets/optimized/4e8f40776d786308ff34ff7b5295bcc575c6c1bb0b7b047f9ce20db6de3a6256.png",
+          "bounds": [
+            475.86287670316955,
+            344,
+            511.7383539249432,
+            386
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-golf-tee",
+          "label": "高尔夫球钉",
+          "image": "./assets/optimized/48e86a46dd40b9523855403517b02bab445cbbbe6ca603de53f3588ab0839642.png",
+          "bounds": [
+            93.75,
+            922.5,
+            118.20000000000002,
+            972.25
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-waffle",
+          "label": "巧克力",
+          "image": "./assets/optimized/b7fc2ff2aff266c545399c7a85664c3d4bf20453582afa8b098bea86083723ef.png",
+          "bounds": [
+            464.53846153846155,
+            1044.75,
+            598.5396825396826,
+            1103.6666666666665
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-lips",
+          "label": "嘴唇",
+          "image": "./assets/optimized/6911e8594890e1d8f600b7176f13ca01ed661d39338baa9733efb9ca1ddcd08e.png",
+          "bounds": [
+            479.75,
+            968.25,
+            633.75,
+            1009.4703226896792
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-clothes-hanger",
+          "label": "衣架",
+          "image": "./assets/optimized/375401b054b47d51e47974b1aa7f3816e3614540b17aabc44188e7356ae1748d.png",
+          "bounds": [
+            454.67499999999995,
+            14.726993925641962,
+            950.75,
+            164.54202759519157
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "020",
       "version": "release-v03",
