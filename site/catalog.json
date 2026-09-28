@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "022",
+  "defaultIssue": "023",
   "issues": [
+    {
+      "id": "023",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "猫头鹰的修钟小屋",
+      "english": "OWL HOURS",
+      "intro": "猫头鹰钟表匠和打瞌睡的小老鼠助手在工坊里修理时钟。沿着木制钟壳、齿轮、布料和开放的支架，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/e81b1e4ccadb448314c51c46e9ce3d5ff250aa9ca334ca8e19eb2f9bd3dbc4ee.webp",
+      "color": "./assets/optimized/a4295e0ab0a4561724c3c7d74a6fd1b69afba3b09023b610bc64743d89cdf435.webp",
+      "cover": "./assets/optimized/741fa125c5d14827c2fe8017f2b587674bd57ab64614329e993f818525f67070.webp",
+      "coverWidth": 520,
+      "coverHeight": 736,
+      "targets": [
+        {
+          "id": "t03-shield",
+          "label": "盾牌",
+          "image": "./assets/optimized/0fa0c1cb14e71780c271ab0d0586d23bd5f235ffc1ad104aa86ad66a6846211b.png",
+          "bounds": [
+            510,
+            468,
+            588,
+            532
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-coffee-bean",
+          "label": "咖啡豆",
+          "image": "./assets/optimized/e17ac11c2ab1ae07783ce25ecb133bfd5a02302d3042758620e901d6a44a7b0b.png",
+          "bounds": [
+            1182.5811039734447,
+            545.3550216557552,
+            1248.0419717052478,
+            617.75
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-hard-hat",
+          "label": "安全帽",
+          "image": "./assets/optimized/15949a66ac0bc5532fe169ae0f88f74de657bdacc2694ed7b28bd8086b9e60ee.png",
+          "bounds": [
+            212,
+            431.53946382930104,
+            336.5,
+            515.9
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-cheese",
+          "label": "奶酪",
+          "image": "./assets/optimized/50588ddaea5e5cc411037c000381bcc512e4c79d77583e36b9d8f75037d3e5cd.png",
+          "bounds": [
+            147,
+            1072,
+            240,
+            1153
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-speech-bubble",
+          "label": "对话气泡",
+          "image": "./assets/optimized/579d0f8e253adcb1922b6d811195e45ea682ec74cc8352f3ff5b008bb360b083.png",
+          "bounds": [
+            987,
+            525.7735743560174,
+            1056.0692527881358,
+            585
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-fishing-hook",
+          "label": "鱼钩",
+          "image": "./assets/optimized/3f61bc1b359e7560b715c97b2258e1391567f2295cd53960d2f548639c983520.png",
+          "bounds": [
+            274,
+            231,
+            334.05803830961145,
+            315.0582148767349
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-vase",
+          "label": "花瓶",
+          "image": "./assets/optimized/ac01d2bad2e276f6494f720ee05021f1d6139fa980311e76fee62c596cffab3b.png",
+          "bounds": [
+            922.6783697524083,
+            857.75,
+            1001.3069927288565,
+            967.8888888888889
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-sickle",
+          "label": "镰刀",
+          "image": "./assets/optimized/65c3fc6fc85a9fe4a721f735fa981dc7dff2888da0f9602ae2b1fb0b01f966d8.png",
+          "bounds": [
+            940,
+            45,
+            1177,
+            240
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t12-toothpaste",
+          "label": "牙膏",
+          "image": "./assets/optimized/9a6369b3ee58cf367aa188ede141e0d9721e59bcd49786d26deb7f51336f1966.png",
+          "bounds": [
+            451,
+            968.8875739644972,
+            664,
+            1023.1278905896871
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "022",
       "version": "release-v02",
