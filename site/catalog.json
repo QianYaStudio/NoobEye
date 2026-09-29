@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "023",
+  "defaultIssue": "024",
   "issues": [
+    {
+      "id": "024",
+      "version": "release-v04",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "水豚的育苗温室",
+      "english": "GROW SLOW",
+      "intro": "水豚园丁在明亮的温室里耐心栽种幼苗，小鸟在手推车旁安静旁观。沿着植物、木架、水盆和布料，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/eac60cebefa0ce21c6d2b93bfa92eb558d49f603a8d8a9b6277ec03c15f65ee2.webp",
+      "color": "./assets/optimized/873b3b4ce7ba0ea086746806543ed33a75971f80f481510985dd1a45bcc07e21.webp",
+      "cover": "./assets/optimized/b369679e3f5c928c065a93d5d9bfd2b46651dcd1bb59e3c2d4bd43eb4eedc161.webp",
+      "coverWidth": 520,
+      "coverHeight": 736,
+      "targets": [
+        {
+          "id": "t03-surfboard",
+          "label": "冲浪板",
+          "image": "./assets/optimized/7bfbc86941047ee5f3b7a01803d9dac2f118daeca2d52ca6980f4d1757d4d4a0.png",
+          "bounds": [
+            566.3257885930409,
+            1147.75,
+            897,
+            1242.746133917893
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t12-eraser",
+          "label": "橡皮擦",
+          "image": "./assets/optimized/9618e7789dc0a0e4a29bfb9ba458f9f76e985dff8023383f99ae32b1fc30518a.png",
+          "bounds": [
+            898.9369277518322,
+            961,
+            1035.75,
+            1015.25
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-fly-swatter",
+          "label": "苍蝇拍",
+          "image": "./assets/optimized/3277ecc677dfe94a483426ab0ac8c385f60897c2c016ab4b587fbabe5886abdd.png",
+          "bounds": [
+            205,
+            62,
+            509,
+            260
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-infinity",
+          "label": "无限符号",
+          "image": "./assets/optimized/77f4047d9272e78c83a838606dc487a8a1aa419e5217253d29b39a21a62c934e.png",
+          "bounds": [
+            387.8683053871942,
+            344.86787297257234,
+            488.0342211545557,
+            562.0313685554493
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-water-drop",
+          "label": "水滴",
+          "image": "./assets/optimized/9d31c72cf41c03cab5f79098a58d081ab260f2964cd4a6bd79e218fbfaab5066.png",
+          "bounds": [
+            185.08006855188012,
+            843.4659066980997,
+            279,
+            896.6875
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-stingray",
+          "label": "鳐鱼",
+          "image": "./assets/optimized/db8b0daea2cfc681526f62896dd50bfaf0cffc424b9a4388f27f9f1141b46c85.png",
+          "bounds": [
+            892,
+            34,
+            1041,
+            205.77777777777777
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-sewing-machine",
+          "label": "缝纫机",
+          "image": "./assets/optimized/5570634b4d35314d278bd9dfc0e381d206426e18992c01169cdc10456246aa36.png",
+          "bounds": [
+            120,
+            389.5,
+            310,
+            597
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-thumbtack",
+          "label": "图钉",
+          "image": "./assets/optimized/e2af935411d4817d3a1380f0eea6c3e24be9c23049ab146d2310cfea9987d52e.png",
+          "bounds": [
+            350.25,
+            1040,
+            429,
+            1132.0443493479215
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-flask",
+          "label": "烧瓶",
+          "image": "./assets/optimized/a678b691623aee440a07cc93926a440a6b92fa1fe6a8a5d123648f46d293db6b.png",
+          "bounds": [
+            1125,
+            318,
+            1191,
+            404
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "023",
       "version": "release-v01",

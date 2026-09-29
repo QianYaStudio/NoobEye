@@ -1,4 +1,4 @@
-import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-023-20260928';
+import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-024-20260929';
 const KEY='noobeye:language';
 let saved;try{saved=localStorage.getItem(KEY);}catch{}
 const preferred=(navigator.languages?.[0]||navigator.language||'en').toLowerCase();
@@ -6,6 +6,7 @@ export let language=['zh','en','ja'].includes(saved)?saved:(preferred.startsWith
 export const tr=(zh,en,ja)=>language==='zh'?zh:language==='ja'?(ja??en):en;
 export const titleOf=issue=>tr(issue.title,issue.english.replace(/^THE /,'').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase()),titlesJa[issue.id]);
 const nouns={
+  '冲浪板':'Surfboard','橡皮擦':'Eraser','苍蝇拍':'Fly swatter','无限符号':'Infinity symbol','水滴':'Water drop','鳐鱼':'Stingray','缝纫机':'Sewing machine','图钉':'Thumbtack','烧瓶':'Flask',
   '黑胶唱片':'Vinyl record','箭头':'Arrow','高音谱号':'Treble clef','骰子':'Die','大蒜':'Garlic','高尔夫球钉':'Golf tee','巧克力':'Chocolate bar','嘴唇':'Lips','衣架':'Clothes hanger',
   '手铐':'Handcuffs','煎蛋':'Fried egg','鸟笼':'Birdcage','飞碟':'Flying saucer','电池':'Battery','电话听筒':'Telephone receiver','水母':'Jellyfish','披萨':'Pizza slice','眼睛':'Eye',
   '爪印':'Paw print','直尺':'Ruler','棒棒糖':'Lollipop','海马':'Seahorse','注射器':'Syringe','花生':'Peanut','宝剑':'Sword','刮刀':'Squeegee','橄榄球':'Football',
@@ -21,6 +22,7 @@ const nouns={
 };
 export const labelOf=target=>tr(target.label,nouns[target.label]||target.labelEn||target.label,nounsJa[target.label]);
 const intros={
+  '024':'A capybara gardener patiently tends seedlings in a bright greenhouse while a little bird watches from a wheelbarrow. Find nine hidden shapes among the plants, timber, basins and cloth.',
   '023':'An owl clockmaker and a sleepy mouse assistant repair clocks in a cozy workshop. Find nine hidden shapes among the wooden cases, mechanisms, cloth and open supports.',
   '022':'A penguin offers a tall scoop of ice cream to an otter while a little crab joins the seaside commotion. Find nine hidden shapes among the cart, canopy, basket and beach clothes.',
   '021':'In a leafy garden, a grandfather puts on a tiny puppet show for two children. A fox knight and a friendly dragon meet on the little stage. Find nine hidden shapes among the theatre, props and garden.',
