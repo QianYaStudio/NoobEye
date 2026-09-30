@@ -1,4 +1,4 @@
-import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-025-20260930';
+import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-026-20261001';
 const KEY='noobeye:language';
 let saved;try{saved=localStorage.getItem(KEY);}catch{}
 const preferred=(navigator.languages?.[0]||navigator.language||'en').toLowerCase();
@@ -6,6 +6,7 @@ export let language=['zh','en','ja'].includes(saved)?saved:(preferred.startsWith
 export const tr=(zh,en,ja)=>language==='zh'?zh:language==='ja'?(ja??en):en;
 export const titleOf=issue=>tr(issue.title,issue.english.replace(/^THE /,'').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase()),titlesJa[issue.id]);
 const nouns={
+  '披萨滚刀':'Pizza cutter','字母 A':'Letter A','蛋糕卷':'Swiss roll','饺子':'Dumpling','腋拐':'Crutch','毛毛虫':'Caterpillar','胶囊':'Capsule','螺旋桨':'Propeller','麦穗':'Wheat ear',
   '洒水壶':'Watering can','海豚':'Dolphin','草莓':'Strawberry','汉堡':'Hamburger','电视机':'Television','学士帽':'Graduation cap','卷纸':'Toilet paper roll','圆规':'Compass','红绿灯':'Traffic light',
   '冲浪板':'Surfboard','橡皮擦':'Eraser','苍蝇拍':'Fly swatter','无限符号':'Infinity symbol','水滴':'Water drop','鳐鱼':'Stingray','缝纫机':'Sewing machine','图钉':'Thumbtack','烧瓶':'Flask',
   '黑胶唱片':'Vinyl record','箭头':'Arrow','高音谱号':'Treble clef','骰子':'Die','大蒜':'Garlic','高尔夫球钉':'Golf tee','巧克力':'Chocolate bar','嘴唇':'Lips','衣架':'Clothes hanger',
@@ -23,6 +24,7 @@ const nouns={
 };
 export const labelOf=target=>tr(target.label,nouns[target.label]||target.labelEn||target.label,nounsJa[target.label]);
 const intros={
+  '026':'A badger repairs a little sailboat by the river while a mouse holds a sail that is too large. Find nine hidden shapes among the hull, supports, toolbox and ropes along the shore.',
   '025':'A raccoon hangs a wind-filled sheet in a sunny outdoor laundry yard. Find nine hidden shapes among the drying racks, fabrics, wash basin and laundry basket.',
   '024':'A capybara gardener patiently tends seedlings in a bright greenhouse while a little bird watches from a wheelbarrow. Find nine hidden shapes among the plants, timber, basins and cloth.',
   '023':'An owl clockmaker and a sleepy mouse assistant repair clocks in a cozy workshop. Find nine hidden shapes among the wooden cases, mechanisms, cloth and open supports.',

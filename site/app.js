@@ -1,12 +1,13 @@
-import { setupSensor } from './sensor.js?v=issue-025-20260930';
+import { setupSensor } from './sensor.js?v=issue-026-20261001';
 import { celebrateCompletion } from './celebration.js';
-import {targetOutline,createOutlineMark} from './target-outlines.js?v=issue-025-20260930';
-import { effect, setupAudio, setIssueMusic, startListening } from './audio.js?v=issue-025-20260930';
-import { tr, labelOf, titleOf, introOf, clueOf, setupLanguage } from './i18n.js?v=issue-025-20260930';
+import {targetOutline,createOutlineMark} from './target-outlines.js?v=issue-026-20261001';
+import { effect, setupAudio, setIssueMusic, startListening } from './audio.js?v=issue-026-20261001';
+import { tr, labelOf, titleOf, introOf, clueOf, setupLanguage } from './i18n.js?v=issue-026-20261001';
 import {setupProjectLinks} from './project.js';
-import {setupSubscriptions} from './subscriptions.js?v=issue-025-20260930';
+import {setupSubscriptions} from './subscriptions.js?v=issue-026-20261001';
 import {clearPlayRecords} from './records.js';
 import { SessionClock, formatTime } from './session.js';
+import {constrainCamera,detailCamera,overviewCamera,pointInScene} from './camera.js';
 import { setupStats, startRun, finishRun, readStats } from './stats.js?v=startup-20260915';
 const $ = (id) => document.getElementById(id);
 const NS = 'http://www.w3.org/2000/svg';
@@ -17,10 +18,14 @@ const clock=new SessionClock();
 let gameVisible=false, mistakes=0, runId='', rankEligible=true, rankResult=null, startPromise=null, startSent=false;
 let awaitingFreshInteraction=false, sensorUsed=false;
 let view = { x: 0, y: 0, size: 1254 }, pointers = new Map(), drag = null, pinch = null;
+let adaptiveViewport=false,lastViewRatio=null;
 const say = (text) => { $('status').textContent = text; };
 const clamp = (n, min, max) => Math.max(min, Math.min(max, n));
 const sceneWidth=()=>currentIssue?.width||1254;
 const sceneHeight=()=>currentIssue?.height||1254;
+const viewRatio=()=>adaptiveViewport&&$('viewport').clientWidth&&$('viewport').clientHeight?$('viewport').clientHeight/$('viewport').clientWidth:sceneHeight()/sceneWidth();
+const initialView=()=>adaptiveViewport?detailCamera(sceneWidth(),sceneHeight(),viewRatio()):{x:0,y:0,size:sceneWidth()};
+const fullView=()=>overviewCamera(sceneWidth(),sceneHeight(),viewRatio());
 function loadScene(src){
   sensor.clear();const request=++sceneRequest;sceneReady=false;$('viewport').setAttribute('aria-busy','true');
   const preload=new Image();
@@ -77,19 +82,21 @@ function discover(target) {
   if(found.size===targets.length)celebrateCompletion($('complete'));
   say(found.size === targets.length ? tr(`全部 ${targets.length} 件藏品都找到了！`,`All ${targets.length} objects found!`,`全${targets.length}個を見つけました！`) : tr(`发现了${labelOf(target)}！已找到 ${found.size} / ${targets.length}。`,`Found ${labelOf(target)}! ${found.size} / ${targets.length}.`,`${labelOf(target)}を発見！ ${found.size} / ${targets.length}。`));
 }
-function updateView() {
-  const ratio=sceneHeight()/sceneWidth();
-  view.x = clamp(view.x, 0, sceneWidth()-view.size); view.y = clamp(view.y, 0, sceneHeight()-view.size*ratio);
+function updateView(preserveCenter=false) {
+  const ratio=viewRatio();
+  if(adaptiveViewport&&preserveCenter&&lastViewRatio!==null)view.y+=view.size*(lastViewRatio-ratio)/2;
+  lastViewRatio=ratio;
+  view=constrainCamera(view,sceneWidth(),sceneHeight(),ratio);
   $('scene').setAttribute('viewBox',`${view.x} ${view.y} ${view.size} ${view.size*ratio}`);
   $('zoom-value').textContent = `${Math.round(sceneWidth()/view.size*100)}%`;
 }
 function zoom(factor, px = .5, py = .5) {
-  const next = clamp(view.size/factor,sceneWidth()/5,sceneWidth());
-  view.x += (view.size-next)*px; view.y += (view.size-next)*py*sceneHeight()/sceneWidth(); view.size=next; updateView();
+  const next = clamp(view.size/factor,sceneWidth()/5,Math.max(sceneWidth(),sceneHeight()/viewRatio()));
+  view.x += (view.size-next)*px; view.y += (view.size-next)*py*viewRatio(); view.size=next; updateView();
 }
 function localPoint(clientX,clientY) {
   const r = $('viewport').getBoundingClientRect();
-  return { x:view.x+(clientX-r.left)/r.width*view.size, y:view.y+(clientY-r.top)/r.height*view.size*sceneHeight()/sceneWidth() };
+  return pointInScene(clientX,clientY,r,view,viewRatio());
 }
 function ripple(clientX,clientY,success){
   const rect=vp.getBoundingClientRect(),el=document.createElement('span');el.className='ripple '+(success?'rainbow':'ordinary');
@@ -114,7 +121,7 @@ function giveHint() {
   if(hints[target.id]===1) {
     const text=`${labelOf(target)}: ${clueOf(target,currentIssue)}`; $('hint-copy').textContent=text; say(text);
   } else if(hints[target.id]===2) {
-    view={x:0,y:0,size:sceneWidth()}; updateView(); mark(target,true);
+    view=fullView(); updateView(); mark(target,true);
     $('hint-copy').textContent=tr(`${labelOf(target)}就在虚线圈出的附近。`,`${labelOf(target)} is near the dashed outline.`,`${labelOf(target)}は点線の近くにあります。`); say($('hint-copy').textContent);
   } else {
     discover(target); $('hint-copy').textContent=tr(`已揭晓${labelOf(target)}的位置。`,`${labelOf(target)} has been revealed.`,`${labelOf(target)}の位置を表示しました。`);
@@ -124,7 +131,7 @@ function giveHint() {
 $('hint').addEventListener('click',giveHint);
 $('zoom-in').addEventListener('click',()=>{effect();zoom(1.35);});
 $('zoom-out').addEventListener('click',()=>{effect();zoom(1/1.35);});
-$('fit').addEventListener('click',()=>{view={x:0,y:0,size:sceneWidth()};updateView();});
+$('fit').addEventListener('click',()=>{view=fullView();updateView();});
 for(const mode of ['color','line']) $(mode).addEventListener('click',()=>{
   if(!currentIssue)return;effect('page');
   loadScene(currentIssue[mode]);
@@ -139,7 +146,7 @@ $('reset-dialog').addEventListener('close',()=>{
 function resetAttempt(waitForInteraction=false){
   sensor.clear();sensorUsed=false;awaitingFreshInteraction=waitForInteraction;found.clear();hints={};selected=null;clock.load({});mistakes=0;runId=crypto.randomUUID();rankEligible=true;rankResult=null;startPromise=null;startSent=false;
   $('marks').replaceChildren();$('hint-mark').replaceChildren();$('ripple-layer').replaceChildren();$('personal-best').textContent='';$('rank-result').textContent='';$('rank-result').hidden=true;$('complete').classList.remove('celebrate');
-  view={x:0,y:0,size:sceneWidth()};updateView();
+  view=initialView();updateView();
 }
 function engage(){if(awaitingFreshInteraction){awaitingFreshInteraction=false;syncClock();}}
 $('clear-records').addEventListener('click',()=>{if(!currentIssue)return;clock.setActive(false);$('clear-dialog').showModal();});
@@ -173,7 +180,7 @@ vp.addEventListener('pointerdown',e=>{
 });
 vp.addEventListener('pointermove',e=>{
   if(!pointers.has(e.pointerId))return;pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});
-  if(pointers.size>=2){const[a,b]=[...pointers.values()];const distance=Math.hypot(a.x-b.x,a.y-b.y);const r=vp.getBoundingClientRect();const x=(a.x+b.x)/2,y=(a.y+b.y)/2;if(pinch?.distance>0){zoom(distance/pinch.distance,(pinch.x-r.left)/r.width,(pinch.y-r.top)/r.height);view.x-=(x-pinch.x)/r.width*view.size;view.y-=(y-pinch.y)/r.height*view.size*sceneHeight()/sceneWidth();updateView();}pinch={distance,x,y};return;}
+  if(pointers.size>=2){const[a,b]=[...pointers.values()];const distance=Math.hypot(a.x-b.x,a.y-b.y);const r=vp.getBoundingClientRect();const x=(a.x+b.x)/2,y=(a.y+b.y)/2;if(pinch?.distance>0){zoom(distance/pinch.distance,(pinch.x-r.left)/r.width,(pinch.y-r.top)/r.height);view.x-=(x-pinch.x)/r.width*view.size;view.y-=(y-pinch.y)/r.height*view.size*viewRatio();updateView();}pinch={distance,x,y};return;}
   if(!drag)return;const dx=e.clientX-drag.x,dy=e.clientY-drag.y;
   if(Math.hypot(dx,dy)>5)drag.moved=true;
   if(drag.moved&&!(sensor.enabled&&e.pointerType!=='mouse')){const scale=view.size/vp.clientWidth;view.x=drag.vx-dx*scale;view.y=drag.vy-dy*scale;updateView();}
@@ -188,11 +195,11 @@ vp.addEventListener('keydown',e=>{
   engage();
   if(['+','=','-','ArrowLeft','ArrowRight','ArrowUp','ArrowDown','h','H','0'].includes(e.key))e.preventDefault();
   if(e.key==='+'||e.key==='=')zoom(1.3);if(e.key==='-')zoom(1/1.3);
-  if(e.key==='h'||e.key==='H')giveHint();if(e.key==='0'){view={x:0,y:0,size:sceneWidth()};updateView();}
+  if(e.key==='h'||e.key==='H')giveHint();if(e.key==='0'){view=fullView();updateView();}
   if(e.key.startsWith('Arrow')){const step=view.size*.1;view.x+=(e.key==='ArrowRight'?step:e.key==='ArrowLeft'?-step:0);view.y+=(e.key==='ArrowDown'?step:e.key==='ArrowUp'?-step:0);updateView();}
 });
 const storageKey=issue=>issue.id==='011'?'noobeye:pottery-yard:v1':`noobeye:issue:${issue.id}:${issue.storageVersion||issue.version}`;
-const SHELF_PAGE_SIZE=4;
+let SHELF_PAGE_SIZE=4;
 let shelfPage=0;
 let shelfSlide=null;
 const shelfCounts=new Map();
@@ -259,7 +266,7 @@ function loadIssue(id,{navigate=false}={}){
     rankResult=null;startPromise=null;startSent=false;renderCommunity(null);
     $('viewport').style.aspectRatio=`${issue.width} / ${issue.height}`;
     $('scene-image').setAttribute('width',issue.width);$('scene-image').setAttribute('height',issue.height);
-    selected=null;view={x:0,y:0,size:sceneWidth()};pointers.clear();drag=null;pinch=null;updateView();
+    selected=null;view=initialView();pointers.clear();drag=null;pinch=null;updateView();
     $('marks').replaceChildren();$('hint-mark').replaceChildren();$('targets').replaceChildren();
     $('hint-copy').textContent=tr('卡住了？先选一件想找的藏品。','Stuck? Select an object for a hint.','迷ったら、探すものを選んでヒントを見ましょう。');
     renderIssueCopy();
@@ -282,7 +289,7 @@ function loadIssue(id,{navigate=false}={}){
       button.append(img,label);button.addEventListener('click',()=>{
         engage();
         effect('select');
-        if(found.has(target.id)){view={x:0,y:0,size:sceneWidth()};updateView();say(tr(`${labelOf(target)}已找到，高亮线条记录着你的发现。`,`${labelOf(target)} is already found, highlighted in the picture.`,`${labelOf(target)}は発見済みです。絵の中の線がハイライトされています。`));return;}
+        if(found.has(target.id)){view=fullView();updateView();say(tr(`${labelOf(target)}已找到，高亮线条记录着你的发现。`,`${labelOf(target)} is already found, highlighted in the picture.`,`${labelOf(target)}は発見済みです。絵の中の線がハイライトされています。`));return;}
         selected=target.id;$('hint-mark').replaceChildren();$('hint-copy').textContent=tr(`正在寻找${labelOf(target)}。需要时可以获取线索。`,`Looking for ${labelOf(target)}. A hint is available if you need one.`,`${labelOf(target)}を探しています。必要ならヒントをどうぞ。`);render();
       });$('targets').append(button);if(found.has(target.id))mark(target);
     }
@@ -296,7 +303,7 @@ function loadIssue(id,{navigate=false}={}){
 async function init(){
   setupLanguage();setupSubscriptions();setupAudio();setupStats();setupProjectLinks();
   try {
-    const response=await fetch('./catalog.json?v=issue-025-20260930');if(!response.ok)throw new Error('Content unavailable');
+    const response=await fetch('./catalog.json?v=issue-026-20261001');if(!response.ok)throw new Error('Content unavailable');
     const content=await response.json();issues=content.issues.sort((a,b)=>Number(b.id)-Number(a.id));
     renderShelfPage();
     let last;try{last=localStorage.getItem('noobeye:last-issue');}catch{}
@@ -327,6 +334,7 @@ function scheduleSideNavigation(){if(!sideNavigationFrame)sideNavigationFrame=re
 window.addEventListener('scroll',scheduleSideNavigation,{passive:true});
 window.addEventListener('resize',scheduleSideNavigation);
 new ResizeObserver(scheduleSideNavigation).observe(document.querySelector('.canvas-column'));
+new ResizeObserver(()=>{if(adaptiveViewport&&vp.clientWidth&&vp.clientHeight)updateView(true);}).observe(vp);
 scheduleSideNavigation();
 $('complete-prev').addEventListener('click',()=>adjacent(-1));
 $('continue-issue').addEventListener('click',()=>{if(!neighbor(1))$('archive').scrollIntoView();else adjacent(1);});
@@ -378,4 +386,9 @@ document.addEventListener('visibilitychange',()=>{syncClock();if(currentIssue)sa
 window.addEventListener('pagehide',()=>{clock.setActive(false);if(currentIssue)save();});
 window.addEventListener('noobeye-language',()=>{renderIssueCopy();if(currentIssue){render();updateNavigation();syncClock();$('hint-copy').textContent=tr('选择一件藏品，获取提示。','Select an object for a hint.','探すものを選ぶと、ヒントが見られます。');say(tr('继续寻找吧。','Keep exploring.','続きを探してみましょう。'));renderCommunity(communityData);}});
 setInterval(syncClock,500);setInterval(()=>{if(currentIssue&&clock.active)save();},5000);
-init();
+export const gameReady=init();
+export {loadIssue};
+export function getGameState(){return currentIssue?{issueId:currentIssue.id,foundIds:[...found],selectedId:selected,hints:{...hints}}:null;}
+export function setShelfPageSize(size){if(!Number.isInteger(size)||size<1)throw new TypeError('Invalid shelf page size');SHELF_PAGE_SIZE=size;shelfPage=0;if(issues.length)renderShelfPage();}
+export function configureViewport({adaptive=false}={}){adaptiveViewport=adaptive;lastViewRatio=null;if(currentIssue){view=initialView();updateView();}}
+export function resetViewport(mode='detail'){if(currentIssue){view=mode==='overview'?fullView():initialView();updateView();}}
