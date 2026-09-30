@@ -1,10 +1,10 @@
-import { setupSensor } from './sensor.js?v=issue-024-20260929';
+import { setupSensor } from './sensor.js?v=issue-025-20260930';
 import { celebrateCompletion } from './celebration.js';
-import {targetOutline,createOutlineMark} from './target-outlines.js?v=issue-024-20260929';
-import { effect, setupAudio, setIssueMusic, startListening } from './audio.js?v=issue-024-20260929';
-import { tr, labelOf, titleOf, introOf, clueOf, setupLanguage } from './i18n.js?v=issue-024-20260929';
+import {targetOutline,createOutlineMark} from './target-outlines.js?v=issue-025-20260930';
+import { effect, setupAudio, setIssueMusic, startListening } from './audio.js?v=issue-025-20260930';
+import { tr, labelOf, titleOf, introOf, clueOf, setupLanguage } from './i18n.js?v=issue-025-20260930';
 import {setupProjectLinks} from './project.js';
-import {setupSubscriptions} from './subscriptions.js?v=issue-024-20260929';
+import {setupSubscriptions} from './subscriptions.js?v=issue-025-20260930';
 import {clearPlayRecords} from './records.js';
 import { SessionClock, formatTime } from './session.js';
 import { setupStats, startRun, finishRun, readStats } from './stats.js?v=startup-20260915';
@@ -296,7 +296,7 @@ function loadIssue(id,{navigate=false}={}){
 async function init(){
   setupLanguage();setupSubscriptions();setupAudio();setupStats();setupProjectLinks();
   try {
-    const response=await fetch('./catalog.json?v=issue-024-20260929');if(!response.ok)throw new Error('Content unavailable');
+    const response=await fetch('./catalog.json?v=issue-025-20260930');if(!response.ok)throw new Error('Content unavailable');
     const content=await response.json();issues=content.issues.sort((a,b)=>Number(b.id)-Number(a.id));
     renderShelfPage();
     let last;try{last=localStorage.getItem('noobeye:last-issue');}catch{}

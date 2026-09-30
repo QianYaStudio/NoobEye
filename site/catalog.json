@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "024",
+  "defaultIssue": "025",
   "issues": [
+    {
+      "id": "025",
+      "version": "release-v04",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "浣熊的晾衣日",
+      "english": "WASH DAY",
+      "intro": "浣熊在阳光明亮的户外洗衣院里晾起被风吹鼓的床单。沿着晾衣架、布料、洗衣盆和篮子，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/7d1bd6f65c028f929a46eaec374eb0f21f9e177bc84f464cabc77463a29861aa.webp",
+      "color": "./assets/optimized/bbf262cf1947442e2ed664aabdf66c7e127404bfd64abe8180d38a2e81620483.webp",
+      "cover": "./assets/optimized/283041762dcd794076f9032549fb39c7d6b7e9f8e9a1915943c9af3b1d4bd2cc.webp",
+      "coverWidth": 520,
+      "coverHeight": 736,
+      "targets": [
+        {
+          "id": "t08-watering-can",
+          "label": "洒水壶",
+          "image": "./assets/optimized/9d78501790e2de67f5513e9c54227a82d4a970fc75316698b48d6caccb71ce83.png",
+          "bounds": [
+            872.7192512453358,
+            931.7470755878787,
+            1159.2415089520673,
+            1099.1064249278425
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-dolphin",
+          "label": "海豚",
+          "image": "./assets/optimized/1d777e8810a1efe6463078affb3da76ef9b1ae0847172a2ff2ea9397f8b8c34c.png",
+          "bounds": [
+            784,
+            1095,
+            981.8181818181818,
+            1174
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t11-strawberry",
+          "label": "草莓",
+          "image": "./assets/optimized/19b9c99819b21b3d4e5584521df8bdf2b663af93316f45178aafff276a4ef330.png",
+          "bounds": [
+            59.801370184487254,
+            1104,
+            146.19381479578487,
+            1214.5
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-hamburger",
+          "label": "汉堡",
+          "image": "./assets/optimized/5c71e52162b85d62e83a26d418be4f07d4c466429e9a2500950f090cb26a26a9.png",
+          "bounds": [
+            368.97991451052667,
+            928.9656584653288,
+            521.5440882321141,
+            1018.3333333333336
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-television",
+          "label": "电视机",
+          "image": "./assets/optimized/ce8cfa1161899accf710cfa5168f98390a5b0de0e1c010f044431bccf741fa20.png",
+          "bounds": [
+            966.5316817189687,
+            142.15256732479915,
+            1082.1704548113219,
+            258.75658686446184
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-graduation-cap",
+          "label": "学士帽",
+          "image": "./assets/optimized/f78db4a5bd726562fa562bf281dbb39ebe4651ba57da7045cabca5ef8f379233.png",
+          "bounds": [
+            11.25,
+            823,
+            163.98822222222225,
+            952.75
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-toilet-paper-roll",
+          "label": "卷纸",
+          "image": "./assets/optimized/e84d9c924420118bb5bde5b18ea019f51fb71d2d4b0a8afd7ae08dba07c10cd3.png",
+          "bounds": [
+            148.27070364877267,
+            548.7167118916199,
+            410,
+            825
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-compass",
+          "label": "圆规",
+          "image": "./assets/optimized/a287331fbbbc2ec9142c8d1c4cf85c1c86049b1bfe4fd5386f8c0b418caf1cff.png",
+          "bounds": [
+            1130,
+            771,
+            1233,
+            906.5
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-traffic-light",
+          "label": "红绿灯",
+          "image": "./assets/optimized/f42164c813e244339737d02263b39b570c72236a7010cc9c2bc76c8ec4a2baa3.png",
+          "bounds": [
+            88,
+            495.1851765205377,
+            147,
+            682
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "024",
       "version": "release-v04",
