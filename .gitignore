@@ -3,6 +3,7 @@ __pycache__/
 .DS_Store
 Thumbs.db
 node_modules/
+/site/plugin-content-v1.json
 .wrangler/
 .env
 .dev.vars

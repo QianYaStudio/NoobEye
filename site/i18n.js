@@ -1,10 +1,11 @@
 import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-026-20261001';
 const KEY='noobeye:language';
-let saved;try{saved=localStorage.getItem(KEY);}catch{}
-const preferred=(navigator.languages?.[0]||navigator.language||'en').toLowerCase();
+let saved;try{if(typeof window!=='undefined')saved=localStorage.getItem(KEY);}catch{}
+const preferred=(typeof navigator==='undefined'?'en':navigator.languages?.[0]||navigator.language||'en').toLowerCase();
 export let language=['zh','en','ja'].includes(saved)?saved:(preferred.startsWith('zh')?'zh':preferred.startsWith('ja')?'ja':'en');
 export const tr=(zh,en,ja)=>language==='zh'?zh:language==='ja'?(ja??en):en;
-export const titleOf=issue=>tr(issue.title,issue.english.replace(/^THE /,'').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase()),titlesJa[issue.id]);
+const inLanguage=(lang,zh,en,ja)=>lang==='zh'?zh:lang==='ja'?(ja??en):en;
+export const titleOf=issue=>issue.translations?.[language]?.title??inLanguage(language,issue.title,issue.english.replace(/^THE /,'').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase()),titlesJa[issue.id]);
 const nouns={
   '披萨滚刀':'Pizza cutter','字母 A':'Letter A','蛋糕卷':'Swiss roll','饺子':'Dumpling','腋拐':'Crutch','毛毛虫':'Caterpillar','胶囊':'Capsule','螺旋桨':'Propeller','麦穗':'Wheat ear',
   '洒水壶':'Watering can','海豚':'Dolphin','草莓':'Strawberry','汉堡':'Hamburger','电视机':'Television','学士帽':'Graduation cap','卷纸':'Toilet paper roll','圆规':'Compass','红绿灯':'Traffic light',
@@ -22,7 +23,7 @@ const nouns={
   '手表':'Watch','蜡烛':'Candle','梯子':'Ladder','扇子':'Fan','弹弓':'Slingshot','画笔':'Paintbrush','铃铛':'Bell','信封':'Envelope','龙蛋':'Dragon egg','叉子':'Fork','国际象棋兵':'Chess pawn','相机':'Camera','鲸鱼':'Whale','蝙蝠':'Bat','纸飞机':'Paper airplane','瓶子':'Bottle','烟雾':'Smoke','钥匙':'Key','耙子':'Rake','砍刀':'Machete','葫芦':'Gourd','铁罐':'Tin can','手杖':'Cane','书本':'Book','小猫':'Kitten','冰淇淋':'Ice cream','山竹':'Mangosteen','萝卜':'Carrot','小刀':'Knife','羽毛':'Feather','香蕉':'Banana','手枪':'Pistol','钢笔':'Fountain pen','玩偶':'Doll','山形画框':'Mountain picture','元宝':'Gold ingot','痒痒挠':'Back scratcher','牛奶':'Milk carton','乌龟':'Turtle','晴天娃娃':'Weather doll','花簪':'Flower hairpin','橡果':'Acorn','衬衫':'Shirt','风筝':'Kite','量角器':'Protractor','灯泡':'Light bulb','哨子':'Whistle','帆船':'Sailboat','火箭':'Rocket','牙刷':'Toothbrush','羽毛扇':'Feather fan','梳子':'Comb','曲棍球杆':'Hockey stick','猫':'Cat','冰棒':'Ice pop','圆框眼镜':'Round glasses','美工刀':'Utility knife','腕表':'Wristwatch','桃子':'Peach','吐司':'Toast','蝴蝶':'Butterfly','勺子':'Spoon','调色盘':'Palette','雨伞':'Umbrella','蜗牛':'Snail','鱼':'Fish','骨头':'Bone','剪刀':'Scissors','口琴':'Harmonica','胡萝卜':'Carrot','锯子':'Saw','松果':'Pine cone','牙齿':'Tooth','路锥':'Traffic cone','蘑菇':'Mushroom','领结':'Bow tie','麦克风':'Microphone','沙漏':'Hourglass','熨斗':'Iron','小铲子':'Trowel','园艺铲':'Trowel','铲子':'Trowel','钻石':'Diamond','牛角包':'Croissant','高脚杯':'Goblet','线轴':'Thread spool','回形针':'Paperclip','八分音符':'Eighth note','袜子':'Sock','海星':'Starfish','电源插头':'Electric plug','创可贴':'Bandage','螺丝刀':'Screwdriver','回旋镖':'Boomerang','号角':'Horn','梨':'Pear','手风琴':'Accordion','放大镜':'Magnifying glass','木槌':'Mallet','束口袋':'Drawstring pouch','窗户':'Window','吹风机':'Hair dryer','小胡子':'Moustache','双筒望远镜':'Binoculars','辣椒':'Chilli pepper','钉子':'Nail','雨靴':'Rain boot'
   , '镰刀':'Sickle','盾牌':'Shield','咖啡豆':'Coffee bean','安全帽':'Hard hat','奶酪':'Cheese','对话气泡':'Speech bubble','鱼钩':'Fishing hook','花瓶':'Vase','牙膏':'Toothpaste'
 };
-export const labelOf=target=>tr(target.label,nouns[target.label]||target.labelEn||target.label,nounsJa[target.label]);
+export const labelOf=target=>target.translations?.[language]?.label??inLanguage(language,target.label,nouns[target.label]||target.labelEn||target.label,nounsJa[target.label]);
 const intros={
   '026':'A badger repairs a little sailboat by the river while a mouse holds a sail that is too large. Find nine hidden shapes among the hull, supports, toolbox and ropes along the shore.',
   '025':'A raccoon hangs a wind-filled sheet in a sunny outdoor laundry yard. Find nine hidden shapes among the drying racks, fabrics, wash basin and laundry basket.',
@@ -50,10 +51,24 @@ const intros={
 '010':'The film has not started, but night has arrived. Explore the rooftop and find eight surprises in its unexpected outlines.',
 '011':'Clay turns between the potters’ hands as afternoon light falls on the paving. Nine objects have changed direction or become part of something else.',
 '012':'Pages turn softly as the library drifts downstream. Join the otter’s journey and add nine discoveries to today’s reading.'};
-export const introOf=issue=>tr(issue.intro,intros[issue.id],introsJa[issue.id]);
-export function clueOf(target,issue){
+export const introOf=issue=>issue.translations?.[language]?.intro??inLanguage(language,issue.intro,intros[issue.id],introsJa[issue.id]);
+export function clueOf(target,issue){return target.translations?.[language]?.clue??clueInLanguage(target,issue,language);}
+function clueInLanguage(target,issue,lang){
  const b=target.bounds,x=(b[0]+b[2])/2/issue.width,y=(b[1]+b[3])/2/issue.height;
- return tr(`看看画面${y<1/3?'上方':y<2/3?'中部':'下方'}${x<1/3?'偏左':x>2/3?'偏右':''}，试着转动脑海里的形状。`,`Look in the ${y<1/3?'upper':y<2/3?'middle':'lower'} ${x<1/3?'left':x>2/3?'right':'center'} of the picture. Try rotating the shape in your mind.`,`画面の${y<1/3?'上の方':y<2/3?'中央あたり':'下の方'}${x<1/3?'、左寄り':x>2/3?'、右寄り':''}を見てみましょう。頭の中で形を回してみてください。`);
+ return inLanguage(lang,`看看画面${y<1/3?'上方':y<2/3?'中部':'下方'}${x<1/3?'偏左':x>2/3?'偏右':''}，试着转动脑海里的形状。`,`Look in the ${y<1/3?'upper':y<2/3?'middle':'lower'} ${x<1/3?'left':x>2/3?'right':'center'} of the picture. Try rotating the shape in your mind.`,`画面の${y<1/3?'上の方':y<2/3?'中央あたり':'下の方'}${x<1/3?'、左寄り':x>2/3?'、右寄り':''}を見てみましょう。頭の中で形を回してみてください。`);
+}
+// The release feed uses the same wording as the website, without a DOM or a
+// mutable language switch during publication.
+export function releaseTranslations(issue){
+ const issueCopy={},targetCopy={};
+ for(const lang of ['zh','en','ja']){
+  issueCopy[lang]={title:inLanguage(lang,issue.title,issue.english.replace(/^THE /,'').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase()),titlesJa[issue.id]),intro:inLanguage(lang,issue.intro,intros[issue.id]??issue.intro,introsJa[issue.id])};
+  for(const target of issue.targets){
+   targetCopy[target.id]??={};
+   targetCopy[target.id][lang]={label:inLanguage(lang,target.label,nouns[target.label]||target.labelEn||target.label,nounsJa[target.label]),clue:clueInLanguage(target,issue,lang)};
+  }
+ }
+ return {issue:issueCopy,targets:targetCopy};
 }
 const copy={
 creationNote:["本项目 99% 的素材、创意实现、艺术创作和代码均由 Codex 完成。", "Codex created 99% of this project’s assets, creative execution, artwork, and code."],
