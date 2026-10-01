@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "026",
+  "defaultIssue": "027",
   "issues": [
+    {
+      "id": "027",
+      "version": "release-v02",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "鼹鼠的地底邮包站",
+      "english": "ROOT MAIL",
+      "intro": "鼹鼠邮差在树根下的邮包站整理包裹，小鼠助手正把一件大包裹递到他手中。沿着树根、货架、工作台和手推车，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/a9fba912d80b2034e88425e300ef2a210c6dab20322f6158f7dc8dc31a86d455.webp",
+      "color": "./assets/optimized/472ca51d777df2de472c129d3804c3084059f5f65f7d02f1c693426a3db353e6.webp",
+      "cover": "./assets/optimized/a02f240328c9face71e87c844f064227b0fd2b926dd2d6d7eafec19d4953f2f3.webp",
+      "coverWidth": 520,
+      "coverHeight": 736,
+      "targets": [
+        {
+          "id": "t07-pan-flute",
+          "label": "排箫",
+          "image": "./assets/optimized/e60a81610bf6d7754d9a0a6f000ca224cf56f4c223843d9a77ec3a96bdd52437.png",
+          "bounds": [
+            876,
+            453.5,
+            940,
+            516
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-question-mark",
+          "label": "问号",
+          "image": "./assets/optimized/350f4cec1b88ccfeab1502375f10d84a87ac0febdfd7dd48a21b0f15090fa109.png",
+          "bounds": [
+            933.25,
+            801.0424017461874,
+            999.7750822395872,
+            905
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-avocado",
+          "label": "牛油果",
+          "image": "./assets/optimized/3c2d2190119ce4dacd272f81918877b04ef273a7759e4f750120e40ba22e4d76.png",
+          "bounds": [
+            832.75,
+            30.792950609420068,
+            889,
+            105.47670784988644
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t11-muffin",
+          "label": "麦芬蛋糕",
+          "image": "./assets/optimized/d6abb512f7d0be194d562ff924840b80345d75f6ede0388f413ad5064a9bdd2e.png",
+          "bounds": [
+            66.4,
+            972.9495849355017,
+            163.36363636363632,
+            1055
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t15-stethoscope",
+          "label": "听诊器",
+          "image": "./assets/optimized/62f13cc381b2fd55720f6f2fa1a69c70c3ae818ddbcd23202247b9ba8b205fe8.png",
+          "bounds": [
+            389.62176660043576,
+            241.7272727272727,
+            472,
+            377.3757348038686
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t12-usb-drive",
+          "label": "U盘",
+          "image": "./assets/optimized/f8d1977f1d8302910c4edb8a2d298d93ae7a0618ea024f60d0dfd13455777269.png",
+          "bounds": [
+            873,
+            219,
+            923,
+            285
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t13-pleated-skirt",
+          "label": "百褶裙",
+          "image": "./assets/optimized/5d84ba52f9481112979812d8095b051aaaa77c648d7f4f200d774ddd4ab0661e.png",
+          "bounds": [
+            351,
+            635.9166666666665,
+            469.25,
+            735.5714285714284
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-slipper",
+          "label": "拖鞋",
+          "image": "./assets/optimized/c50c295cd3ce1ec0345bb0527b03897755533208a0a2595de00d6c80d49e4611.png",
+          "bounds": [
+            191.61522824925774,
+            708.6874012536185,
+            368.05389465469233,
+            799.1964285714287
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-plunger",
+          "label": "皮搋子",
+          "image": "./assets/optimized/fe5677dc8c930698a13b3a65b5284c759f58475a4b0440cc93b6b9e87d4a3ea1.png",
+          "bounds": [
+            567,
+            105,
+            722,
+            240.5
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "026",
       "version": "release-v01",

@@ -1,10 +1,10 @@
-import { setupSensor } from './sensor.js?v=issue-026-20261001';
+import { setupSensor } from './sensor.js?v=issue-027-20261002';
 import { celebrateCompletion } from './celebration.js';
-import {targetOutline,createOutlineMark} from './target-outlines.js?v=issue-026-20261001';
-import { effect, setupAudio, setIssueMusic, startListening } from './audio.js?v=issue-026-20261001';
-import { tr, labelOf, titleOf, introOf, clueOf, setupLanguage } from './i18n.js?v=issue-026-20261001';
+import {targetOutline,createOutlineMark} from './target-outlines.js?v=issue-027-20261002';
+import { effect, setupAudio, setIssueMusic, startListening } from './audio.js?v=issue-027-20261002';
+import { tr, labelOf, titleOf, introOf, clueOf, setupLanguage } from './i18n.js?v=issue-027-20261002';
 import {setupProjectLinks} from './project.js';
-import {setupSubscriptions} from './subscriptions.js?v=issue-026-20261001';
+import {setupSubscriptions} from './subscriptions.js?v=issue-027-20261002';
 import {clearPlayRecords} from './records.js';
 import { SessionClock, formatTime } from './session.js';
 import {constrainCamera,detailCamera,overviewCamera,pointInScene} from './camera.js';
@@ -69,7 +69,8 @@ function render() {
     btn.setAttribute('aria-label', `${labelOf(target)}, ${found.has(target.id)?tr('已找到','found','発見済み'):tr('未找到','not found','未発見')}`);
   }
   $('hint').disabled = found.size === targets.length;
-  const level = selected ? Number(hints[selected] || 0) : 0;
+  const hintTarget=targets.find(t=>t.id===selected&&!found.has(t.id))||targets.find(t=>!found.has(t.id));
+  const level=Number(hints[hintTarget?.id]||0);
   $('hint').textContent = found.size === targets.length ? tr('全部发现','All found','すべて発見') : level >= 2 ? tr('揭晓这件藏品','Reveal this object','この位置を見る') : level === 1 ? tr('圈出大致区域','Show the area','近くの範囲を見る') : tr('给我一点线索','A little hint','ヒントをもらう');
   updateShelf();renderCompletion();
 }
@@ -303,7 +304,7 @@ function loadIssue(id,{navigate=false}={}){
 async function init(){
   setupLanguage();setupSubscriptions();setupAudio();setupStats();setupProjectLinks();
   try {
-    const response=await fetch('./catalog.json?v=issue-026-20261001');if(!response.ok)throw new Error('Content unavailable');
+    const response=await fetch('./catalog.json?v=issue-027-20261002');if(!response.ok)throw new Error('Content unavailable');
     const content=await response.json();issues=content.issues.sort((a,b)=>Number(b.id)-Number(a.id));
     renderShelfPage();
     let last;try{last=localStorage.getItem('noobeye:last-issue');}catch{}
