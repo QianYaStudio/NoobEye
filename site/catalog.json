@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "027",
+  "defaultIssue": "028",
   "issues": [
+    {
+      "id": "028",
+      "version": "release-v02",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "葡萄架下的丰收日",
+      "english": "GRAPE EXPECTATIONS",
+      "intro": "松鼠爬上梯子采摘成熟葡萄，兔子推车接住一篮篮收获。沿着葡萄架、藤叶、木梯和田野，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/999b89ddea851f368b05ce0b54e3c7b3c39f1868c8a98f92bea93dbd74c240e9.webp",
+      "color": "./assets/optimized/93b930b97417ea1d2a9dc3c7b5fef5ab936fa92be82248b002cb933dc90d3a75.webp",
+      "cover": "./assets/optimized/a6ed74e0a55908504feead5ccd83cbcb84f70254bcea67c13cba1338afe8c0c8.webp",
+      "coverWidth": 520,
+      "coverHeight": 736,
+      "targets": [
+        {
+          "id": "t07-french-fries",
+          "label": "薯条",
+          "image": "./assets/optimized/0818e6576f199b54d704bedc728ecfb57e77f027e3f97a2376a5c7006faed840.png",
+          "bounds": [
+            75,
+            1129,
+            158,
+            1220
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-briefcase",
+          "label": "公文包",
+          "image": "./assets/optimized/f5ecf81a5dd8f0e78c105b5f045b00dafefd663621baa7c151ef0da308e41822.png",
+          "bounds": [
+            277.75,
+            837.5,
+            367.75,
+            920.25
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-cactus",
+          "label": "仙人掌",
+          "image": "./assets/optimized/92cefd7ad75fd51318935a86a68ed9c2785c77d73fc065bfa60be94e6cc1cc22.png",
+          "bounds": [
+            173,
+            53,
+            243.27272727272725,
+            118.75
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-cogwheel",
+          "label": "齿轮",
+          "image": "./assets/optimized/e13f1f5d2a5229c097ff970d4bcf1021a387b7557dd7d3b6a77004bf5a473119.png",
+          "bounds": [
+            742.79,
+            923.79,
+            803.21,
+            984.21
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-lifebuoy",
+          "label": "救生圈",
+          "image": "./assets/optimized/47d06380c6fa5b5aaa643ababbd3e8fa7c3010ce855318af5318a003dade581a.png",
+          "bounds": [
+            558,
+            498,
+            606,
+            546
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t12-walnut",
+          "label": "核桃",
+          "image": "./assets/optimized/ce3f6fbb6d4b5fdceaea7b8a8fa0a45081713ef5d80558499ecab471115d2960.png",
+          "bounds": [
+            373.42857142857144,
+            730,
+            409.93999999999994,
+            777
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t13-price-tag",
+          "label": "吊牌",
+          "image": "./assets/optimized/a5e50a14f8673a3aefdf2e3f2264f681b3446335adfd4982c0442a88dda4b2b3.png",
+          "bounds": [
+            275.7,
+            669.75,
+            384.25,
+            711.25
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-remote-control",
+          "label": "遥控器",
+          "image": "./assets/optimized/a4f7f347dbf6562f9ae7494d4a3883a2859bebc159855de0693c70201d0f5f5a.png",
+          "bounds": [
+            879,
+            846,
+            911,
+            942
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-ampersand",
+          "label": "＆ 符号",
+          "image": "./assets/optimized/422ce27f91fca52541f327213ecbef9e59b41a9621b3e7b3d77e2902c1d7c4e5.png",
+          "bounds": [
+            1106.0748899465252,
+            209.08114797145947,
+            1169.250601905307,
+            268.975
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "027",
       "version": "release-v02",

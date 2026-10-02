@@ -1,4 +1,4 @@
-import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-027-20261002';
+import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-028-20261003';
 const KEY='noobeye:language';
 let saved;try{if(typeof window!=='undefined')saved=localStorage.getItem(KEY);}catch{}
 const preferred=(typeof navigator==='undefined'?'en':navigator.languages?.[0]||navigator.language||'en').toLowerCase();
@@ -7,6 +7,7 @@ export const tr=(zh,en,ja)=>language==='zh'?zh:language==='ja'?(ja??en):en;
 const inLanguage=(lang,zh,en,ja)=>lang==='zh'?zh:lang==='ja'?(ja??en):en;
 export const titleOf=issue=>issue.translations?.[language]?.title??inLanguage(language,issue.title,issue.english.replace(/^THE /,'').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase()),titlesJa[issue.id]);
 const nouns={
+  '薯条':'French fries','公文包':'Briefcase','仙人掌':'Cactus','齿轮':'Cogwheel','救生圈':'Lifebuoy','核桃':'Walnut','吊牌':'Price tag','遥控器':'Remote control','＆ 符号':'Ampersand',
   '排箫':'Pan flute','问号':'Question mark','牛油果':'Avocado','麦芬蛋糕':'Muffin','听诊器':'Stethoscope','U盘':'USB drive','百褶裙':'Pleated skirt','拖鞋':'Slipper','皮搋子':'Plunger',
   '披萨滚刀':'Pizza cutter','字母 A':'Letter A','蛋糕卷':'Swiss roll','饺子':'Dumpling','腋拐':'Crutch','毛毛虫':'Caterpillar','胶囊':'Capsule','螺旋桨':'Propeller','麦穗':'Wheat ear',
   '洒水壶':'Watering can','海豚':'Dolphin','草莓':'Strawberry','汉堡':'Hamburger','电视机':'Television','学士帽':'Graduation cap','卷纸':'Toilet paper roll','圆规':'Compass','红绿灯':'Traffic light',
@@ -26,6 +27,7 @@ const nouns={
 };
 export const labelOf=target=>target.translations?.[language]?.label??inLanguage(language,target.label,nouns[target.label]||target.labelEn||target.label,nounsJa[target.label]);
 const intros={
+  '028':'A squirrel reaches for ripe grapes while a rabbit brings the harvest cart. Find nine hidden shapes among the vines, leaves, ladder and vineyard.',
   '027':'A mole runs a little parcel station beneath the roots while a mouse helper hands over an oversized package. Find nine hidden shapes among the roots, shelves, workbench and cart.',
   '026':'A badger repairs a little sailboat by the river while a mouse holds a sail that is too large. Find nine hidden shapes among the hull, supports, toolbox and ropes along the shore.',
   '025':'A raccoon hangs a wind-filled sheet in a sunny outdoor laundry yard. Find nine hidden shapes among the drying racks, fabrics, wash basin and laundry basket.',
