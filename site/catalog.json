@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "028",
+  "defaultIssue": "029",
   "issues": [
+    {
+      "id": "029",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "刺猬的蘑菇野营地",
+      "english": "SMALL CAMPERS",
+      "intro": "刺猬一家在湖边的林间营地搭起黄色帐篷，准备茶点和篝火。沿着树枝、帐篷、背包和落叶，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/9a631f0f7b107c0b344daa9e12a20455b67f1bc8f2e83a82ed47bdbc8d472833.webp",
+      "color": "./assets/optimized/194612604a3a534b759f6e9af391df2065a35418827fae0bd2ee17a43f41dc0e.webp",
+      "cover": "./assets/optimized/c2d6100c2a10cf34cf08e2a09adbf1d4395e16e3d929132dbbe9e6ce8316e154.webp",
+      "coverWidth": 520,
+      "coverHeight": 736,
+      "targets": [
+        {
+          "id": "t05-flame",
+          "label": "火焰",
+          "image": "./assets/optimized/6b144b098f6ac92e65fd6e2c6497e73b727ab7e20f84f73dfad9c86a4e9231c7.png",
+          "bounds": [
+            1107.683673469388,
+            96,
+            1145.8719058117229,
+            169
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-carabiner",
+          "label": "登山扣",
+          "image": "./assets/optimized/e93685745b6fe0e449b5acdbe77ac931b488c969050a32810f530863463896fa.png",
+          "bounds": [
+            892.25,
+            744.25,
+            960.25,
+            785.25
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-saxophone",
+          "label": "萨克斯管",
+          "image": "./assets/optimized/c9682d108a0df64a309e4072750468f5b758e1c88bb905164e07a49628156c8e.png",
+          "bounds": [
+            821,
+            1014,
+            891.25,
+            1137.1371232968302
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-watermelon-slice",
+          "label": "西瓜片",
+          "image": "./assets/optimized/ca00eb3edde17802bcd60a19008c8dcf038357b8ec669fd39a9bead918dce98d.png",
+          "bounds": [
+            14.638888888888891,
+            364.8257402057094,
+            209.86111111111114,
+            445.75
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-hair-clipper",
+          "label": "电推剪",
+          "image": "./assets/optimized/d22cc48d3974b4f21338db58475eddd35a60317b67c25c51c7a39409260f4ab5.png",
+          "bounds": [
+            1046.414013617282,
+            721.6526666666667,
+            1094.893641708724,
+            792.95
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-lemon",
+          "label": "柠檬",
+          "image": "./assets/optimized/23429f481ed40c83c605e5e529144f85548f2dfd80d6bb8884818623d98872e4.png",
+          "bounds": [
+            304.91666666666663,
+            1068.0976750475463,
+            369.27272727272725,
+            1103.1650523799951
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-table-tennis-bat",
+          "label": "乒乓球拍",
+          "image": "./assets/optimized/54f45da1b04b6987f33e677c48640c9e42a9948375e9fd44ff4e4417186169bb.png",
+          "bounds": [
+            1177.666666666667,
+            881.7488303660538,
+            1240,
+            975.1666666666667
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-hashtag",
+          "label": "井号",
+          "image": "./assets/optimized/5646f82bcef5465326b7469ff071e073444e90a8363701c686266b4e124e0adf.png",
+          "bounds": [
+            920,
+            881,
+            1031,
+            956
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-antler",
+          "label": "鹿角",
+          "image": "./assets/optimized/f4932cb9fd9ba7785b31094086be5e1d60bb8f596ff612a929a5461158049fa3.png",
+          "bounds": [
+            248.75,
+            1132,
+            366.25,
+            1186.25
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "028",
       "version": "release-v02",
