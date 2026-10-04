@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "029",
+  "defaultIssue": "030",
   "issues": [
+    {
+      "id": "030",
+      "version": "release-v02",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "海边的贝壳乐器工坊",
+      "english": "SHELL WE PLAY?",
+      "intro": "海獭在海边的贝壳乐器工坊制作风铃，鹈鹕认真试吹海螺。沿着棚布、风铃、工具和沙岸，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/d75fa45ca9c742eb59ebc3c9e29506f88625b2831fa3fec00bdb3f548af832c0.webp",
+      "color": "./assets/optimized/283ec634c5877e9f8a01b0c5dd531663e47cb1b75c9fd6418b409f13a2d1b66b.webp",
+      "cover": "./assets/optimized/dcc6bc9c5b65ab4134e5c13546a11e8ef222bb21c580d0c8333db15764b7cfed.webp",
+      "coverWidth": 520,
+      "coverHeight": 736,
+      "targets": [
+        {
+          "id": "t12-seal",
+          "label": "海豹",
+          "image": "./assets/optimized/6342f28bf70ca8d78aeb05f48a59fede43a454493dfabc0352cbf457280e54dc.png",
+          "bounds": [
+            720,
+            1100,
+            903,
+            1210.5652173913043
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t13-arcade-joystick",
+          "label": "游戏摇杆",
+          "image": "./assets/optimized/66bc6d3ebc019097f750e3d9150b09a9161127fd46b3e619965f9effc77d8d10.png",
+          "bounds": [
+            815.5,
+            745,
+            871.5,
+            853.5
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-maraca",
+          "label": "沙锤",
+          "image": "./assets/optimized/3e594fa186e5a879686832898cc856daf684e2c8fa052ce01320cba6e592a2a7.png",
+          "bounds": [
+            648.6421020145523,
+            400.25,
+            676.4489949563492,
+            470.25
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-fist",
+          "label": "拳头",
+          "image": "./assets/optimized/03780f9e39209a7f117587d870d05abb20c457f32c4d9b21492558eae9354bc8.png",
+          "bounds": [
+            1116.75,
+            129.1563282218637,
+            1191.2680282813476,
+            193.75
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-rainbow",
+          "label": "彩虹",
+          "image": "./assets/optimized/5118f2bd0bd64951bedc263248be5ec574aa0a2eb383dcbc6f2732fd9a3decee.png",
+          "bounds": [
+            1092.2249145942706,
+            916.881,
+            1234.879,
+            1008.6588407364562
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-postage-stamp",
+          "label": "邮票",
+          "image": "./assets/optimized/cf64a16902e88367bd57ba9c1d90c3733c4552e02326e16f7f1896c91e8ae19e.png",
+          "bounds": [
+            495,
+            533.76,
+            578.24,
+            619
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-pendant-light",
+          "label": "吊灯",
+          "image": "./assets/optimized/6b08ad042d8295d0b4a336ff9bb7bcee408c1f0332f8b56c813ef572eb3295f9.png",
+          "bounds": [
+            724.0534489132283,
+            269.6775418927173,
+            778.8522222222224,
+            364.53850308221337
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-chicken-drumstick",
+          "label": "鸡腿",
+          "image": "./assets/optimized/442c6d8e1b4a1025b0e0a06214c573f100218cdd1ce0c00485828c2fb5a846de.png",
+          "bounds": [
+            353.4315301329756,
+            891.5,
+            504.8000000000001,
+            946
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-number-four",
+          "label": "数字 4",
+          "image": "./assets/optimized/92f0473f3d07094dcdd0e20dbdbe508a6305c6e1c25ee29a8669f584f7e6449e.png",
+          "bounds": [
+            251,
+            804.25,
+            302,
+            876
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "029",
       "version": "release-v01",

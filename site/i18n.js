@@ -1,4 +1,4 @@
-import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-029-20261004';
+import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-030-20261005';
 const KEY='noobeye:language';
 let saved;try{if(typeof window!=='undefined')saved=localStorage.getItem(KEY);}catch{}
 const preferred=(typeof navigator==='undefined'?'en':navigator.languages?.[0]||navigator.language||'en').toLowerCase();
@@ -21,6 +21,7 @@ const nouns={
 '剃须刀':'Safety razor','包子':'Steamed bun','火柴':'Matchstick','拉链':'Zipper','国际象棋马':'Chess knight','望远镜':'Telescope','滑板':'Skateboard','安抚奶嘴':'Pacifier','虾':'Shrimp',
 '平底锅':'Frying pan','多米诺骨牌':'Domino','头戴式耳机':'Headphones','领带':'Necktie','顶针':'Thimble','扫帚':'Broom','音叉':'Tuning fork','漏斗':'Funnel','蜂蜜棒':'Honey dipper',
 '扳手':'Wrench','糖果':'Candy','番茄':'Tomato','磁铁':'Magnet','安全别针':'Safety pin','螺旋开瓶器':'Corkscrew','热气球':'Hot-air balloon','棒球棒':'Baseball bat','贝壳':'Seashell',
+ '海豹':'Seal','游戏摇杆':'Arcade joystick','沙锤':'Maraca','拳头':'Fist','彩虹':'Rainbow','邮票':'Postage stamp','吊灯':'Pendant light','鸡腿':'Chicken drumstick','数字 4':'Number 4',
  '爱心':'Heart','城堡':'Castle','手电筒':'Flashlight','温度计':'Thermometer','樱桃':'Cherries','班卓琴':'Banjo',
  '手铲':'Trowel','手锯':'Hand saw','牛角面包':'Croissant','话筒':'Microphone',
   '手表':'Watch','蜡烛':'Candle','梯子':'Ladder','扇子':'Fan','弹弓':'Slingshot','画笔':'Paintbrush','铃铛':'Bell','信封':'Envelope','龙蛋':'Dragon egg','叉子':'Fork','国际象棋兵':'Chess pawn','相机':'Camera','鲸鱼':'Whale','蝙蝠':'Bat','纸飞机':'Paper airplane','瓶子':'Bottle','烟雾':'Smoke','钥匙':'Key','耙子':'Rake','砍刀':'Machete','葫芦':'Gourd','铁罐':'Tin can','手杖':'Cane','书本':'Book','小猫':'Kitten','冰淇淋':'Ice cream','山竹':'Mangosteen','萝卜':'Carrot','小刀':'Knife','羽毛':'Feather','香蕉':'Banana','手枪':'Pistol','钢笔':'Fountain pen','玩偶':'Doll','山形画框':'Mountain picture','元宝':'Gold ingot','痒痒挠':'Back scratcher','牛奶':'Milk carton','乌龟':'Turtle','晴天娃娃':'Weather doll','花簪':'Flower hairpin','橡果':'Acorn','衬衫':'Shirt','风筝':'Kite','量角器':'Protractor','灯泡':'Light bulb','哨子':'Whistle','帆船':'Sailboat','火箭':'Rocket','牙刷':'Toothbrush','羽毛扇':'Feather fan','梳子':'Comb','曲棍球杆':'Hockey stick','猫':'Cat','冰棒':'Ice pop','圆框眼镜':'Round glasses','美工刀':'Utility knife','腕表':'Wristwatch','桃子':'Peach','吐司':'Toast','蝴蝶':'Butterfly','勺子':'Spoon','调色盘':'Palette','雨伞':'Umbrella','蜗牛':'Snail','鱼':'Fish','骨头':'Bone','剪刀':'Scissors','口琴':'Harmonica','胡萝卜':'Carrot','锯子':'Saw','松果':'Pine cone','牙齿':'Tooth','路锥':'Traffic cone','蘑菇':'Mushroom','领结':'Bow tie','麦克风':'Microphone','沙漏':'Hourglass','熨斗':'Iron','小铲子':'Trowel','园艺铲':'Trowel','铲子':'Trowel','钻石':'Diamond','牛角包':'Croissant','高脚杯':'Goblet','线轴':'Thread spool','回形针':'Paperclip','八分音符':'Eighth note','袜子':'Sock','海星':'Starfish','电源插头':'Electric plug','创可贴':'Bandage','螺丝刀':'Screwdriver','回旋镖':'Boomerang','号角':'Horn','梨':'Pear','手风琴':'Accordion','放大镜':'Magnifying glass','木槌':'Mallet','束口袋':'Drawstring pouch','窗户':'Window','吹风机':'Hair dryer','小胡子':'Moustache','双筒望远镜':'Binoculars','辣椒':'Chilli pepper','钉子':'Nail','雨靴':'Rain boot'
@@ -28,6 +29,7 @@ const nouns={
 };
 export const labelOf=target=>target.translations?.[language]?.label??inLanguage(language,target.label,nouns[target.label]||target.labelEn||target.label,nounsJa[target.label]);
 const intros={
+  '030':'A sea otter makes shell instruments in a seaside workshop while a pelican seriously tries a conch shell. Find nine hidden shapes among the awning, chimes, tools and beach.',
   '029':'A hedgehog family sets up a yellow tent beside the lake, with tea and a campfire ready for the evening. Find nine hidden shapes among the branches, tent, backpacks and fallen leaves.',
   '028':'A squirrel reaches for ripe grapes while a rabbit brings the harvest cart. Find nine hidden shapes among the vines, leaves, ladder and vineyard.',
   '027':'A mole runs a little parcel station beneath the roots while a mouse helper hands over an oversized package. Find nine hidden shapes among the roots, shelves, workbench and cart.',
