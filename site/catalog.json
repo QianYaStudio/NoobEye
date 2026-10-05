@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "030",
+  "defaultIssue": "031",
   "issues": [
+    {
+      "id": "031",
+      "version": "release-v04",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "兔子的屋顶染布坊",
+      "english": "A Breezy Dye Day",
+      "intro": "兔子母子在屋顶的染布坊合作晾晒布料，轻风把长布吹起。沿着烟囱、木架、染缸和屋顶，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/1625f0970b3c0a894d11112567eb4a8c6728ffee1df6b968b14cc7b91816602e.webp",
+      "color": "./assets/optimized/7e48d9ee098c5876015273fd9b86bed0e7b78b45715c838f73cd4877567742dd.webp",
+      "cover": "./assets/optimized/e797dfa902a7f75d48082ad3615853b8a376439b7211b5aaf4f1820c7be3151f.webp",
+      "coverWidth": 520,
+      "coverHeight": 736,
+      "targets": [
+        {
+          "id": "t16-smoking-pipe",
+          "label": "烟斗",
+          "image": "./assets/optimized/b9269967fb8b9c1a9c7eedee3dead0bd93c7000224a8cd0dc576522ad2609257.png",
+          "bounds": [
+            962.75,
+            1054.75,
+            1007.2982487939843,
+            1168.2765184804587
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-computer-mouse",
+          "label": "电脑鼠标",
+          "image": "./assets/optimized/ba32677f68db71f60159350c9b185844ba0bc6dc9987d5e21e4f08fe5c5728ff.png",
+          "bounds": [
+            758,
+            718.7142857142857,
+            811,
+            791.0831626545363
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t12-bottle-opener",
+          "label": "开瓶器",
+          "image": "./assets/optimized/79ef2faaf858fbcaabf38d279c3814e80496fb78f6db7d6cb5d88a353f6a0c01.png",
+          "bounds": [
+            329.44948163372106,
+            105,
+            371.0833333333333,
+            210.0952688966726
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t15-triangle-sandwich",
+          "label": "三角三明治",
+          "image": "./assets/optimized/2cb744bde4e95b5395d81ff9bc04068832134a42d29bf33274c0105853fff851.png",
+          "bounds": [
+            975,
+            853.5,
+            1189,
+            956
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-turnip",
+          "label": "芜菁",
+          "image": "./assets/optimized/1d264818bb0ff897d4384acbb93f22ef4308601bdfcb3891e99bfede9369362c.png",
+          "bounds": [
+            95.84753613440753,
+            1089,
+            177.24147296920938,
+            1222
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-gecko",
+          "label": "壁虎",
+          "image": "./assets/optimized/e91d0685e5a6ebc23828b33b76226c3fef19ce41dd5413f98b563b39a1d280b7.png",
+          "bounds": [
+            931,
+            675,
+            1021,
+            749
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-parachute",
+          "label": "降落伞",
+          "image": "./assets/optimized/ea5cdf36c2ae6b2986b7629052cab44cb3c68271a1a51877d8ca683d7332600f.png",
+          "bounds": [
+            116,
+            39.95578005022154,
+            237,
+            150
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t13-hedgehog",
+          "label": "刺猬",
+          "image": "./assets/optimized/1dc88a0e2535274838ba6f860c1cab1c17c34a8c5382d0d4bf57885f45d06ef0.png",
+          "bounds": [
+            440.5058246937836,
+            1025.134,
+            504.446,
+            1102.068
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t11-shorts",
+          "label": "短裤",
+          "image": "./assets/optimized/9f0914055f507d5d2e0fc141b00ab466d31f4d7d79200d69b203d624d4cd37c6.png",
+          "bounds": [
+            915,
+            820,
+            1000,
+            891
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "030",
       "version": "release-v02",
