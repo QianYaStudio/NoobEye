@@ -1,4 +1,4 @@
-import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-031-20261005';
+import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-032-20261005';
 const KEY='noobeye:language';
 let saved;try{if(typeof window!=='undefined')saved=localStorage.getItem(KEY);}catch{}
 const preferred=(typeof navigator==='undefined'?'en':navigator.languages?.[0]||navigator.language||'en').toLowerCase();
@@ -7,6 +7,7 @@ export const tr=(zh,en,ja)=>language==='zh'?zh:language==='ja'?(ja??en):en;
 const inLanguage=(lang,zh,en,ja)=>lang==='zh'?zh:lang==='ja'?(ja??en):en;
 export const titleOf=issue=>issue.translations?.[language]?.title??inLanguage(language,issue.title,issue.english.replace(/^THE /,'').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase()),titlesJa[issue.id]);
 const nouns={
+  '弓':'Bow','水晶球':'Crystal ball','西兰花':'Broccoli','狐狸脸':'Fox face','星环行星':'Ringed planet','卷轴':'Scroll','幽灵':'Ghost','国际象棋·象':'Chess bishop','巫师帽':'Wizard hat',
   '烟斗':'Smoking pipe','电脑鼠标':'Computer mouse','开瓶器':'Bottle opener','三角三明治':'Triangle sandwich','芜菁':'Turnip','壁虎':'Gecko','降落伞':'Parachute','刺猬':'Hedgehog','短裤':'Shorts',
   '火焰':'Flame','登山扣':'Carabiner','萨克斯管':'Saxophone','西瓜片':'Watermelon slice','电推剪':'Hair clipper','柠檬':'Lemon','乒乓球拍':'Table tennis bat','井号':'Hashtag','鹿角':'Antler',
   '薯条':'French fries','公文包':'Briefcase','仙人掌':'Cactus','齿轮':'Cogwheel','救生圈':'Lifebuoy','核桃':'Walnut','吊牌':'Price tag','遥控器':'Remote control','＆ 符号':'Ampersand',
@@ -30,6 +31,7 @@ const nouns={
 };
 export const labelOf=target=>target.translations?.[language]?.label??inLanguage(language,target.label,nouns[target.label]||target.labelEn||target.label,nounsJa[target.label]);
 const intros={
+  '032':'A leaf-sailed ferry docks among giant trees while travelers tuck clouds back into their baskets and a stone beast naps below. Find nine hidden shapes among the trees, ferry, dock and clouds.',
   '031':'A rabbit family works together at a rooftop dye workshop while a breeze lifts long cloth. Find nine hidden shapes among the chimney, wooden racks, dye vats and rooftop.',
   '030':'A sea otter makes shell instruments in a seaside workshop while a pelican seriously tries a conch shell. Find nine hidden shapes among the awning, chimes, tools and beach.',
   '029':'A hedgehog family sets up a yellow tent beside the lake, with tea and a campfire ready for the evening. Find nine hidden shapes among the branches, tent, backpacks and fallen leaves.',
