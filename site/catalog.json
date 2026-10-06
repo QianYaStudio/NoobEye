@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "033",
+  "defaultIssue": "034",
   "issues": [
+    {
+      "id": "034",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 雷云梳毛日",
+      "english": "DIDIDO · A Brush with Thunder",
+      "intro": "森林精灵用大梳子给雷云梳毛，水獭在树枝上用陶罐接住雨水。沿着树冠、藤叶、绳索和衣物，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/c42d1b64d69c029e22b244756728d6cda7e813dd40cb85d5e7854012e5b75840.webp",
+      "color": "./assets/optimized/03f91bb4abde5712320dc5d72a883c39caf8c1fe067054524a9d91c4d75d4090.webp",
+      "cover": "./assets/optimized/d71c50e162a757dc530371b3fd874fd907250f9e7957fb4448bf528fbd6de3fe.webp",
+      "coverWidth": 520,
+      "coverHeight": 736,
+      "targets": [
+        {
+          "id": "t12-trestle-table",
+          "label": "木桌",
+          "image": "./assets/optimized/f074c510376e2207c488d78087c31c45d0ab7b530cb61055b33b2fa64ec4f216.png",
+          "bounds": [
+            97,
+            107.22222222222221,
+            231,
+            170.8
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-genie-lamp",
+          "label": "神灯",
+          "image": "./assets/optimized/c9ad6c4e8592a58bf9a5792c60c1660cb9380aeca33b10a2562734ea6ee3314b.png",
+          "bounds": [
+            442.9166666666666,
+            811.75,
+            558.25,
+            859
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-tornado",
+          "label": "龙卷风",
+          "image": "./assets/optimized/927290c786a0f15d45026b49097cc65b3758552f2f30293a3d1cf2bb0f37f29a.png",
+          "bounds": [
+            1104.0632601205562,
+            47.619085728659485,
+            1174.763,
+            101.72316315446447
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-bikini-top",
+          "label": "比基尼上衣",
+          "image": "./assets/optimized/07e53ece159df88ea97563f8ae1fa68f5ef7f7225efdf12eaec2c6ac535ea91b.png",
+          "bounds": [
+            930,
+            673,
+            1022,
+            726.8046688662517
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-asparagus",
+          "label": "芦笋",
+          "image": "./assets/optimized/29fe1323b52301dca12cfdd1f7033b8e9b3d895e41f0bc24f384bde19d04f0de.png",
+          "bounds": [
+            254.771,
+            332.841,
+            293.458004045605,
+            404.26222467365324
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-unicorn-head",
+          "label": "独角兽头像",
+          "image": "./assets/optimized/c3f6c47582a7c2c12922adb9c2375d1ca9b26ec2b60a0010dd0d2fa974ab868f.png",
+          "bounds": [
+            875,
+            1049,
+            940.235294117647,
+            1143.7770655124314
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-artichoke",
+          "label": "洋蓟",
+          "image": "./assets/optimized/bdfc9f310de62b60623453778f223bec0330f603286696a93e5e72be49415923.png",
+          "bounds": [
+            1078.5216296043657,
+            131.721,
+            1141.2659421311125,
+            208.8937234678625
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-stirrup",
+          "label": "马镫",
+          "image": "./assets/optimized/5677ea39fa14f8b22b0daed92c6af951edb29364748df5cb1b32909b71247d5c.png",
+          "bounds": [
+            410.33333333333337,
+            685.5,
+            445.2924620292847,
+            746
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-cicada",
+          "label": "蝉",
+          "image": "./assets/optimized/491cb3b73e136f1751e9e056daa1d71c91ffa179d7a8a497103aafd5b36ce9b0.png",
+          "bounds": [
+            705.3370009199584,
+            1043.1661412389467,
+            771,
+            1118
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "033",
       "version": "release-v01",
