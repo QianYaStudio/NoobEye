@@ -1,4 +1,4 @@
-import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-033-20261006';
+import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-033-20261006b';
 const KEY='noobeye:language';
 let saved;try{if(typeof window!=='undefined')saved=localStorage.getItem(KEY);}catch{}
 const preferred=(typeof navigator==='undefined'?'en':navigator.languages?.[0]||navigator.language||'en').toLowerCase();
