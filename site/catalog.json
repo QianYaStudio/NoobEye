@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "032",
+  "defaultIssue": "033",
   "issues": [
+    {
+      "id": "033",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 倒流的月泉",
+      "english": "DIDIDO · The Upward Moonwell",
+      "intro": "泉水从树根间的水池向上流入悬空的花冠，森林精灵在水生灵身旁收集月露。沿着花瓣、水流、树根和池岸，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/87b99521e29d47afb50d45f938de787cec210a840c7e6e7a7e5b51ccbc2ff168.webp",
+      "color": "./assets/optimized/8acb1bdb1a30186e66b7069a9142e2ba5fab6df3de32421966fcc757c76f3752.webp",
+      "cover": "./assets/optimized/5f7a98a9b4c20f85d2c2ded8daf6b0aeecbe1f38a47c730ec57efbafdc48d716.webp",
+      "coverWidth": 520,
+      "coverHeight": 736,
+      "targets": [
+        {
+          "id": "t13-octopus",
+          "label": "章鱼",
+          "image": "./assets/optimized/16c5ab75493c3a22e37aaa9d8e502e1d270a2e1a772ed2548ba723f58fb62759.png",
+          "bounds": [
+            326.9552247115271,
+            726,
+            398.69870300389624,
+            780.436083290516
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-airship",
+          "label": "飞艇",
+          "image": "./assets/optimized/e71e8a1686e57d828916bea3d75e0eed124d77abe77ccba2470d93ba8865c035.png",
+          "bounds": [
+            876,
+            204.76070831245224,
+            1058.8909090909092,
+            298
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-sushi",
+          "label": "握寿司",
+          "image": "./assets/optimized/685ac668e4427ff16c75ce5516296665c7997e35182646032600365377a772dd.png",
+          "bounds": [
+            369.75,
+            504,
+            449,
+            540.7777777777778
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-spider",
+          "label": "蜘蛛",
+          "image": "./assets/optimized/f535738790087f0c12159d59a3b225699a24109721829baf2c1667ba3eb940e5.png",
+          "bounds": [
+            447,
+            973,
+            665,
+            1059
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-wifi",
+          "label": "Wi-Fi",
+          "image": "./assets/optimized/7637933eed7d6fd0fb876de7ab9ca2cf4734b52e1185e304fa0a2aeca3398e6c.png",
+          "bounds": [
+            380,
+            896.6,
+            425,
+            927.5
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-penguin",
+          "label": "企鹅",
+          "image": "./assets/optimized/154c665b2afd5cbd93cb70028fe8d387e2811d6a95af4cbdb05c84d9f7d34222.png",
+          "bounds": [
+            52,
+            405,
+            98,
+            490
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-conch",
+          "label": "海螺",
+          "image": "./assets/optimized/11b4516e69e933da9af3304c56b3b1b8a64b5afb5480707281881bf7bc7f81be.png",
+          "bounds": [
+            425.33333333333337,
+            100,
+            477,
+            179
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-drum",
+          "label": "小鼓",
+          "image": "./assets/optimized/29e5adb8cad48c2022af1303a4abbdccf72ee4ed403d3ed828ce4484fa3329fc.png",
+          "bounds": [
+            1135.9895345985856,
+            673.2233047033632,
+            1205.0104654014146,
+            706.5
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-trident",
+          "label": "三叉戟",
+          "image": "./assets/optimized/9d9f3a6097b38811aab24b96b950ba09083337a245a064dd01125650bbff3f14.png",
+          "bounds": [
+            781.2057713659401,
+            729,
+            859,
+            822.5
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "032",
       "version": "release-v02",

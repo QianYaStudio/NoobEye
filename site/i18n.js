@@ -1,4 +1,4 @@
-import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-032-20261005';
+import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-033-20261006';
 const KEY='noobeye:language';
 let saved;try{if(typeof window!=='undefined')saved=localStorage.getItem(KEY);}catch{}
 const preferred=(typeof navigator==='undefined'?'en':navigator.languages?.[0]||navigator.language||'en').toLowerCase();
@@ -31,6 +31,7 @@ const nouns={
 };
 export const labelOf=target=>target.translations?.[language]?.label??inLanguage(language,target.label,nouns[target.label]||target.labelEn||target.label,nounsJa[target.label]);
 const intros={
+  '033':'Water rises from a pool among the roots into a floating flower while forest sprites gather moondew beside a gentle water creature. Find nine hidden shapes among the petals, stream, roots and shore.',
   '032':'A leaf-sailed ferry docks among giant trees while travelers tuck clouds back into their baskets and a stone beast naps below. Find nine hidden shapes among the trees, ferry, dock and clouds.',
   '031':'A rabbit family works together at a rooftop dye workshop while a breeze lifts long cloth. Find nine hidden shapes among the chimney, wooden racks, dye vats and rooftop.',
   '030':'A sea otter makes shell instruments in a seaside workshop while a pelican seriously tries a conch shell. Find nine hidden shapes among the awning, chimes, tools and beach.',
@@ -112,3 +113,5 @@ export function setupLanguage(){
  const control=document.getElementById('language-toggle');if(control)control.innerHTML='<option value="zh">中文</option><option value="en">English</option><option value="ja">日本語</option>';
  applyLanguage();control?.addEventListener('change',e=>{if(!['zh','en','ja'].includes(e.target.value))return;language=e.target.value;try{localStorage.setItem(KEY,language);}catch{}applyLanguage();window.dispatchEvent(new Event('noobeye-language'));});
 }
+
+Object.assign(nouns,{'章鱼':'Octopus','飞艇':'Airship','饭团寿司':'Sushi','蜘蛛':'Spider','Wi-Fi':'Wi-Fi','企鹅':'Penguin','海螺':'Conch','小鼓':'Drum','三叉戟':'Trident'});

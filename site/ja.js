@@ -59,3 +59,9 @@ export const copyJa={
 creationNote:"本プロジェクトの素材、アイデアの実現、アート制作、コードの99%をCodexが手がけました。",
 clearRecords:'記録を消す',clearTitle:'プレイ記録を消去',clearDescription:'このブラウザーの進み具合、ヒント、時間、自己ベストを消去します。言語・音量設定とオンラインの累計は残ります。',clearCurrent:'この号を消去',clearAll:'すべての号を消去',clearCancel:'キャンセル',
 skip:'ゲームへ進む',mast:'FindPuzzle · 遊べるもの探しマガジン',archiveLink:'バックナンバー',coverKicker:'いつもの景色に、新しい発見',coverDescription:'少しゆっくり、絵の中を目で散歩しませんか。どのページにも、立ち止まりたくなる小さな世界があります。',enter:'探し始める・音楽つき',closer:'もう少し、近くで。',ticket:'好奇心の入場券',ticker:'もう一度見ると、小さな驚きが。　·　好奇心の行き先を見つけよう。　·　もう一度、見てみよう。',editor:'編集だより',editorTitle:'見慣れた場所に、別の形が隠れている。',collection:'バックナンバー',collectionTitle:'好きな世界を選んで、入ってみよう。',swipe:'左右にスワイプして選ぶ',prev:'前の号',next:'次の号',shelf:'一覧へ戻る',found:'発見',time:'探した時間',track:'曲',defaultTrack:'標準・Echoes',volume:'音量',color:'カラー',line:'線画',fit:'全体',canvasTip:'タップで発見・拡大して観察・ドラッグで移動',gestures:'ホイールやピンチで拡大、ドラッグで移動。キーボード：＋ − で拡大縮小、矢印で移動、H でヒント。',findTitle:'探すもの',findIntro:'向きにとらわれず、形を覚えましょう。ヒントが必要なときは、探したいものを選んでください。',autoSave:'進み具合を自動保存',restart:'もう一度探す',finished:'すべて発見',completeTitle:'全部、見つけましたね。',share:'この号のリンクをコピー',footerLine:'好奇心の行き先を見つけよう。',footerNote:'遊べる、独立系もの探しマガジン',credits:'クレジットとライセンス',resetTitle:'この号を最初から探しますか？',resetCopy:'今回の進み具合と時間をリセットします。自己ベストは残ります。',cancel:'続きから探す',confirm:'最初から始める',loading:'画像を読み込み中…',pause:'一時停止中'};
+
+titlesJa['033']='DIDIDO・逆さに流れる月の泉';
+introsJa['033']='木の根の間の池から水が空中の花へと流れ上がり、森の精霊たちは穏やかな水の生き物のそばで月のしずくを集めています。花びらや水流、木の根、池の岸に隠れた九つの形を探しましょう。';
+Object.assign(nounsJa,{'章鱼':'タコ','飞艇':'飛行船','寿司':'寿司','蜘蛛':'クモ','Wi-Fi':'Wi-Fi','企鹅':'ペンギン','海螺':'ほら貝','鼓':'太鼓','三叉戟':'三叉槍'});
+
+Object.assign(nounsJa,{'饭团寿司':'寿司','小鼓':'太鼓'});
