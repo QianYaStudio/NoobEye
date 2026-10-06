@@ -114,4 +114,4 @@ export function setupLanguage(){
  applyLanguage();control?.addEventListener('change',e=>{if(!['zh','en','ja'].includes(e.target.value))return;language=e.target.value;try{localStorage.setItem(KEY,language);}catch{}applyLanguage();window.dispatchEvent(new Event('noobeye-language'));});
 }
 
-Object.assign(nouns,{'章鱼':'Octopus','飞艇':'Airship','饭团寿司':'Sushi','蜘蛛':'Spider','Wi-Fi':'Wi-Fi','企鹅':'Penguin','海螺':'Conch','小鼓':'Drum','三叉戟':'Trident'});
+Object.assign(nouns,{'章鱼':'Octopus','飞艇':'Airship','握寿司':'Sushi','蜘蛛':'Spider','Wi-Fi':'Wi-Fi','企鹅':'Penguin','海螺':'Conch','小鼓':'Drum','三叉戟':'Trident'});
