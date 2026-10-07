@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "035",
+  "defaultIssue": "036",
   "issues": [
+    {
+      "id": "036",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 失重的遗迹站厅",
+      "english": "DIDIDO · The Weightless Station",
+      "intro": "古老的魔法站厅仍在运行，悬浮台阶通向圆形传送门，搬运魔偶牵住漂浮的行李。沿着石柱、悬梯、衣物和行李，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/18cbb52f810b76b1e5cce858175d4bf7cc8bb2babc88a8d66fd9e5e2c248dab0.webp",
+      "color": "./assets/optimized/cfa80031800f63d829b006828922a52f55875370aa800e7bbf94f78e25c668a0.webp",
+      "cover": "./assets/optimized/b38e1eb723790bd1916fc93d955101bb936413c92ff6bd775cf610f9c498fc5d.webp",
+      "coverWidth": 520,
+      "coverHeight": 368,
+      "targets": [
+        {
+          "id": "t01-faucet",
+          "label": "水龙头",
+          "image": "./assets/optimized/50059fbcf6b19284082f654b0c0106ab8f313413f196639d49b877f6eb29a25d.png",
+          "bounds": [
+            534.25,
+            675.1405448347919,
+            627.4732142857143,
+            834.25
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-camera-aperture",
+          "label": "相机光圈",
+          "image": "./assets/optimized/88fc3708d5db62113e683df0904d5191cbf9a5ee30a0bca59cac665f7fd2dfd1.png",
+          "bounds": [
+            351,
+            62.74,
+            387,
+            101.26
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-letter-s",
+          "label": "字母 S",
+          "image": "./assets/optimized/656a7639f1919cb4ffd7eaa43c3e00645d08db721db83ecab0df2eb1c8e9040f.png",
+          "bounds": [
+            134.50962886994364,
+            542.75,
+            230.75,
+            657.4318291102253
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t11-measuring-tape",
+          "label": "卷尺",
+          "image": "./assets/optimized/5ac59058da277c06c6e4ec496d799c5855d73d1b5405c63072cde1ba92fce2b2.png",
+          "bounds": [
+            377.75,
+            920.246163584189,
+            512.4928032682251,
+            989
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t12-letter-t",
+          "label": "字母 T",
+          "image": "./assets/optimized/31acff6e1a18b286f6484293ace02bf4104ce373db79be2bbde849e2f49ad2fc.png",
+          "bounds": [
+            797.25,
+            580.75,
+            860.25,
+            612.75
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-top-hat",
+          "label": "礼帽",
+          "image": "./assets/optimized/1ad9359d5833c06b9037896e65d079449654f78b5e2ac5e0cc3433478924e0af.png",
+          "bounds": [
+            1053.753846153846,
+            634.0841836734694,
+            1181.246153846154,
+            713
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-soccer-ball",
+          "label": "足球",
+          "image": "./assets/optimized/1477c16dd66c0ecbd98c33a2d44380043e165810444ba7a6edd6754ca158c706.png",
+          "bounds": [
+            63.61953082694687,
+            111.95807800165399,
+            140.75307985528943,
+            190.827156879067
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-salt-shaker",
+          "label": "盐罐",
+          "image": "./assets/optimized/402176f2785cd31c0cf0146b68a1e04df2efa5b2750dac62c1bffaf65b1adec8.png",
+          "bounds": [
+            932.75,
+            934.6297855975245,
+            988.4415068891135,
+            1004.1634615384615
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-magic-wand",
+          "label": "魔杖",
+          "image": "./assets/optimized/475da5f48d7ccc939bf49683dcdb0553dd7fa232d3d7dbcb184cebb6420ddd5c.png",
+          "bounds": [
+            553,
+            1147,
+            596,
+            1215
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "035",
       "version": "release-v04",
