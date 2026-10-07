@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "034",
+  "defaultIssue": "035",
   "issues": [
+    {
+      "id": "035",
+      "version": "release-v04",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 星河织补铺",
+      "english": "DIDIDO · Mending the Starlight",
+      "intro": "长耳精灵在巨树间的木织架上修补星光缎带，小狐狸捧着碗收集落下的光点。沿着树冠、织架、衣物和树根，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/91f0d895120d6b654e7d3445caa36285bad57e7e98f146d44e2deaaaa489cb73.webp",
+      "color": "./assets/optimized/36aad8c095ac38a18f7136bdca674463a93eb8360d0f648d55333f2f666287af.webp",
+      "cover": "./assets/optimized/8b0c36afd9b850767f86711ae4ef6800c2910eb7e326ed600e9f4f07282a9475.webp",
+      "coverWidth": 520,
+      "coverHeight": 736,
+      "targets": [
+        {
+          "id": "v02-cloud",
+          "label": "云朵",
+          "image": "./assets/optimized/5c7c0c1b66a4cd3453c16d36e708ceb31182a2f185f0d8a9aae16ceedac4a13e.png",
+          "bounds": [
+            11.913779534538225,
+            103.62660245035484,
+            271.91078975812667,
+            213.16393681158834
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "v02-letter-e",
+          "label": "字母 E",
+          "image": "./assets/optimized/1d55531c6c5387d587fb8f0e924c92f777726d3db91a661aa5a138d8cb2dbc97.png",
+          "bounds": [
+            56.25,
+            965.25,
+            133,
+            1038
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "v02-onion",
+          "label": "洋葱",
+          "image": "./assets/optimized/ee434fe65dadddc2a4c9071ca9bd2331aa7ab2753572373ea4a9506069d0bd13.png",
+          "bounds": [
+            373,
+            337.65909090909093,
+            448,
+            392
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t11-caliper",
+          "label": "游标卡尺",
+          "image": "./assets/optimized/49d30ce3347559a56675f9725d83aa601495613c6ff861d7ec33bb792cfa1635.png",
+          "bounds": [
+            625,
+            328.431,
+            775.734,
+            395.18
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "v02-crowbar",
+          "label": "撬棍",
+          "image": "./assets/optimized/82f459fdc13908aa8635485f53167d4b5868b147ea700b83515f37d39a90a638.png",
+          "bounds": [
+            306,
+            783.2992914706966,
+            335.30852239851816,
+            861
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "v03-protractor",
+          "label": "量角器",
+          "image": "./assets/optimized/20544f23d69aacd86589e844d04c42afa80f96f04f81d3ded13ef1413832dab5.png",
+          "bounds": [
+            157.25,
+            897.25,
+            228.75,
+            927.25
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "v02-fish-skeleton",
+          "label": "鱼骨",
+          "image": "./assets/optimized/f7ba259ef33868169c18ddba5032e88196a722bfb95a82e4abc1149dab023ebf.png",
+          "bounds": [
+            933,
+            324,
+            981,
+            405.75
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "v02-yoyo",
+          "label": "悠悠球",
+          "image": "./assets/optimized/65f5013e4804c84eb4d67957816214047d8705b775510899374aefb0ba717379.png",
+          "bounds": [
+            866.75,
+            160.2025948425685,
+            927.3375672974066,
+            211.54240084677775
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t17-hex-nut",
+          "label": "六角螺母",
+          "image": "./assets/optimized/687c6fe064082b465183c37328ce4ecfbdf3cbb03afcec672228df284b302945.png",
+          "bounds": [
+            377.875,
+            1117.418437987737,
+            425.3176168641594,
+            1162.528
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "034",
       "version": "release-v01",

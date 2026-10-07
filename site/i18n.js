@@ -1,4 +1,4 @@
-import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-034-20261006';
+import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-035-20261007';
 const KEY='noobeye:language';
 let saved;try{if(typeof window!=='undefined')saved=localStorage.getItem(KEY);}catch{}
 const preferred=(typeof navigator==='undefined'?'en':navigator.languages?.[0]||navigator.language||'en').toLowerCase();
@@ -7,6 +7,7 @@ export const tr=(zh,en,ja)=>language==='zh'?zh:language==='ja'?(ja??en):en;
 const inLanguage=(lang,zh,en,ja)=>lang==='zh'?zh:lang==='ja'?(ja??en):en;
 export const titleOf=issue=>issue.translations?.[language]?.title??inLanguage(language,issue.title,issue.english.replace(/^THE /,'').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase()).replace(/^Didido\b/,'DIDIDO'),titlesJa[issue.id]);
 const nouns={
+  '云朵':'Cloud','字母 E':'Letter E','洋葱':'Onion','游标卡尺':'Vernier caliper','撬棍':'Crowbar','鱼骨':'Fish skeleton','悠悠球':'Yo-yo','六角螺母':'Hex nut',
   '木桌':'Trestle table','神灯':'Genie lamp','龙卷风':'Tornado','比基尼上衣':'Bikini top','芦笋':'Asparagus','独角兽头像':'Unicorn head','洋蓟':'Artichoke','马镫':'Stirrup','蝉':'Cicada',
   '弓':'Bow','水晶球':'Crystal ball','西兰花':'Broccoli','狐狸脸':'Fox face','星环行星':'Ringed planet','卷轴':'Scroll','幽灵':'Ghost','国际象棋·象':'Chess bishop','巫师帽':'Wizard hat',
   '烟斗':'Smoking pipe','电脑鼠标':'Computer mouse','开瓶器':'Bottle opener','三角三明治':'Triangle sandwich','芜菁':'Turnip','壁虎':'Gecko','降落伞':'Parachute','刺猬':'Hedgehog','短裤':'Shorts',
@@ -32,6 +33,7 @@ const nouns={
 };
 export const labelOf=target=>target.translations?.[language]?.label??inLanguage(language,target.label,nouns[target.label]||target.labelEn||target.label,nounsJa[target.label]);
 const intros={
+  '035':'A long-eared elf mends a ribbon of starlight on a wooden loom among giant trees while a little fox catches the falling sparks in a bowl. Find nine hidden shapes among the treetops, loom, garments and roots.',
   '034':'A forest sprite brushes a thundercloud with a giant comb while an otter catches the rain in a clay jar among the branches. Find nine hidden shapes among the treetops, vines, ropes and cloth.',
   '033':'Water rises from a pool among the roots into a floating flower while forest sprites gather moondew beside a gentle water creature. Find nine hidden shapes among the petals, stream, roots and shore.',
   '032':'A leaf-sailed ferry docks among giant trees while travelers tuck clouds back into their baskets and a stone beast naps below. Find nine hidden shapes among the trees, ferry, dock and clouds.',
