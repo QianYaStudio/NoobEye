@@ -1,4 +1,4 @@
-import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-038-20261009';
+import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-039-20261009';
 const KEY='noobeye:language';
 let saved;try{if(typeof window!=='undefined')saved=localStorage.getItem(KEY);}catch{}
 const preferred=(typeof navigator==='undefined'?'en':navigator.languages?.[0]||navigator.language||'en').toLowerCase();
@@ -35,6 +35,7 @@ const nouns={
 };
 export const labelOf=target=>target.translations?.[language]?.label??inLanguage(language,target.label,nouns[target.label]||target.labelEn||target.label,nounsJa[target.label]);
 const intros={
+  '039':'A sun lamp hangs from a golden crane inside a stone tower. Two little golems replace its wick and deliver spare supplies. Find nine hidden shapes among the lamp, crane, stone walls and handcart.',
   '038':'An open giant book becomes paper mountains and rivers. Two travelers follow its page stairs and bridges toward a distant castle. Find nine hidden shapes among the pages, peaks, luggage and bridges.',
   '037':'In a stone workshop, a golem turns the valve to pour a ring of tide into glass bottles. Find nine hidden shapes among the water, pipes, stone walls and workbenches.',
   '036':'An ancient magical station is still running: floating steps lead to a circular portal while a porter golem holds onto drifting luggage. Find nine hidden shapes among the columns, suspended stairs, garments and luggage.',
@@ -126,3 +127,5 @@ export function setupLanguage(){
 Object.assign(nouns,{'章鱼':'Octopus','飞艇':'Airship','握寿司':'Sushi','蜘蛛':'Spider','Wi-Fi':'Wi-Fi','企鹅':'Penguin','海螺':'Conch','小鼓':'Drum','三叉戟':'Trident'});
 
 Object.assign(nouns,{"钢笔尖": "Fountain pen nib", "板球拍": "Cricket bat", "马蹄铁": "Horseshoe", "纸鹤": "Origami crane", "魔毯": "Magic carpet", "研钵与杵": "Mortar and pestle", "杏仁": "Almond", "数字 3": "Number 3", "百分号": "Percent sign"});
+
+Object.assign(nouns,{"郁金香": "Tulip", "里拉琴": "Lyre", "棺木": "Coffin", "低音谱号": "Bass clef", "风向袋": "Windsock", "竹笋": "Bamboo shoot", "国际象棋国王": "Chess king", "三角铁": "Triangle", "和平标志": "Peace symbol"});

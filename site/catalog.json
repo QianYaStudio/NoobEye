@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "038",
+  "defaultIssue": "039",
   "issues": [
+    {
+      "id": "039",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 给黎明换灯芯",
+      "english": "DIDIDO · Tending the Dawn",
+      "intro": "石塔里的太阳灯悬在金色吊架上，两个小魔偶忙着更换灯芯、运送备用材料。沿着灯具、吊架、石墙和手推车，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/eff0a93a3ab185cc3d9f46174111609da4287a5083cdbf77426a86de94e6e2f8.webp",
+      "color": "./assets/optimized/21272a20ba14340983d2521fbdda8c10bbce2420874c553f0dfe21f6b3e0244c.webp",
+      "cover": "./assets/optimized/6d28d49d66d357c4acf1a8de0f1c1b7562e4a2bbc00143d72c1e0d624a4cb6b8.webp",
+      "coverWidth": 520,
+      "coverHeight": 736,
+      "targets": [
+        {
+          "id": "t09-tulip",
+          "label": "郁金香",
+          "image": "./assets/optimized/10159444b07012cb7669dff11425e8ed61b35ba28ad873ba4cf04977ee60ef0b.png",
+          "bounds": [
+            203,
+            768,
+            294,
+            838.75
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-lyre",
+          "label": "里拉琴",
+          "image": "./assets/optimized/a087d10cdf5c101803cecfe78779a98d014b6539835ac1df31e8ee89398c42df.png",
+          "bounds": [
+            524,
+            108,
+            692,
+            219
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-coffin",
+          "label": "棺木",
+          "image": "./assets/optimized/3e57e4327c848b61f47838fdc58d2aa97d176a8602ef53a40cf93499d8c9930e.png",
+          "bounds": [
+            1156,
+            650,
+            1197,
+            766
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-bass-clef",
+          "label": "低音谱号",
+          "image": "./assets/optimized/5f0f1a46c4ac7a0e295fc6667bc9ff70e0aaa526b30a36e0141b4f5537e1d9b0.png",
+          "bounds": [
+            651,
+            297.4115427318801,
+            719.8,
+            390
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-windsock",
+          "label": "风向袋",
+          "image": "./assets/optimized/d044d73b1d062718736dd56eb8010f934e555cfdad054c034b1af0ec2d839e3a.png",
+          "bounds": [
+            455.25,
+            484.25,
+            598.7243855170386,
+            583.2423048553808
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-bamboo-shoot",
+          "label": "竹笋",
+          "image": "./assets/optimized/61b5560f0b140a74579b39cad448097804658f154602489a707c6388e7d47105.png",
+          "bounds": [
+            817,
+            51.75,
+            886.5714285714287,
+            164
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-chess-king",
+          "label": "国际象棋国王",
+          "image": "./assets/optimized/b460118d2914d28fa4270c3bf8fe24037a5d2f67900dff5a56cb05ee5b0d5c13.png",
+          "bounds": [
+            918,
+            603,
+            973,
+            703.5
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-triangle-instrument",
+          "label": "三角铁",
+          "image": "./assets/optimized/32ee18d4ac7aca6256431e134b1d6671617c20b190ee9988694ef1593fdf5874.png",
+          "bounds": [
+            198.61071579510798,
+            158,
+            261,
+            240.75
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-peace-symbol",
+          "label": "和平标志",
+          "image": "./assets/optimized/5405ea2d4ad8f6174666c4f88a81673eecc6227c9f72d0ce6a07482ec7ea702d.png",
+          "bounds": [
+            716,
+            844,
+            776,
+            936
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "038",
       "version": "release-v01",
