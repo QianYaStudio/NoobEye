@@ -1,4 +1,4 @@
-import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-036-20261007';
+import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-037-20261009';
 const KEY='noobeye:language';
 let saved;try{if(typeof window!=='undefined')saved=localStorage.getItem(KEY);}catch{}
 const preferred=(typeof navigator==='undefined'?'en':navigator.languages?.[0]||navigator.language||'en').toLowerCase();
@@ -7,6 +7,7 @@ export const tr=(zh,en,ja)=>language==='zh'?zh:language==='ja'?(ja??en):en;
 const inLanguage=(lang,zh,en,ja)=>lang==='zh'?zh:lang==='ja'?(ja??en):en;
 export const titleOf=issue=>issue.translations?.[language]?.title??inLanguage(language,issue.title,issue.english.replace(/^THE /,'').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase()).replace(/^Didido\b/,'DIDIDO'),titlesJa[issue.id]);
 const nouns={
+  '数字 8':'Number 8','斧头':'Axe','彗星':'Comet','哑铃':'Dumbbell','钻戒':'Diamond ring','竖笛':'Recorder','四分休止符':'Quarter rest','独眼兔':'One-eyed rabbit',
   '水龙头':'Faucet','相机光圈':'Camera aperture','字母 S':'Letter S','卷尺':'Measuring tape','字母 T':'Letter T','礼帽':'Top hat','足球':'Soccer ball','盐罐':'Salt shaker','魔杖':'Magic wand',
   '云朵':'Cloud','字母 E':'Letter E','洋葱':'Onion','游标卡尺':'Vernier caliper','撬棍':'Crowbar','鱼骨':'Fish skeleton','悠悠球':'Yo-yo','六角螺母':'Hex nut',
   '木桌':'Trestle table','神灯':'Genie lamp','龙卷风':'Tornado','比基尼上衣':'Bikini top','芦笋':'Asparagus','独角兽头像':'Unicorn head','洋蓟':'Artichoke','马镫':'Stirrup','蝉':'Cicada',
@@ -34,6 +35,7 @@ const nouns={
 };
 export const labelOf=target=>target.translations?.[language]?.label??inLanguage(language,target.label,nouns[target.label]||target.labelEn||target.label,nounsJa[target.label]);
 const intros={
+  '037':'In a stone workshop, a golem turns the valve to pour a ring of tide into glass bottles. Find nine hidden shapes among the water, pipes, stone walls and workbenches.',
   '036':'An ancient magical station is still running: floating steps lead to a circular portal while a porter golem holds onto drifting luggage. Find nine hidden shapes among the columns, suspended stairs, garments and luggage.',
   '035':'A long-eared elf mends a ribbon of starlight on a wooden loom among giant trees while a little fox catches the falling sparks in a bowl. Find nine hidden shapes among the treetops, loom, garments and roots.',
   '034':'A forest sprite brushes a thundercloud with a giant comb while an otter catches the rain in a clay jar among the branches. Find nine hidden shapes among the treetops, vines, ropes and cloth.',
