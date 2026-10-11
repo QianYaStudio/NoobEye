@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "039",
+  "defaultIssue": "040",
   "issues": [
+    {
+      "id": "040",
+      "version": "release-v02",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 山丘睡着了",
+      "english": "DIDIDO · The Sleeping Hill",
+      "intro": "巨人化作山丘安静地打盹，山顶的小旅店飘起炊烟，旅人沿着木阶走向热茶。沿着屋檐、衣物、石壁和草木，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/fb3f49187205483011b214545b3eb308b77cbeac6a7df99de10faa832a5a3a76.webp",
+      "color": "./assets/optimized/18b60e1c8f9d063d4fa09a0570be2902284a8a31867f4eb303543bdaa4fdfaf0.webp",
+      "cover": "./assets/optimized/76e20662723cd86eb45d598d62daf0524a18d00356755ebb621aaccf3a6927c5.webp",
+      "coverWidth": 520,
+      "coverHeight": 736,
+      "targets": [
+        {
+          "id": "t07-frog",
+          "label": "青蛙",
+          "image": "./assets/optimized/a38f1bb370204d86a7d8820565c0a2cd531264867de3a5f3a2608fa873672815.png",
+          "bounds": [
+            436.25,
+            1119,
+            499.0625,
+            1179.3096686747474
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t11-cheese-grater",
+          "label": "奶酪刨",
+          "image": "./assets/optimized/a536af5a1b31fb615b66e7bccbbd8be5e55cb9e753a833d6a7aeabbfc1f2111d.png",
+          "bounds": [
+            819,
+            303.6,
+            844,
+            353
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-crossbow",
+          "label": "弩",
+          "image": "./assets/optimized/e7afb0800025ef47526166d1bf352b662bd9e6dfccf5fd298fa91d0eb0b13efd.png",
+          "bounds": [
+            278,
+            267,
+            356,
+            330
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-nautilus",
+          "label": "鹦鹉螺壳",
+          "image": "./assets/optimized/b66668fe0f9bdef503da80288e9cf89622509df2bca8a748c05b188212366769.png",
+          "bounds": [
+            668.989105209229,
+            629.6069438629142,
+            735.64632336187,
+            716
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-robot-head",
+          "label": "机器人头像",
+          "image": "./assets/optimized/e6213e296e6dcf2505dc1d55e069b1f996e401afe3a1c34f87659a0044797872.png",
+          "bounds": [
+            251,
+            748,
+            305,
+            792
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-lobster",
+          "label": "龙虾",
+          "image": "./assets/optimized/9f4fe41da7e7ecc2d7ab30c18d53f273e9c9be09affac12a50fc3f3de6da76e7.png",
+          "bounds": [
+            1063,
+            1070,
+            1161,
+            1152
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-gnome",
+          "label": "小地精",
+          "image": "./assets/optimized/3825cb0003d03b6dab306edc22cfdfd8a471ecdb5eb52d6c5ee5bc21b9fc7f3c.png",
+          "bounds": [
+            328.9549150281252,
+            567,
+            373,
+            642
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-jester-hat",
+          "label": "小丑帽",
+          "image": "./assets/optimized/aceaa5c3baca9ba662b5a45bec6b4a1c9d6dfd316c30d095abf4dfcc6e6c2ff0.png",
+          "bounds": [
+            434.2434131355383,
+            306,
+            558,
+            378.54639781775006
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-pickaxe",
+          "label": "鹤嘴镐",
+          "image": "./assets/optimized/a6578231633decefce2e0e0e113a4e343a8176c7aea3f952c063b74644b248b6.png",
+          "bounds": [
+            18,
+            536.8416163742252,
+            104,
+            668
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "039",
       "version": "release-v01",
