@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "040",
+  "defaultIssue": "041",
   "issues": [
+    {
+      "id": "041",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 回声在排练",
+      "english": "DIDIDO · The Echo Rehearsal",
+      "intro": "古老的露天剧场里，小魔偶挥动指挥棒，铜喇叭送出彩色的回声丝带，助手在一旁调试管道。沿着丝带、衣物、石阶和舞台道具，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/cbfa1f87f1750de1b3825e3c96b6f8b053bfd5d687e7ad7ac3e02e7b2d071f9f.webp",
+      "color": "./assets/optimized/2f668f7b57906ecc0de1d5a51b38e191f530071c75c5bdac84040104ddc7d52a.webp",
+      "cover": "./assets/optimized/068b4f1ffcfa6c02833c8e55ad2843269f60781bd1068294d1c6b96110875326.webp",
+      "coverWidth": 520,
+      "coverHeight": 368,
+      "targets": [
+        {
+          "id": "t10-tweezers",
+          "label": "镊子",
+          "image": "./assets/optimized/d875f57dd2f45688b95c2f02148b413870e0d61784657af87ab360f7e54da7fd.png",
+          "bounds": [
+            399.3877551020408,
+            399.75,
+            599,
+            462
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-grapes",
+          "label": "葡萄",
+          "image": "./assets/optimized/9f8f8edccd547c20dfe37d79d3c075ce7e16146f0240ff192e57ad9ad12fc1a8.png",
+          "bounds": [
+            1031.3,
+            1029.666666666667,
+            1071.7,
+            1078.2
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-crown",
+          "label": "王冠",
+          "image": "./assets/optimized/90f9b022fc1efd6b59476bd0ed9fa18a2f1cbf6ecb6063220c91c20b9feff82e.png",
+          "bounds": [
+            414,
+            929,
+            533,
+            970
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-ginkgo-leaf",
+          "label": "银杏叶",
+          "image": "./assets/optimized/bafb059010d887e5a67c5cfd8347180e513673c07639d02dbd2fc9caf363012e.png",
+          "bounds": [
+            1141,
+            290,
+            1217,
+            367
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t11-test-tube",
+          "label": "试管",
+          "image": "./assets/optimized/61ceda8ee0fdd64e9e8aa0bc3e03f8a7e211ccd9003e1b5903e8df702d73c22b.png",
+          "bounds": [
+            874,
+            915.25,
+            893,
+            967
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-chameleon",
+          "label": "变色龙",
+          "image": "./assets/optimized/c08d6004ac3fd9cc42b935dc015aaa79187586cf3b9dbd27e9353837571bcedc.png",
+          "bounds": [
+            317.9577128620172,
+            1060,
+            399,
+            1094.908831440576
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-paper-boat",
+          "label": "纸船",
+          "image": "./assets/optimized/d7aa7facd390d135639315b392f58ef0b0a83c98bab0c54711927dbc2e303857.png",
+          "bounds": [
+            31,
+            1107,
+            145,
+            1159.5
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-ladle",
+          "label": "长柄汤勺",
+          "image": "./assets/optimized/007306e97b7be6223112c987540d47ffbcd1ca7983da786fef8fdceed25c78ae.png",
+          "bounds": [
+            343.5267857142858,
+            56.25,
+            430.51237804571014,
+            252.85714285714286
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-pinwheel",
+          "label": "纸风车",
+          "image": "./assets/optimized/9cb98ed8677256c9a20a8c71f98ec23d28df6b5e45421bced155e55f98f22fb1.png",
+          "bounds": [
+            503,
+            609,
+            537,
+            682
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "040",
       "version": "release-v02",

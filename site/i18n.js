@@ -1,4 +1,4 @@
-import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-040-20261011';
+import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-041-20261012';
 const KEY='noobeye:language';
 let saved;try{if(typeof window!=='undefined')saved=localStorage.getItem(KEY);}catch{}
 const preferred=(typeof navigator==='undefined'?'en':navigator.languages?.[0]||navigator.language||'en').toLowerCase();
@@ -35,6 +35,7 @@ const nouns={
 };
 export const labelOf=target=>target.translations?.[language]?.label??inLanguage(language,target.label,nouns[target.label]||target.labelEn||target.label,nounsJa[target.label]);
 const intros={
+  '041':'In an ancient open-air theatre, a little golem waves its baton as brass horns send out colorful ribbons of echo. An assistant adjusts the pipes nearby. Find nine hidden shapes among the ribbons, clothing, stone steps and stage props.',
   '040':'A giant sleeps peacefully as a hill. Smoke rises from the little inn on top, while a traveler follows wooden steps toward a cup of hot tea. Find nine hidden shapes among the roofs, clothing, rocks and greenery.',
   '039':'A sun lamp hangs from a golden crane inside a stone tower. Two little golems replace its wick and deliver spare supplies. Find nine hidden shapes among the lamp, crane, stone walls and handcart.',
   '038':'An open giant book becomes paper mountains and rivers. Two travelers follow its page stairs and bridges toward a distant castle. Find nine hidden shapes among the pages, peaks, luggage and bridges.',
@@ -132,3 +133,5 @@ Object.assign(nouns,{"钢笔尖": "Fountain pen nib", "板球拍": "Cricket bat"
 Object.assign(nouns,{"郁金香": "Tulip", "里拉琴": "Lyre", "棺木": "Coffin", "低音谱号": "Bass clef", "风向袋": "Windsock", "竹笋": "Bamboo shoot", "国际象棋国王": "Chess king", "三角铁": "Triangle", "和平标志": "Peace symbol"});
 
 Object.assign(nouns,{"青蛙": "Frog", "奶酪刨": "Cheese grater", "弩": "Crossbow", "鹦鹉螺壳": "Nautilus shell", "机器人头像": "Robot head", "龙虾": "Lobster", "小地精": "Gnome", "小丑帽": "Jester hat", "鹤嘴镐": "Pickaxe"});
+
+Object.assign(nouns,{"镊子": "Tweezers", "葡萄": "Grapes", "王冠": "Crown", "银杏叶": "Ginkgo leaf", "试管": "Test tube", "变色龙": "Chameleon", "纸船": "Paper boat", "长柄汤勺": "Ladle", "纸风车": "Pinwheel"});
