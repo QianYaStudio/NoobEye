@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "041",
+  "defaultIssue": "042",
   "issues": [
+    {
+      "id": "042",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 瀑布背面的房间",
+      "english": "DIDIDO · Behind the Waterfall",
+      "intro": "层层瀑布流过古老的石阶与门廊，小船载着行李穿行水上，旅人朝瀑布背面的房间走去。沿着水纹、石墙、栏杆和行囊，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/b048e92d6d6db6faf7e4a957a312ca1efe7b6d480705a891c72b21ce517faee1.webp",
+      "color": "./assets/optimized/320d33a7f5813b35cd04a323a5ee6aa44e8aef2784e3e98b82b322fda45cd4c4.webp",
+      "cover": "./assets/optimized/f54b0b91e148f6bcd5beb69b98ed2845c9fd05f773b7d6c91c356d82097b74c4.webp",
+      "coverWidth": 520,
+      "coverHeight": 736,
+      "targets": [
+        {
+          "id": "t12-owl-face",
+          "label": "猫头鹰脸",
+          "image": "./assets/optimized/21e1c51099a03499847430f0a5e0d526e63151676f37304b34d635fd661b4e12.png",
+          "bounds": [
+            1110,
+            132,
+            1157,
+            176.64285714285714
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-trumpet",
+          "label": "小号",
+          "image": "./assets/optimized/9519202b9e87c7b4cba45e3cf621c579f561e2c44c21d55e83e9c7adb0fdbce4.png",
+          "bounds": [
+            1171,
+            388.9166666666667,
+            1210,
+            504
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-hand",
+          "label": "手掌",
+          "image": "./assets/optimized/1bf324db6426cd183d9bec1edba8c51766ca34c8ba598693eed2d31f8f0ba434.png",
+          "bounds": [
+            57.91241863738739,
+            346.7231887803945,
+            86.42761734635268,
+            374.889785409652
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t11-wheelbarrow",
+          "label": "独轮车",
+          "image": "./assets/optimized/6bc47760aa8e17ab3f57001c813af60574a76a5d31a2ee25c742b39a39bab2e9.png",
+          "bounds": [
+            52,
+            611,
+            113,
+            665
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-mace",
+          "label": "钉头锤",
+          "image": "./assets/optimized/86f956cd2289adc20021d5f83f4266a4680e70f01a8d781da1faf5260e095d24.png",
+          "bounds": [
+            280,
+            4.875,
+            317,
+            145
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-pyramid",
+          "label": "金字塔",
+          "image": "./assets/optimized/e9cffeb7c8c75c274b3e4ba3e9da8d3a124c0725e41c5ff70fe76bfc6257ef74.png",
+          "bounds": [
+            780,
+            315,
+            819,
+            353
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-bee",
+          "label": "蜜蜂",
+          "image": "./assets/optimized/91f4803a8e8431f1cbbfe72b2d569f06f605fbc59a5bc31e38fea05fdba0acb2.png",
+          "bounds": [
+            43.872974804436545,
+            1100.6363636363635,
+            135.71844585516496,
+            1163
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-ankh",
+          "label": "生命之符",
+          "image": "./assets/optimized/8b0bf244471c8bcf9ff5d3141b5b4ffcc0b2c6cb905ad2ac5e62fa5de441ca9c.png",
+          "bounds": [
+            409,
+            868.5529935906019,
+            444,
+            954.25
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-medicine-dropper",
+          "label": "滴管",
+          "image": "./assets/optimized/867b630ba9dc92f9beac02c6e451cd28ca78fbf42ecdca2221598b88b9a0e7c3.png",
+          "bounds": [
+            399.7117140713269,
+            1110,
+            417.6326530612245,
+            1166
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "041",
       "version": "release-v01",
