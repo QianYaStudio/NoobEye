@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "042",
+  "defaultIssue": "043",
   "issues": [
+    {
+      "id": "043",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 铸一场雪",
+      "english": "DIDIDO · Casting Snow",
+      "intro": "旧炉房里，银白矿浆从铜吊锅流入陶模，凝成雪晶向穹顶升去。魔偶转动模具，工匠守在暖炉旁。沿着炉台、吊架、衣物和器具，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/13d7bd347fe1ffebf27a2460f5738eec2da20e428016c2d9ba0e800a71019cb0.webp",
+      "color": "./assets/optimized/6d622fe0ece5482395eb05ac4da8ad78e0dbcc2db07268c859e34e1eb9721d33.webp",
+      "cover": "./assets/optimized/e755690262ef1be5bbbae2051f698df6dfcfc5b0e791dceb2f545e5f4bb93aa8.webp",
+      "coverWidth": 520,
+      "coverHeight": 736,
+      "targets": [
+        {
+          "id": "t01-beehive",
+          "label": "蜂巢",
+          "image": "./assets/optimized/5f1723b25ae3e08e1e9f7dd3ddfc1546f0f550402c6f2b20eef3f1f6887c1a88.png",
+          "bounds": [
+            1126,
+            524,
+            1218,
+            692
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t22-xylophone",
+          "label": "木琴",
+          "image": "./assets/optimized/4817b01b71a671658633150a80105b2f0eeb647925e95416063ae825c1fce3ec.png",
+          "bounds": [
+            567,
+            1015,
+            752.1838198528465,
+            1057
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t23-shark-tooth",
+          "label": "鲨鱼牙齿",
+          "image": "./assets/optimized/c9f973fd3dd918ffe47d223022abe2d6df5a99aa14f0ab8ef45bb5efbf99e5a8.png",
+          "bounds": [
+            631,
+            215,
+            671,
+            269
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t25-cheese-wedge",
+          "label": "奶酪",
+          "image": "./assets/optimized/cbdd8a6e53fd33e11dc6c09f14f56266f7f3ac44023b02510ff2934281c7927a.png",
+          "bounds": [
+            190.75,
+            697.25,
+            277.25,
+            744.75
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t19-hand-mirror",
+          "label": "手镜",
+          "image": "./assets/optimized/e17b809c020ecb9ec1c5222204bb707a0eb42d8f65a3dc53c6fc53ec00d2ec56.png",
+          "bounds": [
+            1041.819202100726,
+            227.78664495394543,
+            1078.5496218078245,
+            359.25
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t27-scissors",
+          "label": "剪刀",
+          "image": "./assets/optimized/0016dd261c5a7f4be091d87e62b51cc79c96657979121b29a8297f81a94dd01c.png",
+          "bounds": [
+            785.0825157265551,
+            171.75,
+            829.7239031406366,
+            251.75
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t26-comb",
+          "label": "发梳",
+          "image": "./assets/optimized/5f7d194a9e47f755e0f69692d0bfc2e46fc41e0a7aad4fa3a56eefe17dfbba17.png",
+          "bounds": [
+            552,
+            783.103,
+            748,
+            847.5
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t12-necklace",
+          "label": "宝石项链",
+          "image": "./assets/optimized/0542bf54a95e7a92ce9f021039eefc3ccf46a603159d014dc9f932eb772ac597.png",
+          "bounds": [
+            51.65,
+            764,
+            126.75,
+            929
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t21-wishbone",
+          "label": "许愿骨",
+          "image": "./assets/optimized/83a50f9cea64ec9af84d458ae24c394ec2f293c2d3521e99fb68e966a95f7ecd.png",
+          "bounds": [
+            772.9637077129073,
+            280.8928571428571,
+            850.0578373676303,
+            346.91483509939593
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "042",
       "version": "release-v01",
