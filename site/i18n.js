@@ -1,4 +1,4 @@
-import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-043-20261014';
+import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-044-20261015';
 const KEY='noobeye:language';
 let saved;try{if(typeof window!=='undefined')saved=localStorage.getItem(KEY);}catch{}
 const preferred=(typeof navigator==='undefined'?'en':navigator.languages?.[0]||navigator.language||'en').toLowerCase();
@@ -35,6 +35,7 @@ const nouns={
 };
 export const labelOf=target=>target.translations?.[language]?.label??inLanguage(language,target.label,nouns[target.label]||target.labelEn||target.label,nounsJa[target.label]);
 const intros={
+  '044':'On an autumn afternoon, a squirrel turns the press in a hillside printshop. Fresh botanical prints hang across the terrace while an assistant carries a new sheet up the stone steps. Find nine hidden shapes among the wooden frames, tools, paper and plants.',
   '043':'In an old furnace room, silvery molten ore pours from a suspended copper pot into a ceramic mold, forming snow crystals that rise toward the dome. A golem turns the mold while a craftsperson tends the warm furnace. Find nine hidden shapes among the furnace, hoist, clothing and tools.',
   '042':'Cascading waterfalls flow past ancient stone steps and doorways. A boat carries luggage across the water as a traveler heads toward a room behind the falls. Find nine hidden shapes among the ripples, stone walls, railings and bags.',
   '041':'In an ancient open-air theatre, a little golem waves its baton as brass horns send out colorful ribbons of echo. An assistant adjusts the pipes nearby. Find nine hidden shapes among the ribbons, clothing, stone steps and stage props.',
@@ -141,3 +142,5 @@ Object.assign(nouns,{"镊子": "Tweezers", "葡萄": "Grapes", "王冠": "Crown"
 Object.assign(nouns,{"猫头鹰脸": "Owl face", "小号": "Trumpet", "手掌": "Hand", "独轮车": "Wheelbarrow", "钉头锤": "Mace", "金字塔": "Pyramid", "蜜蜂": "Bee", "生命之符": "Ankh", "滴管": "Dropper"});
 
 Object.assign(nouns,{"蜂巢": "Beehive", "木琴": "Xylophone", "鲨鱼牙齿": "Shark tooth", "奶酪": "Cheese", "手镜": "Hand mirror", "剪刀": "Scissors", "发梳": "Comb", "宝石项链": "Gem necklace", "许愿骨": "Wishbone"});
+
+Object.assign(nouns,{"小老鼠": "Mouse", "信箱": "Mailbox", "拳击手套": "Boxing glove", "蚱蜢": "Grasshopper", "沙漏": "Hourglass", "卷蕨": "Fiddlehead fern", "开瓶器": "Bottle opener", "游泳脚蹼": "Swim fin", "单片眼镜": "Monocle"});

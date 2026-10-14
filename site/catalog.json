@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "043",
+  "defaultIssue": "044",
   "issues": [
+    {
+      "id": "044",
+      "version": "release-v03",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "山坡上的版画工坊",
+      "english": "The Hillside Printshop",
+      "intro": "秋日下午，松鼠在山坡上的版画工坊转动印刷机，刚印好的植物图样沿着露台晾开，助手捧着新印张走上石阶。沿着木架、工具、纸张和植物，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/7a785465832a554bdb48250c6de193dc55b5c80a9f43038dbf3772459a1bb686.webp",
+      "color": "./assets/optimized/b109f4db6713751814fa3add2904bc40cc7ee33e33b23b404a98a3e902c90440.webp",
+      "cover": "./assets/optimized/4b050c103c7881a59405f78dde60b1b5aeebcc0a1a655b8f4b1aa11cfaf0a67d.webp",
+      "coverWidth": 520,
+      "coverHeight": 736,
+      "targets": [
+        {
+          "id": "t02-mouse",
+          "label": "小老鼠",
+          "image": "./assets/optimized/2656d4a7fb151a684284abf5d0cb8dab4013e4813066bc3a63b88cf878b0c9c1.png",
+          "bounds": [
+            878.9415915674151,
+            1149.25,
+            920,
+            1224.0416666666667
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-mailbox",
+          "label": "信箱",
+          "image": "./assets/optimized/022f5be5c0b0998b0f240f419e625449c6942d5a5d7ce49a95fa6b55f0867988.png",
+          "bounds": [
+            250,
+            274,
+            338.26666666666665,
+            341
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-boxing-glove",
+          "label": "拳击手套",
+          "image": "./assets/optimized/a35085b666e1307df51a56c5a4dbfffa23303b113ca2f988a009f9d126387f5e.png",
+          "bounds": [
+            297.2344046936847,
+            653,
+            344.27079066363405,
+            713.2479653044305
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-grasshopper",
+          "label": "蚱蜢",
+          "image": "./assets/optimized/eaa9873b4b299374d5ec24baae074ee5e070d5330795d136bc4fa3ddc70ff22e.png",
+          "bounds": [
+            501,
+            173,
+            582,
+            230
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t12-hourglass",
+          "label": "沙漏",
+          "image": "./assets/optimized/4125368518540843c808bbd07d75fcdface706c7e92ca5b31bf6a4a651aee820.png",
+          "bounds": [
+            198.25,
+            116.9148888888889,
+            231.75,
+            174.75
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-fiddlehead",
+          "label": "卷蕨",
+          "image": "./assets/optimized/da83bef64f87a92c4f630133c6ac49c1bafddb6d65212198fe0977d58432d8cb.png",
+          "bounds": [
+            137.9768433518122,
+            519.3972819161249,
+            212.75,
+            708.25
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t11-bottle-opener",
+          "label": "开瓶器",
+          "image": "./assets/optimized/126aa5e6e0b1d58aca3012ee62d2f16523cb23b08a4eff8836cc4613c0300e33.png",
+          "bounds": [
+            1157.25,
+            619.75,
+            1203.7660893735674,
+            720.4029171644255
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-swim-fin",
+          "label": "游泳脚蹼",
+          "image": "./assets/optimized/1f41f452be6c170ab6c98a9603541acd4ef8c029efdc9aae2083dbff529e7859.png",
+          "bounds": [
+            63,
+            379.74453105677657,
+            113,
+            488.8285714285714
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-monocle",
+          "label": "单片眼镜",
+          "image": "./assets/optimized/fcbb5f33cb2f071991d97c2a86667bf4365e4a031e0bc0178f026bf757c0a1c4.png",
+          "bounds": [
+            376,
+            1065.75,
+            519,
+            1094.25
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "043",
       "version": "release-v01",
