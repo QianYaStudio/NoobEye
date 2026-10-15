@@ -1,11 +1,12 @@
-import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-044-20261015';
+import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-045-20261015';
 const KEY='noobeye:language';
 let saved;try{if(typeof window!=='undefined')saved=localStorage.getItem(KEY);}catch{}
 const preferred=(typeof navigator==='undefined'?'en':navigator.languages?.[0]||navigator.language||'en').toLowerCase();
 export let language=['zh','en','ja'].includes(saved)?saved:(preferred.startsWith('zh')?'zh':preferred.startsWith('ja')?'ja':'en');
 export const tr=(zh,en,ja)=>language==='zh'?zh:language==='ja'?(ja??en):en;
 const inLanguage=(lang,zh,en,ja)=>lang==='zh'?zh:lang==='ja'?(ja??en):en;
-export const titleOf=issue=>issue.translations?.[language]?.title??inLanguage(language,issue.title,issue.english.replace(/^THE /,'').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase()).replace(/^Didido\b/,'DIDIDO'),titlesJa[issue.id]);
+const titlesEn={'045':'DIDIDO · A Dragon’s Loose Tooth'};
+export const titleOf=issue=>issue.translations?.[language]?.title??inLanguage(language,issue.title,titlesEn[issue.id]??issue.english.replace(/^THE /,'').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase()).replace(/^Didido\b/,'DIDIDO'),titlesJa[issue.id]);
 const nouns={
   '数字 8':'Number 8','斧头':'Axe','彗星':'Comet','哑铃':'Dumbbell','钻戒':'Diamond ring','竖笛':'Recorder','四分休止符':'Quarter rest','独眼兔':'One-eyed rabbit',
   '水龙头':'Faucet','相机光圈':'Camera aperture','字母 S':'Letter S','卷尺':'Measuring tape','字母 T':'Letter T','礼帽':'Top hat','足球':'Soccer ball','盐罐':'Salt shaker','魔杖':'Magic wand',
@@ -35,6 +36,7 @@ const nouns={
 };
 export const labelOf=target=>target.translations?.[language]?.label??inLanguage(language,target.label,nouns[target.label]||target.labelEn||target.label,nounsJa[target.label]);
 const intros={
+  '045':'A dragon rests on a cushioned outdoor treatment table for a loose tooth. A golem operates the hoist while a rabbit assistant prepares a rinse. Find nine hidden shapes among the hoist, cushions, clothing and stonework.',
   '044':'On an autumn afternoon, a squirrel turns the press in a hillside printshop. Fresh botanical prints hang across the terrace while an assistant carries a new sheet up the stone steps. Find nine hidden shapes among the wooden frames, tools, paper and plants.',
   '043':'In an old furnace room, silvery molten ore pours from a suspended copper pot into a ceramic mold, forming snow crystals that rise toward the dome. A golem turns the mold while a craftsperson tends the warm furnace. Find nine hidden shapes among the furnace, hoist, clothing and tools.',
   '042':'Cascading waterfalls flow past ancient stone steps and doorways. A boat carries luggage across the water as a traveler heads toward a room behind the falls. Find nine hidden shapes among the ripples, stone walls, railings and bags.',
@@ -90,7 +92,7 @@ function clueInLanguage(target,issue,lang){
 export function releaseTranslations(issue){
  const issueCopy={},targetCopy={};
  for(const lang of ['zh','en','ja']){
-  issueCopy[lang]={title:inLanguage(lang,issue.title,issue.english.replace(/^THE /,'').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase()).replace(/^Didido\b/,'DIDIDO'),titlesJa[issue.id]),intro:inLanguage(lang,issue.intro,intros[issue.id]??issue.intro,introsJa[issue.id])};
+  issueCopy[lang]={title:inLanguage(lang,issue.title,titlesEn[issue.id]??issue.english.replace(/^THE /,'').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase()).replace(/^Didido\b/,'DIDIDO'),titlesJa[issue.id]),intro:inLanguage(lang,issue.intro,intros[issue.id]??issue.intro,introsJa[issue.id])};
   for(const target of issue.targets){
    targetCopy[target.id]??={};
    targetCopy[target.id][lang]={label:inLanguage(lang,target.label,nouns[target.label]||target.labelEn||target.label,nounsJa[target.label]),clue:clueInLanguage(target,issue,lang)};
@@ -144,3 +146,5 @@ Object.assign(nouns,{"猫头鹰脸": "Owl face", "小号": "Trumpet", "手掌": 
 Object.assign(nouns,{"蜂巢": "Beehive", "木琴": "Xylophone", "鲨鱼牙齿": "Shark tooth", "奶酪": "Cheese", "手镜": "Hand mirror", "剪刀": "Scissors", "发梳": "Comb", "宝石项链": "Gem necklace", "许愿骨": "Wishbone"});
 
 Object.assign(nouns,{"小老鼠": "Mouse", "信箱": "Mailbox", "拳击手套": "Boxing glove", "蚱蜢": "Grasshopper", "沙漏": "Hourglass", "卷蕨": "Fiddlehead fern", "开瓶器": "Bottle opener", "游泳脚蹼": "Swim fin", "单片眼镜": "Monocle"});
+
+Object.assign(nouns,{"石榴": "Pomegranate", "手锯": "Handsaw", "海象": "Walrus", "火炮": "Cannon", "八角": "Star anise", "蜗牛": "Snail", "流苏圆帽": "Fez", "船桨": "Oar", "木槌": "Mallet"});
