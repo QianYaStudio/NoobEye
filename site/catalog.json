@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "045",
+  "defaultIssue": "046",
   "issues": [
+    {
+      "id": "046",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 借一场雨",
+      "english": "DIDIDO · Borrow a Little Rain",
+      "intro": "旅人来到拱廊下的云店，向店主借走一团小雨云，小助手捧着水盆接住滴水。沿着铜管、衣物、木柜和石阶，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/a015f40afdb788a600fe349eb3d704d5cfa850fce0a601f309237b8009753a4c.webp",
+      "color": "./assets/optimized/80c610dc4a35979eb0bdf318f3efdeda4cf40bb210e5e2bda454cec69d9b86fa.webp",
+      "cover": "./assets/optimized/6e66ce3e2889a590cc3c969accf9a731b7cd23d593cb616dc6d7427bee4f4cd9.webp",
+      "coverWidth": 520,
+      "coverHeight": 736,
+      "targets": [
+        {
+          "id": "t09-compass",
+          "label": "圆规",
+          "image": "./assets/optimized/bf76f14208cb067eb4190e6408674b86a8b36aa1f48d1a24b0c55bc510d8fd76.png",
+          "bounds": [
+            585,
+            181.5,
+            645,
+            252
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-peapod",
+          "label": "豌豆荚",
+          "image": "./assets/optimized/4c756eb39a9dbe0d1de06918645c15bf7f38c78d1e4e3300a68d3e2d14070e61.png",
+          "bounds": [
+            272.57772146400544,
+            735.4,
+            397,
+            766.8181818181819
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-periscope",
+          "label": "潜望镜",
+          "image": "./assets/optimized/0c6ecd7d4a8ce9c09b1414e87a1267aaeda622dc727be9900c59460b50aba5a6.png",
+          "bounds": [
+            1052,
+            500,
+            1124,
+            643
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-roller-skate",
+          "label": "轮滑鞋",
+          "image": "./assets/optimized/a5e9982f1e918a49a38d6831102e1027cec27da2327007908151dc1f0b6b06ff.png",
+          "bounds": [
+            472,
+            932,
+            597.448275862069,
+            1045
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-cotton-swab",
+          "label": "棉签",
+          "image": "./assets/optimized/8adb0f858ec597acc07ba75f72ac23218297a1f163fdd0bca26f34782cbf0b30.png",
+          "bounds": [
+            488.26493526370575,
+            784.845738800741,
+            638.2547112051975,
+            801.75
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-umbrella",
+          "label": "收拢的雨伞",
+          "image": "./assets/optimized/c3d77b53ee7fbe66afa0ff60f321d187de8a8159e3b19fe090c52dd4c4dae245.png",
+          "bounds": [
+            185,
+            436.1,
+            236,
+            636.3076923076923
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-mousetrap",
+          "label": "捕鼠夹",
+          "image": "./assets/optimized/0040c183d4d403e243423466dcf23d3b2bb35f1e42949f7ddd6d95de2c0834bc.png",
+          "bounds": [
+            263,
+            983,
+            390,
+            1051
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t12-spinning-top",
+          "label": "陀螺",
+          "image": "./assets/optimized/d006607b9f0c6ec03153a5c1c6408fd417f9c1731878d8fb03aa9dd84aa8bdaf.png",
+          "bounds": [
+            115,
+            528,
+            170,
+            605
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t11-bacon",
+          "label": "培根",
+          "image": "./assets/optimized/4fe8f6e575bb7413372a9583391596f227ac31b2bdc6b03cd45a4156be589c55.png",
+          "bounds": [
+            920.6111111111111,
+            880,
+            987.1637521363476,
+            1014
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "045",
       "version": "release-v01",

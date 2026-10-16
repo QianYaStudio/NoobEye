@@ -1,11 +1,11 @@
-import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-045-20261015';
+import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-046-20261016';
 const KEY='noobeye:language';
 let saved;try{if(typeof window!=='undefined')saved=localStorage.getItem(KEY);}catch{}
 const preferred=(typeof navigator==='undefined'?'en':navigator.languages?.[0]||navigator.language||'en').toLowerCase();
 export let language=['zh','en','ja'].includes(saved)?saved:(preferred.startsWith('zh')?'zh':preferred.startsWith('ja')?'ja':'en');
 export const tr=(zh,en,ja)=>language==='zh'?zh:language==='ja'?(ja??en):en;
 const inLanguage=(lang,zh,en,ja)=>lang==='zh'?zh:lang==='ja'?(ja??en):en;
-const titlesEn={'045':'DIDIDO · A Dragon’s Loose Tooth'};
+const titlesEn={'046':'DIDIDO · Borrow a Little Rain','045':'DIDIDO · A Dragon’s Loose Tooth'};
 export const titleOf=issue=>issue.translations?.[language]?.title??inLanguage(language,issue.title,titlesEn[issue.id]??issue.english.replace(/^THE /,'').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase()).replace(/^Didido\b/,'DIDIDO'),titlesJa[issue.id]);
 const nouns={
   '数字 8':'Number 8','斧头':'Axe','彗星':'Comet','哑铃':'Dumbbell','钻戒':'Diamond ring','竖笛':'Recorder','四分休止符':'Quarter rest','独眼兔':'One-eyed rabbit',
@@ -36,6 +36,7 @@ const nouns={
 };
 export const labelOf=target=>target.translations?.[language]?.label??inLanguage(language,target.label,nouns[target.label]||target.labelEn||target.label,nounsJa[target.label]);
 const intros={
+  '046':'A traveler visits the cloud shop beneath the arches to borrow a little rain cloud. The shopkeeper hands it over while a tiny assistant catches the drips in a basin. Find nine hidden shapes among the brass pipes, clothing, wooden cabinets and stone steps.',
   '045':'A dragon rests on a cushioned outdoor treatment table for a loose tooth. A golem operates the hoist while a rabbit assistant prepares a rinse. Find nine hidden shapes among the hoist, cushions, clothing and stonework.',
   '044':'On an autumn afternoon, a squirrel turns the press in a hillside printshop. Fresh botanical prints hang across the terrace while an assistant carries a new sheet up the stone steps. Find nine hidden shapes among the wooden frames, tools, paper and plants.',
   '043':'In an old furnace room, silvery molten ore pours from a suspended copper pot into a ceramic mold, forming snow crystals that rise toward the dome. A golem turns the mold while a craftsperson tends the warm furnace. Find nine hidden shapes among the furnace, hoist, clothing and tools.',
@@ -148,3 +149,5 @@ Object.assign(nouns,{"蜂巢": "Beehive", "木琴": "Xylophone", "鲨鱼牙齿":
 Object.assign(nouns,{"小老鼠": "Mouse", "信箱": "Mailbox", "拳击手套": "Boxing glove", "蚱蜢": "Grasshopper", "沙漏": "Hourglass", "卷蕨": "Fiddlehead fern", "开瓶器": "Bottle opener", "游泳脚蹼": "Swim fin", "单片眼镜": "Monocle"});
 
 Object.assign(nouns,{"石榴": "Pomegranate", "手锯": "Handsaw", "海象": "Walrus", "火炮": "Cannon", "八角": "Star anise", "蜗牛": "Snail", "流苏圆帽": "Fez", "船桨": "Oar", "木槌": "Mallet"});
+
+Object.assign(nouns,{"圆规": "Drawing compass", "豌豆荚": "Peapod", "潜望镜": "Periscope", "轮滑鞋": "Roller skate", "棉签": "Cotton swab", "收拢的雨伞": "Closed umbrella", "捕鼠夹": "Mousetrap", "陀螺": "Spinning top", "培根": "Bacon"});
