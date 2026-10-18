@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "047",
+  "defaultIssue": "048",
   "issues": [
+    {
+      "id": "048",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 门后是一片海",
+      "english": "DIDIDO · A Door to the Sea",
+      "intro": "修门工坊里的空间门通向大海，潮水漫过门槛。师傅用长柄扫帚引水，小魔偶站在矮凳上倒水，猫躲上工作台。沿着门板、工具、衣物和水边，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/e9d419418cc0376d774055990ddb67991ea9e5d9d0d2cb9789d1cecae8a7783a.webp",
+      "color": "./assets/optimized/e9fa27f2349eff807e819d29b5533b83514a32e5af6de30c7ad8d7e6f95e405b.webp",
+      "cover": "./assets/optimized/f078ea880084548b94c0ec9aceafc76fd34998359a1886ddffb16e4a2603b478.webp",
+      "coverWidth": 520,
+      "coverHeight": 368,
+      "targets": [
+        {
+          "id": "t01-cheese",
+          "label": "奶酪块",
+          "image": "./assets/optimized/0083dcaf6f2e366adf8ba0dc0584ff8cfecebb688abdb9414870edb41c03559f.png",
+          "bounds": [
+            272.25,
+            1054.229481921915,
+            418.13433741314907,
+            1133.25
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-snowflake",
+          "label": "雪花",
+          "image": "./assets/optimized/9e6a4d332c0f84234e90a66ed6e421a8f987fdb854c21ad49228cd5227f5089b.png",
+          "bounds": [
+            66.747,
+            1065.418,
+            127.253,
+            1124.582
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-coffee-bean",
+          "label": "咖啡豆",
+          "image": "./assets/optimized/13dec883189a547efb8f0baff4bb61cb46bbc371e032bee4d07434befff3f837.png",
+          "bounds": [
+            555.9394325380623,
+            251.98128113339504,
+            614.3963822387052,
+            284.3498550911876
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-baguette",
+          "label": "长面包",
+          "image": "./assets/optimized/2e2155d6d1bc9622934e8dc37654a9c1f8604cb6ccc766317021ec5ba2ad925c.png",
+          "bounds": [
+            75.5,
+            743.7272727272726,
+            140,
+            855.0833333333333
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-tea-bag",
+          "label": "茶包",
+          "image": "./assets/optimized/92dad66f7399421158904ef9dcd4d978adc0b75195f53fcc14bc60e8bd8532d9.png",
+          "bounds": [
+            672.75,
+            572.24842891661,
+            728.7546952454969,
+            669.75
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-spatula",
+          "label": "锅铲",
+          "image": "./assets/optimized/30e65bbf536f07b8423300f1614488798b3bdad97db0a63ac785bf9e5987e2b4.png",
+          "bounds": [
+            887,
+            337,
+            935,
+            426.09090909090907
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-safety-pin",
+          "label": "安全别针",
+          "image": "./assets/optimized/2990e89b467352e2830ea59da23887e01f05b4c2f6125e40c6d72e0c53a6dc87.png",
+          "bounds": [
+            740.7918775425192,
+            225.66666666666669,
+            776,
+            344.9230769230769
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-keyhole",
+          "label": "锁眼",
+          "image": "./assets/optimized/f70fd80ba554ebb4377608628ac75cfe854a0a8a97c17d342f3254732942397a.png",
+          "bounds": [
+            827,
+            535,
+            860.5549219375375,
+            644
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-suitcase",
+          "label": "旅行箱",
+          "image": "./assets/optimized/d5fbcb7a7604f63b2625f2b14b47ff8e081def1d54ddac73a39447df673f96cc.png",
+          "bounds": [
+            1065.888888888889,
+            90.85714285714288,
+            1173,
+            242.10000000000002
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "047",
       "version": "release-v01",

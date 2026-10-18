@@ -1,11 +1,11 @@
-import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-047-20261018';
+import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-048-20261018';
 const KEY='noobeye:language';
 let saved;try{if(typeof window!=='undefined')saved=localStorage.getItem(KEY);}catch{}
 const preferred=(typeof navigator==='undefined'?'en':navigator.languages?.[0]||navigator.language||'en').toLowerCase();
 export let language=['zh','en','ja'].includes(saved)?saved:(preferred.startsWith('zh')?'zh':preferred.startsWith('ja')?'ja':'en');
 export const tr=(zh,en,ja)=>language==='zh'?zh:language==='ja'?(ja??en):en;
 const inLanguage=(lang,zh,en,ja)=>lang==='zh'?zh:lang==='ja'?(ja??en):en;
-const titlesEn={'047':'DIDIDO · A Castle on the Move','046':'DIDIDO · Borrow a Little Rain','045':'DIDIDO · A Dragon’s Loose Tooth'};
+const titlesEn={'048':'DIDIDO · A Door to the Sea','047':'DIDIDO · A Castle on the Move','046':'DIDIDO · Borrow a Little Rain','045':'DIDIDO · A Dragon’s Loose Tooth'};
 export const titleOf=issue=>issue.translations?.[language]?.title??inLanguage(language,issue.title,titlesEn[issue.id]??issue.english.replace(/^THE /,'').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase()).replace(/^Didido\b/,'DIDIDO'),titlesJa[issue.id]);
 const nouns={
   '数字 8':'Number 8','斧头':'Axe','彗星':'Comet','哑铃':'Dumbbell','钻戒':'Diamond ring','竖笛':'Recorder','四分休止符':'Quarter rest','独眼兔':'One-eyed rabbit',
@@ -36,6 +36,7 @@ const nouns={
 };
 export const labelOf=target=>target.translations?.[language]?.label??inLanguage(language,target.label,nouns[target.label]||target.labelEn||target.label,nounsJa[target.label]);
 const intros={
+  '048':'A magical door in a repair workshop opens onto the sea, letting the tide spill across the threshold. A craftsperson sweeps the water aside, a little golem pours from a cup atop a stool, and a cat takes refuge on the workbench. Find nine hidden shapes among the doors, tools, clothing and water.',
   '047':'A giant snail carries a little castle along a mountain path. Residents wave goodbye and carry their luggage while a golem assistant raises the wooden bridge. Find nine hidden shapes among the towers, balcony, clothing and mountain plants.',
   '046':'A traveler visits the cloud shop beneath the arches to borrow a little rain cloud. The shopkeeper hands it over while a tiny assistant catches the drips in a basin. Find nine hidden shapes among the brass pipes, clothing, wooden cabinets and stone steps.',
   '045':'A dragon rests on a cushioned outdoor treatment table for a loose tooth. A golem operates the hoist while a rabbit assistant prepares a rinse. Find nine hidden shapes among the hoist, cushions, clothing and stonework.',
@@ -154,3 +155,5 @@ Object.assign(nouns,{"石榴": "Pomegranate", "手锯": "Handsaw", "海象": "Wa
 Object.assign(nouns,{"圆规": "Drawing compass", "豌豆荚": "Peapod", "潜望镜": "Periscope", "轮滑鞋": "Roller skate", "棉签": "Cotton swab", "收拢的雨伞": "Closed umbrella", "捕鼠夹": "Mousetrap", "陀螺": "Spinning top", "培根": "Bacon"});
 
 Object.assign(nouns,{"羽翼": "Wing", "问号": "Question mark", "飞蛾": "Moth", "三枝烛台": "Three-arm candelabrum", "钢笔": "Fountain pen", "银杏叶": "Ginkgo leaf", "弹弓": "Slingshot", "击剑面罩": "Fencing mask", "＆ 符号": "Ampersand"});
+
+Object.assign(nouns,{"奶酪块": "Cheese wedge", "雪花": "Snowflake", "咖啡豆": "Coffee bean", "长面包": "Baguette", "茶包": "Tea bag", "锅铲": "Spatula", "安全别针": "Safety pin", "锁眼": "Keyhole", "旅行箱": "Suitcase"});
