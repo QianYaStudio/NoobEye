@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "049",
+  "defaultIssue": "050",
   "issues": [
+    {
+      "id": "050",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 月亮退潮以后",
+      "english": "DIDIDO · After the Moon Tide",
+      "intro": "月潮退去，大船搁在港湾高低错落的屋顶上。住民沿栈桥上船，扫集船上的星砂，用陶盆收集月晶。沿着帆布、船板、绳索和港湾建筑，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/1094aa21a57ea872671ba867caad30cde394ff7d61485b11c27ab502886dbe40.webp",
+      "color": "./assets/optimized/8dee37a755683fe9235d15734414b59d1314edceebf88b03b0ba707e2d454f1c.webp",
+      "cover": "./assets/optimized/6ac4e2e676b3c99ce8e237e22e3a2fd0657439fa37b3b0751484a8689013ea1d.webp",
+      "coverWidth": 520,
+      "coverHeight": 368,
+      "targets": [
+        {
+          "id": "t01-whale-tail",
+          "label": "鲸尾",
+          "image": "./assets/optimized/d8434494f403f51d2fd2c8c1e827679ef84a2d7045a5fe258c60930d953fd394.png",
+          "bounds": [
+            720.9246207168396,
+            55,
+            816,
+            148
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-sextant",
+          "label": "六分仪",
+          "image": "./assets/optimized/dd9bca49e613f4710b496cf466048ef2da20af6995bc91ed61b14b38d40189f2.png",
+          "bounds": [
+            644,
+            263,
+            717,
+            338.03125
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-diving-helmet",
+          "label": "潜水头盔",
+          "image": "./assets/optimized/248bac5028ff336c89bba7c496d4009c2cacfbab284ac9a60b6ff1f6cc877388.png",
+          "bounds": [
+            106,
+            620.4285714285716,
+            163,
+            694
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-suspenders",
+          "label": "背带",
+          "image": "./assets/optimized/1f1c6084e9f418809546840b39ae5d4064905b9dd675d9eed132396a3a594f2b.png",
+          "bounds": [
+            546,
+            369,
+            600,
+            547
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-horseshoe-crab",
+          "label": "鲎",
+          "image": "./assets/optimized/9d534ef0caa807698196b94c553fdcab142d2d810058e4acec65a596bbb2d1b5.png",
+          "bounds": [
+            817.7233946746677,
+            890,
+            862.9421429395456,
+            964
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-anchor",
+          "label": "锚",
+          "image": "./assets/optimized/7ebb97875ef2f031494ac74553964d8227e1c358c5a69d400568b7e47bd9570c.png",
+          "bounds": [
+            519,
+            822.75,
+            609,
+            929
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-pepper-mill",
+          "label": "胡椒磨",
+          "image": "./assets/optimized/142e60089d8a36ecb3c8c40c04eac7e175bcfde4c073f424f02b71b4b7766aef.png",
+          "bounds": [
+            108,
+            413.25,
+            149,
+            496.7692307692307
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-sundial",
+          "label": "日晷",
+          "image": "./assets/optimized/3925c3601526c30f09ea16e8acee6e7d88ed960d6f15e99ccba18cc7d365b836.png",
+          "bounds": [
+            446.96557304629454,
+            493,
+            524,
+            530
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t11-tape-dispenser",
+          "label": "胶带座",
+          "image": "./assets/optimized/9faec99689f2b30226e83db27eb1015130b6b41ec0752f3706519e2f27fa306f.png",
+          "bounds": [
+            741.069,
+            805,
+            837.5799390226595,
+            869.8278744581238
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "049",
       "version": "release-v01",
