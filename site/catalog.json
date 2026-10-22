@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "050",
+  "defaultIssue": "051",
   "issues": [
+    {
+      "id": "051",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 给风暴装上发条",
+      "english": "DIDIDO · Winding the Storm",
+      "intro": "敞开的古钟楼里，修理者拉动传动带，给悬浮风暴装上发条；陶偶举盆接住漏下的雨。沿着石拱、传动构件、衣褶和器具，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/647fbce87d18bc2e69fee1ff1d639f3ed5d600c6157fa15f347b847ffbb5f8f1.webp",
+      "color": "./assets/optimized/7e6c7ce820d772d4074ba9b1d1a79bf158558dd017e8927f14b73d5e4d7ed306.webp",
+      "cover": "./assets/optimized/b83345c7ccb5cf7caa33af3d110cc53f79429c486fe6fe170d5a982a97c63604.webp",
+      "coverWidth": 520,
+      "coverHeight": 735,
+      "targets": [
+        {
+          "id": "t06-sleep-mask",
+          "label": "睡眠眼罩",
+          "image": "./assets/optimized/4c1d92ff68e4949f44fbcdbc52e5544faf11dcfe24b53db048140f19bf345bad.png",
+          "bounds": [
+            690,
+            1154,
+            742.75,
+            1184.230769230769
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-tornado",
+          "label": "龙卷风",
+          "image": "./assets/optimized/2afb741b7925cfabe8de524a747b0a1d13e03c6e7bbfb79e9e45a66ca5c30363.png",
+          "bounds": [
+            444.9375,
+            1100.9906210900833,
+            583.225806451613,
+            1217
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-castanets",
+          "label": "响板",
+          "image": "./assets/optimized/48f8a57b19fbb13e8bfe3abaa0720402efcfc982194c9b4545c96e7962851c77.png",
+          "bounds": [
+            909.3387554139389,
+            889.6666666666667,
+            1003.3617698277255,
+            1001.0569415042094
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-rainbow",
+          "label": "彩虹",
+          "image": "./assets/optimized/2476afe1eb81b3a026308a8c1380de558a66cea9d1422b4845bd30bf32ed4fce.png",
+          "bounds": [
+            389,
+            198.95336632350666,
+            530,
+            300
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t11-barber-pole",
+          "label": "理发店转灯",
+          "image": "./assets/optimized/7f0421e9e4e149bd7220db6f70baeeb7908f53e1145bb74eca811f28e03f285a.png",
+          "bounds": [
+            808,
+            710.7333333333333,
+            851,
+            855.7777777777778
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-tricorn-hat",
+          "label": "海盗帽",
+          "image": "./assets/optimized/214919b726157322017ae1c575a9efb044994a2bd082184814dc36995b8f36ed.png",
+          "bounds": [
+            38.817,
+            411.30170487564317,
+            140.0553126684636,
+            487.49645496801514
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-butterfly-net",
+          "label": "捕蝶网",
+          "image": "./assets/optimized/283cd3238d59d5901cdd7042c337b8c90973676b1a7889c69a897b0ac5619270.png",
+          "bounds": [
+            178.83984722705299,
+            588,
+            307,
+            718
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-fire-extinguisher",
+          "label": "灭火器",
+          "image": "./assets/optimized/b202335b5e7e7b16f200e753b059eeb80df3ca3eff4216c30fb9d85aa152cc64.png",
+          "bounds": [
+            487,
+            816,
+            552,
+            912.0769230769232
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-thermometer",
+          "label": "温度计",
+          "image": "./assets/optimized/391d8d46423838f883d21c28a8436b28da2b7ec87e4e7d7833814f0a07a284df.png",
+          "bounds": [
+            736.825478650405,
+            830,
+            781.7894736842105,
+            951.5842351210173
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "050",
       "version": "release-v01",

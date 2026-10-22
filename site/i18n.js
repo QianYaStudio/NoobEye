@@ -1,11 +1,11 @@
-import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-050-20261021';
+import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-051-20261022';
 const KEY='noobeye:language';
 let saved;try{if(typeof window!=='undefined')saved=localStorage.getItem(KEY);}catch{}
 const preferred=(typeof navigator==='undefined'?'en':navigator.languages?.[0]||navigator.language||'en').toLowerCase();
 export let language=['zh','en','ja'].includes(saved)?saved:(preferred.startsWith('zh')?'zh':preferred.startsWith('ja')?'ja':'en');
 export const tr=(zh,en,ja)=>language==='zh'?zh:language==='ja'?(ja??en):en;
 const inLanguage=(lang,zh,en,ja)=>lang==='zh'?zh:lang==='ja'?(ja??en):en;
-const titlesEn={'050':'DIDIDO · After the Moon Tide','049':'DIDIDO · Shadows on the Line','048':'DIDIDO · A Door to the Sea','047':'DIDIDO · A Castle on the Move','046':'DIDIDO · Borrow a Little Rain','045':'DIDIDO · A Dragon’s Loose Tooth'};
+const titlesEn={'051':'DIDIDO · Winding the Storm','050':'DIDIDO · After the Moon Tide','049':'DIDIDO · Shadows on the Line','048':'DIDIDO · A Door to the Sea','047':'DIDIDO · A Castle on the Move','046':'DIDIDO · Borrow a Little Rain','045':'DIDIDO · A Dragon’s Loose Tooth'};
 export const titleOf=issue=>issue.translations?.[language]?.title??inLanguage(language,issue.title,titlesEn[issue.id]??issue.english.replace(/^THE /,'').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase()).replace(/^Didido\b/,'DIDIDO'),titlesJa[issue.id]);
 const nouns={
   '数字 8':'Number 8','斧头':'Axe','彗星':'Comet','哑铃':'Dumbbell','钻戒':'Diamond ring','竖笛':'Recorder','四分休止符':'Quarter rest','独眼兔':'One-eyed rabbit',
@@ -36,6 +36,7 @@ const nouns={
 };
 export const labelOf=target=>target.translations?.[language]?.label??inLanguage(language,target.label,nouns[target.label]||target.labelEn||target.label,nounsJa[target.label]);
 const intros={
+  '051':'In an open clock tower, a repairer pulls a drive belt to wind up a floating storm while a ceramic helper catches the rain in a basin. Find nine hidden shapes among the stone arches, machinery, cloth folds and tools.',
   '050':'After the moon tide ebbs, a great ship rests among the rooftops of a little harbor. Residents climb aboard along wooden walkways, sweep up stardust and collect moon crystals in a ceramic basin. Find nine hidden shapes among the sails, hull, ropes and harbor buildings.',
   '049':'On a sunny terrace, a long-eared ceramic resident clips a cat shadow to the line while a little stone spirit wrings out a soft shadow beside the washbasin. Find nine hidden shapes among the laundry equipment, clothing, plants and baskets.',
   '048':'A magical door in a repair workshop opens onto the sea, letting the tide spill across the threshold. A craftsperson sweeps the water aside, a little golem pours from a cup atop a stool, and a cat takes refuge on the workbench. Find nine hidden shapes among the doors, tools, clothing and water.',
@@ -163,3 +164,5 @@ Object.assign(nouns,{"奶酪块": "Cheese wedge", "雪花": "Snowflake", "咖啡
 Object.assign(nouns,{"鲨鱼": "Shark", "回形针": "Paperclip", "高脚杯": "Goblet", "指甲刀": "Nail clipper", "蝴蝶": "Butterfly", "感叹号": "Exclamation mark", "扫帚": "Broom", "创可贴": "Bandage", "蜈蚣": "Centipede"});
 
 Object.assign(nouns,{"鲸尾": "Whale tail", "六分仪": "Sextant", "潜水头盔": "Diving helmet", "背带": "Suspenders", "鲎": "Horseshoe crab", "锚": "Anchor", "胡椒磨": "Pepper mill", "日晷": "Sundial", "胶带座": "Tape dispenser"});
+
+Object.assign(nouns,{"睡眠眼罩": "Sleep mask", "龙卷风": "Tornado", "响板": "Castanets", "彩虹": "Rainbow", "理发店转灯": "Barber pole", "海盗帽": "Pirate hat", "捕蝶网": "Butterfly net", "灭火器": "Fire extinguisher", "温度计": "Thermometer"});
