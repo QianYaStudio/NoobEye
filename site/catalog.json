@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "051",
+  "defaultIssue": "052",
   "issues": [
+    {
+      "id": "052",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 星星刚出壳",
+      "english": "DIDIDO · Newly Hatched Stars",
+      "intro": "古老孵化室里，带翅膀的小星星从巨蛋中飞出，精灵举网追赶，小助手抱着毯子赶来。沿着石拱、篮筐、布褶和器具，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/cbe13c2332bb0559f8fbc1bd38c0204777595367baf6fde66f502092dec63093.webp",
+      "color": "./assets/optimized/83a888e335ac01a3a7627bb26deb6fd8fa5e3d3c2ca023272920aea2c60166ac.webp",
+      "cover": "./assets/optimized/177612d199c22d3a11957b2f491553d706086d9f90af7f26baeeca6f59a8ff51.webp",
+      "coverWidth": 520,
+      "coverHeight": 368,
+      "targets": [
+        {
+          "id": "t11-lantern",
+          "label": "提灯",
+          "image": "./assets/optimized/1d2674f241c2395ea09f41725fede1a57296803147778c3eb8dd9f4961952432.png",
+          "bounds": [
+            894,
+            1087,
+            981,
+            1188.0547182373607
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-letter-pi",
+          "label": "π",
+          "image": "./assets/optimized/b3500dda6f75c48517b64a016af903d18696e3d09305d801dc015791c2650062.png",
+          "bounds": [
+            308,
+            762.6205340256666,
+            397,
+            832
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-dna",
+          "label": "DNA 双螺旋",
+          "image": "./assets/optimized/2dd3900549c9c8a25b341c4b12245bbdc5c577a6cd458fb587e852f1df772044.png",
+          "bounds": [
+            1172.085,
+            578,
+            1215.95,
+            704
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-bib",
+          "label": "围兜",
+          "image": "./assets/optimized/5c242ff67a1f6da5bb45d12abada0d0b6bc22eaf9ac016e4ad7be787724a2587.png",
+          "bounds": [
+            217,
+            742,
+            300.42968028021335,
+            860.7317640832789
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-flying-saucer",
+          "label": "飞碟",
+          "image": "./assets/optimized/d4b37aafe45af450eef59b91992a6a2f21cfa8bd36a3fd17f282228b436071bb.png",
+          "bounds": [
+            75.75,
+            418.61387212474165,
+            242.40000000000003,
+            480.06221362103406
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-crescent-moon",
+          "label": "弯月",
+          "image": "./assets/optimized/24345d18d2bf23599fb93077cf95537e8e05bb13bc8cd16fcbdfa4d1410d1feb.png",
+          "bounds": [
+            212.66306697983146,
+            247,
+            395,
+            348.15876207579663
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-bell-pepper",
+          "label": "甜椒",
+          "image": "./assets/optimized/ef8c58b99feb65b2564c919744e4b23a93d035db98e6d0b5c01e61e06680a37c.png",
+          "bounds": [
+            345.11182337645766,
+            923,
+            389.0740288532698,
+            981.7777777777778
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-diving-fin",
+          "label": "潜水脚蹼",
+          "image": "./assets/optimized/a560db34f48f7926f92dcc549ff144efa25defa2447f4b5692381ec08f8b8ec9.png",
+          "bounds": [
+            502,
+            232,
+            679,
+            432.4659989723824
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-satellite",
+          "label": "人造卫星",
+          "image": "./assets/optimized/d96deabb7715c6db76a492f399a527a7c6a1ccead4efc5603f2c0741e98626b0.png",
+          "bounds": [
+            620,
+            791,
+            858,
+            884.7222222222224
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "051",
       "version": "release-v01",
