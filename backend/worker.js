@@ -1,6 +1,6 @@
 import {subscriptionRoute} from './subscriptions.js';
+import {issueValid} from './issue-identity.js';
 const UUID=/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
-const issueValid=v=>/^(00[1-9]|01[0-9]|02[0-9]|03[0-9]|04[0-9]|05[0-2])$/.test(v);
 const integer=(v,min,max)=>Number.isInteger(v)&&v>=min&&v<=max;
 const json=(data,status,origin)=>new Response(JSON.stringify(data),{status,headers:{'Content-Type':'application/json','Access-Control-Allow-Origin':origin,'Vary':'Origin','Cache-Control':'no-store'}});
 async function counts(db,issue,revision){
@@ -26,7 +26,7 @@ export default {
    const url=new URL(request.url);
    if(request.method==='GET'&&url.pathname==='/stats'){
     const issue=url.searchParams.get('issue'),revision=Number(url.searchParams.get('revision'));
-    if(!issueValid(issue)||!integer(revision,1,10000))return json({error:'Invalid issue'},400,origin);
+    if(!issueValid(issue,env)||!integer(revision,1,10000))return json({error:'Invalid issue'},400,origin);
     const totals=await env.DB.prepare('SELECT COUNT(DISTINCT visitor_id) AS players, COUNT(DISTINCT CASE WHEN completed_at IS NOT NULL THEN visitor_id END) AS completedPlayers FROM runs').first();
     return json({...await counts(env.DB,issue,revision),totalPlayers:totals.players,totalCompletedPlayers:totals.completedPlayers},200,origin);
    }
@@ -36,7 +36,7 @@ export default {
    const text=await request.text();if(text.length>2048)return json({error:'Request too large'},413,origin);
    let body;try{body=JSON.parse(text);}catch{return json({error:'Invalid JSON'},400,origin);}
    const {runId,visitorId,issue,revision}=body||{};
-   if(!UUID.test(runId)||!UUID.test(visitorId)||!issueValid(issue)||!integer(revision,1,10000))return json({error:'Invalid run'},400,origin);
+   if(!UUID.test(runId)||!UUID.test(visitorId)||!issueValid(issue,env)||!integer(revision,1,10000))return json({error:'Invalid run'},400,origin);
    const now=Date.now();
    if(url.pathname==='/runs/start'){
     await env.DB.prepare('INSERT OR IGNORE INTO runs (run_id,visitor_id,issue,revision,started_at) VALUES (?,?,?,?,?)').bind(runId,visitorId,issue,revision,now).run();

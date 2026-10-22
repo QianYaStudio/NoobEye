@@ -1,11 +1,12 @@
-import { setupSensor } from './sensor.js?v=issue-052-20261022';
+import { setupSensor } from './sensor.js?v=custom-000-20261023';
 import { celebrateCompletion } from './celebration.js';
-import {targetOutline,createOutlineMark} from './target-outlines.js?v=issue-052-20261022';
-import { effect, setupAudio, setIssueMusic, startListening } from './audio.js?v=issue-052-20261022';
-import { tr, labelOf, titleOf, introOf, clueOf, setupLanguage } from './i18n.js?v=issue-052-20261022';
+import {targetOutline,createOutlineMark} from './target-outlines.js?v=custom-000-20261023';
+import { effect, setupAudio, setIssueMusic, startListening } from './audio.js?v=custom-000-20261023';
+import { tr, labelOf, titleOf, introOf, clueOf, setupLanguage } from './i18n.js?v=custom-000-20261023';
 import {setupProjectLinks} from './project.js';
-import {setupSubscriptions} from './subscriptions.js?v=issue-052-20261022';
+import {setupSubscriptions} from './subscriptions.js?v=custom-000-20261023';
 import {clearPlayRecords} from './records.js';
+import {isCustomIssue,publicIssueNumber,newestFirst} from './issue-identity.js';
 import { SessionClock, formatTime } from './session.js';
 import {constrainCamera,detailCamera,overviewCamera,pointInScene} from './camera.js';
 import { setupStats, startRun, finishRun, readStats } from './stats.js?v=startup-20260915';
@@ -217,7 +218,7 @@ function renderShelfPage(direction=0){
     if(landscape){cover.classList.add('is-landscape');cover.style.setProperty('--cover-ratio',coverWidth/coverHeight);}
     const img=document.createElement('img');img.alt='';img.loading='lazy';img.fetchPriority='low';img.decoding='async';img.width=issue.coverWidth;img.height=issue.coverHeight;
     const fallback=document.createElement('span');fallback.className='cover-fallback';fallback.hidden=true;fallback.setAttribute('aria-hidden','true');
-    fallback.textContent=issue.id;
+    fallback.textContent=isCustomIssue(issue)?(issue.series||'SPECIAL'):publicIssueNumber(issue);
     img.addEventListener('load',()=>{cover.classList.add('is-loaded');});
     img.addEventListener('error',()=>{cover.classList.add('is-error');fallback.hidden=false;});
     img.src=issue.cover;cover.append(img,fallback);
@@ -251,7 +252,7 @@ function updateShelf(){
     const button=$(`issue-${issue.id}`);if(!button)continue;
     button.setAttribute('aria-pressed',String(issue.id===currentIssue?.id));
     button.querySelector('strong').textContent=titleOf(issue);
-    button.querySelector('.card-number').textContent=tr(`第 ${issue.id} 期`,`ISSUE ${issue.id}`,`第${issue.id}号`);
+    button.querySelector('.card-number').textContent=isCustomIssue(issue)?tr('定制特刊','SPECIAL','特別号'):tr(`第 ${publicIssueNumber(issue)} 期`,`ISSUE ${publicIssueNumber(issue)}`,`第${publicIssueNumber(issue)}号`);
     button.querySelector('.card-progress').textContent=count===issue.targets.length?tr('已完成','Completed','クリア済み'):count?tr(`${count} / ${issue.targets.length} 已发现`,`${count} / ${issue.targets.length} found`,`${count} / ${issue.targets.length} 発見`):tr(`${issue.targets.length} 件藏品 · 开始寻找`,`${issue.targets.length} objects · Explore`,`${issue.targets.length}個を探す`);
   }
   const pages=Math.max(1,Math.ceil(issues.length/SHELF_PAGE_SIZE));
@@ -304,8 +305,8 @@ function loadIssue(id,{navigate=false}={}){
 async function init(){
   setupLanguage();setupSubscriptions();setupAudio();setupStats();setupProjectLinks();
   try {
-    const response=await fetch('./catalog.json?v=issue-052-20261022');if(!response.ok)throw new Error('Content unavailable');
-    const content=await response.json();issues=content.issues.sort((a,b)=>Number(b.id)-Number(a.id));
+    const response=await fetch('./catalog.json?v=custom-000-20261023');if(!response.ok)throw new Error('Content unavailable');
+    const content=await response.json();issues=content.issues.sort(newestFirst);
     renderShelfPage();
     let last;try{last=localStorage.getItem('noobeye:last-issue');}catch{}
     const requested=new URL(location.href).searchParams.get('issue')||last||content.defaultIssue;
@@ -343,10 +344,10 @@ for(const a of document.querySelectorAll('a[href="#play"]'))a.addEventListener('
 
 function renderIssueCopy(){
  if(!currentIssue)return;const issue=currentIssue;
- $('issue-title').textContent=titleOf(issue);$('chapter-number').textContent=tr(`第 ${issue.id} 期 · 观察练习`,`ISSUE ${issue.id} · A CLOSER LOOK`,`第${issue.id}号・じっくり観察`);
+ $('issue-title').textContent=titleOf(issue);$('chapter-number').textContent=isCustomIssue(issue)?tr('定制特刊 · 观察练习','SPECIAL · A CLOSER LOOK','特別号・じっくり観察'):tr(`第 ${publicIssueNumber(issue)} 期 · 观察练习`,`ISSUE ${publicIssueNumber(issue)} · A CLOSER LOOK`,`第${publicIssueNumber(issue)}号・じっくり観察`);
  $('total-count').textContent=String(targets.length).padStart(2,'0');
  $('issue-intro').textContent=introOf(issue);
- $('cover-issue').textContent=tr(`第 ${issue.id} 期 / ${titleOf(issue)}`,`Issue ${issue.id} / ${titleOf(issue)}`,`第${issue.id}号 / ${titleOf(issue)}`);
+ $('cover-issue').textContent=isCustomIssue(issue)?titleOf(issue):tr(`第 ${publicIssueNumber(issue)} 期 / ${titleOf(issue)}`,`Issue ${publicIssueNumber(issue)} / ${titleOf(issue)}`,`第${publicIssueNumber(issue)}号 / ${titleOf(issue)}`);
  $('cover-meta').textContent=tr(`${targets.length} 件藏品 · 随时停留`,`${targets.length} objects · Take your time`,`${targets.length}個・自分のペースで`);
  const cover=document.querySelector('.cover-art img');cover.src=issue.color||issue.line;cover.alt=titleOf(issue);
  document.querySelector('.cover-art').setAttribute('aria-label',tr(`进入${titleOf(issue)}`,`Explore ${titleOf(issue)}`,`${titleOf(issue)}で探す`));

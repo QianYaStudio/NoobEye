@@ -4,6 +4,7 @@
   "main": "worker.js",
   "compatibility_date": "2026-09-13",
   "vars": {
+    "CUSTOM_ISSUE_IDS": "custom-000",
     "ALLOWED_ORIGINS": "https://qianyastudio.github.io,http://localhost:4173,http://127.0.0.1:4173",
     "RESEND_SEGMENT_ID": "",
     "RESEND_TOPIC_ZH": "",

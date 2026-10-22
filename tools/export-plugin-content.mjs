@@ -10,7 +10,7 @@ export async function exportPluginContent(site, publicationPath) {
   const publication = publicationPath ? JSON.parse(await readFile(publicationPath, 'utf8')) : { defaultIssue: catalog.defaultIssue, withheldIssues: [] };
   const { releaseTranslations } = await import(pathToFileURL(path.join(site, 'i18n.js')).href);
   const { targetOutline } = await import(pathToFileURL(path.join(site, 'target-outlines.js')).href);
-  const issues = catalog.issues.filter(issue => Number(issue.id) <= Number(publication.defaultIssue) && !publication.withheldIssues.includes(issue.id));
+  const issues = catalog.issues.filter(issue => !publication.withheldIssues.includes(issue.id) && (issue.kind !== 'custom' || !publicationPath || publication.customIssues?.[issue.id]?.published === true));
   if (!issues.some(issue => issue.id === publication.defaultIssue)) throw new Error('Published default issue is missing');
   for (const issue of issues) {
     const translations = releaseTranslations(issue);

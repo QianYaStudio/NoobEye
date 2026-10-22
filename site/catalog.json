@@ -1,6 +1,219 @@
 {
-  "defaultIssue": "052",
+  "defaultIssue": "custom-000",
   "issues": [
+    {
+      "id": "custom-000",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "POKO · 沙发，请进",
+      "english": "POKO · Sofa, Please",
+      "intro": "松鼠与水獭合力把沙发搬进门，红糖糍粑抱着靠垫，先坐了上去。沿着家具、衣物、植物和石板间隙，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/9ae6116a51c151d5fd49060130405fd4fa33d69ab40f90aec70e238f9372cb04.webp",
+      "color": "./assets/optimized/a48887da1377cf16e5b6b1af4e160eba7d0b122b22873daf18655e342299f0d7.webp",
+      "cover": "./assets/optimized/143509a3c024adc9ae947db98bec9c3141f9a42151232473aba2eb59384c2422.webp",
+      "coverWidth": 520,
+      "coverHeight": 735,
+      "targets": [
+        {
+          "id": "t08",
+          "label": "蛋糕铲",
+          "image": "./assets/optimized/3082340e95480cd0cafe059cf461ea39dd84ec0bf945b059549401f080861d8b.png",
+          "bounds": [
+            1129.6951320418398,
+            1060.9289321881345,
+            1201.0710678118653,
+            1131.75
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。",
+          "translations": {
+            "en": {
+              "label": "Cake server"
+            },
+            "ja": {
+              "label": "ケーキサーバー"
+            }
+          }
+        },
+        {
+          "id": "t02",
+          "label": "镊子",
+          "image": "./assets/optimized/89d9c135e08da4da515ddc86b93686c146b5b8cb09593e0bb715df8ae4704aa1.png",
+          "bounds": [
+            112.93605470515638,
+            1106,
+            135.82842712474618,
+            1182
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。",
+          "translations": {
+            "en": {
+              "label": "Tweezers"
+            },
+            "ja": {
+              "label": "ピンセット"
+            }
+          }
+        },
+        {
+          "id": "t01",
+          "label": "双筒望远镜",
+          "image": "./assets/optimized/e46771fec5c9c5b4e76349d9c78accbf5dbedda808f6dac57111435cdd4f129f.png",
+          "bounds": [
+            748.0000000000001,
+            158.7268086001252,
+            816.0696603995077,
+            215.24643113206344
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。",
+          "translations": {
+            "en": {
+              "label": "Binoculars"
+            },
+            "ja": {
+              "label": "双眼鏡"
+            }
+          }
+        },
+        {
+          "id": "t06",
+          "label": "热水袋",
+          "image": "./assets/optimized/78dd19ccc1facbfd285c552c0152302d019cdb953666c4a2309119482981ae56.png",
+          "bounds": [
+            1139.6905989232414,
+            590.046917100347,
+            1185.888888888889,
+            671.5047288494804
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。",
+          "translations": {
+            "en": {
+              "label": "Hot water bottle"
+            },
+            "ja": {
+              "label": "湯たんぽ"
+            }
+          }
+        },
+        {
+          "id": "t09",
+          "label": "鞋拔",
+          "image": "./assets/optimized/8712749d3da7aea19deae1adf512c389b9386434a3e423d38ff01ac2c5cd41f4.png",
+          "bounds": [
+            621.9525684318523,
+            1121.6339716829818,
+            758.888888888889,
+            1160.8457049240435
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。",
+          "translations": {
+            "en": {
+              "label": "Shoehorn"
+            },
+            "ja": {
+              "label": "靴べら"
+            }
+          }
+        },
+        {
+          "id": "t03",
+          "label": "柿子",
+          "image": "./assets/optimized/5a01819b466362ed82c9e09f0b71741b64e69b55e74d71467255970492087f07.png",
+          "bounds": [
+            159.61006569007043,
+            569.75,
+            197.13006479436302,
+            620
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。",
+          "translations": {
+            "en": {
+              "label": "Persimmon"
+            },
+            "ja": {
+              "label": "柿"
+            }
+          }
+        },
+        {
+          "id": "t07",
+          "label": "扩音喇叭",
+          "image": "./assets/optimized/f3a46e54256c7bbfc3d598e58761c8ec7f971a6ab017af2b5334df66783acd5a.png",
+          "bounds": [
+            427.75,
+            908.3155499203406,
+            484.1293787513021,
+            965.25
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。",
+          "translations": {
+            "en": {
+              "label": "Megaphone"
+            },
+            "ja": {
+              "label": "拡声器"
+            }
+          }
+        },
+        {
+          "id": "t04",
+          "label": "潜望镜",
+          "image": "./assets/optimized/57496ad6ff0af91ba3745ab5ccbf9f8e8f3dbd99ed476063eb635398356813a9.png",
+          "bounds": [
+            20.75,
+            85.17,
+            96,
+            248.73
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。",
+          "translations": {
+            "en": {
+              "label": "Periscope"
+            },
+            "ja": {
+              "label": "潜望鏡"
+            }
+          }
+        },
+        {
+          "id": "t05",
+          "label": "叉勺",
+          "image": "./assets/optimized/346075aad5cd34d67f697c5c5e503e92ebaf20cb1d26f75b3a178d3b6b78dd5a.png",
+          "bounds": [
+            817.7096707705304,
+            367.75,
+            842.2022078999634,
+            445.63659945443754
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。",
+          "translations": {
+            "en": {
+              "label": "Spork"
+            },
+            "ja": {
+              "label": "先割れスプーン"
+            }
+          }
+        }
+      ],
+      "kind": "custom",
+      "number": null,
+      "series": "POKO",
+      "displayOrder": 52.5,
+      "translations": {
+        "en": {
+          "title": "POKO · Sofa, Please",
+          "intro": "A squirrel and an otter carry a sofa through the doorway, while Poko is already sitting on it with a cushion. Find nine hidden shapes among the furniture, clothing, plants and paving stones."
+        },
+        "ja": {
+          "title": "POKO・ソファをどうぞ",
+          "intro": "リスとカワウソが力を合わせてソファを運び入れています。ポコはクッションを抱えて、もう座ってしまいました。家具や服、植物、石畳に隠れた九つの形を探しましょう。"
+        }
+      }
+    },
     {
       "id": "052",
       "version": "release-v01",

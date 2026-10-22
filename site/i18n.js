@@ -1,4 +1,4 @@
-import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-052-20261022';
+import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=custom-000-20261023';
 const KEY='noobeye:language';
 let saved;try{if(typeof window!=='undefined')saved=localStorage.getItem(KEY);}catch{}
 const preferred=(typeof navigator==='undefined'?'en':navigator.languages?.[0]||navigator.language||'en').toLowerCase();
@@ -6,7 +6,7 @@ export let language=['zh','en','ja'].includes(saved)?saved:(preferred.startsWith
 export const tr=(zh,en,ja)=>language==='zh'?zh:language==='ja'?(ja??en):en;
 const inLanguage=(lang,zh,en,ja)=>lang==='zh'?zh:lang==='ja'?(ja??en):en;
 const titlesEn={'052':'DIDIDO · Newly Hatched Stars','051':'DIDIDO · Winding the Storm','050':'DIDIDO · After the Moon Tide','049':'DIDIDO · Shadows on the Line','048':'DIDIDO · A Door to the Sea','047':'DIDIDO · A Castle on the Move','046':'DIDIDO · Borrow a Little Rain','045':'DIDIDO · A Dragon’s Loose Tooth'};
-export const titleOf=issue=>issue.translations?.[language]?.title??inLanguage(language,issue.title,titlesEn[issue.id]??issue.english.replace(/^THE /,'').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase()).replace(/^Didido\b/,'DIDIDO'),titlesJa[issue.id]);
+export const titleOf=issue=>issue.translations?.[language]?.title??inLanguage(language,issue.title,titlesEn[issue.id]??issue.english.replace(/^THE /,'').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase()).replace(/^(Didido|Milo|Poko)\b/,s=>s.toUpperCase()),titlesJa[issue.id]);
 const nouns={
   '数字 8':'Number 8','斧头':'Axe','彗星':'Comet','哑铃':'Dumbbell','钻戒':'Diamond ring','竖笛':'Recorder','四分休止符':'Quarter rest','独眼兔':'One-eyed rabbit',
   '水龙头':'Faucet','相机光圈':'Camera aperture','字母 S':'Letter S','卷尺':'Measuring tape','字母 T':'Letter T','礼帽':'Top hat','足球':'Soccer ball','盐罐':'Salt shaker','魔杖':'Magic wand',
@@ -99,10 +99,10 @@ function clueInLanguage(target,issue,lang){
 export function releaseTranslations(issue){
  const issueCopy={},targetCopy={};
  for(const lang of ['zh','en','ja']){
-  issueCopy[lang]={title:inLanguage(lang,issue.title,titlesEn[issue.id]??issue.english.replace(/^THE /,'').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase()).replace(/^Didido\b/,'DIDIDO'),titlesJa[issue.id]),intro:inLanguage(lang,issue.intro,intros[issue.id]??issue.intro,introsJa[issue.id])};
+  issueCopy[lang]={title:inLanguage(lang,issue.title,titlesEn[issue.id]??issue.english.replace(/^THE /,'').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase()).replace(/^(Didido|Milo|Poko)\b/,s=>s.toUpperCase()),titlesJa[issue.id]),intro:inLanguage(lang,issue.intro,intros[issue.id]??issue.intro,introsJa[issue.id]),...issue.translations?.[lang]};
   for(const target of issue.targets){
    targetCopy[target.id]??={};
-   targetCopy[target.id][lang]={label:inLanguage(lang,target.label,nouns[target.label]||target.labelEn||target.label,nounsJa[target.label]),clue:clueInLanguage(target,issue,lang)};
+   targetCopy[target.id][lang]={label:inLanguage(lang,target.label,nouns[target.label]||target.labelEn||target.label,nounsJa[target.label]),clue:clueInLanguage(target,issue,lang),...target.translations?.[lang]};
   }
  }
  return {issue:issueCopy,targets:targetCopy};

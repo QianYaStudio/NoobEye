@@ -16,6 +16,7 @@ test('invalid results and unapproved origins are rejected; old partial runs are 
 test('every published issue supports stats, starts and completions',async()=>{
  const catalog=JSON.parse(readFileSync(new URL('../site/catalog.json',import.meta.url),'utf8'));
  const {sqlite,env}=fixture();
+ env.CUSTOM_ISSUE_IDS=catalog.issues.filter(i=>i.kind==='custom').map(i=>i.id).join(',');
  try{
   for(const issue of catalog.issues){
    const body={runId:crypto.randomUUID(),visitorId:crypto.randomUUID(),issue:issue.id,revision:issue.gameplayRevision};
