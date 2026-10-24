@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "custom-000",
+  "defaultIssue": "053",
   "issues": [
+    {
+      "id": "053",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 瀑布休息日",
+      "english": "DIDIDO · A Waterfall’s Day Off",
+      "intro": "两只石头魔偶把瀑布像地毯一样卷起，露出通往古门的阶梯，小鱼仍在卷水中游动。沿着石拱、水纹、绳索和器具，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/d463ca38f97bd3e59ce1acad3cde955a858e38dca3828f3b6393b71f806b9386.webp",
+      "color": "./assets/optimized/5b7db077545c7b99c833d19e282e75ac182cabeed91506438d6c1270f94862fb.webp",
+      "cover": "./assets/optimized/16bcdc17ca0a8a70f491e983cc01ec9709a38a1a365eeb5b9fa3e58653cacf1a.webp",
+      "coverWidth": 520,
+      "coverHeight": 735,
+      "targets": [
+        {
+          "id": "t09-mussel",
+          "label": "贻贝",
+          "image": "./assets/optimized/2b8bc761f7d398d7d7275f974fc14660a8394c54987883122948292be0db4104.png",
+          "bounds": [
+            90.7328352948959,
+            993.4000000000001,
+            207,
+            1193.9302325581396
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-flip-flop",
+          "label": "人字拖",
+          "image": "./assets/optimized/0ddb96dccd96c18e0168b58d0695121a42bd7ba577052e2c2e7c10a0430b30cb.png",
+          "bounds": [
+            1147,
+            819,
+            1220,
+            903.0869565217392
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-dustpan",
+          "label": "簸箕",
+          "image": "./assets/optimized/bc1e3cf3b2f1bf51a08dd62465c31370ba25a9ea5cc2e1dd4c255c3a0527a8dd.png",
+          "bounds": [
+            302,
+            815,
+            356,
+            887
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-pufferfish",
+          "label": "河豚",
+          "image": "./assets/optimized/5fccc58eabe8b40de075cc0016b462aa6856d30c1471c84cae0f7ca3f3618bba.png",
+          "bounds": [
+            832,
+            93,
+            888,
+            165
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-harpoon",
+          "label": "鱼叉",
+          "image": "./assets/optimized/60b5676dea0bf1f142e6b14699b091cb665f4cb8c153bc2b9d489242587718de.png",
+          "bounds": [
+            403,
+            956,
+            485,
+            1118
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-letter-n",
+          "label": "字母 N",
+          "image": "./assets/optimized/5744d8847914c991e956eb12bacc553f4763a4bc68864135b0db283eb3f9dfca.png",
+          "bounds": [
+            137,
+            41,
+            199,
+            85
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-coil-spring",
+          "label": "弹簧",
+          "image": "./assets/optimized/2fd6d8e19b894583c605640326aea9adfc63c93805b9e9f9a098dedcd4504543.png",
+          "bounds": [
+            134.30473318921463,
+            463,
+            223.72680914902185,
+            551.8008370659859
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-headphones",
+          "label": "耳机",
+          "image": "./assets/optimized/1d66b80f95a2a48d3e09de17216280648b88622dfdc6dbe9a13515064edcc9f5.png",
+          "bounds": [
+            782,
+            172.3263107723633,
+            955,
+            351
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-shark-fin",
+          "label": "鲨鱼背鳍",
+          "image": "./assets/optimized/0daadfef4b6c9342a19dd8f51265487986f38059e91e868e99dce86a06c377c5.png",
+          "bounds": [
+            539,
+            963,
+            676,
+            1062.448275862069
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "custom-000",
       "version": "release-v01",
