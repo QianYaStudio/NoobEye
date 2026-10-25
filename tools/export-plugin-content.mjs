@@ -28,7 +28,12 @@ export async function exportPluginContent(site, publicationPath) {
   return content;
 }
 if (process.argv[1] && pathToFileURL(path.resolve(process.argv[1])).href === import.meta.url) {
-  const site = fileURLToPath(new URL('../site/', import.meta.url));
-  const content = await exportPluginContent(site);
-  console.log(`Plugin content: ${content.catalog.issues.length} published issues; default ${content.catalog.defaultIssue}.`);
+  const publicationState = JSON.parse(await readFile(new URL('./plugin-publication.json', import.meta.url), 'utf8'));
+  if (publicationState.enabled) {
+    const site = fileURLToPath(new URL('../site/', import.meta.url));
+    const content = await exportPluginContent(site);
+    console.log(`Plugin content: ${content.catalog.issues.length} published issues; default ${content.catalog.defaultIssue}.`);
+  } else {
+    console.log('Plugin publishing paused.');
+  }
 }
