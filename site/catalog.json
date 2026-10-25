@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "053",
+  "defaultIssue": "054",
   "issues": [
+    {
+      "id": "054",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 给影子放个假",
+      "english": "DIDIDO · Shadows on Holiday",
+      "intro": "午后的洗染院里，精灵和陶偶仰头望着晾绳，他们的影子正挂在上面悠闲休息。沿着石拱、晾绳、衣物和器具，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/42429347f6e7d26605ec8aa7d9630340f8191063dce0511dfa1a7417ea8a78d2.webp",
+      "color": "./assets/optimized/a6cb87b09b2b94f617495d1e8f6829ef4981f1855335cedae52c92268d0f4f5b.webp",
+      "cover": "./assets/optimized/b79791abdccb24b62262ef2d92476fd55cfd2de3e500b9566dfc06f544bf9d4e.webp",
+      "coverWidth": 520,
+      "coverHeight": 368,
+      "targets": [
+        {
+          "id": "t07-sunhat",
+          "label": "遮阳帽",
+          "image": "./assets/optimized/c609a1792278abadb923277f3667957c2d40e75c0f6933616bd7f92fc1bd5f5a.png",
+          "bounds": [
+            1029.774193548387,
+            489.24,
+            1134.2222222222224,
+            545.5384615384615
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-juggling-club",
+          "label": "杂耍棒",
+          "image": "./assets/optimized/698b75375b997f48bf7659534f8883dfe232cdd29bf68d7a27b31f4cab340acb.png",
+          "bounds": [
+            453,
+            747.875,
+            483.45454545454544,
+            872.3684210526316
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-cocktail-glass",
+          "label": "鸡尾酒杯",
+          "image": "./assets/optimized/c44792db5c29ccd1666c2b6f4e26949b24f263c499044654e4e85ceb201a69ce.png",
+          "bounds": [
+            164,
+            924.4285714285714,
+            225,
+            1008
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t11-birdhouse",
+          "label": "鸟屋",
+          "image": "./assets/optimized/5f83ef1dd25274baa92a3ae025762573dc047a651b04c4a9a07c0e59d4dce416.png",
+          "bounds": [
+            778.9,
+            900,
+            880,
+            1002
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-candy-cane",
+          "label": "拐杖糖",
+          "image": "./assets/optimized/260f3e2ae1626ae8dc6717f357f47b38da42a4d011ba3cc5302e0b58ad5203ba.png",
+          "bounds": [
+            1171.2,
+            260.12346277038876,
+            1203,
+            421
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-wheat",
+          "label": "麦穗",
+          "image": "./assets/optimized/cfe0b773b24dbe544f891ef95727df445e85db7bfe1c8a5fed70e9679f1d1ad1.png",
+          "bounds": [
+            92.52952380952381,
+            1103,
+            116.49043478260867,
+            1166.64
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-pen-nib",
+          "label": "钢笔尖",
+          "image": "./assets/optimized/532fa965325c94f387f3595220ef9f9210ee16b3350df8ecc0509a21db3cb239.png",
+          "bounds": [
+            222,
+            550.0000000000001,
+            322,
+            583
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-not-equal",
+          "label": "不等号",
+          "image": "./assets/optimized/1e84ed94cb36c8deb1193414a2385f53bc0932d56a66c61e4f170bcd2e3135a1.png",
+          "bounds": [
+            945,
+            168,
+            1029,
+            279
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-crayon",
+          "label": "蜡笔",
+          "image": "./assets/optimized/75b5391c806668813cbf4279f654d98c0bb3a39c2e9aa15c791c78512e3ece90.png",
+          "bounds": [
+            492,
+            952,
+            690,
+            1001
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "053",
       "version": "release-v01",
