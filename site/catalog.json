@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "054",
+  "defaultIssue": "055",
   "issues": [
+    {
+      "id": "055",
+      "version": "release-v02",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 冬天还没睡醒",
+      "english": "DIDIDO · Winter, Five More Minutes",
+      "intro": "季节保管室里，石偶拉开抽屉，冬天还抱着被子赖床。沿着木柜、衣物、冰角和器具，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/d0d64281eda46ab77df73a105bc159f37dc15e5630750e0969b7661b2eb35901.webp",
+      "color": "./assets/optimized/995215062c8845ec4a158f644150c784925b057e3fd10739bebcc293a96d69e3.webp",
+      "cover": "./assets/optimized/3d78814723a8f20fb5117da8ea63f8ffbe279da437ee0e0661c65f01b45e13db.webp",
+      "coverWidth": 520,
+      "coverHeight": 736,
+      "targets": [
+        {
+          "id": "t10-jerrycan",
+          "label": "油桶",
+          "image": "./assets/optimized/2fd58d4ddff49d95752a65b91b8849a1910661c35317747852289830c4a4c283.png",
+          "bounds": [
+            47,
+            985,
+            99,
+            1066.125
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-macaron",
+          "label": "马卡龙",
+          "image": "./assets/optimized/09f1d63f0055247c387892db0f7d866593a45392cfb64432dff60ce0a2ef0f0d.png",
+          "bounds": [
+            351.22222222222223,
+            265.60230307891845,
+            434.7826086956522,
+            313.578947368421
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-chess-queen",
+          "label": "国际象棋·后",
+          "image": "./assets/optimized/be70b0125a08f6fbb7fa0e38a86927453eaa52e2e2790307e7fd042a15ad30b2.png",
+          "bounds": [
+            203.4686037957567,
+            1,
+            257.5,
+            77.26666666666667
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-candle-snuffer",
+          "label": "灭烛罩",
+          "image": "./assets/optimized/d853eca97276f6b7df90f159205c10752d10edec0e62820c38de2fec8baa18c6.png",
+          "bounds": [
+            119,
+            430,
+            187.72222222222226,
+            590
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t13-wishbone",
+          "label": "叉骨",
+          "image": "./assets/optimized/b7504f0f4d9fd2e06d986d4659c88bb9e6f6ca767b8bba8930c8a9717699bfa6.png",
+          "bounds": [
+            941.8061852042152,
+            601.4,
+            991.2857142857141,
+            668.5714285714286
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-division-sign",
+          "label": "除号",
+          "image": "./assets/optimized/13cddc8bca482324587a256945a16ee2cb7ea1a217e15a532115eebd9d54453d.png",
+          "bounds": [
+            787,
+            126,
+            840,
+            170
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-t-bone-steak",
+          "label": "T骨牛排",
+          "image": "./assets/optimized/8e1660358e63dd11521b93e476b61c072d83f07b26e0c9e72e1bc09b73e00bc1.png",
+          "bounds": [
+            984.2967187083083,
+            857.7914311033654,
+            1070.8281975623197,
+            933.5868944940332
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t11-spirit-level",
+          "label": "水平尺",
+          "image": "./assets/optimized/b7256da5bdabc13fc024f0807a48ad6fd9e5a8c773e997fdf045ac0e55b75db2.png",
+          "bounds": [
+            350.153,
+            779,
+            530.541,
+            899.256
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-curling-stone",
+          "label": "冰壶",
+          "image": "./assets/optimized/77a39c9c09f3c835e25a75a990c8f617b74b999740531ab62428a6443f506f86.png",
+          "bounds": [
+            469,
+            345.8571428571429,
+            541,
+            385.41495365852546
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "054",
       "version": "release-v01",
