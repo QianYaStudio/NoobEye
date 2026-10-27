@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "055",
+  "defaultIssue": "056",
   "issues": [
+    {
+      "id": "056",
+      "version": "release-v02",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 彩虹在发酵",
+      "english": "DIDIDO · A Rainbow on the Rise",
+      "intro": "石砌发酵室里，一只陶偶拼命压住大缸盖，另一只在桌边牵拉面团，发酵的彩虹面团却越长越高，跨过石拱落在木桌上。沿着绳索、陶罐、木架和器具，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/3ee7295fa8bfdb8ba16769a8ec798fec731cd3d6176aa10845313fd41dc700a7.webp",
+      "color": "./assets/optimized/8d5467d4d0ff3f9c6c1aaad4a1cd8521b2fc94c8003f329adce858054279155a.webp",
+      "cover": "./assets/optimized/32db16ea7aa7a373af6cec1d0587d0255ba8dc268207be9a049891a14fafaaae.webp",
+      "coverWidth": 520,
+      "coverHeight": 736,
+      "targets": [
+        {
+          "id": "t06-ravioli",
+          "label": "意式方饺",
+          "image": "./assets/optimized/4eed5983d84131ff37d5b15aae96c5bc5991ab092cb8e9c9f31563004398d2a2.png",
+          "bounds": [
+            1040.7142857142858,
+            941.7142857142856,
+            1119.2857142857142,
+            1026.2857142857142
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-letter-j",
+          "label": "字母 J",
+          "image": "./assets/optimized/c0e056f1251a4f592045a0e3ad15dff0fc83912e4505865776e94e1fb0d7a675.png",
+          "bounds": [
+            1140,
+            248.5,
+            1182.25,
+            320.37697637746453
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t14-staircase",
+          "label": "台阶",
+          "image": "./assets/optimized/a44a21867eb1c8cc60a5ae13d9f0b26efa4d9279857821f6d39425e99b3463e3.png",
+          "bounds": [
+            638.25,
+            522.875,
+            717.717,
+            621.525
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-fishing-float",
+          "label": "鱼漂",
+          "image": "./assets/optimized/e0d36deb34df1848c9e7a690c6b187812d959086225c7452af511d7a4d6f8a29.png",
+          "bounds": [
+            93.5,
+            119,
+            122.14285714285715,
+            204
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-omega",
+          "label": "Ω",
+          "image": "./assets/optimized/59ec26f18a9f7aa5ff9d64c55d3e74830a9b81bcf2da8483e84418b4dd2c1be6.png",
+          "bounds": [
+            1178.512,
+            638.6551652701679,
+            1223.2448768608704,
+            688.383
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t13-letter-b",
+          "label": "字母 B",
+          "image": "./assets/optimized/bffc820972ba2f41b3aad8b1d298e45640664ca333c05d98cd7b70cac768219f.png",
+          "bounds": [
+            296.0875144154201,
+            225.25,
+            381.9885817959396,
+            359.69230769230774
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-cheese-slicer",
+          "label": "奶酪刨",
+          "image": "./assets/optimized/f867d10e692bcdc5167cd6e8708a1ee91f31db02b891a9d9447d89b938dc8426.png",
+          "bounds": [
+            814,
+            886,
+            909,
+            967.4000000000001
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-rhinoceros",
+          "label": "犀牛",
+          "image": "./assets/optimized/6de3f60dad15a58580c73b686031977d1c06ff82e7f4d21d511acf7ea6a80f88.png",
+          "bounds": [
+            380.24351253359293,
+            974,
+            488.5562499999999,
+            1059.1428571428573
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-paper-hat",
+          "label": "纸帽",
+          "image": "./assets/optimized/c5ae2d559b42c2893b4a6b8e34099c342fa96b62327f40352d30426ba1bab629.png",
+          "bounds": [
+            1014,
+            270,
+            1107,
+            352
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "055",
       "version": "release-v02",
