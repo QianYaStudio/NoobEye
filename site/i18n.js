@@ -1,11 +1,11 @@
-import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-056-20261028';
+import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-057-20261028';
 const KEY='noobeye:language';
 let saved;try{if(typeof window!=='undefined')saved=localStorage.getItem(KEY);}catch{}
 const preferred=(typeof navigator==='undefined'?'en':navigator.languages?.[0]||navigator.language||'en').toLowerCase();
 export let language=['zh','en','ja'].includes(saved)?saved:(preferred.startsWith('zh')?'zh':preferred.startsWith('ja')?'ja':'en');
 export const tr=(zh,en,ja)=>language==='zh'?zh:language==='ja'?(ja??en):en;
 const inLanguage=(lang,zh,en,ja)=>lang==='zh'?zh:lang==='ja'?(ja??en):en;
-const titlesEn={'056':'DIDIDO · A Rainbow on the Rise','055':'DIDIDO · Winter, Five More Minutes','054':'DIDIDO · Shadows on Holiday','053':'DIDIDO · A Waterfall’s Day Off','052':'DIDIDO · Newly Hatched Stars','051':'DIDIDO · Winding the Storm','050':'DIDIDO · After the Moon Tide','049':'DIDIDO · Shadows on the Line','048':'DIDIDO · A Door to the Sea','047':'DIDIDO · A Castle on the Move','046':'DIDIDO · Borrow a Little Rain','045':'DIDIDO · A Dragon’s Loose Tooth'};
+const titlesEn={'057':'DIDIDO · A Very Unusual Catch','056':'DIDIDO · A Rainbow on the Rise','055':'DIDIDO · Winter, Five More Minutes','054':'DIDIDO · Shadows on Holiday','053':'DIDIDO · A Waterfall’s Day Off','052':'DIDIDO · Newly Hatched Stars','051':'DIDIDO · Winding the Storm','050':'DIDIDO · After the Moon Tide','049':'DIDIDO · Shadows on the Line','048':'DIDIDO · A Door to the Sea','047':'DIDIDO · A Castle on the Move','046':'DIDIDO · Borrow a Little Rain','045':'DIDIDO · A Dragon’s Loose Tooth'};
 export const titleOf=issue=>issue.translations?.[language]?.title??inLanguage(language,issue.title,titlesEn[issue.id]??issue.english.replace(/^THE /,'').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase()).replace(/^(Didido|Milo|Poko)\b/,s=>s.toUpperCase()),titlesJa[issue.id]);
 const nouns={
   '数字 8':'Number 8','斧头':'Axe','彗星':'Comet','哑铃':'Dumbbell','钻戒':'Diamond ring','竖笛':'Recorder','四分休止符':'Quarter rest','独眼兔':'One-eyed rabbit',
@@ -36,6 +36,7 @@ const nouns={
 };
 export const labelOf=target=>target.translations?.[language]?.label??inLanguage(language,target.label,nouns[target.label]||target.labelEn||target.label,nounsJa[target.label]);
 const intros={
+  '057':"At a wooden pier above the clouds, a traveler raises his fishing rod and hooks a floating island with a stone doorway and a great tree. A little stone helper steadies him from behind. Find nine hidden shapes among the clothing, wooden supports, rock faces and island greenery.",
   '056':"In a stone fermentation room, one ceramic helper struggles to hold down a huge crock lid while another pulls the dough at the table. The rainbow dough keeps rising, arching over the room and spilling onto a wooden table. Find nine hidden shapes among the ropes, jars, wooden supports and tools.",
   '055':"In the season storeroom, a stone golem pulls open a drawer, but Winter is still tucked under the blanket. Find nine hidden shapes among the wooden cabinet, clothing, icy antlers and tools.",
   '054':'In a sunny laundry courtyard, an elf and a ceramic helper look up at their shadows, taking a leisurely break on the clothesline. Find nine hidden shapes among the stone arches, washing line, clothing and tools.',
@@ -181,3 +182,5 @@ Object.assign(nouns,{"遮阳帽": "Sunhat", "杂耍棒": "Juggling club", "鸡�
 Object.assign(nouns,{"油桶": "Jerrycan", "马卡龙": "Macaron", "国际象棋·后": "Chess queen", "灭烛罩": "Candle snuffer", "叉骨": "Wishbone", "除号": "Division sign", "T骨牛排": "T-bone steak", "水平尺": "Spirit level", "冰壶": "Curling stone"});
 
 Object.assign(nouns,{"意式方饺": "Ravioli", "字母 J": "Letter J", "台阶": "Staircase", "鱼漂": "Fishing float", "Ω": "Omega", "字母 B": "Letter B", "奶酪刨": "Cheese slicer", "犀牛": "Rhinoceros", "纸帽": "Paper hat"});
+
+Object.assign(nouns,{"椰子": "Coconut", "珊瑚枝": "Coral branch", "字母 K": "Letter K", "铅垂锤": "Plumb bob", "龙翼": "Dragon wing", "海饼": "Sand dollar", "盾牌": "Shield", "王字": "Chinese character 王", "马蹄莲": "Calla lily"});
