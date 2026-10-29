@@ -1,4 +1,4 @@
-import {language,tr} from './i18n.js?v=issue-057-20261028';
+import {language,tr} from './i18n.js?v=issue-058-20261029';
 import {readSettings} from './settings.js';
 export function setupSubscriptions(){
  const section=document.createElement('section');section.id='subscribe';section.className='newsletter';
