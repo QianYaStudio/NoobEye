@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "058",
+  "defaultIssue": "059",
   "issues": [
+    {
+      "id": "059",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 楼梯去散步",
+      "english": "DIDIDO · Stairs on the Loose",
+      "intro": "古老的阅览厅里，楼梯离开原来的位置，在高耸的石柱之间盘旋游走。抱着书的陶偶追了上来。沿着书页、栏杆、石柱和衣物，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/a5d290de9c02068d6caf5f5130acc379b4d2ac7ecf21dbe2733b9507e2bebf66.webp",
+      "color": "./assets/optimized/9f4e3e9fdcf0f82620d680c0b9bfc47384ebff125a343dea08b32dcca76ae1a8.webp",
+      "cover": "./assets/optimized/954e68d8dd652691d207e62e6c4bffed0052b19aa60b33791c8abf6d4c6abff5.webp",
+      "coverWidth": 520,
+      "coverHeight": 368,
+      "targets": [
+        {
+          "id": "t02-horn",
+          "label": "号角",
+          "image": "./assets/optimized/753a38fe3e02901aff434ba15770af35bc53b7e3b8f00973c8c8e71fc93bc577.png",
+          "bounds": [
+            173.25,
+            788.4573591596629,
+            310.75,
+            868.5999876953304
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-lightning-bolt",
+          "label": "闪电",
+          "image": "./assets/optimized/89eeba08666eb027889c212afc46b03dd7af46c3ff85e843c84b6ca833399812.png",
+          "bounds": [
+            599,
+            172.4,
+            638,
+            251.1
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-thread-spool",
+          "label": "线轴",
+          "image": "./assets/optimized/69c60ccb7a27abdd235a74e2645968af74c7a7b1f00dcbc041131e7492a3c3c3.png",
+          "bounds": [
+            634,
+            978,
+            709,
+            1027.7692307692307
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-rabbit-head",
+          "label": "兔子头像",
+          "image": "./assets/optimized/59ce72becd6211cfa3c1450b3458401c43083764517c409eacc1bd810af3c567.png",
+          "bounds": [
+            879.2225390312312,
+            791.2291236000337,
+            927.3,
+            845.9438321736727
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-crown",
+          "label": "王冠",
+          "image": "./assets/optimized/add98a06853d3ece4211d4bc5a139361701401fa2709903037eb94454349e02f.png",
+          "bounds": [
+            615,
+            1164.7,
+            678,
+            1214
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-matchstick",
+          "label": "火柴",
+          "image": "./assets/optimized/d6fb427b550f26812276f596b7bb8c9f9b93b4b25d5995d1fdf571a5179cfb79.png",
+          "bounds": [
+            287.29184628051314,
+            667,
+            296,
+            763.7019230769231
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-rocket",
+          "label": "火箭",
+          "image": "./assets/optimized/5f858e2b2328e451f46bdded245c829325359f449fd19671a12ac75f961f7669.png",
+          "bounds": [
+            1091,
+            479,
+            1123,
+            551
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-scissors",
+          "label": "剪刀",
+          "image": "./assets/optimized/39ebdbec62857dd146ee0d17eee7a61e9527ac1b77018e363e53c236132a85c4.png",
+          "bounds": [
+            381.28164716604965,
+            604.599,
+            422.673,
+            655.3435858108378
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-horseshoe",
+          "label": "马蹄铁",
+          "image": "./assets/optimized/cb74174a40145a4e11f05ff2a903044591405c9935883bd0d7b5f3071bf9408d.png",
+          "bounds": [
+            415.75,
+            768.9580890114843,
+            499.25,
+            813
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "058",
       "version": "release-v01",
