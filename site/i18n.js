@@ -1,11 +1,11 @@
-import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-059-20261031';
+import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-060-20261101';
 const KEY='noobeye:language';
 let saved;try{if(typeof window!=='undefined')saved=localStorage.getItem(KEY);}catch{}
 const preferred=(typeof navigator==='undefined'?'en':navigator.languages?.[0]||navigator.language||'en').toLowerCase();
 export let language=['zh','en','ja'].includes(saved)?saved:(preferred.startsWith('zh')?'zh':preferred.startsWith('ja')?'ja':'en');
 export const tr=(zh,en,ja)=>language==='zh'?zh:language==='ja'?(ja??en):en;
 const inLanguage=(lang,zh,en,ja)=>lang==='zh'?zh:lang==='ja'?(ja??en):en;
-const titlesEn={'059':'DIDIDO · Stairs on the Loose','058':'DIDIDO · Posting the Night','057':'DIDIDO · A Very Unusual Catch','056':'DIDIDO · A Rainbow on the Rise','055':'DIDIDO · Winter, Five More Minutes','054':'DIDIDO · Shadows on Holiday','053':'DIDIDO · A Waterfall’s Day Off','052':'DIDIDO · Newly Hatched Stars','051':'DIDIDO · Winding the Storm','050':'DIDIDO · After the Moon Tide','049':'DIDIDO · Shadows on the Line','048':'DIDIDO · A Door to the Sea','047':'DIDIDO · A Castle on the Move','046':'DIDIDO · Borrow a Little Rain','045':'DIDIDO · A Dragon’s Loose Tooth'};
+const titlesEn={'060':'MILO · Waiting for Clear Skies','059':'DIDIDO · Stairs on the Loose','058':'DIDIDO · Posting the Night','057':'DIDIDO · A Very Unusual Catch','056':'DIDIDO · A Rainbow on the Rise','055':'DIDIDO · Winter, Five More Minutes','054':'DIDIDO · Shadows on Holiday','053':'DIDIDO · A Waterfall’s Day Off','052':'DIDIDO · Newly Hatched Stars','051':'DIDIDO · Winding the Storm','050':'DIDIDO · After the Moon Tide','049':'DIDIDO · Shadows on the Line','048':'DIDIDO · A Door to the Sea','047':'DIDIDO · A Castle on the Move','046':'DIDIDO · Borrow a Little Rain','045':'DIDIDO · A Dragon’s Loose Tooth'};
 export const titleOf=issue=>issue.translations?.[language]?.title??inLanguage(language,issue.title,titlesEn[issue.id]??issue.english.replace(/^THE /,'').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase()).replace(/^(Didido|Milo|Poko)\b/,s=>s.toUpperCase()),titlesJa[issue.id]);
 const nouns={
   '数字 8':'Number 8','斧头':'Axe','彗星':'Comet','哑铃':'Dumbbell','钻戒':'Diamond ring','竖笛':'Recorder','四分休止符':'Quarter rest','独眼兔':'One-eyed rabbit',
@@ -36,6 +36,7 @@ const nouns={
 };
 export const labelOf=target=>target.translations?.[language]?.label??inLanguage(language,target.label,nouns[target.label]||target.labelEn||target.label,nounsJa[target.label]);
 const intros={
+  '060':'At a mountain pass after the rain, cloaks dry beneath the inn’s eaves. A traveler accepts a warm drink, a craftsman repairs a pack saddle, and a child points toward the clearing mountains. Find nine hidden shapes among the timbers, clothing, luggage and stone steps.',
   '059':'In an ancient reading hall, the staircase has wandered away from its place and winds between tall stone columns. A ceramic helper hurries after it with a stack of books. Find nine hidden shapes among the pages, railings, columns and clothing.',
   '058':"In an old post house, a traveler opens a large trunk on a cart. A night sky filled with the moon and stars rises from it, while a ceramic helper reaches for a drifting corner. Find nine hidden shapes among the clothing, parcels, lamps and stone steps.",
   '057':"At a wooden pier above the clouds, a traveler raises his fishing rod and hooks a floating island with a stone doorway and a great tree. A little stone helper steadies him from behind. Find nine hidden shapes among the clothing, wooden supports, rock faces and island greenery.",
@@ -190,3 +191,5 @@ Object.assign(nouns,{"椰子": "Coconut", "珊瑚枝": "Coral branch", "字母 K
 Object.assign(nouns,{"纸飞机": "Paper airplane", "叶子": "Leaf", "字母 M": "Letter M", "月亮炸弹": "Moon bomb", "爱心": "Heart", "钥匙": "Key", "奖杯": "Trophy", "香蕉": "Banana", "汉字“山”": "Chinese character 山"});
 
 Object.assign(nouns,{"闪电": "Lightning bolt", "兔子头像": "Rabbit head"});
+
+Object.assign(nouns,{"三角尺": "Set square", "棋兵": "Chess pawn", "独木舟": "Canoe"});
