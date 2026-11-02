@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "061",
+  "defaultIssue": "062",
   "issues": [
+    {
+      "id": "062",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "MILO · 退潮后的集市",
+      "english": "MILO · The Low-Tide Market",
+      "intro": "退潮露出通往岛上市集的石路，米洛牵着驮兽走向近岸鱼摊。沿着船板、披风、海藻、网浮子和盘绳，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/4c69eb409c731cb693f1f0ac7b7371da9924e1222e3fb39270a1a43a946b9d21.webp",
+      "color": "./assets/optimized/3ed262faa482e3bae4cf1e0dc89014228e9376d50e925120c8291d4751977ee6.webp",
+      "cover": "./assets/optimized/123db4a15033bd597442c44883b0127807e7bcb441484c2c128104a2c68c55d9.webp",
+      "coverWidth": 520,
+      "coverHeight": 368,
+      "targets": [
+        {
+          "id": "t06-cocktail-glass",
+          "label": "鸡尾酒杯",
+          "image": "./assets/optimized/5c718f0554dc7c037ba87616dc7c599ebdfa9aff3f166f81059813cb63b13348.png",
+          "bounds": [
+            574,
+            200.2,
+            618,
+            249
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-pineapple",
+          "label": "菠萝",
+          "image": "./assets/optimized/7312c3196113c729c59721da273cf4ab34e910584d19e1d572c71ad9ed047193.png",
+          "bounds": [
+            803,
+            567,
+            839.0845742759655,
+            631.2205058584217
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-feather",
+          "label": "羽毛",
+          "image": "./assets/optimized/f63d8cae2f5059d600625a241e262fb28f00be718b8657a417980874de972a91.png",
+          "bounds": [
+            181,
+            1032,
+            258,
+            1119
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-pistol",
+          "label": "手枪",
+          "image": "./assets/optimized/cec4f8c2cf2e45727e3ad222f38dd26ecfdb8164759099e2b4fbcf26bca39068.png",
+          "bounds": [
+            872.25,
+            965.2480054084256,
+            982.25,
+            1020.25
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-honey-dipper",
+          "label": "蜂蜜棒",
+          "image": "./assets/optimized/3e9a1e85ea0aa180a6e3d73c0777424a3a6bcc3da2ceae36d7c48c5b6858d039.png",
+          "bounds": [
+            723.0039796085415,
+            982.25,
+            837.1284890754198,
+            1113
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-stingray",
+          "label": "鳐鱼",
+          "image": "./assets/optimized/10b915295ab4510bf635a7b7873771d8607cbb7e1c674b8e5443e2aabb6a629d.png",
+          "bounds": [
+            502.25,
+            586.25,
+            570.25,
+            682.25
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-candy-cane",
+          "label": "拐杖糖",
+          "image": "./assets/optimized/8c95ae338e564fcf20c6ed1dc05b07935006788c3ec2b355d96d02cfa373349b.png",
+          "bounds": [
+            1187,
+            998.1217691607856,
+            1235.1465154595376,
+            1070
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-flag",
+          "label": "旗帜",
+          "image": "./assets/optimized/80e320bbac75057265daa86a092516f0dd3eadbcb6fe3288204d7da37463edae.png",
+          "bounds": [
+            725.25,
+            803.1785368849743,
+            820.25,
+            875.25
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-chili-pepper",
+          "label": "辣椒",
+          "image": "./assets/optimized/3a7bc30c32774d9c78d5a52edaf8241f7a2f469db2f95be95d2248ee7a26babc.png",
+          "bounds": [
+            1085.8621418377888,
+            910.25,
+            1152.25,
+            970.7997060936572
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "061",
       "version": "release-v01",
