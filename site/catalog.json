@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "062",
+  "defaultIssue": "063",
   "issues": [
+    {
+      "id": "063",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 织一条河",
+      "english": "DIDIDO · Weaving a River",
+      "intro": "魔法织机将水织成长幅，再从滚轴前翻落成河。两位陶偶忙着操作织机、接取河水。沿着木构、布料、线轴、植物和绳索，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/b1a7eff89bf461b8deeaa0cc9c94741627bfd9eb807cf792e82e0157e733ad8f.webp",
+      "color": "./assets/optimized/e6fe517689ce4aa7be00e43e0d95372cb2ff480014a757e8d77e81ac686e99c9.webp",
+      "cover": "./assets/optimized/1d65dc96ca421f624cd707d1384341451a8e9d576dda116c582ff82fbd242084.webp",
+      "coverWidth": 520,
+      "coverHeight": 368,
+      "targets": [
+        {
+          "id": "t09-whistle",
+          "label": "口哨",
+          "image": "./assets/optimized/1aa978129186775cf3e69c9f14d235a0d306662d0ed74fb5d92f26b9fbb69f5b.png",
+          "bounds": [
+            269.9530022087924,
+            823.78278998814,
+            339.27272727272725,
+            854.8421052631579
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-jellyfish",
+          "label": "水母",
+          "image": "./assets/optimized/ae4e3e60af880c5c139ad923cc7fe0dd972b2c165d2185cc872e573a419a0171.png",
+          "bounds": [
+            15.370197058635037,
+            990.7441860465117,
+            172.17899247175583,
+            1129
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-magnet",
+          "label": "马蹄磁铁",
+          "image": "./assets/optimized/fcdfe22ef528320fb59f5b90c221905e1a7c7c4991e8debfa3637e3e9a8902f9.png",
+          "bounds": [
+            888,
+            538.8101696158819,
+            945,
+            672.3236235698926
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-cat",
+          "label": "猫脸",
+          "image": "./assets/optimized/232e90f470e93967e2cd7dff6d800b19d2de9aeb61353d196e82be2bdd8e4807.png",
+          "bounds": [
+            1077,
+            608,
+            1124,
+            664
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-paintbrush",
+          "label": "油漆刷",
+          "image": "./assets/optimized/b9944d44b8cab01a70f7a1380c7cb52714f787dc72534dba828818fb3a1f162e.png",
+          "bounds": [
+            530.4285714285714,
+            282.09999999999997,
+            590,
+            469.5
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-sock",
+          "label": "袜子",
+          "image": "./assets/optimized/a2603ac0a51fa848e0056dbda3357f24e6914c90949aa0d0ab90a66321f91286.png",
+          "bounds": [
+            184.5,
+            456,
+            233.28571428571428,
+            584
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-tin-can",
+          "label": "罐头盒",
+          "image": "./assets/optimized/7dbac4179b7e737768913cdbb1f0cda77f2a2939735452732de5437e4073047c.png",
+          "bounds": [
+            58.75,
+            442.6111249326308,
+            130.21294190381698,
+            538.0124739177626
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-thermometer",
+          "label": "温度计",
+          "image": "./assets/optimized/a166622193573a69e349a192387d477fa940984ec0e60dd519f6f6162c4d3f65.png",
+          "bounds": [
+            356.2023394193737,
+            105.16822222222223,
+            369.75,
+            158.25
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-butterfly",
+          "label": "蝴蝶",
+          "image": "./assets/optimized/04bf58e7d1fa4cba4efbc36bc2a846d0f2e5f669d0152a417ec4cfb1e3a089aa.png",
+          "bounds": [
+            192.9156081756484,
+            299,
+            236,
+            338
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "062",
       "version": "release-v01",
