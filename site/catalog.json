@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "063",
+  "defaultIssue": "064",
   "issues": [
+    {
+      "id": "064",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 倒挂的果园",
+      "english": "DIDIDO · Upside-Down Orchard",
+      "intro": "上下相对的浮岛上，陶偶们隔着弧桥采收倒挂的梨子。沿着树叶、篮筐、衣物、石壁和绳桥，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/38f1a2d5fede16b944c26a2ac4deb302f447cb709571d9b8b69a544f6953d566.webp",
+      "color": "./assets/optimized/56c31cce6084ede0ba0349cffda4be757650d62167d34200e1821196bdf3e9c1.webp",
+      "cover": "./assets/optimized/f2e9ee21ffaaecfc5765add9e75ee3c2c1ff3bfa146a5fb792cc725099c80a76.webp",
+      "coverWidth": 520,
+      "coverHeight": 735,
+      "targets": [
+        {
+          "id": "t08-keyhole",
+          "label": "钥匙孔",
+          "image": "./assets/optimized/a424fad7afdcd665f7f293b68b9edeee104dc6e495314c7254ebb6526e7c683a.png",
+          "bounds": [
+            1106.3711116486854,
+            303.9303188773407,
+            1126.5780400941298,
+            325.25
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-banana",
+          "label": "香蕉",
+          "image": "./assets/optimized/d05755dfdad8adafc9b765873c7808e47542c952d07621c5c1d81f70fd045c02.png",
+          "bounds": [
+            430.75,
+            778.826602267664,
+            460.5091750240615,
+            829.75
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-mitten",
+          "label": "连指手套",
+          "image": "./assets/optimized/ca8252450b1c5a8669f427caedcf4d8420c3f2e22f24b04e567c3e2b491f27e9.png",
+          "bounds": [
+            1084.325765385825,
+            689.25,
+            1120,
+            726.7860408793833
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-pen-nib",
+          "label": "钢笔尖",
+          "image": "./assets/optimized/c2f93ff30692a390a21d58cff948e55ace79410508d3f81d8da5804540ade6a9.png",
+          "bounds": [
+            375.32758620689646,
+            147.25,
+            391.84782608695656,
+            185.25
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-dumbbell",
+          "label": "哑铃",
+          "image": "./assets/optimized/dcf7522e8e06d0a0cd7e0a00c10badcf288ec5392d2ca51194d03f6e29941c77.png",
+          "bounds": [
+            109.75,
+            613.5483870967743,
+            162.23076923076923,
+            671.75
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-top-hat",
+          "label": "高顶礼帽",
+          "image": "./assets/optimized/d935e3557f496a67deb0ecdc7d970c91800e09fd52af2645467435cca92777ef.png",
+          "bounds": [
+            216.33333333333334,
+            763,
+            268.79999999999995,
+            796.8999999999999
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-arrowhead",
+          "label": "石箭头",
+          "image": "./assets/optimized/aaf141e19aa7d82453f9bb545542ab1e1aa7ce14ec69ed5a5bcfdcfdf49366a6.png",
+          "bounds": [
+            278,
+            1173,
+            330,
+            1242.75
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-puzzle-piece",
+          "label": "拼图块",
+          "image": "./assets/optimized/3b72c91ec284fe134914a3ee27c96f764885f2179e00f73e5e572b3d0b8a6fa7.png",
+          "bounds": [
+            869,
+            42.54644007500071,
+            917,
+            106
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t11-key",
+          "label": "钥匙",
+          "image": "./assets/optimized/4654718403438f110c2bccf0f8eba542307641a07abedb44a1b9072685e714c6.png",
+          "bounds": [
+            481.2,
+            610.25,
+            499.6363636363636,
+            657.25
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "063",
       "version": "release-v01",
