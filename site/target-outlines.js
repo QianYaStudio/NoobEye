@@ -1,5 +1,5 @@
 import guideData from './guide-outline-data.js';
-import data from './target-outline-data.js?v=issue-064-20261104';
+import data from './target-outline-data.js?v=issue-065-20261105';
 export const targetOutline=(issueId,targetId)=>guideData[issueId+'/'+targetId]?.paths??data[issueId]?.targets[targetId]?.paths;
 export const outlineInfo=(issueId,targetId)=>guideData[issueId+'/'+targetId]??data[issueId]?.targets[targetId];
 

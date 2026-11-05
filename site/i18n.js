@@ -1,11 +1,11 @@
-import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-064-20261104';
+import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-065-20261105';
 const KEY='noobeye:language';
 let saved;try{if(typeof window!=='undefined')saved=localStorage.getItem(KEY);}catch{}
 const preferred=(typeof navigator==='undefined'?'en':navigator.languages?.[0]||navigator.language||'en').toLowerCase();
 export let language=['zh','en','ja'].includes(saved)?saved:(preferred.startsWith('zh')?'zh':preferred.startsWith('ja')?'ja':'en');
 export const tr=(zh,en,ja)=>language==='zh'?zh:language==='ja'?(ja??en):en;
 const inLanguage=(lang,zh,en,ja)=>lang==='zh'?zh:lang==='ja'?(ja??en):en;
-const titlesEn={'064':'DIDIDO · Upside-Down Orchard','063':'DIDIDO · Weaving a River','062':'MILO · The Low-Tide Market','061':'DIDIDO · A Very Large Guest','060':'MILO · Waiting for Clear Skies','059':'DIDIDO · Stairs on the Loose','058':'DIDIDO · Posting the Night','057':'DIDIDO · A Very Unusual Catch','056':'DIDIDO · A Rainbow on the Rise','055':'DIDIDO · Winter, Five More Minutes','054':'DIDIDO · Shadows on Holiday','053':'DIDIDO · A Waterfall’s Day Off','052':'DIDIDO · Newly Hatched Stars','051':'DIDIDO · Winding the Storm','050':'DIDIDO · After the Moon Tide','049':'DIDIDO · Shadows on the Line','048':'DIDIDO · A Door to the Sea','047':'DIDIDO · A Castle on the Move','046':'DIDIDO · Borrow a Little Rain','045':'DIDIDO · A Dragon’s Loose Tooth'};
+const titlesEn={'065':'DIDIDO · Winding the Wind','064':'DIDIDO · Upside-Down Orchard','063':'DIDIDO · Weaving a River','062':'MILO · The Low-Tide Market','061':'DIDIDO · A Very Large Guest','060':'MILO · Waiting for Clear Skies','059':'DIDIDO · Stairs on the Loose','058':'DIDIDO · Posting the Night','057':'DIDIDO · A Very Unusual Catch','056':'DIDIDO · A Rainbow on the Rise','055':'DIDIDO · Winter, Five More Minutes','054':'DIDIDO · Shadows on Holiday','053':'DIDIDO · A Waterfall’s Day Off','052':'DIDIDO · Newly Hatched Stars','051':'DIDIDO · Winding the Storm','050':'DIDIDO · After the Moon Tide','049':'DIDIDO · Shadows on the Line','048':'DIDIDO · A Door to the Sea','047':'DIDIDO · A Castle on the Move','046':'DIDIDO · Borrow a Little Rain','045':'DIDIDO · A Dragon’s Loose Tooth'};
 export const titleOf=issue=>issue.translations?.[language]?.title??inLanguage(language,issue.title,titlesEn[issue.id]??issue.english.replace(/^THE /,'').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase()).replace(/^(Didido|Milo|Poko)\b/,s=>s.toUpperCase()),titlesJa[issue.id]);
 const nouns={
   '数字 8':'Number 8','斧头':'Axe','彗星':'Comet','哑铃':'Dumbbell','钻戒':'Diamond ring','竖笛':'Recorder','四分休止符':'Quarter rest','独眼兔':'One-eyed rabbit',
@@ -36,6 +36,7 @@ const nouns={
 };
 export const labelOf=target=>target.translations?.[language]?.label??inLanguage(language,target.label,nouns[target.label]||target.labelEn||target.label,nounsJa[target.label]);
 const intros={
+  '065':'In a magical clockmaker’s courtyard, two ceramic helpers wind the breeze into a giant spring machine. Find nine hidden shapes among the timber, fabric, metal joints, tools and gaps in the paving.',
   '064':'On two floating islands facing opposite ways, ceramic helpers harvest pears across a curved rope bridge. Find nine hidden shapes among the leaves, baskets, clothing, rocky cliffs and bridge.',
   '063':'A magical loom weaves water into a long cloth that spills from its rollers as a river. Two ceramic helpers tend the loom and collect the flowing water. Find nine hidden shapes among the timbers, fabric, spools, plants and ropes.',
   '062':'The receding tide reveals a stone path to the island market. Milo leads a pack animal past the fish stalls. Find nine hidden shapes among boat planks, a cloak, seaweed, net floats and coiled ropes.',
@@ -205,3 +206,5 @@ Object.assign(nouns,{"菠萝": "Pineapple", "旗帜": "Flag"});
 Object.assign(nouns,{"口哨": "Whistle", "马蹄磁铁": "Horseshoe magnet", "猫脸": "Cat face", "油漆刷": "Paintbrush", "罐头盒": "Tin can"});
 
 Object.assign(nouns,{"钥匙孔": "Keyhole", "连指手套": "Mitten", "高顶礼帽": "Top hat", "石箭头": "Arrowhead"});
+
+Object.assign(nouns,{"数字6": "Number 6"});

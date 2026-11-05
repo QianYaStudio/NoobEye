@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "064",
+  "defaultIssue": "065",
   "issues": [
+    {
+      "id": "065",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 给风装上发条",
+      "english": "DIDIDO · Winding the Wind",
+      "intro": "魔法钟匠的庭院里，两位陶偶忙着把风卷入巨大的发条机。沿着木构、布料、金属关节、器具和石板间隙，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/7bf1d50f3303f854179cc68c99a2e41b07997c9ee0488289581bfcdbda3b905f.webp",
+      "color": "./assets/optimized/482ab74ebb98deb49502f88a59813c21e22660c56883f1fb25b6e89f5d80ac74.webp",
+      "cover": "./assets/optimized/b269ab82e00ce6c4278cba74555fdace3beda4106c335d290b00145e2cced7c1.webp",
+      "coverWidth": 520,
+      "coverHeight": 735,
+      "targets": [
+        {
+          "id": "t05-scissors",
+          "label": "剪刀",
+          "image": "./assets/optimized/f26256bb7ce4526b26ede8fb3fcbaa803b9d890276c82939bab356d801c4f500.png",
+          "bounds": [
+            24,
+            1063,
+            87.50239168750329,
+            1156
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t11-paper-boat",
+          "label": "纸船",
+          "image": "./assets/optimized/63e54dc38f5bfc73eaa78b8539d0691d9b2b4e288501f54940f012c29a2ff940.png",
+          "bounds": [
+            157,
+            473,
+            220.25,
+            517
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-number-six",
+          "label": "数字6",
+          "image": "./assets/optimized/a69ba0db93b12d3a132039cadf18e9b364b1b1e4b1a8a93610a7e07d678af9d8.png",
+          "bounds": [
+            344.28100372043343,
+            418.5235434462257,
+            398.1739130434783,
+            464.5323535451769
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-duck",
+          "label": "鸭子",
+          "image": "./assets/optimized/83112eadfab942d9fbee5d4b5584769d626f80b135e1bf980465a35ea77d9c57.png",
+          "bounds": [
+            1044.75,
+            836.9655635329345,
+            1103.75,
+            867.067236942479
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-hot-air-balloon",
+          "label": "热气球",
+          "image": "./assets/optimized/4ec5d588254f67c8b1aba108228e19306af06cadfdfab8e804b3bcf63d73b3e2.png",
+          "bounds": [
+            190.93074821508816,
+            604.9369088938149,
+            246.05403591278738,
+            693
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-crescent-moon",
+          "label": "弯月",
+          "image": "./assets/optimized/6a7b5231e447ccc90ae5de1e417c06ee9c06acd1530eed94f82f762fceaf6483.png",
+          "bounds": [
+            814.25,
+            852.75,
+            911.75,
+            912.3564175568407
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-fried-egg",
+          "label": "煎蛋",
+          "image": "./assets/optimized/b4be0c63e7864c11db84cb2588ec061f9c62f6df609a4658cf085c02a4b5ecd5.png",
+          "bounds": [
+            449.00304167734066,
+            703.2613653508902,
+            476.73853594189694,
+            734.710258929031
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-carrot",
+          "label": "胡萝卜",
+          "image": "./assets/optimized/bcd7e8963934fef967b8338cf2e79cde4998bc01966fa8f9f343138d070175af.png",
+          "bounds": [
+            615.25,
+            1011.3202591611068,
+            839,
+            1061.6891467161154
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-paper-airplane",
+          "label": "纸飞机",
+          "image": "./assets/optimized/26dda7159646683bc8f767cf5547d4ce6f6a5a3cd4ecb378eba4454715497ed3.png",
+          "bounds": [
+            225.75,
+            749.25,
+            277.25,
+            800.75
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "064",
       "version": "release-v01",
