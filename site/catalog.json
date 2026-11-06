@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "065",
+  "defaultIssue": "066",
   "issues": [
+    {
+      "id": "066",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 巨龙的牙医",
+      "english": "DIDIDO · The Dragon’s Dentist",
+      "intro": "巨龙在石拱廊下张开大嘴，陶偶牙医站上木架检查牙齿，助手端着水盆在一旁等候。沿着鳞片、布料、石阶、药草和木架，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/06cd7aa4291b0b5d4b40f6d98401a56517b467e0a3bbd8a2f89f7102c68289c5.webp",
+      "color": "./assets/optimized/c305ef255e6136e1d51a56ea52c89c877a6134f9c117737303eea8f62509f2c4.webp",
+      "cover": "./assets/optimized/f8ee3ef6e9eb54c10ff6bc975d64e18e21bd6a1056fd633e8de531182605bcd5.webp",
+      "coverWidth": 520,
+      "coverHeight": 368,
+      "targets": [
+        {
+          "id": "t09-book",
+          "label": "书",
+          "image": "./assets/optimized/f55c4e244a5ebc88416d00f41035673ca36144addbf05c612eca31d40df66787.png",
+          "bounds": [
+            451.86029411764713,
+            1071.75,
+            552.75,
+            1118.7569444444441
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-pencil",
+          "label": "铅笔",
+          "image": "./assets/optimized/61e552e05f71f52281ea0d4cb6db7a20211d4271dc70a458ea50b755458896fc.png",
+          "bounds": [
+            909.25,
+            245.93670886075952,
+            956.25,
+            323.75
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-whale",
+          "label": "鲸鱼",
+          "image": "./assets/optimized/7a88670ce6558dbd6c3c128a2f1d6590ada3819b040df934b03803a02f222a9e.png",
+          "bounds": [
+            68.92951596496185,
+            856.331,
+            135.709,
+            907.0627845360019
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-leaf",
+          "label": "叶子",
+          "image": "./assets/optimized/ac661ce88526350caeb2bdd839e3739180297434da3619e5dca11963dc5c6476.png",
+          "bounds": [
+            160.1006666666667,
+            616.7240829395138,
+            199.75,
+            666.25
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-crown",
+          "label": "王冠",
+          "image": "./assets/optimized/591cbf2ea31922d644f63c02801e8c355326a7819adde9eec1589b5345701822.png",
+          "bounds": [
+            533,
+            477.7010105192615,
+            666.75,
+            562
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-chef-hat",
+          "label": "厨师帽",
+          "image": "./assets/optimized/e491537d5fdf10f9a536f58be164eb47474bb8ca2fd3bbedec3c81e36f41e13c.png",
+          "bounds": [
+            836.8641179257784,
+            36.937207591513435,
+            926.6888888888889,
+            106.75
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-sailboat",
+          "label": "帆船",
+          "image": "./assets/optimized/4711f538e465634a4f9b3c350298d79c57ef7158a494ef14ff04911b57a8b592.png",
+          "bounds": [
+            923.75,
+            680.5,
+            1004.25,
+            778.25
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-necktie",
+          "label": "领带",
+          "image": "./assets/optimized/6d4b5713053ca43a598609944fd3579c7d81f133c192c11362bcabc04d291090.png",
+          "bounds": [
+            1153,
+            124.375,
+            1173,
+            259
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-paperclip",
+          "label": "回形针",
+          "image": "./assets/optimized/1e251ca18870d13123bd629c356289e7b613e0fadb17f45bcd1fe39157e03870.png",
+          "bounds": [
+            1118,
+            925.9598444095232,
+            1201.7598638697211,
+            955
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "065",
       "version": "release-v01",
