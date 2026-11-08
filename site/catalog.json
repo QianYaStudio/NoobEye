@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "067",
+  "defaultIssue": "068",
   "issues": [
+    {
+      "id": "068",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 雨滴游乐场",
+      "english": "DIDIDO · Rain at Play",
+      "intro": "悬停的雨滴变成水滑梯、秋千和踏脚石，三位伙伴在池边尽情玩耍。沿着水花、叶片、木桩、缆绳和衣物，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/d32609c9891ce1758bdc3b93bef28d806d212b9cb25b2a9718f0bd7be73fb3db.webp",
+      "color": "./assets/optimized/a8d61c1c542f0797db13efaf78dadcb15ca5056d0efeab59b21b3890cda32ea8.webp",
+      "cover": "./assets/optimized/e74a4977c8d08313e0c3008b85340bade87386d299a3961754ea58db0d4bff1f.webp",
+      "coverWidth": 520,
+      "coverHeight": 368,
+      "targets": [
+        {
+          "id": "t01-tadpole-trio",
+          "label": "逆流的三只蝌蚪",
+          "image": "./assets/optimized/8737f0cd25adbd024d568423f8c265d33a62b63992aa861e1a1abf146f41734f.png",
+          "bounds": [
+            815,
+            794.0728636677509,
+            900,
+            878
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-winged-seeds",
+          "label": "双翼种子",
+          "image": "./assets/optimized/734028d7d92dd657cae24c8f002349efdf7139b8ea0e2fe2ed6774ac0a472dfa.png",
+          "bounds": [
+            284.95246356717627,
+            603.0894611824987,
+            413.25,
+            673.6793235601546
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-ringed-planet",
+          "label": "双环行星",
+          "image": "./assets/optimized/3b507a2bb9d4690816fd4eaca1e2f53a6f3dc39a91858b0aeb6f7f070dad2c49.png",
+          "bounds": [
+            595.3697673117873,
+            808.9526568729007,
+            664.7697119129613,
+            865.2128498556856
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-fish-skeleton",
+          "label": "鱼骨",
+          "image": "./assets/optimized/93bf11eedb8b5850502e41f3357269c4ca0d40c5cc9c8737a384c9b5f16314d2.png",
+          "bounds": [
+            920,
+            216.95449555959596,
+            994,
+            253
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-stepped-tile",
+          "label": "阶梯拼块",
+          "image": "./assets/optimized/98e33d6553a906271427a6aee7aa0e2b2038d36feb22e2d141d79cc34da05a45.png",
+          "bounds": [
+            253.75,
+            1101.25,
+            355.25,
+            1152.25
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-hopping-mushroom",
+          "label": "单脚跳的蘑菇",
+          "image": "./assets/optimized/750d4fa05de14d4c3eb26eb9c860472ae7bf16f4137242184fe7a70e62414d95.png",
+          "bounds": [
+            974.6691111111112,
+            616.7451660040609,
+            1047,
+            709.3762222222223
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-curled-flame",
+          "label": "侧卷的火焰",
+          "image": "./assets/optimized/e14160ab69fc2f740e5d64b1ce7e4baeae4081b7009970533a96890b6f5ef4d0.png",
+          "bounds": [
+            186.25,
+            53.91035093187842,
+            342.9222179471351,
+            246.25
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t12-spiral-staff",
+          "label": "螺旋魔杖",
+          "image": "./assets/optimized/e3b83412acad51223c3786916090b2f8a24f8f14ac8df7d2964c628a79b94e3d.png",
+          "bounds": [
+            485.68887702481385,
+            722.2219643837234,
+            523.0100438195991,
+            813.75
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t13-wooden-flute",
+          "label": "四孔短笛",
+          "image": "./assets/optimized/4d2d3419d792c9e12010808ad719139145f7ca349b901efa64ed53087f723631.png",
+          "bounds": [
+            382.25,
+            949.75,
+            463.75,
+            1017.5463114458767
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "067",
       "version": "release-v01",

@@ -13,7 +13,8 @@ test('custom statistics opt in independently of ordinary issue numbering',()=>{
  assert.equal(issueValid('065',env),true);
  assert.equal(issueValid('066',env),true);
  assert.equal(issueValid('067',env),true);
- assert.equal(issueValid('068',env),false);
+ assert.equal(issueValid('068',env),true);
+ assert.equal(issueValid('069',env),false);
  assert.equal(issueValid('custom-000'),false);
  assert.equal(issueValid('custom-000',env),true);
  assert.equal(issueValid('custom-003',env),true);
