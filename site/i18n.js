@@ -1,11 +1,11 @@
-import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-069-20261109';
+import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-070-20261111';
 const KEY='noobeye:language';
 let saved;try{if(typeof window!=='undefined')saved=localStorage.getItem(KEY);}catch{}
 const preferred=(typeof navigator==='undefined'?'en':navigator.languages?.[0]||navigator.language||'en').toLowerCase();
 export let language=['zh','en','ja'].includes(saved)?saved:(preferred.startsWith('zh')?'zh':preferred.startsWith('ja')?'ja':'en');
 export const tr=(zh,en,ja)=>language==='zh'?zh:language==='ja'?(ja??en):en;
 const inLanguage=(lang,zh,en,ja)=>lang==='zh'?zh:lang==='ja'?(ja??en):en;
-const titlesEn={'069':'DIDIDO · The Other Side of the Moon','068':'DIDIDO · Rain at Play','067':'DIDIDO · The Sea Beyond the Door','066':'DIDIDO · The Dragon’s Dentist','065':'DIDIDO · Winding the Wind','064':'DIDIDO · Upside-Down Orchard','063':'DIDIDO · Weaving a River','062':'MILO · The Low-Tide Market','061':'DIDIDO · A Very Large Guest','060':'MILO · Waiting for Clear Skies','059':'DIDIDO · Stairs on the Loose','058':'DIDIDO · Posting the Night','057':'DIDIDO · A Very Unusual Catch','056':'DIDIDO · A Rainbow on the Rise','055':'DIDIDO · Winter, Five More Minutes','054':'DIDIDO · Shadows on Holiday','053':'DIDIDO · A Waterfall’s Day Off','052':'DIDIDO · Newly Hatched Stars','051':'DIDIDO · Winding the Storm','050':'DIDIDO · After the Moon Tide','049':'DIDIDO · Shadows on the Line','048':'DIDIDO · A Door to the Sea','047':'DIDIDO · A Castle on the Move','046':'DIDIDO · Borrow a Little Rain','045':'DIDIDO · A Dragon’s Loose Tooth'};
+const titlesEn={'070':'DIDIDO · The Bridge Stretches','069':'DIDIDO · The Other Side of the Moon','068':'DIDIDO · Rain at Play','067':'DIDIDO · The Sea Beyond the Door','066':'DIDIDO · The Dragon’s Dentist','065':'DIDIDO · Winding the Wind','064':'DIDIDO · Upside-Down Orchard','063':'DIDIDO · Weaving a River','062':'MILO · The Low-Tide Market','061':'DIDIDO · A Very Large Guest','060':'MILO · Waiting for Clear Skies','059':'DIDIDO · Stairs on the Loose','058':'DIDIDO · Posting the Night','057':'DIDIDO · A Very Unusual Catch','056':'DIDIDO · A Rainbow on the Rise','055':'DIDIDO · Winter, Five More Minutes','054':'DIDIDO · Shadows on Holiday','053':'DIDIDO · A Waterfall’s Day Off','052':'DIDIDO · Newly Hatched Stars','051':'DIDIDO · Winding the Storm','050':'DIDIDO · After the Moon Tide','049':'DIDIDO · Shadows on the Line','048':'DIDIDO · A Door to the Sea','047':'DIDIDO · A Castle on the Move','046':'DIDIDO · Borrow a Little Rain','045':'DIDIDO · A Dragon’s Loose Tooth'};
 export const titleOf=issue=>issue.translations?.[language]?.title??inLanguage(language,issue.title,titlesEn[issue.id]??issue.english.replace(/^THE /,'').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase()).replace(/^(Didido|Milo|Poko)\b/,s=>s.toUpperCase()),titlesJa[issue.id]);
 const nouns={
   '数字 8':'Number 8','斧头':'Axe','彗星':'Comet','哑铃':'Dumbbell','钻戒':'Diamond ring','竖笛':'Recorder','四分休止符':'Quarter rest','独眼兔':'One-eyed rabbit',
@@ -36,6 +36,7 @@ const nouns={
 };
 export const labelOf=target=>target.translations?.[language]?.label??inLanguage(language,target.label,nouns[target.label]||target.labelEn||target.label,nounsJa[target.label]);
 const intros={
+  '070':'At dawn, an old stone bridge lifts one of its piers for a long stretch. A traveler and a ceramic companion wait on the riverbank. Find nine hidden shapes among the carved stones, leaves, ripples and folds of cloth.',
   '069':'In an open-air dock, the moon turns to reveal a terraced garden. A gardener gathers trailing vines, a ceramic helper patrols the curved bridge, and another steadies the axle. Find nine hidden shapes among the craters, plants, timber and stone steps.',
   '068':'Floating raindrops become a waterslide, a swing and stepping stones as three friends play beside a pond. Find nine hidden shapes among the splashes, leaves, wooden posts, ropes and clothing.',
   '067':'A wooden door opens onto a vertical sea. A manta ray swims into the dry stone hall, where a ceramic keeper pauses with a tray of tea. Find nine hidden shapes among the curtains, railings, stone steps, ornaments and sea life.',
@@ -220,3 +221,5 @@ Object.assign(nouns,{"卷胡须": "Moustache", "玻璃瓶": "Glass bottle", "折
 Object.assign(nouns,{"逆流的三只蝌蚪": "Three upstream tadpoles", "双翼种子": "Winged seed pair", "双环行星": "Double-ringed planet", "阶梯拼块": "Stepped tile", "单脚跳的蘑菇": "One-legged hopping mushroom", "侧卷的火焰": "Side-curled flame", "螺旋魔杖": "Spiral wand", "四孔短笛": "Four-hole flute"});
 
 Object.assign(nouns,{"指纹": "Fingerprint", "打盹的三头鸟": "Dozing three-headed bird", "侧身的蝴蝶": "Butterfly in profile", "扭纹面包圈": "Twisted bread ring", "火炬": "Torch", "三叶螺旋桨": "Three-bladed propeller", "小乌贼": "Little squid"});
+
+Object.assign(nouns,{"双头蛇": "Two-headed snake", "战斧": "Battle axe", "长叶的音符": "Leafy musical note", "鸢形盾": "Kite shield"});

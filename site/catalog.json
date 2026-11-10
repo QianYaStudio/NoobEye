@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "069",
+  "defaultIssue": "070",
   "issues": [
+    {
+      "id": "070",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 桥在伸懒腰",
+      "english": "DIDIDO · The Bridge Stretches",
+      "intro": "清晨，古石桥抬起一侧桥墩伸了个懒腰。旅人和陶偶在河边等它醒透。留意石雕、草叶、流水和衣褶，找出九件藏品。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/c0cbd462e298caf46eeb2c44fc4daa19d40293b36116e7759ffb29e8a40320f1.webp",
+      "color": "./assets/optimized/0689d515617ee5bf6d707e30f4f6e4d1dbd2af44e417649f3c2133c980b7fb7e.webp",
+      "cover": "./assets/optimized/84e3b1f5a0e832dce40a2ca400989fe0da6c8e68087c4837d662e244aa21c9b8.webp",
+      "coverWidth": 520,
+      "coverHeight": 368,
+      "targets": [
+        {
+          "id": "t08-trident",
+          "label": "三叉戟",
+          "image": "./assets/optimized/ff077475efea1766de376fb69d197b62c67a585e3e24d24ad7d1bd1fa887961a.png",
+          "bounds": [
+            743,
+            1011,
+            824,
+            1168
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-flying-saucer",
+          "label": "飞碟",
+          "image": "./assets/optimized/d9187e76128bbf09ba82dad8d76764f470e0027530b880894f1c62eeb4551f68.png",
+          "bounds": [
+            510.9375941073901,
+            808.7287100004944,
+            670,
+            856.6202299767555
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-two-headed-snake",
+          "label": "双头蛇",
+          "image": "./assets/optimized/fdd07320c9e1aaa65918e96309be9fcab309c1c5baaa602b65fedff2877b6efc.png",
+          "bounds": [
+            140.963969037773,
+            669,
+            247,
+            718
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-lightning",
+          "label": "闪电",
+          "image": "./assets/optimized/39b86a2662a73ac8ba6f4a67c431ff9daeba2be3becd95006bd622dceea04007.png",
+          "bounds": [
+            401,
+            238.25,
+            419.75,
+            274.75
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-battle-axe",
+          "label": "战斧",
+          "image": "./assets/optimized/05a5e1b809033d804d65d7814aa7cc91043eea8837625f7ed8ace128149ea57c.png",
+          "bounds": [
+            233.75,
+            780.75,
+            294.81793227692964,
+            979.1375560241074
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-dragon-wing",
+          "label": "龙翼",
+          "image": "./assets/optimized/9c4ad51acff90ceb3f4416e9261ccc32a2657013cff5e30b9778f6ba3d079831.png",
+          "bounds": [
+            1045.842741935484,
+            262.75,
+            1128.75,
+            307.9375
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-nautilus",
+          "label": "鹦鹉螺壳",
+          "image": "./assets/optimized/d047a9151b36b3091c3b1fde369897a13a618b01c4c7fd8b7d8fe8ee7f9cad69.png",
+          "bounds": [
+            153.7846371235144,
+            340.595789453747,
+            228,
+            411
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-leaf-note",
+          "label": "长叶的音符",
+          "image": "./assets/optimized/de8cb08368bef56c8028b93a4117431e0768d102ead590c8fd723af3157c6d6d.png",
+          "bounds": [
+            959,
+            208.25,
+            998.0717485527761,
+            292.25
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-kite-shield",
+          "label": "鸢形盾",
+          "image": "./assets/optimized/bf8f688222dc4782e52e48268600c82738ed2cae64afa23ec3bf293feb71849e.png",
+          "bounds": [
+            127,
+            747.5517241379312,
+            172.11102780252023,
+            831
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "069",
       "version": "release-v01",
