@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "070",
+  "defaultIssue": "071",
   "issues": [
+    {
+      "id": "071",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 把梦晾在屋顶",
+      "english": "DIDIDO · Dreams on the Clothesline",
+      "intro": "午后，人们把刚洗好的梦毯晾在屋顶。毯子一抖，波浪和城堡从褶皱里浮了出来。沿着织物、屋瓦和晾绳，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/abafae32668ad30a7a1324da4b49e311efa690fcb12de0c1a7eeabfdaedff243.webp",
+      "color": "./assets/optimized/bf2d626307a366b0707ef7c13d78d3cc8918b4a6dfee8d7d15c76543e1035281.webp",
+      "cover": "./assets/optimized/166bbb04a8fce5172733d8d5616ebddb768d1de16f48cc1a7b3fe66c5e4e0a1d.webp",
+      "coverWidth": 520,
+      "coverHeight": 736,
+      "targets": [
+        {
+          "id": "t01-scallop",
+          "label": "扇贝",
+          "image": "./assets/optimized/feaac5793935bf2675fc84b6b227869b7af3fafd5d09b2270666608c588a30a0.png",
+          "bounds": [
+            991,
+            943.3772233983163,
+            1072.0098209497432,
+            998.2614780310388
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-crayon",
+          "label": "蜡笔",
+          "image": "./assets/optimized/0bb5469a1866c7848931ffb42813f4e7c26d104462af3852ac09570a746fb898.png",
+          "bounds": [
+            940.75,
+            732.75,
+            1077.929181169125,
+            785.25
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-fairy",
+          "label": "长袍小仙子",
+          "image": "./assets/optimized/1f4a51175d15b2c9a6b526799adc48ec94416b4d8aac5fbde78412608fc9ed22.png",
+          "bounds": [
+            296.75,
+            543.75,
+            370.5,
+            617
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-surprise",
+          "label": "惊讶的脸",
+          "image": "./assets/optimized/2dd7fdce5b53fcf43fb27dea12c8080bbf7d9b6136390abe598a10282cbe751f.png",
+          "bounds": [
+            698.1409046681683,
+            503.75,
+            729.9556191224221,
+            551.672611768566
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-helix",
+          "label": "DNA 双螺旋",
+          "image": "./assets/optimized/8f8a550344422ee7e2f6c7737977bb5ecc1522df5800475781caab2fab7ff05b.png",
+          "bounds": [
+            218.682,
+            499,
+            259.2,
+            547.503
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-chocolate",
+          "label": "巧克力板",
+          "image": "./assets/optimized/1e140eb50d68481cb9fe8057e86b1bbd028b38e54e75a3eb7efd0caffce30238.png",
+          "bounds": [
+            58.75,
+            842.25,
+            112.75,
+            887.75
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-scroll",
+          "label": "卷轴",
+          "image": "./assets/optimized/9a33cd75da2388ce6ab8237cf7b9ba23efb134f4e6810920aa17bb45f4314b46.png",
+          "bounds": [
+            738.5581697527022,
+            709.75,
+            782.9163915177572,
+            803.5313333333335
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-ear",
+          "label": "耳朵",
+          "image": "./assets/optimized/bb9439ceab716af319df4e50ce09f61ea4641f71031927daf017fe4952fa3007.png",
+          "bounds": [
+            829.9641291930421,
+            577.5978550656064,
+            862.25,
+            609.0862762191957
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-hook",
+          "label": "鱼钩",
+          "image": "./assets/optimized/0ada8546d04f4d9b448dd819ca6247ed4c214837cc0c1ad545de8ef1d5618b9a.png",
+          "bounds": [
+            324.6115683181818,
+            643.6018674206312,
+            364.287137851595,
+            733.5
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "070",
       "version": "release-v01",

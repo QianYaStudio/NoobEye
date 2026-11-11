@@ -1,5 +1,5 @@
-import { tr } from './i18n.js?v=issue-070-20261111';
-import { prepareSensorAudio, sensorPulse } from './audio.js?v=issue-070-20261111';
+import { tr } from './i18n.js?v=issue-071-20261112';
+import { prepareSensorAudio, sensorPulse } from './audio.js?v=issue-071-20261112';
 
 // Distances use scene coordinates so zoom alone cannot make a target closer.
 export function proximity(point, targets, found, width, height) {
