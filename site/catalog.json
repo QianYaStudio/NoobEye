@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "071",
+  "defaultIssue": "072",
   "issues": [
+    {
+      "id": "072",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 把黄昏卷起来",
+      "english": "DIDIDO · Rolling Up the Dusk",
+      "intro": "石台上，两名看守和一只陶偶合力卷起晚霞，露出点点星光。沿着云纹、卷轴和台阶，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/226a76e9dd3dde12780d94eb2ab10352bcb6327391f16ab0f788630859a2341b.webp",
+      "color": "./assets/optimized/8abcfee8f9640130eedaa5b2951fa3a1517f6ce012a8e1f77ba521c6337e6d91.webp",
+      "cover": "./assets/optimized/55afe5520e3b19a5cabbdc54f98797ab685a33a43f4b769f1567eed6b4b2a0c0.webp",
+      "coverWidth": 520,
+      "coverHeight": 368,
+      "targets": [
+        {
+          "id": "t13-crank-key",
+          "label": "钥匙",
+          "image": "./assets/optimized/ac5cdbccd3dea2bbddf561775686196f823202e783c8fbf3e070d228ddda07f3.png",
+          "bounds": [
+            1061.4772727272727,
+            644.7442188206255,
+            1121,
+            735
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-phoenix-fold",
+          "label": "展翼凤凰",
+          "image": "./assets/optimized/1bf72f8dae91b987aff648f3871b7bbf52474ba11e317fcc943b53e63201e3f2.png",
+          "bounds": [
+            76,
+            326,
+            235,
+            437
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-goblet",
+          "label": "奖杯",
+          "image": "./assets/optimized/e58a7cd99dfaba8524f6d6f548532677b134ecb53d98221b3707d08b24ce29a3.png",
+          "bounds": [
+            193.68111111111114,
+            891.754356038573,
+            275.75,
+            1018.8308888888891
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t12-jester-leaves",
+          "label": "小丑帽",
+          "image": "./assets/optimized/6f61780420707c8dc529210994c53dbc12823ad20ba23d44d1599140b2f1c9a2.png",
+          "bounds": [
+            1098.1786790830306,
+            1130.3381853639985,
+            1241.2647828254596,
+            1222.764705882353
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-bat-gap",
+          "label": "蝙蝠",
+          "image": "./assets/optimized/4a41e74348c79264ce4bd815197c0d8ab1be4b91b374b095f47b8f1a2f6f0dda.png",
+          "bounds": [
+            993.25,
+            82.91255925540312,
+            1104.75,
+            155
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t14-orb-balloon",
+          "label": "热气球",
+          "image": "./assets/optimized/68436cd452cb665c7e8ebb0d4ac819b5e662fada6c6085914398f104d8361af6.png",
+          "bounds": [
+            357,
+            202.8924898935511,
+            413,
+            264
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-curled-prawn",
+          "label": "蜷起的大虾",
+          "image": "./assets/optimized/fba25179589eef3c771b17743e1c71680d71da614781ca9f65fb7502cd2337fe.png",
+          "bounds": [
+            917.4853447901539,
+            528.9641220691358,
+            1055.2460810939294,
+            698.2105576727296
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t11-arch-horseshoe",
+          "label": "马蹄铁",
+          "image": "./assets/optimized/b5554eb0ae48a5cec459f7ac7360ea0c2791a1a730f5c6d76103dd07c3eabcb6.png",
+          "bounds": [
+            243.94981325423262,
+            631.5845470537635,
+            380,
+            730
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-strap-swan",
+          "label": "仰起头的天鹅",
+          "image": "./assets/optimized/5552e229b9bc311b28a3d747ca7a8c08b245c0bfd1a484a88ab3882057158d2f.png",
+          "bounds": [
+            568,
+            941.3320843977507,
+            732,
+            1114
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "071",
       "version": "release-v01",
