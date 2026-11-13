@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "072",
+  "defaultIssue": "073",
   "issues": [
+    {
+      "id": "073",
+      "version": "release-v03",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 天花板上的池塘",
+      "english": "DIDIDO · The Pond Above",
+      "intro": "水厅的池塘悬在天花板上，睡莲的根须垂到半空。两只陶偶在石阶上仰头垂钓。沿着水纹、根须和石缝，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/ff100e8185dfd07bdd16efd5fe6adabf2eb3b63d70b01da54deb809e2076852a.webp",
+      "color": "./assets/optimized/24f1e2897c89660dda24f1d9189accd4d3d830dc8064c73a5d5efbb137e4437b.webp",
+      "cover": "./assets/optimized/970e4a293c0d2c0a82a5e20b7dd4df005f4d31c99d2dcddd7746a953ad738b1b.webp",
+      "coverWidth": 520,
+      "coverHeight": 735,
+      "targets": [
+        {
+          "id": "t05-magnet",
+          "label": "马蹄形磁铁",
+          "image": "./assets/optimized/a94c170ab1521903c44126532b74849e8b9aeb54de83357dea76a522c67cceb8.png",
+          "bounds": [
+            154,
+            620,
+            191.84604061228737,
+            676.1862921826073
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-hummingbird",
+          "label": "振翅的蜂鸟",
+          "image": "./assets/optimized/ccecc6d90ed64fca52ce1cc1a91579bd169c5ccdd57aac5a9f6c173cb697ec2e.png",
+          "bounds": [
+            150,
+            1066,
+            236,
+            1123
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-hourglass",
+          "label": "沙漏",
+          "image": "./assets/optimized/e6dfb127313ca019801cc0f41f551174b8c0bc754e158d8cd05a5c7171027a44.png",
+          "bounds": [
+            495.25,
+            1190.75,
+            535,
+            1243.8
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t14-shuttlecock",
+          "label": "羽毛球",
+          "image": "./assets/optimized/3763f747978ee564ad2ce2711c8d295a9631d776fbeec859f0f7226e48c2e076.png",
+          "bounds": [
+            830,
+            954,
+            865,
+            1001.2727272727273
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-dolphin",
+          "label": "跃起的海豚",
+          "image": "./assets/optimized/fbd88b3eab4bda0daae321b8a7ec27fda35e2c837fbd22baa8ec279ac355f007.png",
+          "bounds": [
+            677,
+            69,
+            850.4000000000001,
+            134.75
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-glove",
+          "label": "手套",
+          "image": "./assets/optimized/ccbef59d8cd6d41c7d9c09360945a34864d9bc671f8dc7cfa2b1b9467e8d5efb.png",
+          "bounds": [
+            270.32026516464475,
+            842.701,
+            308.48,
+            882.959344972908
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t17-scroll-moustache",
+          "label": "卷胡须",
+          "image": "./assets/optimized/9d641f428c9807392e8ddee93e42945219cc4273d881e755c30f4b3484236f03.png",
+          "bounds": [
+            180.82150938938554,
+            753.4116851596416,
+            239.0782240615394,
+            794.0350084690056
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t13-pen-nib",
+          "label": "钢笔尖",
+          "image": "./assets/optimized/75fc8fdd211c2895b972d475f3aec7b9e27710a8d2cc89a6620214258d6b26b4.png",
+          "bounds": [
+            1035,
+            270,
+            1057.0666666666668,
+            334
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "v03-t19-lotus-jellyfish",
+          "label": "水母",
+          "image": "./assets/optimized/253997403a8a63692bc7255025464cdd57ddd057b3fb34333765693c17c00a7f.png",
+          "bounds": [
+            377.0851142224544,
+            277,
+            472.75,
+            510.25
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "072",
       "version": "release-v01",
