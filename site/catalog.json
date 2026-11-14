@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "073",
+  "defaultIssue": "074",
   "issues": [
+    {
+      "id": "074",
+      "version": "release-v03",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 吹出来的花园",
+      "english": "DIDIDO · Blowing a Garden",
+      "intro": "玻璃工坊里，火蜥蜴吹出一簇透明花枝，飞蛾学徒捧着软布接住新生的花苞。沿着花枝、工具和工坊里的缝隙，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1024,
+      "height": 1024,
+      "line": "./assets/optimized/014c703914b2b022e835f25b67c79aa7c099b1d381d10be08cd7062f5f822bb4.webp",
+      "color": "./assets/optimized/2974026ef6225a141450a0d048c2685497f03bbd55d72c279569d4dfa81e71f1.webp",
+      "cover": "./assets/optimized/c141d3954fda27e97d84c3d20b6bb1b8538e6d1816f75c0b2642d88859bf6a0c.webp",
+      "coverWidth": 520,
+      "coverHeight": 368,
+      "targets": [
+        {
+          "id": "t07-cherries",
+          "label": "一对樱桃",
+          "image": "./assets/optimized/3f22a2db3a110b6486e391d2de3d0a7eb21304d9e85e2ae69ab0bb362062abb4.png",
+          "bounds": [
+            774.1465120188494,
+            17.649111111111115,
+            839.3695555555557,
+            118
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-bowling-pin",
+          "label": "保龄球瓶",
+          "image": "./assets/optimized/09aab5ef34d4a08e4e1e4919e46c365f08e7e2364509bc6f19f7d71a5a5a121a.png",
+          "bounds": [
+            339.27,
+            839.8542437299568,
+            408.0743870821018,
+            878.33
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "v03-t13-antenna-feather",
+          "label": "羽毛",
+          "image": "./assets/optimized/74e418c187c96daac163325aea6d4a52228728daf60fe284b7a14a8570bbbf9b.png",
+          "bounds": [
+            716.25,
+            483.25,
+            797.25,
+            552.25
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-manta",
+          "label": "蝠鲼",
+          "image": "./assets/optimized/369a11da8a9134475e86b1b612ab1e513df73df6c572fb3e188d1f40e7579485.png",
+          "bounds": [
+            616,
+            211.37002636254238,
+            719,
+            308
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-ballet-slippers",
+          "label": "一双芭蕾舞鞋",
+          "image": "./assets/optimized/85233add02cc555635f8bea3d87cd2990453443bf02e42e48c343b90fb4cd17b.png",
+          "bounds": [
+            228.0039527081177,
+            580,
+            267.44444444444446,
+            668
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-comet",
+          "label": "彗星",
+          "image": "./assets/optimized/3ca9e2dbe4569788840b19154a00436c1112b35371e978e6ac9eb8195d748e9e.png",
+          "bounds": [
+            870,
+            665,
+            935.3377315240923,
+            745.5116305089932
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-peapod",
+          "label": "豌豆荚",
+          "image": "./assets/optimized/b0088346d32a8bb3a75d0b0784f9263cb29b2e668fe3ea67840b85ffae25d448.png",
+          "bounds": [
+            50.90972222222222,
+            448.75,
+            141.04757035690812,
+            522.25
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-paper-boat",
+          "label": "纸船",
+          "image": "./assets/optimized/0a3293be2d57fce030dc7ff5735cdedfb8ac2aba07f32e467cb3a43c319303fa.png",
+          "bounds": [
+            306.87,
+            152.33,
+            388.66,
+            207.58
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-dancer",
+          "label": "踮脚的舞者",
+          "image": "./assets/optimized/870ca32e1c7822773d8937bf205023798ef490d973f7dce11311360d9e527add.png",
+          "bounds": [
+            28.565411518764193,
+            273,
+            70,
+            354
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "073",
       "version": "release-v03",
