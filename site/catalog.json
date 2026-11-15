@@ -1,6 +1,133 @@
 {
-  "defaultIssue": "074",
+  "defaultIssue": "075",
   "issues": [
+    {
+      "id": "075",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 桥打了个结",
+      "english": "DIDIDO · A Bridge in a Knot",
+      "intro": "横跨峡谷的编织桥打了个结，两岸的旅人与陶偶正合力拉开它。沿着桥绳、岩壁和行李，找出九个藏起来的形状。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/a1f48db933a800d4c3aadf1d0c681a9bf916c4d034650258706dbd1f0d12860a.webp",
+      "color": "./assets/optimized/a5d79f9a7524169bceabe43ac96d7fa50fb9e26baaa706130d7197d2cf4bd0c6.webp",
+      "cover": "./assets/optimized/4a94b6340648eb4cecd380dc054e4f451e454be764ab7c26d3651a7869ee5bf7.webp",
+      "coverWidth": 520,
+      "coverHeight": 736,
+      "targets": [
+        {
+          "id": "t01-folding-fan",
+          "label": "折扇",
+          "image": "./assets/optimized/aba7e92d7495290e1d4f98b7b46339f315f2b890e9c623f52c8b42bad8bb875a.png",
+          "bounds": [
+            329,
+            528,
+            439.25,
+            568.8483688126153
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-snail",
+          "label": "蜗牛",
+          "image": "./assets/optimized/4665c3989d5baf822c0be416f24800780145302795771bb6af3df3280bc85c4c.png",
+          "bounds": [
+            47.2,
+            382,
+            121,
+            421
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-winged-key",
+          "label": "带翼的钥匙",
+          "image": "./assets/optimized/a7fcd9c87abb1995c2d8cd7d4a9473661693b4a683a7b9df2c9e17ec98d448b5.png",
+          "bounds": [
+            1072,
+            1136.5684675623017,
+            1210,
+            1231
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-feather",
+          "label": "羽毛",
+          "image": "./assets/optimized/74e8ffc9a141026c13d01f728953ea1c366896df597441af7bf9ba96769e2511.png",
+          "bounds": [
+            173,
+            814.637748758269,
+            224.75,
+            875
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-scimitar",
+          "label": "弯刀",
+          "image": "./assets/optimized/2954d2c4553eb7e3e43a1d1b09e07f3d625c64a1dbd29fe626f178c50578e752.png",
+          "bounds": [
+            12.714285714285712,
+            170.33333333333337,
+            182.75,
+            256.09487866282564
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-seahorse",
+          "label": "海马",
+          "image": "./assets/optimized/c8003b2ebde19cd956bad181a90609954d627103d07cff43da81140a6cd5b44c.png",
+          "bounds": [
+            572.2250772235222,
+            379.26493526370575,
+            641,
+            493.3876295915697
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-spectacles",
+          "label": "眼镜",
+          "image": "./assets/optimized/00001ae9733ad753865ff8ed831f0e7385acc7ad3273de0c449dbb059e2bcdf4.png",
+          "bounds": [
+            1186,
+            741,
+            1247,
+            760
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-spark",
+          "label": "四芒星",
+          "image": "./assets/optimized/f2f4b8707377acc94023b60723d90c844567d17b8ef3cadd282f97f7fe329f3d.png",
+          "bounds": [
+            58,
+            1149,
+            129,
+            1228
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-rocket",
+          "label": "火箭",
+          "image": "./assets/optimized/4520c67f1e14f77da29e9d62f0d8dc70edf8633e27aa2c482cc4b55f8fe929a3.png",
+          "bounds": [
+            1183,
+            513,
+            1222,
+            559
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "074",
       "version": "release-v03",
