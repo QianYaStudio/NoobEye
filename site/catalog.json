@@ -1,6 +1,1403 @@
 {
-  "defaultIssue": "075",
+  "defaultIssue": "086",
   "issues": [
+    {
+      "id": "086",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 夜色在晾干",
+      "english": "DIDIDO · Night on the Line",
+      "intro": "两只陶偶把刚洗过的夜空挂起来，一盆水接住滴落的星光。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/b2b01c6b1f5852deb5255172dee14516b68cd8a345e30ca7b657b4201d9b5787.webp",
+      "color": "./assets/optimized/dee9ee0e845a0f99e668c7ad3a4b38edd720c87d0a9562ae0ab5da7ad307e723.webp",
+      "cover": "./assets/optimized/113df3848be22c91e60089f419a14b15105c665e88c95bf3f296cfe61bc9617b.webp",
+      "coverWidth": 520,
+      "coverHeight": 736,
+      "targets": [
+        {
+          "id": "t13-twinhead-tailbeast",
+          "label": "双首卷尾兽",
+          "image": "./assets/optimized/946573475b8563ba6fd8e277c0bf9ca82c56308ead9d0ed355fa793ce1ae733e.png",
+          "bounds": [
+            1020.0000000000002,
+            1013.6923076923076,
+            1186.642857142857,
+            1089.900834456272
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-chalice",
+          "label": "高脚杯",
+          "image": "./assets/optimized/3ca47237c8b8e2392fe9264f63e66e2a9a6a8c109736805e84f4961f3bb2df15.png",
+          "bounds": [
+            491.25,
+            856.25,
+            573.75,
+            923.8854381999834
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t14-pod-sleeper",
+          "label": "睡舱旅人",
+          "image": "./assets/optimized/8bb3f5b281102961e3816300300d71ec70b4fab755c7cdbcb6b9026482837634.png",
+          "bounds": [
+            164,
+            440.875,
+            239,
+            507
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-balloon",
+          "label": "热气球",
+          "image": "./assets/optimized/5c47a21036d579156f66dda5cc350e4c135d443c15135c2090214ea3fe0ea6e2.png",
+          "bounds": [
+            1182.616796585165,
+            397.9049920700601,
+            1215.0077767026291,
+            460.79999999999995
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-counter-swimming-fish",
+          "label": "错身双鱼",
+          "image": "./assets/optimized/28cd9eea2bb28bec92adcb329e43062ff17034b2c0325865276d7c8e92e0c062.png",
+          "bounds": [
+            1098,
+            93.96662804179273,
+            1164,
+            139
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-star-cradling-bird",
+          "label": "托星长尾鸟",
+          "image": "./assets/optimized/882749ce2a877158e692e39f9ea73ad01dfc4a2b9edf1197557058b3921710f7.png",
+          "bounds": [
+            321.2380952380952,
+            477.9525684318524,
+            569.75,
+            657.3929082200078
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t11-seed-hand",
+          "label": "指尖托籽",
+          "image": "./assets/optimized/da07bc3bc2e2d38aa9559c21dd7b3e4c51df80f1716242f867fa8946fb94433f.png",
+          "bounds": [
+            369,
+            949,
+            417.6568542494923,
+            1023.5383325190251
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-nautilus",
+          "label": "鹦鹉螺壳",
+          "image": "./assets/optimized/e1fa6d676373e2dfc2a3bff9f7182fc2565126c854f55538e40522d78dcff725.png",
+          "bounds": [
+            116.91896329019146,
+            835.6774422602091,
+            231.75,
+            925
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t15-saucer",
+          "label": "小飞碟",
+          "image": "./assets/optimized/45112477e7fe4b359882d25bd1e81765feb53d81533d471031047cc3b585f587.png",
+          "bounds": [
+            1022.746279780618,
+            740.4610660263136,
+            1087.7088742631663,
+            781.025982204364
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        }
+      ]
+    },
+    {
+      "id": "085",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "MILO · 风把集市吹歪了",
+      "english": "MILO · A Market in the Wind",
+      "intro": "横风掀起集市的棚布，米洛和摊贩赶紧拉住棚架和货物。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/d67e754cdd82ea9bbc5b6c5f21146fdd474365bb26c6b27940a6d9a8a1c248a8.webp",
+      "color": "./assets/optimized/7ed8a34886f8af6197e348cd654a96e88202d5a0f0ecbdfbd2175f512b8a7fde.webp",
+      "cover": "./assets/optimized/19270c152c679697e8bbba319f4bedf17c3dff335541f025ad280a04e2819cc7.webp",
+      "coverWidth": 520,
+      "coverHeight": 735,
+      "targets": [
+        {
+          "id": "t10-fishbone",
+          "label": "鱼骨",
+          "image": "./assets/optimized/5e57a7c96e543ca96918c3b26af968bcda5d5b7dd68066184f1c906dc0d0999c.png",
+          "bounds": [
+            772,
+            551.8445824720009,
+            807,
+            598
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-mallet",
+          "label": "木槌",
+          "image": "./assets/optimized/50c09ec645c7e1d85997dd57db0be25497797dc1fa2d7699d9a2d29f0fac69b2.png",
+          "bounds": [
+            430.25,
+            846.75,
+            522.75,
+            1121.75
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-bottle-opener",
+          "label": "开瓶器",
+          "image": "./assets/optimized/c3a222cafb7f6b21b7bc0551f95284b3cb52d5711935d2c465738bf83b37ac2c.png",
+          "bounds": [
+            845.2162969223409,
+            816.3444112394957,
+            882.1012878151259,
+            867.4360162975345
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-two-headed-snake",
+          "label": "双头蛇",
+          "image": "./assets/optimized/6eaecf97c9512b826045f2c39adc5a40abf01d9fde590d52b68f501dff54af74.png",
+          "bounds": [
+            11.212246173203727,
+            110.30324548181844,
+            102.70018915397924,
+            319
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-comb",
+          "label": "梳子",
+          "image": "./assets/optimized/fa92bd74d55d288705714f0da4f081fa4748578bb9dbe870d97d2fbdd237f653.png",
+          "bounds": [
+            322.3922892510185,
+            426,
+            404.6279020141535,
+            481.18379738417207
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-croissant",
+          "label": "牛角面包",
+          "image": "./assets/optimized/d7042af05a3aeeb30d414d41833bf8aee00ce16c580977f7b72bd3a149f155af.png",
+          "bounds": [
+            487.25,
+            36.011016649739,
+            678.75,
+            162.75
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-shuttlecock",
+          "label": "羽毛球",
+          "image": "./assets/optimized/2eda74b9da7daf57854861ffd6953bc6b94f2053be27a7c374c349686280731d.png",
+          "bounds": [
+            1115.5993502675033,
+            626.25,
+            1139.3393333333333,
+            669.3228146292436
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-boxing-glove",
+          "label": "拳击手套",
+          "image": "./assets/optimized/4ee4dfef968b935c1a8d69ff89031c6982468479c401dad1d28efc19531519c7.png",
+          "bounds": [
+            130.75,
+            428.25,
+            257.35666014802734,
+            496.80782515654585
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-whale-tail",
+          "label": "鲸尾",
+          "image": "./assets/optimized/24ceb3959894265cf448a8f4c6a83110b569621bbbc2d542c3c9dd0c988a3d7f.png",
+          "bounds": [
+            317.9164944001346,
+            1110,
+            385,
+            1186.666666666667
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        }
+      ]
+    },
+    {
+      "id": "084",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 月亮来换牙",
+      "english": "DIDIDO · The Moon’s New Tooth",
+      "intro": "怕痒的弯月靠在诊所外，等小牙医换上一颗新牙。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/39893562be79903e35f774b42c42e2f99e34197693f06ca32422013336ac4952.webp",
+      "color": "./assets/optimized/5548e1126a002012111822cbc539750b75dd7fb661f7a5eebf21ed98ed927a8c.webp",
+      "cover": "./assets/optimized/c58b045a69bd5277dbcdbb935e0c03c78eb73e699e6c4a82fcd6b4b99f6eb367.webp",
+      "coverWidth": 520,
+      "coverHeight": 735,
+      "targets": [
+        {
+          "id": "t01-conch",
+          "label": "海螺",
+          "image": "./assets/optimized/755c66bcceb6bb71943faac5e53b234288215137ee4d21ae3ba8dc90e7429331.png",
+          "bounds": [
+            204.69147760148184,
+            438.36532333825033,
+            282,
+            465.0405183549042
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-jellyfish",
+          "label": "水母",
+          "image": "./assets/optimized/ea646f272ec3904b12456c85b3e3f643ec08858c62fc1591fbdb1a1c6424ae06.png",
+          "bounds": [
+            436,
+            335,
+            499,
+            419.88527129453536
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-earring",
+          "label": "垂坠耳环",
+          "image": "./assets/optimized/049b3a0f765cd3f1d0d6228f634e197d39dc65c680a95a22ea7ca7fb92e8e066.png",
+          "bounds": [
+            328.25,
+            588.25,
+            355.75,
+            640.75
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-coffee-bean",
+          "label": "咖啡豆",
+          "image": "./assets/optimized/786282162b0881a98e4a83fe9e8ebece7251bfd3becd83ba71cb5bc76b7fa16d.png",
+          "bounds": [
+            1003.5703197197865,
+            108.31979511882875,
+            1059.5931747138732,
+            156.08403222864916
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-scroll",
+          "label": "月纹卷轴",
+          "image": "./assets/optimized/998325d3ee923bdf1f5824fdffba3fa545b01ab5582b0fd082bd166e123c738a.png",
+          "bounds": [
+            658.875,
+            944.6144736058181,
+            781.0810367098085,
+            1069.138438763306
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-ring-spanner",
+          "label": "双环扳手",
+          "image": "./assets/optimized/4219dbd4519feec3683cac55dd5040914c256e6f1ecfea81f085a329da07f0c6.png",
+          "bounds": [
+            430.9154257240345,
+            601.6948025403631,
+            561.7803887661781,
+            729.1075101064488
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-harmonica",
+          "label": "口琴",
+          "image": "./assets/optimized/74bd21c2655ab14543c0652423bed1c38be5c7d00eda414e620cf79d7534113b.png",
+          "bounds": [
+            823.75,
+            947.25,
+            995.75,
+            967.7673672963136
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-pinwheel",
+          "label": "四叶风轮",
+          "image": "./assets/optimized/cf46094731ad36e1ec598827f21077c1a57d27d63cd7023422214fdae5742bdc.png",
+          "bounds": [
+            864.1786790830307,
+            873.1786790830305,
+            913.8213209169694,
+            922.8213209169693
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-bell",
+          "label": "铃铛",
+          "image": "./assets/optimized/32664db7355eb0866b82f81a9e5c16f164e2771f9b5b2181180f7f0374254cb9.png",
+          "bounds": [
+            775.4797408225479,
+            788,
+            810.0077767026291,
+            859.6312361800962
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        }
+      ]
+    },
+    {
+      "id": "083",
+      "version": "release-v02",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "一片叶子的搬家日",
+      "english": "A Home on the Move",
+      "intro": "雨后，小鼠一家把行李堆上大落叶，拉着它绕过林间的水洼。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/1eeaa168a934d28ae3792d4978815e9e2f6ca2f81f96a8af398dbafd81ed7d07.webp",
+      "color": "./assets/optimized/2affff9c056708b7d4be6a6f8276882e9309bbf2b7ea3f7d13a373eb365022cc.webp",
+      "cover": "./assets/optimized/a145b3f7aba9f8d949eb85cc0d394864c06f3f8413652afd17322c9b3349ebf3.webp",
+      "coverWidth": 520,
+      "coverHeight": 735,
+      "targets": [
+        {
+          "id": "t01-glove",
+          "label": "手套",
+          "image": "./assets/optimized/ff10227e5e54fec5d4708807e35d284b2408c8733a51a1ee098b4cf7aa7e8f5c.png",
+          "bounds": [
+            954.9407084227793,
+            696.75,
+            1017.1980099320327,
+            755.06552517567
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-pretzel",
+          "label": "椒盐卷饼",
+          "image": "./assets/optimized/3ea0270b26981f4658ac458781b1e9f9b5596a6840809342a1a338d23a7d50a9.png",
+          "bounds": [
+            689.382,
+            802.61,
+            756.207,
+            856.144
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-stingray",
+          "label": "鳐鱼",
+          "image": "./assets/optimized/cd5ff936848f9a69fc1cb6997cb01ce320aef4e3cf24b097a692190f49525bf7.png",
+          "bounds": [
+            978,
+            1078.953947368421,
+            1183.6328125,
+            1207
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-caterpillar",
+          "label": "蜷起的毛毛虫",
+          "image": "./assets/optimized/fc21cc9b38c73c7098b1dede9a7e0da0c5ef2af2b76ad86d309f62ca53a73f69.png",
+          "bounds": [
+            308.573175276961,
+            659,
+            362.0277543073672,
+            725.0242177750767
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-needle",
+          "label": "缝衣针",
+          "image": "./assets/optimized/fec934734a760eae18c2758737a06bcaffebaff1cd146560bb278f7818c85222.png",
+          "bounds": [
+            663,
+            356.9408271592883,
+            729.475626642683,
+            417
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-spoon",
+          "label": "汤匙",
+          "image": "./assets/optimized/97a0d5a2949d6c35b52f922029d0c2ae496795ca997ce9358c75a570cee83ddf.png",
+          "bounds": [
+            296.5,
+            220.2222253903123,
+            349.97435844752465,
+            405.4952077727275
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-scallop-shell",
+          "label": "扇贝壳",
+          "image": "./assets/optimized/b9801a6ffae943474a3d1c5f9bf686b83100b6bb415d461143a17fdd0355059b.png",
+          "bounds": [
+            1033.1785860958246,
+            387.75,
+            1124.25,
+            454.25
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-molar",
+          "label": "臼齿",
+          "image": "./assets/optimized/b6276e36571289631cecb5fb72cef3f3f1ea19507662b0bbcb06bf03f15731ed.png",
+          "bounds": [
+            93.25,
+            429.2755253034588,
+            110.42377777777779,
+            463.25
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-envelope",
+          "label": "信封",
+          "image": "./assets/optimized/f6a1c401379a11edd4a08202cfd906593a3b0e8ca9f0f155c425b633bde0c5fa.png",
+          "bounds": [
+            384.75,
+            576.75,
+            462.75,
+            618.75
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        }
+      ]
+    },
+    {
+      "id": "082",
+      "version": "release-v04",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 给影子开扇窗",
+      "english": "DIDIDO · A Window for a Shadow",
+      "intro": "石窗投下流动的影子，两位修补师撑开影布，给它缝上一扇透光的窗。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/c1977086d4475bc34d286337f70aa9e35142b6cf6d157847a1f62e545be1620d.webp",
+      "color": "./assets/optimized/3544f84c6c7c467749289981da407ae35bde369eb13e6585dcdb3554ec84ecac.webp",
+      "cover": "./assets/optimized/bad5dd331fe935198c14baca5c120b590ff74a6b42da982c90925a3dd59480ec.webp",
+      "coverWidth": 520,
+      "coverHeight": 368,
+      "targets": [
+        {
+          "id": "v03-t03-leaf-feather",
+          "label": "羽毛",
+          "image": "./assets/optimized/1ab8e98dad81b33d463edcf7a90c61b1800ace3d030c85d86398933808a98d74.png",
+          "bounds": [
+            150.8,
+            1092.142,
+            216.96111111111117,
+            1189.25
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "v03-t12-paving-bread",
+          "label": "面包片",
+          "image": "./assets/optimized/74fe2b360bfed7cc8c497c2bab43657e6ff83da5f077fd8c84da12b86f2d6108.png",
+          "bounds": [
+            525.75,
+            1070.7301186176721,
+            759.3286300104286,
+            1200.75
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "v03-t04-bench-cloth-profile",
+          "label": "侧脸",
+          "image": "./assets/optimized/c1e247f369ec2374eb9703a5fa3be4fefe0b79c6a739dc9518f9e18d359947e7.png",
+          "bounds": [
+            1004.1823725421879,
+            810.3735377939392,
+            1097.4842638220616,
+            981.3720139049544
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "v03-t05-apron-sweet",
+          "label": "包纸糖果",
+          "image": "./assets/optimized/2b05771c9cca82e9c03fcca892cf0b21d20e3beb3fdf31ed17ae618491c7df81.png",
+          "bounds": [
+            359.938,
+            680.319,
+            430.005,
+            730.337
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "v03-t08-flower-balloon",
+          "label": "气球",
+          "image": "./assets/optimized/e4d883ac36f527b4d6270839cb3aa6bff78c0c95013420d35d5b6c4253b117a4.png",
+          "bounds": [
+            70.15345199064518,
+            414.50371365012114,
+            97.1310546915133,
+            477.25
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "v03-t01-arch-horseshoe",
+          "label": "马蹄铁",
+          "image": "./assets/optimized/7b20af7356f2bac960ade939ea2b750db06977488f2ed32869b16f20bbcfe264.png",
+          "bounds": [
+            848,
+            541.7147163321225,
+            974,
+            648
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "v03-t07-watering-skimmer",
+          "label": "漏勺",
+          "image": "./assets/optimized/e9913dc19e5d4ad8a8940803ede327d17adec0e6ccc8cdeb31fb98b513c8ec99.png",
+          "bounds": [
+            10.558352583738548,
+            810.1543737558758,
+            107.80526398585793,
+            924.75
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "v03-t10-vine-propeller",
+          "label": "三叶螺旋桨",
+          "image": "./assets/optimized/af46050e94b918b2f69232d5595457bd1938c1e862da8473014d496055921ef3.png",
+          "bounds": [
+            1106.6614476225334,
+            109.25,
+            1232.75,
+            235.27908617946696
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "v03-t11-bench-domino",
+          "label": "多米诺骨牌",
+          "image": "./assets/optimized/9f2f31908c8b7417636215e90ce213ef9298716c596054ed0625c6824e920b14.png",
+          "bounds": [
+            902.6901662049861,
+            816.25,
+            984.25,
+            863.75
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        }
+      ]
+    },
+    {
+      "id": "081",
+      "version": "release-v03",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 鹿角上的渡口",
+      "english": "DIDIDO · The Antler Ferry",
+      "intro": "巨鹿涉过清溪，乘客和货物随鹿角上的渡船穿过山谷。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/c257863e3207b2ce8d407455e483e57a0eabf6170f9c963c5f5f7e3fda8d026f.webp",
+      "color": "./assets/optimized/e56e380eb5afd19d76d72bc36c3012a647e2778748cc8eade168e0413cf98018.webp",
+      "cover": "./assets/optimized/d4c01c30d51e225a4fee9adb07caee249837d6a46135a387aced0c1b8ac6c433.webp",
+      "coverWidth": 520,
+      "coverHeight": 735,
+      "targets": [
+        {
+          "id": "v03-t26-lifted-leg-stocking",
+          "label": "长袜",
+          "image": "./assets/optimized/808f171a69400f44bb78120326b000a17c4fec8f31e558b614c51255d38d6424.png",
+          "bounds": [
+            517.138888888889,
+            961.75,
+            583.049959823729,
+            1088.8532046855066
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "v03-t21-reed-brush",
+          "label": "画笔",
+          "image": "./assets/optimized/4f64ed01c7fd765ad4f81d09db3fcded4ee20dcfc1d8f9594e7e4befb7f44455.png",
+          "bounds": [
+            1209,
+            977,
+            1232,
+            1130.0833333333335
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "v03-t27-cargo-snail",
+          "label": "蜗牛",
+          "image": "./assets/optimized/b5e0aca54b091aac12ccc454185bf070772c13a663740033fcb197f3f5abbf70.png",
+          "bounds": [
+            455.75,
+            305.75,
+            492.25,
+            326.8702740551981
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-angel-wing",
+          "label": "天使翅膀",
+          "image": "./assets/optimized/1a7e1906d0df6856963d26ed7a65a52bbb07b11235216bd05be6ba9c82bc3ec0.png",
+          "bounds": [
+            457.7,
+            480.9792663391604,
+            513.8044286858519,
+            538.863634059318
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "v03-t28-canopy-heart",
+          "label": "心形",
+          "image": "./assets/optimized/f9ea3426b172f0b5352fd483310f2af4bcb6cdb053901dd1391544ef76e78fa2.png",
+          "bounds": [
+            1137.0740525500094,
+            97.08931958111289,
+            1156.0665465505308,
+            119
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "v03-t25-pier-lyre",
+          "label": "里拉琴",
+          "image": "./assets/optimized/2ba8bae97e5c271d4ec5a32afdf868821fd78f1850c59c941d634fa3160c0d82.png",
+          "bounds": [
+            634.6442719835164,
+            288,
+            677.6334422850512,
+            345.6616501824317
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "v03-t20-mane-flame",
+          "label": "火苗",
+          "image": "./assets/optimized/0791287a5042f3e1ce73bebcecd822281a67601ab35720593ca57601b38e5668.png",
+          "bounds": [
+            425.9350541585036,
+            697,
+            491.01871886660496,
+            844
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "v03-t23-lantern-acorn",
+          "label": "橡果",
+          "image": "./assets/optimized/d3fef1c49bc46428aa5b37ef600ae9d1c50f75997902ccac7d2f26e513a8a753.png",
+          "bounds": [
+            1151.3600000000001,
+            240.06976744186045,
+            1182.5806451612905,
+            285.3
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "v03-t22-iris-butterfly",
+          "label": "蝴蝶",
+          "image": "./assets/optimized/14b2c9bf2e0dd9e48cec9514f2fd76915236bb0ba72265b93edcaa3e6dfbb264.png",
+          "bounds": [
+            58.29929147069668,
+            1065,
+            103.40840786061491,
+            1103.0766650380501
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        }
+      ]
+    },
+    {
+      "id": "080",
+      "version": "release-v02",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 把雷声烤酥",
+      "english": "DIDIDO · Thunder, Freshly Baked",
+      "intro": "面包师把小雷云揉成面团，刚出炉的酥点还在托盘上噼啪闪光。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/530510300fd3f794e16aa99de76a1d345067c0356e06fbf33557582617ad9811.webp",
+      "color": "./assets/optimized/0e8d12725637ef062018dc917e1db3205dded9e4723171e59c3d38db667fc6e0.webp",
+      "cover": "./assets/optimized/a17b06d8e6a069d2c5b7b692b8ef955545cf743ef1863e2429d8b519b88e8beb.webp",
+      "coverWidth": 520,
+      "coverHeight": 735,
+      "targets": [
+        {
+          "id": "t01-paper-boat",
+          "label": "纸船",
+          "image": "./assets/optimized/96e5b25930045cdebca27dde80b3612725199dac9bc3f615f3d8d0df40052e86.png",
+          "bounds": [
+            889,
+            937,
+            1005,
+            984
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-crown",
+          "label": "王冠",
+          "image": "./assets/optimized/729d9394b75ce6ef25f3917472517754083cb05dbde431d2d5479352b9c042ce.png",
+          "bounds": [
+            772.6480477387439,
+            691.75,
+            872.1943546289735,
+            764.25
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-grain-eye",
+          "label": "眼睛",
+          "image": "./assets/optimized/3df110cca3962290e369532ccf40ca13ec33aeb65abd27d62d08ca9b282087e6.png",
+          "bounds": [
+            156.1382389698814,
+            1057,
+            181.16466417985853,
+            1123
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-chameleon",
+          "label": "卷尾变色龙",
+          "image": "./assets/optimized/500b2058de466cd654f28e8b7bbcbdc2d3da7197b1d2fe345ac617248e016e22.png",
+          "bounds": [
+            338.68797772605666,
+            493,
+            450,
+            548.8822474987797
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-dancing-sprig",
+          "label": "举手的树精",
+          "image": "./assets/optimized/7d241a8b5b96fdbf86357de2aabe0e98a71d7c0e1250357be553a21435cabffa.png",
+          "bounds": [
+            478,
+            975,
+            541,
+            1051
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-crank-key",
+          "label": "钥匙",
+          "image": "./assets/optimized/2edbaed5d76a12f992caaf6397d39b435716f687ec79684b165c712e5c354aea.png",
+          "bounds": [
+            873,
+            785.2291236000337,
+            937.7043577316072,
+            833
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-binoculars",
+          "label": "双筒望远镜",
+          "image": "./assets/optimized/4f2474ee6a39b15d03c38982e58985a00d80537ed472373b6935ae0c6c39ff53.png",
+          "bounds": [
+            579.9482428208706,
+            443,
+            650.2236217689328,
+            504
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-cloud-narwhal",
+          "label": "独角鲸",
+          "image": "./assets/optimized/e492e515991c4912561b1a993c8ac5d9da59453c56e2ab87e607e020417c8487.png",
+          "bounds": [
+            581,
+            713.7735743560174,
+            733,
+            827
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-hourglass",
+          "label": "沙漏",
+          "image": "./assets/optimized/27cd7191612ba1e7bea01896beea26f9129c8381f8a90dea064e8260ff789630.png",
+          "bounds": [
+            552,
+            1108,
+            614,
+            1178
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        }
+      ]
+    },
+    {
+      "id": "079",
+      "version": "release-v02",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 今晚住口袋",
+      "english": "DIDIDO · The Pocket Inn",
+      "intro": "一件巨大的旧外套成了旅店。飞蛾旅人沿着缝线栈道走向口袋里的灯光。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/82b9a4fcf5eefe80ff3ecb36ab9cf46faa70dc3d4b707410434c4f8dc6cfa396.webp",
+      "color": "./assets/optimized/072274b35d4407387e4a97fd4d213997cdcef57820b8aea0f9f5167f0847f131.webp",
+      "cover": "./assets/optimized/855c9f0947033ebb84f9aa6a87b760f5bff1fb3a743e2b78bc766e1b6d3e8256.webp",
+      "coverWidth": 520,
+      "coverHeight": 368,
+      "targets": [
+        {
+          "id": "t01-candy-cane",
+          "label": "拐杖糖",
+          "image": "./assets/optimized/b6adfd7ef619742cda9e6523d300df89997cfba9c939f21a847f245921e3fbda.png",
+          "bounds": [
+            449,
+            26.34862418215001,
+            495,
+            124.57142857142858
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-fishbone",
+          "label": "鱼骨",
+          "image": "./assets/optimized/02983c6c02f1838833ad3a76b61ec239a2633603063d6d14247f53c51881729a.png",
+          "bounds": [
+            552,
+            614,
+            601,
+            658.5714285714286
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-anchor",
+          "label": "船锚",
+          "image": "./assets/optimized/a3cb364eb9bc0700b32428c0c745031f4d0f910b0550063c7d59724a663ac443.png",
+          "bounds": [
+            108,
+            490,
+            240,
+            584
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-winged-satchel",
+          "label": "飞行背包",
+          "image": "./assets/optimized/2e75703b7f75ead6596888df4db7f8f84eab26c6bbd9e54d0bbf51c0c37f351a.png",
+          "bounds": [
+            487.7446129857475,
+            725.7082835040858,
+            589.8,
+            854.6624304592233
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-padlock",
+          "label": "挂锁",
+          "image": "./assets/optimized/26f4644cc85a29a3725cba38207442be40bd218ef822f708b39f5308a9969096.png",
+          "bounds": [
+            688,
+            414.75,
+            760,
+            535
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-ladybug",
+          "label": "瓢虫",
+          "image": "./assets/optimized/b5459a48bc8a74ed894517cd9590b349575c0a0653db374a0c927b965effffa3.png",
+          "bounds": [
+            483.42857142857144,
+            611,
+            528.1666666666666,
+            655
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-wooden-mallet",
+          "label": "木槌",
+          "image": "./assets/optimized/7fda452a45fd39c24ba3d4046f622114ffe0f0d6f61ea6caf92fbd54b79d2969.png",
+          "bounds": [
+            90.47014524318948,
+            59.714285714285715,
+            318,
+            374
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-chess-pawn",
+          "label": "棋子（兵）",
+          "image": "./assets/optimized/0e896b00b016c71122d338104cb2ac09d3194b766feb80f5128159f1fe93317d.png",
+          "bounds": [
+            167.10000000000002,
+            4,
+            216.08333333333331,
+            58
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-drafting-compass",
+          "label": "圆规",
+          "image": "./assets/optimized/2947d8c05363e7eda57c863a51152d4377ca4f926a1ea0aa4b08ff4ef6eb10fc.png",
+          "bounds": [
+            988.3,
+            557.81875,
+            1049.1117090077992,
+            698.8
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        }
+      ]
+    },
+    {
+      "id": "078",
+      "version": "release-v02",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 浮石泡澡日",
+      "english": "DIDIDO · Floating Bath Day",
+      "intro": "石头精灵泡进热汤，连沉甸甸的浴池也跟着浮了起来。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/ab8aa6e9fe3a80a053a99ffb7eab9f54eb32cc3933b6ec8025a53b0f462c3aa1.webp",
+      "color": "./assets/optimized/4c14d93a83f9f9b32e71ffbdb89cea00bcb6a93918351f2635fe4f4644aa30f1.webp",
+      "cover": "./assets/optimized/59b251c4c6569c90657f297981d8fa284c92d71ddb9edf8ffc7c6238133502b3.webp",
+      "coverWidth": 520,
+      "coverHeight": 735,
+      "targets": [
+        {
+          "id": "t15-elephant-face",
+          "label": "象脸",
+          "image": "./assets/optimized/dbadc72c711120cb82814c27792f0d9f930209ced4d8483bab56f0dd9852c8fa.png",
+          "bounds": [
+            512.6923076923076,
+            883,
+            606,
+            957.2666666666668
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-coiled-dragon",
+          "label": "卷尾龙",
+          "image": "./assets/optimized/b066a877879d6acd03634646724931ac27c3f5ee4a37c039505bd58505428f4a.png",
+          "bounds": [
+            751.6482464797419,
+            590,
+            1009,
+            661
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t08-spinning-top",
+          "label": "陀螺",
+          "image": "./assets/optimized/b49e3fd3e5340d7aa7cfbfbab70251c90288b6b0ad61a7a47ba60b03b0b69055.png",
+          "bounds": [
+            41.65638221569574,
+            363,
+            144.0909090909091,
+            450
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-moon-cart",
+          "label": "月亮车",
+          "image": "./assets/optimized/15220c22e7ed02fecf038d3be048d5be6673c141a96e1c38be25697f1f13d258.png",
+          "bounds": [
+            202,
+            98.19453033433399,
+            247,
+            178
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-letter-h",
+          "label": "字母 H",
+          "image": "./assets/optimized/c44818c7359920c48de454ceac842ecec47703f3d84bbe0a20fd0c9f16a04f9b.png",
+          "bounds": [
+            26,
+            944,
+            109,
+            1008
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-dragonfly",
+          "label": "蜻蜓",
+          "image": "./assets/optimized/e785372eabf43f2a1a4c2a1861fa3689ae183db3eb0822bebc82be8112989b94.png",
+          "bounds": [
+            277.1101657655877,
+            869.0778880637929,
+            343,
+            942.5999999999999
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t02-boomerang",
+          "label": "回旋镖",
+          "image": "./assets/optimized/dc475e6c379e0888196aecb78f293e9f3a26dbc0689b0cfce13e1b6d81dea8d6.png",
+          "bounds": [
+            395.33333333333337,
+            677.4903981211893,
+            594,
+            798.8
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t12-safety-pin",
+          "label": "安全别针",
+          "image": "./assets/optimized/44cd2b2547a4ccfcb30a05ee2cdcf86fb9698a8c64dbfebf5e127f82cefdbc8b.png",
+          "bounds": [
+            397.22222222222223,
+            764,
+            436.3636363636364,
+            809
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t17-magnifying-glass",
+          "label": "放大镜",
+          "image": "./assets/optimized/5bd4f6725b3fbc1913913e4c8a5368cc21d587db4c3bd0654c88e80fa592a412.png",
+          "bounds": [
+            1025.7142857142856,
+            1153,
+            1097.6621992412543,
+            1225.29837308054
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        }
+      ]
+    },
+    {
+      "id": "077",
+      "version": "release-v02",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 给雨搬个家",
+      "english": "DIDIDO · Moving the Rain",
+      "intro": "园丁把一场阵雨引进悬空的陶槽，送往高处缺水的花圃。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/1c7a3eb4c2de64f3adb91afa0fd80f291c7c5bab4d51cfd4d0eaf13d0d8c0c3f.webp",
+      "color": "./assets/optimized/58368fda58945434907b3dfe816566eb917f26e0169dc2440b36c410a8e26fd5.webp",
+      "cover": "./assets/optimized/89f0856c8aca896bb11a3b0ea3d5e6bb5f21c507d910b1a92c846c8a1a85d071.webp",
+      "coverWidth": 520,
+      "coverHeight": 735,
+      "targets": [
+        {
+          "id": "t02-sleeping-bear",
+          "label": "蜷睡的小熊",
+          "image": "./assets/optimized/6461edf83e774925f8e9ffe37411542b18a910b015b2d8b9d64d88ab66cf0712.png",
+          "bounds": [
+            118.11311111111114,
+            7.872355786043725,
+            240.39800000000008,
+            92.86016777641044
+          ],
+          "clue": "把目光移到画面上方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t04-toucan",
+          "label": "收拢翅膀的鹦鹉",
+          "image": "./assets/optimized/c3a829d9b3d9ce3bb78e5e287ce94117b728b87eadd39613137a97df5f09734f.png",
+          "bounds": [
+            876.0097676937307,
+            95.5,
+            986,
+            181
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-iron",
+          "label": "熨斗",
+          "image": "./assets/optimized/25fa5552d1946f598a145ccc430b2982588cfa3d68218e9626305533453b0b55.png",
+          "bounds": [
+            479,
+            1019.4285714285714,
+            692,
+            1099
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t07-bass-clef",
+          "label": "低音谱号",
+          "image": "./assets/optimized/f644e43adbb7ea94a095564b99a6be1e5ffb8ee32bb84c303373fe1be4fd077c.png",
+          "bounds": [
+            879,
+            946.4775047509894,
+            935,
+            998
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t09-sickle",
+          "label": "镰刀",
+          "image": "./assets/optimized/959bbbcd5ab524bdff1245ed104f5d50c160adfb128f2b403b8c50dcb620134b.png",
+          "bounds": [
+            519,
+            557,
+            701.2666666666667,
+            654.8181818181818
+          ],
+          "clue": "把目光移到画面中部，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t16-hose-pretzel",
+          "label": "椒盐卷饼",
+          "image": "./assets/optimized/dd0fa747b0e0b995efc1d6e9faa06527d737a7a37a9b54f23893780357bed5f5.png",
+          "bounds": [
+            262.15,
+            1121.346,
+            528.58,
+            1227.396
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t13-gecko",
+          "label": "攀爬的壁虎",
+          "image": "./assets/optimized/682177a8ef293c6b6cf50ae65a67b0a751b847039ed0dee5ae8a5b3b9776fea8.png",
+          "bounds": [
+            40,
+            493,
+            125,
+            601.0590534472217
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t14-ghost",
+          "label": "招手的小幽灵",
+          "image": "./assets/optimized/ddeaeb5d047a056aee4efa81f5b8b1cbf5fba7708b2dc941c931b203e10b2c2b.png",
+          "bounds": [
+            66.67366937731485,
+            1016.3548387096773,
+            226,
+            1198
+          ],
+          "clue": "把目光移到画面下方偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t17-stone-top",
+          "label": "陀螺",
+          "image": "./assets/optimized/e7864cc24a563916a2c069936eda4c4189552c79214ff6df24ec285f07224ff6.png",
+          "bounds": [
+            1032,
+            364.25,
+            1093,
+            467
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        }
+      ]
+    },
+    {
+      "id": "076",
+      "version": "release-v01",
+      "gameplayRevision": 2,
+      "invalidatedTargets": [],
+      "title": "DIDIDO · 给山谷调音",
+      "english": "DIDIDO · Tuning the Valley",
+      "intro": "山谷被风雕成一只听风的耳朵。探险队竖起石琴，听溪水和风如何合奏。",
+      "music": "echoes",
+      "width": 1254,
+      "height": 1254,
+      "line": "./assets/optimized/95cff71dae688ca3217813e3f97f303a3264dac090a7385055396bf2f1658774.webp",
+      "color": "./assets/optimized/0d7759cd9ef35301f174675722c7e0dfeca06d8255c560d6cafdd8b0ca3924a6.webp",
+      "cover": "./assets/optimized/3ffb7fdc261c056c8a5e347b58968ec688f2e3c30f5be754785427a6c76696b6.webp",
+      "coverWidth": 520,
+      "coverHeight": 368,
+      "targets": [
+        {
+          "id": "t08-saturn",
+          "label": "土星",
+          "image": "./assets/optimized/bfa87b764ea65c812f156ef439de36a4e12138da472b19fe92e2b84a8cd5d8a6.png",
+          "bounds": [
+            1139.4471509339783,
+            1072.571606606679,
+            1190.5480473967932,
+            1099.4272125360978
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t06-centipede",
+          "label": "蜈蚣",
+          "image": "./assets/optimized/95d44a455ec0378462242c1fb48ab4b28c769be4c8209de61e6663f014145758.png",
+          "bounds": [
+            103.5,
+            768,
+            143,
+            833.2857142857143
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t01-boxing-glove",
+          "label": "拳击手套",
+          "image": "./assets/optimized/37e2a8a0df859c0dac7255ed4ce6aa59b2f76ad84304390a645c53ec852b4fff.png",
+          "bounds": [
+            132.35735816606126,
+            396.5,
+            228.27955589886443,
+            479.80692984401094
+          ],
+          "clue": "把目光移到画面中部偏左，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t05-hang-glider",
+          "label": "悬挂式滑翔翼",
+          "image": "./assets/optimized/107eafe498312ef55e93bd9aadea50cc64147c932f4f2a0368ba47f8aa1ed484.png",
+          "bounds": [
+            493,
+            149,
+            625,
+            242
+          ],
+          "clue": "把目光移到画面上方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t11-tadpole",
+          "label": "摆尾的蝌蚪",
+          "image": "./assets/optimized/6d39fcd29d668e811cb4ecfc652d2d48620671293b21b8b46e8fa7d4fb8562dc.png",
+          "bounds": [
+            1000.7308352535433,
+            225,
+            1073.477120703242,
+            345.0537088808471
+          ],
+          "clue": "把目光移到画面上方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t15-anvil",
+          "label": "铁砧",
+          "image": "./assets/optimized/35b060412efe79541c1e0c5d99c5b8278b9aabec264c46c04f2d01e2555ae8ce.png",
+          "bounds": [
+            553,
+            925,
+            630.8,
+            961
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t10-jellyfish",
+          "label": "水母",
+          "image": "./assets/optimized/6f6a08cebf3ce1af653e2b3c0c7087bacc230ee1ff4ceedd419160abb500d241.png",
+          "bounds": [
+            450,
+            1071.9588946712936,
+            526,
+            1130
+          ],
+          "clue": "把目光移到画面下方，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t03-comb",
+          "label": "弧背梳",
+          "image": "./assets/optimized/8c0cd97b34e4cdff05fe5700bc3f9ee819ab82215dff853e06d7641a08f355f3.png",
+          "bounds": [
+            974.25,
+            841.25,
+            1058.25,
+            911.25
+          ],
+          "clue": "把目光移到画面下方偏右，试着转动脑海里的形状。"
+        },
+        {
+          "id": "t12-pancakes",
+          "label": "黄油松饼叠",
+          "image": "./assets/optimized/5b22c1fb791ad2d552d96500f2a6762560eda4fa3ad3299b1d786f551a8471cf.png",
+          "bounds": [
+            913.4,
+            602,
+            974.2666666666667,
+            639
+          ],
+          "clue": "把目光移到画面中部偏右，试着转动脑海里的形状。"
+        }
+      ]
+    },
     {
       "id": "075",
       "version": "release-v01",

@@ -1,11 +1,11 @@
-import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-075-20261115';
+import {titlesJa,introsJa,nounsJa,copyJa} from './ja.js?v=issue-086-20261115';
 const KEY='noobeye:language';
 let saved;try{if(typeof window!=='undefined')saved=localStorage.getItem(KEY);}catch{}
 const preferred=(typeof navigator==='undefined'?'en':navigator.languages?.[0]||navigator.language||'en').toLowerCase();
 export let language=['zh','en','ja'].includes(saved)?saved:(preferred.startsWith('zh')?'zh':preferred.startsWith('ja')?'ja':'en');
 export const tr=(zh,en,ja)=>language==='zh'?zh:language==='ja'?(ja??en):en;
 const inLanguage=(lang,zh,en,ja)=>lang==='zh'?zh:lang==='ja'?(ja??en):en;
-const titlesEn={'075':'DIDIDO · A Bridge in a Knot','074':'DIDIDO · Blowing a Garden','073':'DIDIDO · The Pond Above','072':'DIDIDO · Rolling Up the Dusk','071':'DIDIDO · Dreams on the Clothesline','070':'DIDIDO · The Bridge Stretches','069':'DIDIDO · The Other Side of the Moon','068':'DIDIDO · Rain at Play','067':'DIDIDO · The Sea Beyond the Door','066':'DIDIDO · The Dragon’s Dentist','065':'DIDIDO · Winding the Wind','064':'DIDIDO · Upside-Down Orchard','063':'DIDIDO · Weaving a River','062':'MILO · The Low-Tide Market','061':'DIDIDO · A Very Large Guest','060':'MILO · Waiting for Clear Skies','059':'DIDIDO · Stairs on the Loose','058':'DIDIDO · Posting the Night','057':'DIDIDO · A Very Unusual Catch','056':'DIDIDO · A Rainbow on the Rise','055':'DIDIDO · Winter, Five More Minutes','054':'DIDIDO · Shadows on Holiday','053':'DIDIDO · A Waterfall’s Day Off','052':'DIDIDO · Newly Hatched Stars','051':'DIDIDO · Winding the Storm','050':'DIDIDO · After the Moon Tide','049':'DIDIDO · Shadows on the Line','048':'DIDIDO · A Door to the Sea','047':'DIDIDO · A Castle on the Move','046':'DIDIDO · Borrow a Little Rain','045':'DIDIDO · A Dragon’s Loose Tooth'};
+const titlesEn={"076":"DIDIDO · Tuning the Valley","077":"DIDIDO · Moving the Rain","078":"DIDIDO · Floating Bath Day","079":"DIDIDO · The Pocket Inn","080":"DIDIDO · Thunder, Freshly Baked","081":"DIDIDO · The Antler Ferry","082":"DIDIDO · A Window for a Shadow","083":"A Home on the Move","084":"DIDIDO · The Moon’s New Tooth","085":"MILO · A Market in the Wind","086":"DIDIDO · Night on the Line",'075':'DIDIDO · A Bridge in a Knot','074':'DIDIDO · Blowing a Garden','073':'DIDIDO · The Pond Above','072':'DIDIDO · Rolling Up the Dusk','071':'DIDIDO · Dreams on the Clothesline','070':'DIDIDO · The Bridge Stretches','069':'DIDIDO · The Other Side of the Moon','068':'DIDIDO · Rain at Play','067':'DIDIDO · The Sea Beyond the Door','066':'DIDIDO · The Dragon’s Dentist','065':'DIDIDO · Winding the Wind','064':'DIDIDO · Upside-Down Orchard','063':'DIDIDO · Weaving a River','062':'MILO · The Low-Tide Market','061':'DIDIDO · A Very Large Guest','060':'MILO · Waiting for Clear Skies','059':'DIDIDO · Stairs on the Loose','058':'DIDIDO · Posting the Night','057':'DIDIDO · A Very Unusual Catch','056':'DIDIDO · A Rainbow on the Rise','055':'DIDIDO · Winter, Five More Minutes','054':'DIDIDO · Shadows on Holiday','053':'DIDIDO · A Waterfall’s Day Off','052':'DIDIDO · Newly Hatched Stars','051':'DIDIDO · Winding the Storm','050':'DIDIDO · After the Moon Tide','049':'DIDIDO · Shadows on the Line','048':'DIDIDO · A Door to the Sea','047':'DIDIDO · A Castle on the Move','046':'DIDIDO · Borrow a Little Rain','045':'DIDIDO · A Dragon’s Loose Tooth'};
 export const titleOf=issue=>issue.translations?.[language]?.title??inLanguage(language,issue.title,titlesEn[issue.id]??issue.english.replace(/^THE /,'').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase()).replace(/^(Didido|Milo|Poko)\b/,s=>s.toUpperCase()),titlesJa[issue.id]);
 const nouns={
   '数字 8':'Number 8','斧头':'Axe','彗星':'Comet','哑铃':'Dumbbell','钻戒':'Diamond ring','竖笛':'Recorder','四分休止符':'Quarter rest','独眼兔':'One-eyed rabbit',
@@ -36,6 +36,17 @@ const nouns={
 };
 export const labelOf=target=>target.translations?.[language]?.label??inLanguage(language,target.label,nouns[target.label]||target.labelEn||target.label,nounsJa[target.label]);
 const intros={
+  "076":"A wind-carved valley curls like an ear. A small expedition listens as hanging stone chimes join the stream and the wind.",
+  "077":"Gardeners guide a passing shower through a suspended channel to a thirsty flower bed.",
+  "078":"The stone spirits slip into a hot bath, and their heavy tub begins to float.",
+  "079":"An old coat has become an inn. Moth travelers follow its stitched walkways to the light in the pocket.",
+  "080":"Bakers knead thunderclouds into dough. The pastries still crackle on their trays fresh from the oven.",
+  "081":"A giant deer wades through the stream, ferrying people and cargo through the valley on its antlers.",
+  "082":"A stone window casts a flowing shadow. Two menders stretch it out and sew in a little window for the sunlight.",
+  "083":"After the rain, a mouse family loads their belongings onto a big leaf and pulls it around the puddles.",
+  "084":"A ticklish crescent moon leans against the clinic while a little dentist fits its new tooth.",
+  "085":"A crosswind lifts the market awnings. Milo and the stallholders scramble to secure the stalls and their wares.",
+  "086":"Two ceramic companions hang the freshly washed night sky on a line and catch dripping starlight in a basin.",
   '075':'A woven bridge has tied itself in a knot above the gorge. Travelers and their ceramic companions pull from both banks to loosen it. Search the ropes, cliffs and luggage for nine hidden shapes.',
   '074':'In the glass workshop, a fire salamander blows a spray of glass flowers while a moth apprentice catches a new bud on a cloth. Search the stems, tools and workshop for nine hidden shapes.',
   '073':'A pond hangs from the ceiling of a stone hall, its lily roots trailing in midair. Below, two ceramic companions fish from the steps. Look among the ripples, roots and stonework for nine hidden shapes.',
@@ -238,3 +249,5 @@ Object.assign(nouns,{"马蹄形磁铁": "Horseshoe magnet", "振翅的蜂鸟": "
 Object.assign(nouns,{"一对樱桃": "Pair of cherries", "保龄球瓶": "Bowling pin", "蝠鲼": "Manta ray", "一双芭蕾舞鞋": "Pair of ballet slippers", "踮脚的舞者": "Dancer on tiptoe"});
 
 Object.assign(nouns,{"带翼的钥匙": "Winged key", "弯刀": "Scimitar", "四芒星": "Four-pointed star"});
+
+Object.assign(nouns,{"土星": "Saturn", "悬挂式滑翔翼": "Hang glider", "摆尾的蝌蚪": "Tadpole", "弧背梳": "Comb", "黄油松饼叠": "Stack of pancakes", "蜷睡的小熊": "Sleeping bear", "收拢翅膀的鹦鹉": "Parrot", "椒盐卷饼": "Pretzel", "攀爬的壁虎": "Gecko", "招手的小幽灵": "Waving ghost", "象脸": "Elephant face", "卷尾龙": "Coiled dragon", "月亮车": "Crescent cart", "字母 H": "Letter h", "船锚": "Anchor", "飞行背包": "Winged satchel", "瓢虫": "Ladybug", "棋子（兵）": "Chess pawn", "卷尾变色龙": "Chameleon", "举手的树精": "Dancing sprig sprite", "独角鲸": "Narwhal", "长袜": "Stocking", "天使翅膀": "Angel wing", "心形": "Heart", "火苗": "Flame", "面包片": "Bread slice", "侧脸": "Face profile", "包纸糖果": "Wrapped sweet", "气球": "Balloon", "漏勺": "Slotted spoon", "蜷起的毛毛虫": "Curled caterpillar", "缝衣针": "Sewing needle", "汤匙": "Spoon", "扇贝壳": "Scallop shell", "臼齿": "Molar tooth", "垂坠耳环": "Drop earring", "月纹卷轴": "Magic scroll", "双环扳手": "Ring spanner", "四叶风轮": "Pinwheel", "双首卷尾兽": "Two headed curl tailed creature", "睡舱旅人": "Sleeping pod traveller", "错身双鱼": "Two fish swimming past each other", "托星长尾鸟": "Long-tailed bird holding a star", "指尖托籽": "Hand balancing a seed", "小飞碟": "Flying saucer"});
